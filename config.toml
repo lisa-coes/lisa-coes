@@ -1,5 +1,5 @@
-baseurl = "https://ocs-coes.netlify.app/"
-title = "Observatorio de Cohesión Social"
+baseurl = "https://example.org"
+title = "Laboratorio de Ciencia Social Abierta"
 theme = "hugo-universal-theme"
 languageCode = "es-cl"
 # Site language. Available translations in the theme's `/i18n` directory.
@@ -7,7 +7,7 @@ defaultContentLanguage = "es"
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = "G-5NZ26DZ60M"
+googleAnalytics = "" #codigo G
 
 [markup]
   [markup.goldmark]
@@ -29,19 +29,19 @@ paginate = 10
 
 [[menu.main]]
     identifier = "app"
-    name = "Visualizador"
+    name = "Convertor"
     url  = "/app/"
     weight = 2
 
 [[menu.main]]
     identifier = "doc"
-    name = "Documentación"
+    name = "Quiénes somos"
     url  = "/doc2/"
     weight = 3
 
 [[menu.main]]
     identifier="blog"
-    name = "Noticias"
+    name = "Blog"
     url  = "/blog/"
     weight = 4
 
@@ -56,7 +56,7 @@ paginate = 10
 [[menu.topbar]]
     weight = 1
     name = "GitHub"
-    url = "https://github.com/ocscoes/"
+    url = "https://github.com/lisa/"
     pre = "<i class='fab fa-2x fa-github'></i>"
 
 [[menu.topbar]]
@@ -97,7 +97,7 @@ paginate = 10
     longitude = "-77.028333"
 
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
-    style = "blue"
+    style = "red"
 
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual
@@ -115,8 +115,8 @@ paginate = 10
     email = "f/xeqpkdpl"
     contact_form_ajax = false
 
-    about_us = "<p>Observatorio de Cohesión Social, COES</p>"
-    copyright = "Copyright (c) 2015 - 2020, Observatorio de Cohesión Social; todos los derechos reservados."
+    about_us = "<p>Laboratorio Ciencia Social Abierta, COES</p>"
+    copyright = "Copyright (c) 2020 - 2021, Laboratorio Ciencia Social Abierta; todos los derechos reservados."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
@@ -138,7 +138,7 @@ paginate = 10
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Contáctenos en ocs@coes.cl</p>
+    text = """<p class="hidden-sm hidden-xs">Contáctenos en lisa@coes.cl</p>
       <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
       <a href="#" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
       </p>
@@ -158,8 +158,8 @@ paginate = 10
 
 [params.test]
     enable = true
-    title = "Observatorio de Cohesión Social"
-    subtitle = "El Observatorio de Cohesión Social es un portal para realizar análisis comparativos de distintos indicadores asociados a cohesión social en América Latina, como confianza interpersonal, valoración de la democracia, participación en protestas, entre otros. Para ello se utiliza la base de la encuesta LAPOP (Latin American Public Opinion Project), olas 2004, 2006, 2008, 2010, 2012, 2014, 2016 y 2018"
+    title = "LISA"
+    subtitle = "El Laboratorio de Ciencia Social Abierta es (...)"
 
 
 [params.features]
@@ -194,5 +194,5 @@ paginate = 10
 
 [params.recent_posts]
     enable = true
-    title = "Noticias"
+    title = "Blog"
     subtitle = "En el siguiente apartado se pueden ver las noticias que han aparecido sobre el Observatorio de Cohesión Social"
