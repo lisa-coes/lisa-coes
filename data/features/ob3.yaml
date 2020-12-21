@@ -1,5 +1,5 @@
 weight: 3
-name: "Paso 3"
-icon: "fas fa-globe-americas"
-url: "https://ocs-coes.netlify.app/doc2"
-description: "Descripción paso 3"
+name: "Publicaciones libres"
+icon: "fas fa-unlock-alt"
+url: "https://lisa-coes.netlify.app/blog/04blog/"
+description: "Dar libre acceso a los resultados de los productos de la investigación"
