@@ -30,7 +30,7 @@ paginate = 10
 [[menu.main]]
     identifier = "doc"
     name = "Quiénes somos"
-    url  = "/doc2/"
+    url  = "/doc/"
     weight = 2
 
 [[menu.main]]
@@ -41,9 +41,24 @@ paginate = 10
 
 [[menu.main]]
     identifier = "app"
-    name = "Convertor"
+    name = "Herramientas"
     url  = "/app/"
     weight = 4
+    
+[[menu.main]]
+    parent = "app"
+    name = "Buscador de bases de datos"
+    url = "/app/tool01/"
+
+[[menu.main]]
+    parent = "app"
+    name = "Tesis bookdown"
+    url = "/app/tool02/"
+
+[[menu.main]]
+    parent = "app"
+    name = "Tutoriales"
+    url = "/app/tool03/"
 
 [[menu.main]]
     identifier = "contact"
@@ -133,8 +148,8 @@ paginate = 10
       """
 
 [Permalinks]
-    blog = "/blog/:year/:month/:day/:filename/"
-
+    blog = "/blog/:filename/"
+#"/blog/:year/:month/:day/:filename/"
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
@@ -159,11 +174,12 @@ paginate = 10
 [params.test]
     enable = true
     title = "LISA"
-    subtitle = "El Laboratorio de Ciencia Social Abierta es (...)"
-
+    subtitle = "El Laboratorio de Ciencia Social Abierta es una iniciativa que tiene como propósito ser una guía para el desarrollo de una ciencia social abierta y reproducible para la comunidad científica y la ciudadanía."
 
 [params.features]
     enable = true
+    title = "Pasos para una Ciencia Abierta"
+    subtitle = "Presiona cada uno de ellos para conocer más detalles"
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/features'.
     # For more informtion take a look at the README.
@@ -181,7 +197,7 @@ paginate = 10
     icon = "fas fa-chart-line"
     title = "Guía para la apertura de datos"
     subtitle = ""
-    link_url = "/doc2/"
+    link_url = "/blog/blog01"
     link_text = "¡Quiero aprender!"
 
 [params.clients]
