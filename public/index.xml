@@ -6,16 +6,54 @@
     <description>Recent content on Laboratorio de Ciencia Social Abierta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-cl</language>
-    <lastBuildDate>Tue, 10 Nov 2020 13:50:46 +0200</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 12:50:46 +0200</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Lanzamiento Observatorio Cohesión Social</title>
-      <link>/blog/2020/11/10/01notice/</link>
-      <pubDate>Tue, 10 Nov 2020 13:50:46 +0200</pubDate>
+      <title>Publicaciones libres</title>
+      <link>/blog/04blog/</link>
+      <pubDate>Sun, 20 Dec 2020 12:50:46 +0200</pubDate>
       
-      <guid>/blog/2020/11/10/01notice/</guid>
-      <description>Lanzamiento Observatorio Cohesión Social En el 3° taller CEPAL-COES ¿Cómo se define la cohesión y cómo sepuede medir? realizada el miércoles 11 de noviembre a las 9:30 horas se presentó el Centro de Cohesión Social con su visualizador de datos nuevo y su sitio web.
-La actividad consistió en la presentación de dos iniciativas
-  Presentación &amp;ldquo;Hacia un nuevo concepto de cohesión social: revisión histórica y elementos centrales&amp;rdquo; por Carlos Maldonado y María Luisa Marnho, de CEPAL.</description>
+      <guid>/blog/04blog/</guid>
+      <description>Guía para la publicación Razones Pasos Consejos Protocolo
+Contenidos</description>
+    </item>
+    
+    <item>
+      <title>Análisis reproducibles</title>
+      <link>/blog/03blog/</link>
+      <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
+      
+      <guid>/blog/03blog/</guid>
+      <description>Guía para realizar análisis reproducibles Razones Pasos Consejos </description>
+    </item>
+    
+    <item>
+      <title>Datos abiertos</title>
+      <link>/blog/02blog/</link>
+      <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
+      
+      <guid>/blog/02blog/</guid>
+      <description>Guía para la apertura de datos Razones Pasos Consejos Protocolo
+Contenidos</description>
+    </item>
+    
+    <item>
+      <title>¿Qué es la Ciencia Abierta?</title>
+      <link>/blog/01blog/</link>
+      <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
+      
+      <guid>/blog/01blog/</guid>
+      <description>¿Qué es la Ciencia Abierta? ¿Porqué practicarla en Ciencias Sociales? Ciencia abierta en Ciencias Sociales Estado actual en Chile Qué ofrece LISA Herramientas disponibles </description>
+    </item>
+    
+    <item>
+      <title>Lanzamiento Laboratorio Ciencia Social Abierta</title>
+      <link>/blog/01notice/</link>
+      <pubDate>Sat, 19 Dec 2020 13:50:46 +0200</pubDate>
+      
+      <guid>/blog/01notice/</guid>
+      <description>Lanzamiento Laboratorio Ciencia Social Abierta En &amp;hellip; realizada el &amp;hellip; a las &amp;hellip; horas se presentó el Laboratorio de Ciencia Social Abierta con su sitio web que aloja una guía para &amp;hellip; y herramientas para &amp;hellip;
+La actividad consistió en la presentación de &amp;hellip;, con la participación de &amp;hellip;
+Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una iniciativa innovadora en &amp;hellip; A su vez, &amp;hellip; indicó que &amp;hellip;.</description>
     </item>
     
     <item>
@@ -24,9 +62,11 @@ La actividad consistió en la presentación de dos iniciativas
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/app/</guid>
-      <description> ¿Quieres comentar o tienes alguna duda? Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
-  En caso de que no puedas visualizar el visualizador o presentes problemas no dudes en contactarnos
- </description>
+      <description>Herramientas propuestas   Buscador de bases de datos/Convertidor (shiny)
+  Tesis bookdown (template)
+  Tutoriales (RStudioCloud + Youtube- Ahora se integra con Rmd en última versión R )
+   ¿Quieres comentar o tienes alguna duda? Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
+  En caso de que no puedas visualizar el buscador o presentes problemas no dudes en contactarnos</description>
     </item>
     
     <item>
@@ -40,32 +80,66 @@ La actividad consistió en la presentación de dos iniciativas
     </item>
     
     <item>
+      <title>Buscador de bases de datos</title>
+      <link>/app/tool01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/app/tool01/</guid>
+      <description>Buscador de bases de datos Poner shiny aquí
+ ¿Quieres comentar o tienes alguna duda? Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
+  En caso de que no puedas visualizar el buscador o presentes problemas no dudes en contactarnos
+ </description>
+    </item>
+    
+    <item>
       <title>Contacto</title>
       <link>/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/contact/</guid>
-      <description>Estamos aquí para ayudarte ¿Quieres saber más sobre el Observatorio de Cohesión Social? ¿Tienes dudas sobre cómo producimos nuestra investigación y datos?
+      <description>Estamos aquí para ayudarte ¿Quieres saber más sobre el Laboratorio de Ciencia Social Abierta? ¿Tienes dudas sobre cómo nos organizamos? ¿Requieres de asesoría?
 En el siguiente formulario puedes contactarte con nosotros, intentaremos contestarte lo antes posible</description>
     </item>
     
     <item>
-      <title>Documentación</title>
+      <title>Quiénes somos</title>
       <link>/doc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/doc/</guid>
-      <description>Título 1 Subtítulo 1 Subtítulo 2 Título   Aquí escribiremos la documentación
+      <description>Misión Objetivos Proyectos Equipo   Si presentas alguna duda o requieres más información contactáctanos
  </description>
     </item>
     
     <item>
-      <title>Documentación: fuentes y procesamiento de datos</title>
+      <title>Quiénes somos</title>
       <link>/doc2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/doc2/</guid>
       <description>DatosEl Observatorio de Cohesión Social utiliza los datos abiertos disponibles de la encuesta Barómetro de las Américas, del LAPOP (Latin American Public Opinion Project), disponible en https://www.vanderbilt.edu/lapop/. En general esta encuesta es conocida como “Encuesta LAPOP”, y se define como “the only survey of democratic public opinion and behavior that covers the Americas (North, Central, South and the Caribbean). It is an effort by LAPOP to measure democratic values and behaviors in the Americas using national probability samples of voting-age adults”.</description>
+    </item>
+    
+    <item>
+      <title>Tesis bookdown</title>
+      <link>/app/tool02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/app/tool02/</guid>
+      <description>Tesis bookdown ¿ Qué es bookdown? Razones para ocuparlo Cómo acceder a template  ¿Quieres comentar o tienes alguna duda? Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
+  En caso de que no puedas visualizar el buscador o presentes problemas no dudes en contactarnos
+ </description>
+    </item>
+    
+    <item>
+      <title>Tutoriales</title>
+      <link>/app/tool03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/app/tool03/</guid>
+      <description> Rstudio Cloud + Youtube- Ahora se integra con Rmd en última versión R )   ¿Quieres comentar o tienes alguna duda? Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
+  En caso de que no puedas visualizar el buscador o presentes problemas no dudes en contactarnos
+ </description>
     </item>
     
   </channel>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>datos on Laboratorio de Ciencia Social Abierta</title>
+    <link>/tags/datos/</link>
+    <description>Recent content in datos on Laboratorio de Ciencia Social Abierta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-cl</language>
+    <lastBuildDate>Sun, 20 Dec 2020 10:50:46 +0200</lastBuildDate><atom:link href="/tags/datos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Datos abiertos</title>
+      <link>/blog/02blog/</link>
+      <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
+      
+      <guid>/blog/02blog/</guid>
+      <description>Guía para la apertura de datos Razones Pasos Consejos Protocolo
+Contenidos</description>
+    </item>
+    
+  </channel>
+</rss>

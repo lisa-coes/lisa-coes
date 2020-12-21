@@ -1,12 +1,11 @@
 ---
-description: Documentación de Visualizador de Indicadores Comparativos de Cohesión Social para América Latina
+description: Quiénes somos
 keywords:
-- shiny
-- indicadores
-- lapop
-- latinoamerica
-- visualizador
-title: "Documentación: fuentes y procesamiento de datos"
+- lisa
+- ciencia abierta
+- equipo
+
+title: "Quiénes somos"
 bibliography: "input/Documentation_lapop_database.bib"
 cls: "input/apa6.cls"
 css: "input/custom.css"
