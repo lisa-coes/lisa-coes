@@ -1,29 +1,25 @@
 ---
-author: Observatorio de Cohesión Social
+author: Laboratorio Ciencia Social Abierta
 banner: img/banners/banner-2.png
 categories:
 - prensa
-date: "2020-11-10T13:50:46+02:00"
+date: "2020-12-19T13:50:46+02:00"
 description: 
 tags:
 - lanzamiento
-- cohesion social
-- visualizador
-title: Lanzamiento Observatorio Cohesión Social
+- ciencia abierta
+- abierta
+title: Lanzamiento Laboratorio Ciencia Social Abierta
 ---
 
-# Lanzamiento Observatorio Cohesión Social
+# Lanzamiento Laboratorio Ciencia Social Abierta
 
-En el 3° taller CEPAL-COES *¿Cómo se define la cohesión y cómo sepuede medir?* realizada el miércoles 11 de noviembre a las 9:30 horas se presentó el Centro de Cohesión Social con su visualizador de datos nuevo y su sitio web. 
+En ... realizada el ... a las ... horas se presentó el Laboratorio de Ciencia Social Abierta con su sitio web que aloja una guía para ... y herramientas para ...
 
-La actividad consistió en la presentación de dos iniciativas
-
-- Presentación "Hacia un nuevo concepto de cohesión social: revisión histórica y elementos centrales" por Carlos Maldonado y María Luisa Marnho, de CEPAL.
-
-- Presentación del "Observatorio de Cohesión Social" del Centro de Estudios de Conflicto y Cohesión Social (COES),  por el investigador principal [Juan Carlos Castillo](https://juancarloscastillo.github.io/jc-castillo/).
+La actividad consistió en la presentación de ..., con la participación de ...
 
 
-Como señaló en académico, el **Observatorio de Cohesión Social** cuenta con un visualizador de indicadores de cohesión social para América Latina, a partir de Latin American Opinion Public (LAPOP).
+Como señaló en académico, el **Laboratorio de Ciencia Social Abierta** es una iniciativa innovadora en ... A su vez, ... indicó que ....
 
-¿Quiéres ver nuestro visualizador? Presiona [click aqui](/app/)
+¿Quiéres ver el registro de la actividad? Presiona [click aqui]
 
