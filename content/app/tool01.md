@@ -1,20 +1,16 @@
 ---
-description: Herramientas LISA
+description: Buscador de bases de datos
 keywords:
 - shiny
 - buscador
 - datos
 - abierto
-title: 
+title: Buscador de bases de datos
 ---
 
-## Herramientas propuestas
+## Buscador de bases de datos
 
-- Buscador de bases de datos/Convertidor (shiny)
-
-- Tesis bookdown (template)
-
-- Tutoriales (RStudioCloud + Youtube- Ahora se integra con Rmd en última versión R )
+*Poner shiny aquí*
 
 ---
 

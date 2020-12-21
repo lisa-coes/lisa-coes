@@ -1,20 +1,11 @@
 ---
 description: Herramientas LISA
 keywords:
-- shiny
-- buscador
-- datos
-- abierto
-title: 
+- tutoriales
+title: Tutoriales
 ---
 
-## Herramientas propuestas
-
-- Buscador de bases de datos/Convertidor (shiny)
-
-- Tesis bookdown (template)
-
-- Tutoriales (RStudioCloud + Youtube- Ahora se integra con Rmd en última versión R )
+- Rstudio Cloud + Youtube- Ahora se integra con Rmd en última versión R )
 
 ---
 

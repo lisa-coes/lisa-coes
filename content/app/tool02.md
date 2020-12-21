@@ -1,20 +1,19 @@
 ---
-description: Herramientas LISA
+description: Tesis bookdown
 keywords:
-- shiny
-- buscador
-- datos
-- abierto
-title: 
+- tesis
+- RMarkdown
+
+title: Tesis bookdown
 ---
 
-## Herramientas propuestas
+# Tesis bookdown
 
-- Buscador de bases de datos/Convertidor (shiny)
+## ¿ Qué es bookdown?
 
-- Tesis bookdown (template)
+## Razones para ocuparlo
 
-- Tutoriales (RStudioCloud + Youtube- Ahora se integra con Rmd en última versión R )
+## Cómo acceder a template
 
 ---
 
