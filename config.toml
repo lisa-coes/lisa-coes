@@ -1,4 +1,4 @@
-baseurl = "https://example.org"
+baseurl = "https://lisa-coes.netlify.app/"
 title = "Laboratorio de Ciencia Social Abierta"
 theme = "hugo-universal-theme"
 languageCode = "es-cl"
