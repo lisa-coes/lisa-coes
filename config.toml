@@ -27,23 +27,33 @@ paginate = 10
     url  = "/"
     weight = 1
 
-[[menu.main]]
-    identifier = "doc"
-    name = "Quiénes somos"
-    url  = "/doc/"
-    weight = 2
 
 [[menu.main]]
-    identifier="blog"
-    name = "Blog"
+    identifier = "blog"
+    name = "Componentes"
     url  = "/blog/"
-    weight = 3
+    weight = 2
+    
+[[menu.main]]
+    parent = "blog"
+    name = "1. Datos Abiertos"
+    url = "/blog/02blog/"
+
+[[menu.main]]
+    parent = "blog"
+    name = "2. Análisis reproducible"
+    url = "/blog/03blog/"
+
+[[menu.main]]
+    parent = "blog"
+    name = "3. Publicaciones libres"
+    url = "/blog/04blog/"
 
 [[menu.main]]
     identifier = "app"
-    name = "Herramientas"
+    name = "Links"
     url  = "/app/"
-    weight = 4
+    weight = 3
     
 [[menu.main]]
     parent = "app"
@@ -64,7 +74,7 @@ paginate = 10
     identifier = "contact"
     name = "Contacto"
     url  = "/contact/"
-    weight = 5
+    weight = 4
 
 # Top bar social links menu
 
@@ -89,7 +99,7 @@ paginate = 10
 [[menu.topbar]]
     weight = 4
     name = "Email"
-    url = "mailto:ocs@coes.cl"
+    url = "mailto:lisa@coes.cl"
     pre = "<i class='fas fa-2x fa-envelope'></i>"
 
 [params]
@@ -127,7 +137,7 @@ paginate = 10
     # - you're done. Happy mailing!
     #
     # Enable the contact form by entering your Formspree.io email
-    email = "f/xeqpkdpl"
+    email = "f/mwkwapba"
     contact_form_ajax = false
 
     about_us = "<p>Laboratorio Ciencia Social Abierta, COES</p>"
@@ -197,7 +207,7 @@ paginate = 10
     icon = "fas fa-chart-line"
     title = "Guía para la apertura de datos"
     subtitle = ""
-    link_url = "/blog/blog01"
+    link_url = "/blog/blog02"
     link_text = "¡Quiero aprender!"
 
 [params.clients]
