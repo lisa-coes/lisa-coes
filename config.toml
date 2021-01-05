@@ -37,7 +37,7 @@ paginate = 10
 [[menu.main]]
     parent = "blog"
     name = "1. Datos Abiertos"
-    url = "/blog/02blog/"
+    url = "/datos/"
 
 [[menu.main]]
     parent = "blog"
@@ -207,7 +207,7 @@ paginate = 10
     icon = "fas fa-chart-line"
     title = "Guía para la apertura de datos"
     subtitle = ""
-    link_url = "/blog/blog02"
+    link_url = "/datos/"
     link_text = "¡Quiero aprender!"
 
 [params.clients]

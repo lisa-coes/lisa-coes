@@ -112,6 +112,10 @@
   </url>
   
   <url>
+    <loc>/datos/</loc>
+  </url>
+  
+  <url>
     <loc>/test/</loc>
   </url>
   
