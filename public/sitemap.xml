@@ -18,12 +18,12 @@
   </url>
   
   <url>
-    <loc>/tags/guias/</loc>
+    <loc>/tags/componentes/</loc>
     <lastmod>2020-12-20T12:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/guias/</loc>
+    <loc>/categories/componentes/</loc>
     <lastmod>2020-12-20T12:50:46+02:00</lastmod>
   </url>
   
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>/blog/04blog/</loc>
+    <loc>/blog/03componentes/</loc>
     <lastmod>2020-12-20T12:50:46+02:00</lastmod>
   </url>
   
@@ -53,7 +53,7 @@
   </url>
   
   <url>
-    <loc>/blog/03blog/</loc>
+    <loc>/blog/02componentes/</loc>
     <lastmod>2020-12-20T11:50:46+02:00</lastmod>
   </url>
   
@@ -63,33 +63,28 @@
   </url>
   
   <url>
-    <loc>/tags/abierta/</loc>
-    <lastmod>2020-12-20T10:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/datos/</loc>
     <lastmod>2020-12-20T10:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/02blog/</loc>
+    <loc>/blog/01componentes/</loc>
     <lastmod>2020-12-20T10:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/definicion/</loc>
+    <loc>/categories/novedades/</loc>
     <lastmod>2020-12-20T10:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/guia/</loc>
+    <loc>/blog/02novedades/</loc>
     <lastmod>2020-12-20T10:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/01blog/</loc>
-    <lastmod>2020-12-20T10:50:46+02:00</lastmod>
+    <loc>/tags/abierta/</loc>
+    <lastmod>2020-12-19T13:50:46+02:00</lastmod>
   </url>
   
   <url>
@@ -98,21 +93,12 @@
   </url>
   
   <url>
-    <loc>/blog/01notice/</loc>
+    <loc>/blog/01novedades/</loc>
     <lastmod>2020-12-19T13:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/prensa/</loc>
-    <lastmod>2020-12-19T13:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/app/</loc>
-  </url>
-  
-  <url>
-    <loc>/datos/</loc>
+    <loc>/links/</loc>
   </url>
   
   <url>

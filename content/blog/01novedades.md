@@ -2,7 +2,7 @@
 author: Laboratorio Ciencia Social Abierta
 banner: img/banners/banner-2.png
 categories:
-- prensa
+- novedades
 date: "2020-12-19T13:50:46+02:00"
 description: 
 tags:

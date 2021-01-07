@@ -2,11 +2,11 @@
 author: LISA
 banner: img/banners/blog-2.png
 categories:
-- guias
+- componentes
 date: "2020-12-20T10:50:46+02:00"
 description: 
 tags:
-- guias
+- componentes
 - ciencia abierta
 - datos
 title: Datos abiertos 

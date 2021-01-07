@@ -17,11 +17,11 @@
     </item>
     
     <item>
-      <title>guias</title>
-      <link>/tags/guias/</link>
+      <title>componentes</title>
+      <link>/tags/componentes/</link>
       <pubDate>Sun, 20 Dec 2020 12:50:46 +0200</pubDate>
       
-      <guid>/tags/guias/</guid>
+      <guid>/tags/componentes/</guid>
       <description></description>
     </item>
     
@@ -53,15 +53,6 @@
     </item>
     
     <item>
-      <title>abierta</title>
-      <link>/tags/abierta/</link>
-      <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
-      
-      <guid>/tags/abierta/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>datos</title>
       <link>/tags/datos/</link>
       <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
@@ -71,11 +62,11 @@
     </item>
     
     <item>
-      <title>definicion</title>
-      <link>/tags/definicion/</link>
-      <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
+      <title>abierta</title>
+      <link>/tags/abierta/</link>
+      <pubDate>Sat, 19 Dec 2020 13:50:46 +0200</pubDate>
       
-      <guid>/tags/definicion/</guid>
+      <guid>/tags/abierta/</guid>
       <description></description>
     </item>
     

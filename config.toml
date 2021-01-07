@@ -52,29 +52,20 @@ paginate = 10
 [[menu.main]]
     identifier = "app"
     name = "Links"
-    url  = "/app/"
+    url  = "/links"
     weight = 3
     
 [[menu.main]]
-    parent = "app"
-    name = "Buscador de bases de datos"
-    url = "/app/tool01/"
-
-[[menu.main]]
-    parent = "app"
-    name = "Tesis bookdown"
-    url = "/app/tool02/"
-
-[[menu.main]]
-    parent = "app"
-    name = "Tutoriales"
-    url = "/app/tool03/"
+    identifier = "news"
+    name = "Novedades"
+    url  = "categories/novedades/"
+    weight = 4
 
 [[menu.main]]
     identifier = "contact"
     name = "Contacto"
     url  = "/contact/"
-    weight = 4
+    weight = 5
 
 # Top bar social links menu
 

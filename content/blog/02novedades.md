@@ -2,13 +2,11 @@
 author: Juan Carlos Castillo
 banner: img/banners/blog-1.png
 categories:
-- guia
+- novedades
 date: "2020-12-20T10:50:46+02:00"
 description: 
 tags:
-- definicion
 - ciencia abierta
-- abierta
 title: ¿Qué es la Ciencia Abierta?
 ---
 
