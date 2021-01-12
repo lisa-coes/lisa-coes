@@ -31,23 +31,23 @@ paginate = 10
 [[menu.main]]
     identifier = "blog"
     name = "Componentes"
-    url  = "/blog/"
+    url  = "/categories/componentes/"
     weight = 2
     
 [[menu.main]]
     parent = "blog"
     name = "1. Datos Abiertos"
-    url = "/datos/"
+    url = "/blog/01componentes/"
 
 [[menu.main]]
     parent = "blog"
     name = "2. Análisis reproducible"
-    url = "/blog/03blog/"
+    url = "/02componentes/"
 
 [[menu.main]]
     parent = "blog"
     name = "3. Publicaciones libres"
-    url = "/blog/04blog/"
+    url = "/03componentes/"
 
 [[menu.main]]
     identifier = "app"
@@ -149,7 +149,7 @@ paginate = 10
       """
 
 [Permalinks]
-    blog = "/blog/:filename/"
+    blog = "/:filename/"
 #"/blog/:year/:month/:day/:filename/"
 # Enable or disable top bar with social icons
 [params.topbar]
@@ -211,5 +211,5 @@ paginate = 10
 
 [params.recent_posts]
     enable = true
-    title = "Blog"
-    subtitle = "¿Quieres saber más sobre Ciencia Abierta?"
+    title = "novedades"
+    subtitle = "¿Quieres saber más sobre Ciencia Social Abierta?"
