@@ -308,10 +308,9 @@ ul.list-style-none {
 }
 .navbar ul.nav > li > a {
   text-transform: uppercase;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: bold;
   letter-spacing: 0.08em;
-  border-top: solid 5px transparent;
 }
 .navbar ul.nav > li > a:hover {
   border-top: solid 5px #ec8686;
@@ -347,8 +346,8 @@ ul.list-style-none {
   color: #555555 !important;
 }
 .navbar ul.dropdown-menu {
-  margin: 0;
-  padding: 0;
+  margin: -30px;
+  padding: 5px;
 }
 .navbar ul.dropdown-menu li {
   list-style-type: none;

@@ -9,48 +9,97 @@
     <lastBuildDate>Sun, 20 Dec 2020 12:50:46 +0200</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Publicaciones libres</title>
-      <link>/blog/03componentes/</link>
+      <link>/03componentes/</link>
       <pubDate>Sun, 20 Dec 2020 12:50:46 +0200</pubDate>
       
-      <guid>/blog/03componentes/</guid>
+      <guid>/03componentes/</guid>
+      <description>Guía para la publicación Razones Pasos Consejos Protocolo
+Contenidos</description>
+    </item>
+    
+    <item>
+      <title>Publicaciones libres</title>
+      <link>/novedades/03componentes/</link>
+      <pubDate>Sun, 20 Dec 2020 12:50:46 +0200</pubDate>
+      
+      <guid>/novedades/03componentes/</guid>
       <description>Guía para la publicación Razones Pasos Consejos Protocolo
 Contenidos</description>
     </item>
     
     <item>
       <title>Análisis reproducibles</title>
-      <link>/blog/02componentes/</link>
+      <link>/02componentes/</link>
       <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
       
-      <guid>/blog/02componentes/</guid>
+      <guid>/02componentes/</guid>
+      <description>Guía para realizar análisis reproducibles Razones Pasos Consejos </description>
+    </item>
+    
+    <item>
+      <title>Análisis reproducibles</title>
+      <link>/novedades/02componentes/</link>
+      <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
+      
+      <guid>/novedades/02componentes/</guid>
       <description>Guía para realizar análisis reproducibles Razones Pasos Consejos </description>
     </item>
     
     <item>
       <title>Datos abiertos</title>
-      <link>/blog/01componentes/</link>
+      <link>/01componentes/</link>
       <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
       
-      <guid>/blog/01componentes/</guid>
+      <guid>/01componentes/</guid>
+      <description>Guía para la apertura de datos Razones Pasos Consejos Protocolo
+Contenidos</description>
+    </item>
+    
+    <item>
+      <title>Datos abiertos</title>
+      <link>/novedades/01componentes/</link>
+      <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
+      
+      <guid>/novedades/01componentes/</guid>
       <description>Guía para la apertura de datos Razones Pasos Consejos Protocolo
 Contenidos</description>
     </item>
     
     <item>
       <title>¿Qué es la Ciencia Abierta?</title>
-      <link>/blog/02novedades/</link>
+      <link>/02novedades/</link>
       <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
       
-      <guid>/blog/02novedades/</guid>
+      <guid>/02novedades/</guid>
+      <description>¿Qué es la Ciencia Abierta? ¿Porqué practicarla en Ciencias Sociales? Ciencia abierta en Ciencias Sociales Estado actual en Chile Qué ofrece LISA Herramientas disponibles </description>
+    </item>
+    
+    <item>
+      <title>¿Qué es la Ciencia Abierta?</title>
+      <link>/novedades/02novedades/</link>
+      <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
+      
+      <guid>/novedades/02novedades/</guid>
       <description>¿Qué es la Ciencia Abierta? ¿Porqué practicarla en Ciencias Sociales? Ciencia abierta en Ciencias Sociales Estado actual en Chile Qué ofrece LISA Herramientas disponibles </description>
     </item>
     
     <item>
       <title>Lanzamiento Laboratorio Ciencia Social Abierta</title>
-      <link>/blog/01novedades/</link>
+      <link>/01novedades/</link>
       <pubDate>Sat, 19 Dec 2020 13:50:46 +0200</pubDate>
       
-      <guid>/blog/01novedades/</guid>
+      <guid>/01novedades/</guid>
+      <description>Lanzamiento Laboratorio Ciencia Social Abierta En &amp;hellip; realizada el &amp;hellip; a las &amp;hellip; horas se presentó el Laboratorio de Ciencia Social Abierta con su sitio web que aloja una guía para &amp;hellip; y herramientas para &amp;hellip;
+La actividad consistió en la presentación de &amp;hellip;, con la participación de &amp;hellip;
+Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una iniciativa innovadora en &amp;hellip; A su vez, &amp;hellip; indicó que &amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>Lanzamiento Laboratorio Ciencia Social Abierta</title>
+      <link>/novedades/01novedades/</link>
+      <pubDate>Sat, 19 Dec 2020 13:50:46 +0200</pubDate>
+      
+      <guid>/novedades/01novedades/</guid>
       <description>Lanzamiento Laboratorio Ciencia Social Abierta En &amp;hellip; realizada el &amp;hellip; a las &amp;hellip; horas se presentó el Laboratorio de Ciencia Social Abierta con su sitio web que aloja una guía para &amp;hellip; y herramientas para &amp;hellip;
 La actividad consistió en la presentación de &amp;hellip;, con la participación de &amp;hellip;
 Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una iniciativa innovadora en &amp;hellip; A su vez, &amp;hellip; indicó que &amp;hellip;.</description>
@@ -99,25 +148,6 @@ Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una ini
       <guid>/contact/</guid>
       <description>Estamos aquí para ayudarte ¿Quieres saber más sobre el Laboratorio de Ciencia Social Abierta? ¿Tienes dudas sobre cómo nos organizamos? ¿Requieres de asesoría?
 En el siguiente formulario puedes contactarte con nosotros, intentaremos contestarte lo antes posible</description>
-    </item>
-    
-    <item>
-      <title>Quiénes somos</title>
-      <link>/doc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/doc/</guid>
-      <description>Misión Objetivos Proyectos Equipo   Si presentas alguna duda o requieres más información contactáctanos
- </description>
-    </item>
-    
-    <item>
-      <title>Quiénes somos</title>
-      <link>/doc2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/doc2/</guid>
-      <description>DatosEl Observatorio de Cohesión Social utiliza los datos abiertos disponibles de la encuesta Barómetro de las Américas, del LAPOP (Latin American Public Opinion Project), disponible en https://www.vanderbilt.edu/lapop/. En general esta encuesta es conocida como “Encuesta LAPOP”, y se define como “the only survey of democratic public opinion and behavior that covers the Americas (North, Central, South and the Caribbean). It is an effort by LAPOP to measure democratic values and behaviors in the Americas using national probability samples of voting-age adults”.</description>
     </item>
     
     <item>

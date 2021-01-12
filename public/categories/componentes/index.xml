@@ -9,29 +9,58 @@
     <lastBuildDate>Sun, 20 Dec 2020 12:50:46 +0200</lastBuildDate><atom:link href="/categories/componentes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Publicaciones libres</title>
-      <link>/blog/03componentes/</link>
+      <link>/03componentes/</link>
       <pubDate>Sun, 20 Dec 2020 12:50:46 +0200</pubDate>
       
-      <guid>/blog/03componentes/</guid>
+      <guid>/03componentes/</guid>
+      <description>Guía para la publicación Razones Pasos Consejos Protocolo
+Contenidos</description>
+    </item>
+    
+    <item>
+      <title>Publicaciones libres</title>
+      <link>/novedades/03componentes/</link>
+      <pubDate>Sun, 20 Dec 2020 12:50:46 +0200</pubDate>
+      
+      <guid>/novedades/03componentes/</guid>
       <description>Guía para la publicación Razones Pasos Consejos Protocolo
 Contenidos</description>
     </item>
     
     <item>
       <title>Análisis reproducibles</title>
-      <link>/blog/02componentes/</link>
+      <link>/02componentes/</link>
       <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
       
-      <guid>/blog/02componentes/</guid>
+      <guid>/02componentes/</guid>
+      <description>Guía para realizar análisis reproducibles Razones Pasos Consejos </description>
+    </item>
+    
+    <item>
+      <title>Análisis reproducibles</title>
+      <link>/novedades/02componentes/</link>
+      <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
+      
+      <guid>/novedades/02componentes/</guid>
       <description>Guía para realizar análisis reproducibles Razones Pasos Consejos </description>
     </item>
     
     <item>
       <title>Datos abiertos</title>
-      <link>/blog/01componentes/</link>
+      <link>/01componentes/</link>
       <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
       
-      <guid>/blog/01componentes/</guid>
+      <guid>/01componentes/</guid>
+      <description>Guía para la apertura de datos Razones Pasos Consejos Protocolo
+Contenidos</description>
+    </item>
+    
+    <item>
+      <title>Datos abiertos</title>
+      <link>/novedades/01componentes/</link>
+      <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
+      
+      <guid>/novedades/01componentes/</guid>
       <description>Guía para la apertura de datos Razones Pasos Consejos Protocolo
 Contenidos</description>
     </item>
