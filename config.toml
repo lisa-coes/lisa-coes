@@ -58,7 +58,7 @@ paginate = 10
 [[menu.main]]
     identifier = "news"
     name = "Novedades"
-    url  = "categories/novedades/"
+    url  = "https://lisa-coes.netlify.app/categories/novedades/"
     weight = 4
 
 [[menu.main]]
