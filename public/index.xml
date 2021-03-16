@@ -111,11 +111,13 @@ Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una ini
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/links/</guid>
-      <description>Herramientas propuestas   Buscador de bases de datos/Convertidor (shiny)
-  Tesis bookdown (template)
-  Tutoriales (RStudioCloud + Youtube- Ahora se integra con Rmd en última versión R )
-   ¿Quieres comentar o tienes alguna duda? Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
-  En caso de que no puedas visualizar el buscador o presentes problemas no dudes en contactarnos</description>
+      <description>Algunos sitios y herramientas que te podrían interesar 👇
+Libros   Open Scientist Handbook
+  Open science training handbook
+  Introduction to reproducible science in R, from Brian Lee Yung Rowe
+  Artículos   Ciencia reproducible: qué, por qué, cómo (Rodríguez-Sánchez et al, 2016)
+  Internal replication of computational workflows in scientific research
+  8 Easy Steps to Open Science: An Annotated Reading List</description>
     </item>
     
     <item>
