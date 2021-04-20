@@ -1,4 +1,4 @@
-.clearfix:before,
+font-size: 13px.clearfix:before,
 .clearfix:after,
 .navbar:before,
 .navbar:after,
@@ -119,7 +119,7 @@ div.section {
   vertical-align: middle;
   text-align: center;
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 30px;
   border-radius: 15px;
 }
@@ -191,7 +191,7 @@ ul.list-style-none {
 }
 .pages-listing .item .text p {
   color: #999999;
-  font-size: 12px;
+  font-size: 13px;
   margin-bottom: 20px;
 }
 .banner {
@@ -241,7 +241,7 @@ ul.list-style-none {
 }
 #top p {
   margin: 0;
-  font-size: 12px;
+  font-size: 13px;
 }
 #top .social {
   float: right;
@@ -254,7 +254,7 @@ ul.list-style-none {
   height: 24px;
   border-radius: 12px;
   line-height: 24px;
-  font-size: 12px;
+  font-size: 13px;
   text-align: center;
 }
 #top .social a:hover {
@@ -282,7 +282,7 @@ ul.list-style-none {
   float: right;
 }
 #top .login a {
-  font-size: 12px;
+  font-size: 13px;
   color: #eeeeee;
   margin-right: 15px;
   text-decoration: none;
@@ -359,7 +359,7 @@ ul.list-style-none {
 .navbar ul.dropdown-menu li a {
   position: relative;
   color: #999999;
-  font-size: 12px;
+  font-size: 13px;
   display: block;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -390,7 +390,7 @@ ul.list-style-none {
 }
 @media (max-width: 767px) {
   .navbar .yamm-content h3 {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 .navbar .yamm-content h5 {
@@ -412,7 +412,7 @@ ul.list-style-none {
 .navbar .yamm-content ul li a {
   position: relative;
   color: #999999;
-  font-size: 12px;
+  font-size: 13px;
   display: block;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -523,23 +523,23 @@ ul.list-style-none {
   border-radius: 0;
 }
 .input-group .btn {
-  font-size: 14px;
+  font-size: 16px;
 }
 .btn-lg {
   padding: 10px 16px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.33;
   border-radius: 0;
 }
 .btn-sm {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
   border-radius: 0;
 }
 .btn-xs {
   padding: 1px 5px;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
   border-radius: 0;
 }
@@ -774,7 +774,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 @media (max-width: 991px) {
   #intro .item .btn {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (max-width: 991px) {
@@ -925,7 +925,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .panel.sidebar-menu .panel-body label {
   color: #999999;
-  font-size: 12px;
+  font-size: 13px;
 }
 .panel.sidebar-menu .panel-body label:hover {
   color: #555555;
@@ -954,7 +954,7 @@ fieldset[disabled] .btn-template-primary.active {
   display: block;
   padding: 10px 15px;
   padding-left: 30px;
-  font-size: 12px;
+  font-size: 13px;
   color: #999999;
 }
 .panel.sidebar-menu ul.nav ul li a:hover,
@@ -979,7 +979,7 @@ fieldset[disabled] .btn-template-primary.active {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 13px;
   text-decoration: none;
 }
 .panel.sidebar-menu ul.tag-cloud li a:hover {
@@ -1043,7 +1043,7 @@ fieldset[disabled] .btn-template-primary.active {
 .panel.sidebar-menu ul.popular li p.date,
 .panel.sidebar-menu ul.recent li p.date {
   float: right;
-  font-size: 12px;
+  font-size: 13px;
   color: #999999;
 }
 .panel.sidebar-menu ul.popular li:last-child,
@@ -1051,7 +1051,7 @@ fieldset[disabled] .btn-template-primary.active {
   border-bottom: none;
 }
 .panel.sidebar-menu .text-widget {
-  font-size: 12px;
+  font-size: 13px;
 }
 .panel.sidebar-menu.with-icons ul.nav li a:after {
   font-family: 'FontAwesome';
@@ -1223,7 +1223,7 @@ fieldset[disabled] .btn-template-primary.active {
 @media (max-width: 991px) {
   .home-carousel ul,
   .home-carousel p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 .home-carousel ul li {
@@ -1315,14 +1315,14 @@ fieldset[disabled] .btn-template-primary.active {
   text-align: right;
 }
 .testimonials .item .testimonial .name-picture h5 {
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 .testimonials .item .testimonial .name-picture p {
   color: #999999;
   margin: 0;
-  font-size: 12px;
+  font-size: 13px;
 }
 .testimonials .item .testimonial .name-picture img {
   float: right;
@@ -1345,7 +1345,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .team-member p.role {
   color: #999999;
-  font-size: 12px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
@@ -1388,7 +1388,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .team-member .text p {
   color: #999999;
-  font-size: 12px;
+  font-size: 13px;
 }
 .team-member .social,
 .team-member-detail .social {
@@ -1842,7 +1842,7 @@ fieldset[disabled] .btn-template-primary.active {
   text-transform: uppercase;
   margin-bottom: 0;
   text-align: left;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.08em;
 }
 .portfolio-project .project-more p {
@@ -2089,7 +2089,7 @@ fieldset[disabled] .btn-template-primary.active {
   color: #999999;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.08em;
 }
 #blog-listing-medium .post .author-category a {
@@ -2097,7 +2097,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 #blog-listing-medium .post .date-comments {
   float: right;
-  font-size: 12px;
+  font-size: 13px;
 }
 #blog-listing-medium .post .date-comments a {
   color: #999999;
@@ -2167,7 +2167,7 @@ fieldset[disabled] .btn-template-primary.active {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 13px;
 }
 .box-image-text.blog .author-category a {
   font-weight: 500;
@@ -2212,7 +2212,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 #blog-post .comment .posted {
   color: #999999;
-  font-size: 12px;
+  font-size: 13px;
 }
 #blog-post .comment .reply {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -2282,7 +2282,7 @@ fieldset[disabled] .btn-template-primary.active {
   padding: 10px;
 }
 .product .text h3 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   height: 39.6px;
   text-transform: uppercase;
@@ -2337,7 +2337,7 @@ fieldset[disabled] .btn-template-primary.active {
   transform: scale(1.1, 1.1);
 }
 .goToDescription {
-  font-size: 12px;
+  font-size: 13px;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -2541,7 +2541,7 @@ fieldset[disabled] .btn-template-primary.active {
   color: #eeeeee;
 }
 #footer h4 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -2602,7 +2602,7 @@ fieldset[disabled] .btn-template-primary.active {
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  font-size: 12px;
+  font-size: 13px;
 }
 #footer .blog-entries .item .name h5 a {
   color: #eeeeee;
@@ -2627,7 +2627,7 @@ fieldset[disabled] .btn-template-primary.active {
   background: #333;
   color: #ccc;
   padding: 50px 0;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 28px;
 }
 #copyright p {
@@ -3175,7 +3175,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 /* scaffolding */
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857143;
   color: #555555;
 }
@@ -3226,7 +3226,7 @@ hr {
 /* dropdowns */
 .dropdown-menu {
   z-index: 1000;
-  font-size: 14px;
+  font-size: 16px;
   background-color: #ffffff;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -3412,7 +3412,7 @@ p {
   }
 }
 .text-small {
-  font-size: 12px;
+  font-size: 13px;
 }
 .text-large {
   font-size: 18px;
@@ -3440,7 +3440,7 @@ abbr[data-original-title] {
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
-  font-size: 14px;
+  font-size: 16px;
   border-left: 5px solid #ec8686;
 }
 blockquote footer,

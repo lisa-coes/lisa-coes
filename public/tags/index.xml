@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Laboratorio de Ciencia Social Abierta</title>
-    <link>/tags/</link>
+    <link>https://lisa-coes.netlify.app/tags/</link>
     <description>Recent content in Tags on Laboratorio de Ciencia Social Abierta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-cl</language>
-    <lastBuildDate>Sun, 20 Dec 2020 12:50:46 +0200</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 12:50:46 +0200</lastBuildDate><atom:link href="https://lisa-coes.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ciencia abierta</title>
-      <link>/tags/ciencia-abierta/</link>
+      <link>https://lisa-coes.netlify.app/tags/ciencia-abierta/</link>
       <pubDate>Sun, 20 Dec 2020 12:50:46 +0200</pubDate>
       
-      <guid>/tags/ciencia-abierta/</guid>
+      <guid>https://lisa-coes.netlify.app/tags/ciencia-abierta/</guid>
       <description></description>
     </item>
     
     <item>
       <title>componentes</title>
-      <link>/tags/componentes/</link>
+      <link>https://lisa-coes.netlify.app/tags/componentes/</link>
       <pubDate>Sun, 20 Dec 2020 12:50:46 +0200</pubDate>
       
-      <guid>/tags/componentes/</guid>
+      <guid>https://lisa-coes.netlify.app/tags/componentes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>publicaciones</title>
-      <link>/tags/publicaciones/</link>
+      <link>https://lisa-coes.netlify.app/tags/publicaciones/</link>
       <pubDate>Sun, 20 Dec 2020 12:50:46 +0200</pubDate>
       
-      <guid>/tags/publicaciones/</guid>
+      <guid>https://lisa-coes.netlify.app/tags/publicaciones/</guid>
       <description></description>
     </item>
     
     <item>
       <title>analisis</title>
-      <link>/tags/analisis/</link>
+      <link>https://lisa-coes.netlify.app/tags/analisis/</link>
       <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
       
-      <guid>/tags/analisis/</guid>
+      <guid>https://lisa-coes.netlify.app/tags/analisis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>codigo</title>
-      <link>/tags/codigo/</link>
+      <link>https://lisa-coes.netlify.app/tags/codigo/</link>
       <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
       
-      <guid>/tags/codigo/</guid>
+      <guid>https://lisa-coes.netlify.app/tags/codigo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>datos</title>
-      <link>/tags/datos/</link>
+      <link>https://lisa-coes.netlify.app/tags/datos/</link>
       <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
       
-      <guid>/tags/datos/</guid>
+      <guid>https://lisa-coes.netlify.app/tags/datos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>abierta</title>
-      <link>/tags/abierta/</link>
+      <link>https://lisa-coes.netlify.app/tags/abierta/</link>
       <pubDate>Sat, 19 Dec 2020 13:50:46 +0200</pubDate>
       
-      <guid>/tags/abierta/</guid>
+      <guid>https://lisa-coes.netlify.app/tags/abierta/</guid>
       <description></description>
     </item>
     
     <item>
       <title>lanzamiento</title>
-      <link>/tags/lanzamiento/</link>
+      <link>https://lisa-coes.netlify.app/tags/lanzamiento/</link>
       <pubDate>Sat, 19 Dec 2020 13:50:46 +0200</pubDate>
       
-      <guid>/tags/lanzamiento/</guid>
+      <guid>https://lisa-coes.netlify.app/tags/lanzamiento/</guid>
       <description></description>
     </item>
     

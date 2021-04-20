@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Laboratorio de Ciencia Social Abierta</title>
-    <link>/categories/</link>
+    <link>https://lisa-coes.netlify.app/categories/</link>
     <description>Recent content in Categories on Laboratorio de Ciencia Social Abierta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-cl</language>
-    <lastBuildDate>Sun, 20 Dec 2020 12:50:46 +0200</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 12:50:46 +0200</lastBuildDate><atom:link href="https://lisa-coes.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>componentes</title>
-      <link>/categories/componentes/</link>
+      <link>https://lisa-coes.netlify.app/categories/componentes/</link>
       <pubDate>Sun, 20 Dec 2020 12:50:46 +0200</pubDate>
       
-      <guid>/categories/componentes/</guid>
+      <guid>https://lisa-coes.netlify.app/categories/componentes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>novedades</title>
-      <link>/categories/novedades/</link>
+      <link>https://lisa-coes.netlify.app/categories/novedades/</link>
       <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
       
-      <guid>/categories/novedades/</guid>
+      <guid>https://lisa-coes.netlify.app/categories/novedades/</guid>
       <description></description>
     </item>
     

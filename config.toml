@@ -33,11 +33,11 @@ paginate = 10
     name = "Componentes"
     url  = "/categories/componentes/"
     weight = 2
-    
+
 [[menu.main]]
     parent = "blog"
     name = "1. Datos Abiertos"
-    url = "/blog/01componentes/"
+    url = "/01componentes/"
 
 [[menu.main]]
     parent = "blog"
@@ -54,7 +54,7 @@ paginate = 10
     name = "Links"
     url  = "/links"
     weight = 3
-    
+
 [[menu.main]]
     identifier = "news"
     name = "Novedades"
@@ -198,7 +198,7 @@ paginate = 10
     icon = "fas fa-chart-line"
     title = "Guía para la apertura de datos"
     subtitle = ""
-    link_url = "/datos/"
+    link_url = "/01componentes/"
     link_text = "¡Quiero aprender!"
 
 [params.clients]

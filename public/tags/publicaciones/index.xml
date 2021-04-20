@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>publicaciones on Laboratorio de Ciencia Social Abierta</title>
-    <link>/tags/publicaciones/</link>
+    <link>https://lisa-coes.netlify.app/tags/publicaciones/</link>
     <description>Recent content in publicaciones on Laboratorio de Ciencia Social Abierta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-cl</language>
-    <lastBuildDate>Sun, 20 Dec 2020 12:50:46 +0200</lastBuildDate><atom:link href="/tags/publicaciones/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 12:50:46 +0200</lastBuildDate><atom:link href="https://lisa-coes.netlify.app/tags/publicaciones/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Publicaciones libres</title>
-      <link>/03componentes/</link>
+      <link>https://lisa-coes.netlify.app/03componentes/</link>
       <pubDate>Sun, 20 Dec 2020 12:50:46 +0200</pubDate>
       
-      <guid>/03componentes/</guid>
+      <guid>https://lisa-coes.netlify.app/03componentes/</guid>
       <description>Guía para la publicación Razones Pasos Consejos Protocolo
 Contenidos</description>
     </item>
     
     <item>
       <title>Publicaciones libres</title>
-      <link>/novedades/03componentes/</link>
+      <link>https://lisa-coes.netlify.app/novedades/03componentes/</link>
       <pubDate>Sun, 20 Dec 2020 12:50:46 +0200</pubDate>
       
-      <guid>/novedades/03componentes/</guid>
+      <guid>https://lisa-coes.netlify.app/novedades/03componentes/</guid>
       <description>Guía para la publicación Razones Pasos Consejos Protocolo
 Contenidos</description>
     </item>
