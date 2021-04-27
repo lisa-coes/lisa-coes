@@ -35,7 +35,7 @@ table<- readxl::read_excel("../input/summary-opendata.xlsx")
 
 En parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de **compartir nuestros datos al resto de la comunidad científica** pero muchas veces no sabemos cómo lograrlo. *¿Cómo abrir nuestros datos? ¿Qué criterios debo cumplir para que sean publicados? ¿Dónde y cómo publicarlos?* En el siguiente blog te contestaremos estas preguntas.
 
-## Paso 1: ¿Qué es lo que tengo?
+## Paso 1: ¿Qué es lo que necesito?
 
 Empecemos con lo primero: qué elementos debo considerar para compartir los datos de mi proyecto. En general, lo que tenemos o recibimos (cuando encargamos el terreno) de nuestro estudio son cuatro elementos:
 <center>
@@ -48,7 +48,7 @@ Empecemos con lo primero: qué elementos debo considerar para compartir los dato
 
 **`2. Cuestionario`**: en caso de estar trabajando con una encuesta, es el archivo que contiene las preguntas que se le realizaron a los participantes del estudio. Es un documento de texto que está en formato *.pdf* o *.docs*. 
 
-**`3. Libro de códigos`**: es la síntesis entre las preguntas realizadas en el **cuestionario** y que son contenidas en la **base de datos**. El libro de códigos es un documento de texto que resume asocia a los ítems consultados el nombre de la variable disponible en los datos. 
+**`3. Libro de códigos`**: es un documento donde aparece información de las variables, valores y etiquetas, correspondientes a la base de datos. En este podemos ver claramente indicada la asociación entre las preguntas del cuestionario y las variables de la base datos.
 
 **`4. Ficha técnica`**: o también nombrado "informe metodológico", es el documento que nos permite conocer características del diseño metodológico propias del instrumento de análisis. En el encontraremos información sobre el terreno, tipo de instrumento y, en algunas ocasiones, una descripción sobre los datos recopilados.
 
@@ -91,12 +91,8 @@ Otra opción es trabajar con abreviaturas nemotécnicas, es decir, nombres corrt
 
 **1.2.2 Utilizables**: como la idea central es poder compartir nuestros datos, estos deben ser poder abiertos por otros softwares. Para ello las variables deben cumplir estos puntos:
 
-| Recomendaciones |    |
-| :---------------- |-------------|
-| 🔴 Dos variables no pueden tener el mismo nombre &nbsp; | 🔴 No utilizar más de 12 carácteres en el nombre |
-| 🔴 Empezar con una letra | 🔴 Deben ser solo alfanuméricos (Números y letras, sin símbolos . ; , : “ $ @) |
-| 🔴 Estar minúscula | 🔴 No utilizar la letra ñ, remplazarlo por gn (agnos, en vez de años) |
-|  🔴 Remplazar espacios por guión bajo (edad_rec) | 
+![](../input/lisa-tabla.png)
+
 </br>
 
 🗸 Si decides etiquetar tus variables con alguna descripción sobre estas, debes guardarlas en un formato como *.sav, .dta o .RData* para que conserve esta característica
@@ -121,7 +117,7 @@ Este documento es clave para que los (futuros) usuarios/as de sus datos cuenten 
 
 🔴 El número de preguntas/ítems disponibles en el cuestionario y el número de variables disponibles en los datos. *Solo en algunos casos, por cuestiones de anonimización, no se disponen públicamente de todas las preguntas consultadas*
 
-🗸 Para evitar ediciones posteriores, recomendamos mantener el cuestionario en *.pdf*
+🗸 Para evitar ediciones posteriores, recomendamos mantener el libro de códigos en *.pdf*
 
 ## `4. Ficha Técnica`
 
@@ -138,23 +134,23 @@ Este resumen sobre el diseño metodológico aplicado debe incluir como mínimo l
 
 De todas maneras, una ficha metodológica puede incluir muchos más elementos, por ejemplo, una revisión de la distribución de las variables y/o una presentación de los tópicos incluidos en la base de datos. 
 
-🗸 Para evitar ediciones posteriores, recomendamos mantener el cuestionario en *.pdf*
+🗸 Para evitar ediciones posteriores, recomendamos mantener la ficha técnica en *.pdf*
 
 ## En síntesis
 
 ```{r, results='asis', echo = F}
-dt_url <- c("www.ejemplo1.cl",
-            "www.ejemplo1.cl",
-            "www.ejemplo1.cl",
-            "www.ejemplo1.cl",
-            "www.ejemplo2.cl",
-            "www.ejemplo2.cl",
-            "www.ejemplo3.cl",
-            "www.ejemplo3.cl",
-            "www.ejemplo4.cl",
-            "www.ejemplo4.cl",
-            "www.ejemplo4.cl",
-            "www.ejemplo4.cl")
+dt_url <- c("https://www.ine.cl/docs/default-source/ocupacion-y-desocupacion/bbdd/2021/stata/ene-2021-01-def.dta?sfvrsn=66562782_4&amp;download=true",
+            "https://www.ine.cl/docs/default-source/ocupacion-y-desocupacion/bbdd/2021/stata/ene-2021-01-def.dta?sfvrsn=66562782_4&amp;download=true",
+            "https://www.ine.cl/docs/default-source/ocupacion-y-desocupacion/bbdd/2021/stata/ene-2021-01-def.dta?sfvrsn=66562782_4&amp;download=true",
+            "https://www.ine.cl/docs/default-source/ocupacion-y-desocupacion/bbdd/2021/stata/ene-2021-01-def.dta?sfvrsn=66562782_4&amp;download=true",
+            "https://b6323ffa-7fb7-4415-b07a-a0afa49c7f3f.filesusr.com/ugd/a52fe7_3ee25ae9a8a94277bb1e9969f96d78aa.pdf",
+            "https://b6323ffa-7fb7-4415-b07a-a0afa49c7f3f.filesusr.com/ugd/a52fe7_3ee25ae9a8a94277bb1e9969f96d78aa.pdf",
+            "http://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/casen/2017/Libro_de_Codigos_Casen_2017.pdf",
+            "http://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/casen/2017/Libro_de_Codigos_Casen_2017.pdf",
+            "https://www.cepchile.cl/cep/site/docs/20210113/20210113161412/manual_del_usuario_base_consolidada.pdf",
+            "https://www.cepchile.cl/cep/site/docs/20210113/20210113161412/manual_del_usuario_base_consolidada.pdf",
+            "https://www.cepchile.cl/cep/site/docs/20210113/20210113161412/manual_del_usuario_base_consolidada.pdf",
+            "https://www.cepchile.cl/cep/site/docs/20210113/20210113161412/manual_del_usuario_base_consolidada.pdf")
 
 table <- table %>% 
 mutate(model = cell_spec(Ejemplo, "html", link = dt_url))  
@@ -163,9 +159,11 @@ kableExtra::kbl(., full_width = T, linesep = "", escape = FALSE) %>%
   kable_styling(
     full_width = F,
     position = "center",
-    font_size = 10,
+    font_size = 14,
     bootstrap_options=c("striped", "bordered", "condensed", "responsive")) %>%  kableExtra::collapse_rows(columns = 1:5)
 ```
+
+<a class = "btn btn-template-main" href="/input/lisa-lista-recomendaciones.pdf">Descargar listado de recomendaciones para rellenar</a> 
 
 # Paso 3 : ¿Cómo publicar?
 

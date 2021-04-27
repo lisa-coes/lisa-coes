@@ -3578,3 +3578,15 @@ a.list-group-item.active > .badge,
   left: 15px;
   right: 15px;
 }
+
+.button-call {
+  background-color: #f44336; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}

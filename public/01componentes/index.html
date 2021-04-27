@@ -237,15 +237,15 @@
 <div id="guía-para-la-apertura-de-datos" class="section level1">
 <h1>Guía para la apertura de datos</h1>
 <p>En parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de <strong>compartir nuestros datos al resto de la comunidad científica</strong> pero muchas veces no sabemos cómo lograrlo. <em>¿Cómo abrir nuestros datos? ¿Qué criterios debo cumplir para que sean publicados? ¿Dónde y cómo publicarlos?</em> En el siguiente blog te contestaremos estas preguntas.</p>
-<div id="paso-1-qué-es-lo-que-tengo" class="section level2">
-<h2>Paso 1: ¿Qué es lo que tengo?</h2>
+<div id="paso-1-qué-es-lo-que-necesito" class="section level2">
+<h2>Paso 1: ¿Qué es lo que necesito?</h2>
 Empecemos con lo primero: qué elementos debo considerar para compartir los datos de mi proyecto. En general, lo que tenemos o recibimos (cuando encargamos el terreno) de nuestro estudio son cuatro elementos:
 <center>
 <p><img src="../input/lisa-elementos-3.png" /></p>
 </center>
 <p><strong><code>1. Bases de datos</code></strong>: archivo que contiene la información recopilada. Este archivo puede estar en distintos formatos, como por ejemplo, en <em>.csv</em> y <em>.xlsx</em> (Excel), <em>.sav</em> (SPSS), <em>.dta</em> (STATA) o <em>.RData</em> (R).</p>
 <p><strong><code>2. Cuestionario</code></strong>: en caso de estar trabajando con una encuesta, es el archivo que contiene las preguntas que se le realizaron a los participantes del estudio. Es un documento de texto que está en formato <em>.pdf</em> o <em>.docs</em>.</p>
-<p><strong><code>3. Libro de códigos</code></strong>: es la síntesis entre las preguntas realizadas en el <strong>cuestionario</strong> y que son contenidas en la <strong>base de datos</strong>. El libro de códigos es un documento de texto que resume asocia a los ítems consultados el nombre de la variable disponible en los datos.</p>
+<p><strong><code>3. Libro de códigos</code></strong>: es un documento donde aparece información de las variables, valores y etiquetas, correspondientes a la base de datos. En este podemos ver claramente indicada la asociación entre las preguntas del cuestionario y las variables de la base datos.</p>
 <p><strong><code>4. Ficha técnica</code></strong>: o también nombrado “informe metodológico,” es el documento que nos permite conocer características del diseño metodológico propias del instrumento de análisis. En el encontraremos información sobre el terreno, tipo de instrumento y, en algunas ocasiones, una descripción sobre los datos recopilados.</p>
 <p>En algunas ocasiones no todos estos elementos están presentes. Si es así ¡no es tiempo de abandonar la cruzada por abrir tus datos! En el siguiente paso podrás conocer cuál es su <strong>formato admisibles</strong> y <strong>cómo elaborarlos en caso de que no los tengas</strong>.</p>
 </div>
@@ -303,36 +303,7 @@ Empecemos con lo primero: qué elementos debo considerar para compartir los dato
 <p><strong>1.2.1. Claridad y coherencia</strong>: para cada escala o módulo temático de tu instrumento, debes incorporar una letra distinta seguido de un número. Por ejemplo, para el módulo S <code>s_1</code>, <code>s_2</code> y para el módulo O <code>o_1</code>, <code>o_2</code>, …</p>
 <p>Otra opción es trabajar con abreviaturas nemotécnicas, es decir, nombres corrtos de las variables que representan el significado del ítem. Por ejemplo, <code>nt_mujeres</code> para designar el <em>Número de trabajadores mujeres</em> en la empresa que estudiamos.</p>
 <p><strong>1.2.2 Utilizables</strong>: como la idea central es poder compartir nuestros datos, estos deben ser poder abiertos por otros softwares. Para ello las variables deben cumplir estos puntos:</p>
-<table>
-<colgroup>
-<col width="56%" />
-<col width="43%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Recomendaciones</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">🔴 Dos variables no pueden tener el mismo nombre  </td>
-<td>🔴 No utilizar más de 12 carácteres en el nombre</td>
-</tr>
-<tr class="even">
-<td align="left">🔴 Empezar con una letra</td>
-<td>🔴 Deben ser solo alfanuméricos (Números y letras, sin símbolos . ; , : “ $ @)</td>
-</tr>
-<tr class="odd">
-<td align="left">🔴 Estar minúscula</td>
-<td>🔴 No utilizar la letra ñ, remplazarlo por gn (agnos, en vez de años)</td>
-</tr>
-<tr class="even">
-<td align="left">🔴 Remplazar espacios por guión bajo (edad_rec)</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p><img src="../input/lisa-tabla.png" /></p>
 <p></br></p>
 <p>🗸 Si decides etiquetar tus variables con alguna descripción sobre estas, debes guardarlas en un formato como <em>.sav, .dta o .RData</em> para que conserve esta característica</p>
 </div>
@@ -350,7 +321,7 @@ Empecemos con lo primero: qué elementos debo considerar para compartir los dato
 <p>🔴 La pregunta del cuestionario y la variable indicada</p>
 <p>🔴 El orden de las categorías de respuesta en el cuestionario y en los valores codificados en la base de datos</p>
 <p>🔴 El número de preguntas/ítems disponibles en el cuestionario y el número de variables disponibles en los datos. <em>Solo en algunos casos, por cuestiones de anonimización, no se disponen públicamente de todas las preguntas consultadas</em></p>
-<p>🗸 Para evitar ediciones posteriores, recomendamos mantener el cuestionario en <em>.pdf</em></p>
+<p>🗸 Para evitar ediciones posteriores, recomendamos mantener el libro de códigos en <em>.pdf</em></p>
 </div>
 <div id="ficha-técnica" class="section level2">
 <h2><code>4. Ficha Técnica</code></h2>
@@ -360,11 +331,11 @@ Empecemos con lo primero: qué elementos debo considerar para compartir los dato
 <p>🔴 <strong>Descripción muestral</strong> (<em>solo en caso de encuestas</em>): indica el tipo de muestreo, tasa de respuesta y variables principales que permitieron construir los ponderadores y factores de expansión.</p>
 <p>🔴 <strong>Identificación de la institución responsable</strong>: ya sea una consultora o el mismo equipo a cargo de la investigación, esto debe estar especificado en la ficha.</p>
 <p>De todas maneras, una ficha metodológica puede incluir muchos más elementos, por ejemplo, una revisión de la distribución de las variables y/o una presentación de los tópicos incluidos en la base de datos.</p>
-<p>🗸 Para evitar ediciones posteriores, recomendamos mantener el cuestionario en <em>.pdf</em></p>
+<p>🗸 Para evitar ediciones posteriores, recomendamos mantener la ficha técnica en <em>.pdf</em></p>
 </div>
 <div id="en-síntesis" class="section level2">
 <h2>En síntesis</h2>
-<table class="table table-striped table-bordered table-condensed table-responsive" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-bordered table-condensed table-responsive" style="font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:left;">
@@ -400,7 +371,7 @@ Codificación correcta de respuestas
 .sav, .dta o .Rdata
 </td>
 <td style="text-align:left;vertical-align: middle !important;" rowspan="4">
-<a href="www.ejemplo1.cl" style="     ">[Ejemplo 1](www.ejemplo1]</a>
+<a href="https://www.ine.cl/docs/default-source/ocupacion-y-desocupacion/bbdd/2021/stata/ene-2021-01-def.dta?sfvrsn=66562782_4&amp;download=true" style="     ">Ejemplo de base de datos</a>
 </td>
 </tr>
 <tr>
@@ -443,7 +414,7 @@ Congruencia con base de datos
 Archivo documento .pdf
 </td>
 <td style="text-align:left;vertical-align: middle !important;" rowspan="2">
-<a href="www.ejemplo2.cl" style="     ">Ejemplo2</a>
+<a href="https://b6323ffa-7fb7-4415-b07a-a0afa49c7f3f.filesusr.com/ugd/a52fe7_3ee25ae9a8a94277bb1e9969f96d78aa.pdf" style="     ">Ejemplo de cuestionario</a>
 </td>
 </tr>
 <tr>
@@ -466,7 +437,7 @@ Coherencia entre base de datos y cuestionario
 <li>Verificar que la pregunta y la variable sean las mismas
 </td>
 <td style="text-align:left;vertical-align: middle !important;" rowspan="2">
-<a href="www.ejemplo3.cl" style="     ">Ejemplo3</a>
+<a href="http://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/casen/2017/Libro_de_Codigos_Casen_2017.pdf" style="     ">Ejemplo de libro de códigos</a>
 </td>
 </tr>
 <tr>
@@ -489,7 +460,7 @@ Información mínima para la utilización del usuario
 <li>Indicar tipo de tipo de instrumento, población y muestra objetivo.
 </td>
 <td style="text-align:left;vertical-align: middle !important;" rowspan="4">
-<a href="www.ejemplo4.cl" style="     ">Ejemplo4</a>
+<a href="https://www.cepchile.cl/cep/site/docs/20210113/20210113161412/manual_del_usuario_base_consolidada.pdf" style="     ">Ejemplo de ficha técnica</a>
 </td>
 </tr>
 <tr>
@@ -516,6 +487,7 @@ Información mínima para la utilización del usuario
 </tr>
 </tbody>
 </table>
+<p><a class = "btn btn-template-main" href="/input/lisa-lista-recomendaciones.pdf">Descargar listado de recomendaciones para rellenar</a></p>
 </div>
 </div>
 <div id="paso-3-cómo-publicar" class="section level1">
