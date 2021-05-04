@@ -10,8 +10,6 @@ tags:
 - ciencia abierta
 - datos
 title: Datos abiertos
-bibliography: "../input/Documentation_lapop_database.bib"
-cls: "../input/apa6.cls"
 linkcolor: blue
 link-citations: yes
 editor_options:
@@ -139,18 +137,18 @@ De todas maneras, una ficha metodológica puede incluir muchos más elementos, p
 ## En síntesis
 
 ```{r, results='asis', echo = F}
-dt_url <- c("https://www.ine.cl/docs/default-source/ocupacion-y-desocupacion/bbdd/2021/stata/ene-2021-01-def.dta?sfvrsn=66562782_4&amp;download=true",
-            "https://www.ine.cl/docs/default-source/ocupacion-y-desocupacion/bbdd/2021/stata/ene-2021-01-def.dta?sfvrsn=66562782_4&amp;download=true",
-            "https://www.ine.cl/docs/default-source/ocupacion-y-desocupacion/bbdd/2021/stata/ene-2021-01-def.dta?sfvrsn=66562782_4&amp;download=true",
-            "https://www.ine.cl/docs/default-source/ocupacion-y-desocupacion/bbdd/2021/stata/ene-2021-01-def.dta?sfvrsn=66562782_4&amp;download=true",
-            "https://b6323ffa-7fb7-4415-b07a-a0afa49c7f3f.filesusr.com/ugd/a52fe7_3ee25ae9a8a94277bb1e9969f96d78aa.pdf",
-            "https://b6323ffa-7fb7-4415-b07a-a0afa49c7f3f.filesusr.com/ugd/a52fe7_3ee25ae9a8a94277bb1e9969f96d78aa.pdf",
-            "http://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/casen/2017/Libro_de_Codigos_Casen_2017.pdf",
-            "http://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/casen/2017/Libro_de_Codigos_Casen_2017.pdf",
-            "https://www.cepchile.cl/cep/site/docs/20210113/20210113161412/manual_del_usuario_base_consolidada.pdf",
-            "https://www.cepchile.cl/cep/site/docs/20210113/20210113161412/manual_del_usuario_base_consolidada.pdf",
-            "https://www.cepchile.cl/cep/site/docs/20210113/20210113161412/manual_del_usuario_base_consolidada.pdf",
-            "https://www.cepchile.cl/cep/site/docs/20210113/20210113161412/manual_del_usuario_base_consolidada.pdf")
+dt_url <- c("https://lisa-coes.netlify.app/input/ELSOC_Wide_2016_2019_v1.00_SPSS.sav",
+            "https://lisa-coes.netlify.app/input/ELSOC_Wide_2016_2019_v1.00_SPSS.sav",
+            "https://lisa-coes.netlify.app/input/datos-issp.zip",
+            "https://lisa-coes.netlify.app/input/datos-issp.zip",
+            "https://lisa-coes.netlify.app/input/cuestionario-elsoc.pdf",
+            "https://lisa-coes.netlify.app/input/cuestionario-issp.pdf",
+            "lisa-coes.netlify.app/input/codebook-ohl.pdf",
+            "https://lisa-coes.netlify.app/input/codebook-issp.pdf",
+            "https://lisa-coes.netlify.app/input/ficha-tecnica-elsoc.pdf",
+            "https://lisa-coes.netlify.app/input/ficha-tecnica-elsoc.pdf",
+            "https://lisa-coes.netlify.app/input/ficha-tecnica-issp.pdf",
+            "https://lisa-coes.netlify.app/input/ficha-tecnica-issp.pdf")
 
 table <- table %>% 
 mutate(model = cell_spec(Ejemplo, "html", link = dt_url))  
