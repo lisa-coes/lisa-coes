@@ -29,8 +29,6 @@ Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
 table<- readxl::read_excel("input/summary-opendata.xlsx", sheet = "codebok")
 ```
 
-# ¿Cómo hacer un libro de códigos?
-
 ![](../input/lisa-codebook.png)
 
 Un **libro de códigos** es un documento que contiene información detallada de una fuente de datos, tales como nombres de variable, etiquetas de variable, etiquetas de valores o valores perdidos. Un libro de códigos bien documentado permite conocer el contenido, estructura y diseño de un estudio, lo cual facilita vincular las preguntas del cuestionario con cada una de las variables en la base de datos.
@@ -78,7 +76,8 @@ tab <- table %>%
 mutate(model = cell_spec(Función, "html", link = dt_url),
        model2 = cell_spec(Ejemplo, "html", link = dt_url2))  
 
-tab %>% select(-Función,-Ejemplo) %>% 
+tab %>% select(-Función,-Ejemplo, Función
+               =model, Ejemplo=model2) %>% 
 kableExtra::kbl(., full_width = T, linesep = "", escape = FALSE) %>%
   kable_styling(
     full_width = F,
