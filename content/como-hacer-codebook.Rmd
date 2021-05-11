@@ -24,7 +24,10 @@ options(scipen=999,
 Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
 ```
 
-# ¿Cómo hacer un libro de códigos?
+
+```{r load, echo = F}
+table<- readxl::read_excel("input/summary-opendata.xlsx", sheet = "codebok")
+```
 
 ![](../input/lisa-codebook.png)
 
@@ -56,14 +59,33 @@ Cada uno de los software mencionados tiene distintas funciones que nos permiten 
 -   En R no existe una única forma de obtener un libro de códigos. Sin embargo, la función `view_df()` de la librería `sjPlot` nos ofrece una salida de buena calidad. Otra alternativa es emplear la función `frq()` de la librería sjmisc, la cual entrega los nombres de variable, etiqueta y etiquetas de valores junto a las frecuencias, media y desviación estándar.
 -   Es importante mencionar que para las tres opciones, sus variables deben estar correctamente etiquetadas.
 
-+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------+
-| **Software** | **Función**                                                                                                                                      | **Ejemplo**                                  |
-+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------+
-| SPSS         | [`CODEBOOK`](https://libguides.library.kent.edu/spss/codebooks)                                                                                  | [Codebook en SPSS](../input/codebook_spss.sps)  |
-+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------+
-| Stata        | [`codebook`](https://www.stata.com/manuals/dcodebook.pdf)                                                                                        | [Codebook en Stata](../input/codebook_stata.do) |
-+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------+
-| R            | [`view_df()`](https://strengejacke.github.io/sjPlot/reference/view_df.html), [`frq()`](https://strengejacke.github.io/sjmisc/reference/frq.html) | [Codebook en R](../input/codebook-sjplot_R.R)   |
+
+```{r, results='asis', echo = F}
+dt_url <- c("https://libguides.library.kent.edu/spss/codebooks",
+            "https://www.stata.com/manuals/dcodebook.pdf",
+            "https://strengejacke.github.io/sjPlot/reference/view_df.html",
+            "https://strengejacke.github.io/sjmisc/reference/frq.html")
+
+dt_url2 <- c("../input/codebook_spss.sps",
+             "../input/codebook_stata.do",
+            "../input/codebook-sjplot_R.R",
+            "../input/codebook-sjplot_R.R")
+
+
+tab <- table %>% 
+mutate(model = cell_spec(Función, "html", link = dt_url),
+       model2 = cell_spec(Ejemplo, "html", link = dt_url2))  
+
+tab %>% select(-Función,-Ejemplo, Función
+               =model, Ejemplo=model2) %>% 
+kableExtra::kbl(., full_width = T, linesep = "", escape = FALSE) %>%
+  kable_styling(
+    full_width = F,
+    position = "center",
+    font_size = 14,
+    bootstrap_options=c("striped", "bordered", "condensed", "responsive")) %>%  kableExtra::collapse_rows(columns = 1:3)
+```
+
 
 ---
 
