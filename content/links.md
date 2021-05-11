@@ -7,8 +7,13 @@ keywords:
 - abierto
 title: 
 ---
+<br>
 
 Algunos sitios y herramientas que te podrían interesar 👇
+
+# Para la apertura de datos
+
+- [¿Cómo hacer un libro de códigos en R, STATA o SPSS?](https://lisa-coes.netlify.app/como-hacer-codebook)
 
 # Libros
 
