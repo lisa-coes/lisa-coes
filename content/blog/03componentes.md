@@ -14,12 +14,4 @@ title: Publicaciones libres
 
 # Guía para la publicación
 
-## Razones
-
-## Pasos
-
-## Consejos
-
-Protocolo
-
-Contenidos
+**En desarrollo**

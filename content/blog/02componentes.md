@@ -15,8 +15,4 @@ title: Análisis reproducibles
 
 # Guía para realizar análisis reproducibles 
 
-## Razones
-
-## Pasos
-
-## Consejos
+**En desarrollo**
