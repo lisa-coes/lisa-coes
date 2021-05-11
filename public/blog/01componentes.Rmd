@@ -48,6 +48,9 @@ Empecemos con lo primero: qué elementos debo considerar para compartir los dato
 
 **`3. Libro de códigos`**: es un documento donde aparece información de las variables, valores y etiquetas, correspondientes a la base de datos. En este podemos ver claramente indicada la asociación entre las preguntas del cuestionario y las variables de la base datos.
 
+<a class = "btn btn-template-main" href="https://lisa-coes.netlify.app/como-hacer-codebook">Crear libro de códigos</a> 
+
+
 **`4. Ficha técnica`**: o también nombrado "informe metodológico", es el documento que nos permite conocer características del diseño metodológico propias del instrumento de análisis. En el encontraremos información sobre el terreno, tipo de instrumento y, en algunas ocasiones, una descripción sobre los datos recopilados.
 
 En algunas ocasiones no todos estos elementos están presentes. Si es así ¡no es tiempo de abandonar la cruzada por abrir tus datos! En el siguiente paso podrás conocer cuál es su **formato admisibles** y **cómo elaborarlos en caso de que no los tengas**. 
@@ -115,7 +118,10 @@ Este documento es clave para que los (futuros) usuarios/as de sus datos cuenten 
 
 🔴 El número de preguntas/ítems disponibles en el cuestionario y el número de variables disponibles en los datos. *Solo en algunos casos, por cuestiones de anonimización, no se disponen públicamente de todas las preguntas consultadas*
 
-🗸 Para evitar ediciones posteriores, recomendamos mantener el libro de códigos en *.pdf*
+🗸 Para evitar ediciones posteriores, recomendamos mantener el [libro de códigos](https://lisa-coes.netlify.app/como-hacer-codebook) en *.pdf*
+
+<a class = "btn btn-template-main" href="https://lisa-coes.netlify.app/como-hacer-codebook">Crear libro de códigos</a> 
+
 
 ## `4. Ficha Técnica`
 
@@ -165,7 +171,12 @@ kableExtra::kbl(., full_width = T, linesep = "", escape = FALSE) %>%
 
 # Paso 3 : ¿Cómo publicar?
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kFhxs-EfUqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# Fuentes
+---
 
-- ICPSR
+## ¿Quieres comentar o tienes alguna duda?
+
+Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes [contactarnos](/contact/)
+
+<div id="disqus_thread"></div>

@@ -13,8 +13,7 @@
       <pubDate>Sun, 20 Dec 2020 12:50:46 +0200</pubDate>
       
       <guid>https://lisa-coes.netlify.app/03componentes/</guid>
-      <description>Guía para la publicación Razones Pasos Consejos Protocolo
-Contenidos</description>
+      <description>Guía para la publicación En desarrollo</description>
     </item>
     
     <item>
@@ -33,7 +32,7 @@ Contenidos</description>
       <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
       
       <guid>https://lisa-coes.netlify.app/02componentes/</guid>
-      <description>Guía para realizar análisis reproducibles Razones Pasos Consejos </description>
+      <description>Guía para realizar análisis reproducibles En desarrollo</description>
     </item>
     
     <item>
@@ -115,17 +114,25 @@ Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una ini
     
     <item>
       <title></title>
+      <link>https://lisa-coes.netlify.app/como-hacer-codebook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lisa-coes.netlify.app/como-hacer-codebook/</guid>
+      <description>Cómo crear un libro de códigos Un libro de códigos es un documento que contiene información detallada de una fuente de datos, tales como nombres de variable, etiquetas de variable, etiquetas de valores o valores perdidos. Un libro de códigos bien documentado permite conocer el contenido, estructura y diseño de un estudio, lo cual facilita vincular las preguntas del cuestionario con cada una de las variables en la base de datos.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://lisa-coes.netlify.app/links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://lisa-coes.netlify.app/links/</guid>
       <description>Algunos sitios y herramientas que te podrían interesar 👇
-Libros   Open Scientist Handbook
+Para la apertura de datos  ¿Cómo hacer un libro de códigos en R, STATA o SPSS?  Libros   Open Scientist Handbook
   Open science training handbook
   Introduction to reproducible science in R, from Brian Lee Yung Rowe
   Artículos   Ciencia reproducible: qué, por qué, cómo (Rodríguez-Sánchez et al, 2016)
-  Internal replication of computational workflows in scientific research
-  8 Easy Steps to Open Science: An Annotated Reading List</description>
+  Internal replication of computational workflows in scientific research</description>
     </item>
     
     <item>

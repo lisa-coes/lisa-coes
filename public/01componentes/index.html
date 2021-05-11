@@ -246,7 +246,8 @@ Empecemos con lo primero: qué elementos debo considerar para compartir los dato
 <p><strong><code>1. Bases de datos</code></strong>: archivo que contiene la información recopilada. Este archivo puede estar en distintos formatos, como por ejemplo, en <em>.csv</em> y <em>.xlsx</em> (Excel), <em>.sav</em> (SPSS), <em>.dta</em> (STATA) o <em>.RData</em> (R).</p>
 <p><strong><code>2. Cuestionario</code></strong>: en caso de estar trabajando con una encuesta, es el archivo que contiene las preguntas que se le realizaron a los participantes del estudio. Es un documento de texto que está en formato <em>.pdf</em> o <em>.docs</em>.</p>
 <p><strong><code>3. Libro de códigos</code></strong>: es un documento donde aparece información de las variables, valores y etiquetas, correspondientes a la base de datos. En este podemos ver claramente indicada la asociación entre las preguntas del cuestionario y las variables de la base datos.</p>
-<p><strong><code>4. Ficha técnica</code></strong>: o también nombrado “informe metodológico,” es el documento que nos permite conocer características del diseño metodológico propias del instrumento de análisis. En el encontraremos información sobre el terreno, tipo de instrumento y, en algunas ocasiones, una descripción sobre los datos recopilados.</p>
+<p><a class = "btn btn-template-main" href="https://lisa-coes.netlify.app/como-hacer-codebook">Crear libro de códigos</a></p>
+<p><strong><code>4. Ficha técnica</code></strong>: o también nombrado “informe metodológico”, es el documento que nos permite conocer características del diseño metodológico propias del instrumento de análisis. En el encontraremos información sobre el terreno, tipo de instrumento y, en algunas ocasiones, una descripción sobre los datos recopilados.</p>
 <p>En algunas ocasiones no todos estos elementos están presentes. Si es así ¡no es tiempo de abandonar la cruzada por abrir tus datos! En el siguiente paso podrás conocer cuál es su <strong>formato admisibles</strong> y <strong>cómo elaborarlos en caso de que no los tengas</strong>.</p>
 </div>
 </div>
@@ -257,7 +258,7 @@ Empecemos con lo primero: qué elementos debo considerar para compartir los dato
 <p>Para resguardar la calidad de nuestros datos debemos asegurar una correcta <strong>codificación de las respuestas y nombramiento de las variables</strong>, ambas bases fundamentales de los datos (filas y columnas). Un paso inicial es realizar un <strong>análisis descriptivo de los datos</strong> para reconocer posibles problemas producidos por digitación, por ejemplo.</p>
 <div id="codificación-de-las-respuestas" class="section level3">
 <h3>1.1 Codificación de las respuestas</h3>
-<p><strong>1.1.2 Identificar casos perdidos</strong>: se deben clasificar a los tipos de perdido de manera diferenciada. Esto implica que codificar con distintos números los perdidos como: <em>“No sabe,” “No responde,” “No aplica,” “Sin dato,” “Error de proceso/Dato no disponible.”</em> Te proponemos el siguiente esquema</p>
+<p><strong>1.1.2 Identificar casos perdidos</strong>: se deben clasificar a los tipos de perdido de manera diferenciada. Esto implica que codificar con distintos números los perdidos como: <em>“No sabe”, “No responde”, “No aplica”, “Sin dato”, “Error de proceso/Dato no disponible”.</em> Te proponemos el siguiente esquema</p>
 <center>
 <table>
 <thead>
@@ -321,7 +322,8 @@ Empecemos con lo primero: qué elementos debo considerar para compartir los dato
 <p>🔴 La pregunta del cuestionario y la variable indicada</p>
 <p>🔴 El orden de las categorías de respuesta en el cuestionario y en los valores codificados en la base de datos</p>
 <p>🔴 El número de preguntas/ítems disponibles en el cuestionario y el número de variables disponibles en los datos. <em>Solo en algunos casos, por cuestiones de anonimización, no se disponen públicamente de todas las preguntas consultadas</em></p>
-<p>🗸 Para evitar ediciones posteriores, recomendamos mantener el libro de códigos en <em>.pdf</em></p>
+<p>🗸 Para evitar ediciones posteriores, recomendamos mantener el <a href="https://lisa-coes.netlify.app/como-hacer-codebook">libro de códigos</a> en <em>.pdf</em></p>
+<p><a class = "btn btn-template-main" href="https://lisa-coes.netlify.app/como-hacer-codebook">Crear libro de códigos</a></p>
 </div>
 <div id="ficha-técnica" class="section level2">
 <h2><code>4. Ficha Técnica</code></h2>
@@ -370,8 +372,8 @@ Codificación correcta de respuestas
 <td style="text-align:left;vertical-align: middle !important;" rowspan="4">
 .sav, .dta o .Rdata
 </td>
-<td style="text-align:left;vertical-align: middle !important;" rowspan="4">
-<a href="https://www.ine.cl/docs/default-source/ocupacion-y-desocupacion/bbdd/2021/stata/ene-2021-01-def.dta?sfvrsn=66562782_4&amp;download=true" style="     ">Ejemplo de base de datos</a>
+<td style="text-align:left;vertical-align: middle !important;" rowspan="2">
+<a href="https://lisa-coes.netlify.app/input/ELSOC_Wide_2016_2019_v1.00_SPSS.sav" style="     ">1. 1 Ejemplo de base de datos</a>
 </td>
 </tr>
 <tr>
@@ -389,14 +391,17 @@ Nombres de variables claros
 <td style="text-align:left;">
 <ol style="list-style-type: decimal">
 <li>Claridad y coherencia en su orden
-</td></li>
-</ol>
+</td>
+<td style="text-align:left;vertical-align: middle !important;" rowspan="2">
+<a href="https://lisa-coes.netlify.app/input/datos-issp.zip" style="     ">1.2 Ejemplo de base de datos</a>
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 <ol start="2" style="list-style-type: decimal">
 <li>Ser utilizables por otros softwares
 </td></li>
+</ol></li>
 </ol>
 </tr>
 <tr>
@@ -413,8 +418,8 @@ Congruencia con base de datos
 <td style="text-align:left;vertical-align: middle !important;" rowspan="8">
 Archivo documento .pdf
 </td>
-<td style="text-align:left;vertical-align: middle !important;" rowspan="2">
-<a href="https://b6323ffa-7fb7-4415-b07a-a0afa49c7f3f.filesusr.com/ugd/a52fe7_3ee25ae9a8a94277bb1e9969f96d78aa.pdf" style="     ">Ejemplo de cuestionario</a>
+<td style="text-align:left;">
+<a href="https://lisa-coes.netlify.app/input/cuestionario-elsoc.pdf" style="     ">1.1 Ejemplo de cuestionario</a>
 </td>
 </tr>
 <tr>
@@ -422,8 +427,10 @@ Archivo documento .pdf
 <ol start="2" style="list-style-type: decimal">
 <li>Verficar orden y frases de categorías de preguntas y categorías de respuesta
 </td></li>
-</ol></li>
 </ol>
+<td style="text-align:left;">
+<a href="https://lisa-coes.netlify.app/input/cuestionario-issp.pdf" style="     ">1.2 Ejemplo de cuestionario</a>
+</td>
 </tr>
 <tr>
 <td style="text-align:left;vertical-align: middle !important;" rowspan="2">
@@ -435,9 +442,10 @@ Coherencia entre base de datos y cuestionario
 <td style="text-align:left;">
 <ol style="list-style-type: decimal">
 <li>Verificar que la pregunta y la variable sean las mismas
-</td>
-<td style="text-align:left;vertical-align: middle !important;" rowspan="2">
-<a href="http://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/casen/2017/Libro_de_Codigos_Casen_2017.pdf" style="     ">Ejemplo de libro de códigos</a>
+</td></li>
+</ol>
+<td style="text-align:left;">
+<a href="lisa-coes.netlify.app/input/codebook-ohl.pdf" style="     ">1.1 Ejemplo de libro de códigos</a>
 </td>
 </tr>
 <tr>
@@ -445,8 +453,10 @@ Coherencia entre base de datos y cuestionario
 <ol start="2" style="list-style-type: decimal">
 <li>Verificar el orden de las categorías y valores de la base
 </td></li>
-</ol></li>
 </ol>
+<td style="text-align:left;">
+<a href="https://lisa-coes.netlify.app/input/codebook-issp.pdf" style="     ">1.2 Ejemplo de libro de códigos</a>
+</td>
 </tr>
 <tr>
 <td style="text-align:left;vertical-align: middle !important;" rowspan="4">
@@ -458,9 +468,10 @@ Información mínima para la utilización del usuario
 <td style="text-align:left;">
 <ol style="list-style-type: decimal">
 <li>Indicar tipo de tipo de instrumento, población y muestra objetivo.
-</td>
-<td style="text-align:left;vertical-align: middle !important;" rowspan="4">
-<a href="https://www.cepchile.cl/cep/site/docs/20210113/20210113161412/manual_del_usuario_base_consolidada.pdf" style="     ">Ejemplo de ficha técnica</a>
+</td></li>
+</ol>
+<td style="text-align:left;vertical-align: middle !important;" rowspan="2">
+<a href="https://lisa-coes.netlify.app/input/ficha-tecnica-elsoc.pdf" style="     ">1.1 Ejemplo de ficha técnica</a>
 </td>
 </tr>
 <tr>
@@ -475,14 +486,17 @@ Información mínima para la utilización del usuario
 <td style="text-align:left;">
 <ol start="3" style="list-style-type: decimal">
 <li>Indicar el tipo de muestreo, tasa de respuesta y ponderadores y factores de expansión.
-</td></li>
-</ol>
+</td>
+<td style="text-align:left;vertical-align: middle !important;" rowspan="2">
+<a href="https://lisa-coes.netlify.app/input/ficha-tecnica-issp.pdf" style="     ">1.2 Ejemplo de ficha técnica</a>
+</td>
 </tr>
 <tr>
 <td style="text-align:left;">
 <ol start="4" style="list-style-type: decimal">
 <li>Identificar institución o grupo ejecutor
 </td></li>
+</ol></li>
 </ol>
 </tr>
 </tbody>
@@ -492,12 +506,16 @@ Información mínima para la utilización del usuario
 </div>
 <div id="paso-3-cómo-publicar" class="section level1">
 <h1>Paso 3 : ¿Cómo publicar?</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kFhxs-EfUqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<hr />
+<div id="quieres-comentar-o-tienes-alguna-duda" class="section level2">
+<h2>¿Quieres comentar o tienes alguna duda?</h2>
+<p>Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes <a href="/contact/">contactarnos</a></p>
+<div id="disqus_thread">
+
 </div>
-<div id="fuentes" class="section level1">
-<h1>Fuentes</h1>
-<ul>
-<li>ICPSR</li>
-</ul>
+</div>
 </div>
 
                         </div>
