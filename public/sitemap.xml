@@ -3,12 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://lisa-coes.netlify.app/blog/</loc>
-    <lastmod>2020-12-20T12:50:46+02:00</lastmod>
+    <loc>https://lisa-coes.netlify.app/categories/</loc>
+    <lastmod>2021-05-11T10:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/categories/</loc>
+    <loc>https://lisa-coes.netlify.app/categories/componentes/</loc>
+    <lastmod>2021-05-11T10:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lisa-coes.netlify.app/</loc>
+    <lastmod>2021-05-11T10:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lisa-coes.netlify.app/como-hacer-codebook/</loc>
+    <lastmod>2021-05-11T10:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://lisa-coes.netlify.app/blog/</loc>
     <lastmod>2020-12-20T12:50:46+02:00</lastmod>
   </url>
   
@@ -19,16 +34,6 @@
   
   <url>
     <loc>https://lisa-coes.netlify.app/tags/componentes/</loc>
-    <lastmod>2020-12-20T12:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lisa-coes.netlify.app/categories/componentes/</loc>
-    <lastmod>2020-12-20T12:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lisa-coes.netlify.app/</loc>
     <lastmod>2020-12-20T12:50:46+02:00</lastmod>
   </url>
   
@@ -135,10 +140,6 @@
   <url>
     <loc>https://lisa-coes.netlify.app/novedades/01novedades/</loc>
     <lastmod>2020-12-19T13:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lisa-coes.netlify.app/como-hacer-codebook/</loc>
   </url>
   
   <url>

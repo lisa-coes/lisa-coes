@@ -6,7 +6,17 @@
     <description>Recent content on Laboratorio de Ciencia Social Abierta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-cl</language>
-    <lastBuildDate>Sun, 20 Dec 2020 12:50:46 +0200</lastBuildDate><atom:link href="https://lisa-coes.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 May 2021 10:50:46 +0200</lastBuildDate><atom:link href="https://lisa-coes.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>¿Cómo hacer un libro de códigos?</title>
+      <link>https://lisa-coes.netlify.app/como-hacer-codebook/</link>
+      <pubDate>Tue, 11 May 2021 10:50:46 +0200</pubDate>
+      
+      <guid>https://lisa-coes.netlify.app/como-hacer-codebook/</guid>
+      <description>Un libro de códigos es un documento que contiene información detallada de una fuente de datos, tales como nombres de variable, etiquetas de variable, etiquetas de valores o valores perdidos. Un libro de códigos bien documentado permite conocer el contenido, estructura y diseño de un estudio, lo cual facilita vincular las preguntas del cuestionario con cada una de las variables en la base de datos.
+Cuando nos encontramos frente a extensas fuentes de datos, el navegar por cada una de sus partes se puede hacer confuso y complicado.</description>
+    </item>
+    
     <item>
       <title>Publicaciones libres</title>
       <link>https://lisa-coes.netlify.app/03componentes/</link>
@@ -110,15 +120,6 @@ Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una ini
       <description>Lanzamiento Laboratorio Ciencia Social Abierta En &amp;hellip; realizada el &amp;hellip; a las &amp;hellip; horas se presentó el Laboratorio de Ciencia Social Abierta con su sitio web que aloja una guía para &amp;hellip; y herramientas para &amp;hellip;
 La actividad consistió en la presentación de &amp;hellip;, con la participación de &amp;hellip;
 Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una iniciativa innovadora en &amp;hellip; A su vez, &amp;hellip; indicó que &amp;hellip;.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://lisa-coes.netlify.app/como-hacer-codebook/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://lisa-coes.netlify.app/como-hacer-codebook/</guid>
-      <description>Cómo crear un libro de códigos Un libro de códigos es un documento que contiene información detallada de una fuente de datos, tales como nombres de variable, etiquetas de variable, etiquetas de valores o valores perdidos. Un libro de códigos bien documentado permite conocer el contenido, estructura y diseño de un estudio, lo cual facilita vincular las preguntas del cuestionario con cada una de las variables en la base de datos.</description>
     </item>
     
     <item>
