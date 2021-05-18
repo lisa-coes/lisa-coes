@@ -172,7 +172,14 @@
                   
                   <li class="dropdown">
                     
-                    <a href="/contact/">Contacto</a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nosotros <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li><a href="/contacto/">Contáctanos</a></li>
+                      
+                        <li><a href="/nosotros/">Nosotros</a></li>
+                      
+                    </ul>
                     
                   </li>
                   
@@ -237,8 +244,23 @@
 <div id="guía-para-la-apertura-de-datos" class="section level1">
 <h1>Guía para la apertura de datos</h1>
 <p>En parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de <strong>compartir nuestros datos al resto de la comunidad científica</strong> pero muchas veces no sabemos cómo lograrlo. <em>¿Cómo abrir nuestros datos? ¿Qué criterios debo cumplir para que sean publicados? ¿Dónde y cómo publicarlos?</em> En el siguiente blog te contestaremos estas preguntas.</p>
-<div id="paso-1-qué-es-lo-que-necesito" class="section level2">
-<h2>Paso 1: ¿Qué es lo que necesito?</h2>
+<ul>
+<li><a href="#paso1">Paso 1: ¿Qué es lo que necesito?</a></li>
+<li><a href="#paso2">Paso 2: ¿Cómo darle en un formato aceptable?</a>
+<ul>
+<li><a href="#basedatos">Base de datos</a></li>
+<li><a href="#cuestionario">Cuestionario</a></li>
+<li><a href="#codebook">Libro de códigos</a>
+<ul>
+<li><a href="https://lisa-coes.netlify.app/como-hacer-codebook">¿Cómo hacer un libro de códigos de manera automática?</a></li>
+</ul></li>
+<li><a href="#fichatecnica">Ficha técnica</a></li>
+</ul></li>
+<li><a href="#paso3">Paso 3 : ¿Cómo publicar?</a></li>
+</ul>
+</div>
+<div id="paso1" class="section level1">
+<h1>Paso 1: ¿Qué es lo que necesito?</h1>
 Empecemos con lo primero: qué elementos debo considerar para compartir los datos de mi proyecto. En general, lo que tenemos o recibimos (cuando encargamos el terreno) de nuestro estudio son cuatro elementos:
 <center>
 <p><img src="../input/lisa-elementos-3.png" /></p>
@@ -250,11 +272,10 @@ Empecemos con lo primero: qué elementos debo considerar para compartir los dato
 <p><strong><code>4. Ficha técnica</code></strong>: o también nombrado “informe metodológico”, es el documento que nos permite conocer características del diseño metodológico propias del instrumento de análisis. En el encontraremos información sobre el terreno, tipo de instrumento y, en algunas ocasiones, una descripción sobre los datos recopilados.</p>
 <p>En algunas ocasiones no todos estos elementos están presentes. Si es así ¡no es tiempo de abandonar la cruzada por abrir tus datos! En el siguiente paso podrás conocer cuál es su <strong>formato admisibles</strong> y <strong>cómo elaborarlos en caso de que no los tengas</strong>.</p>
 </div>
-</div>
-<div id="paso-2-cómo-darle-en-un-formato-aceptable" class="section level1">
+<div id="paso2" class="section level1">
 <h1>Paso 2: ¿Cómo darle en un formato aceptable?</h1>
 <div id="bases-de-datos" class="section level2">
-<h2><code>1. Bases de datos</code></h2>
+<h2><code id="base-datos">1. Bases de datos</code></h2>
 <p>Para resguardar la calidad de nuestros datos debemos asegurar una correcta <strong>codificación de las respuestas y nombramiento de las variables</strong>, ambas bases fundamentales de los datos (filas y columnas). Un paso inicial es realizar un <strong>análisis descriptivo de los datos</strong> para reconocer posibles problemas producidos por digitación, por ejemplo.</p>
 <div id="codificación-de-las-respuestas" class="section level3">
 <h3>1.1 Codificación de las respuestas</h3>
@@ -310,14 +331,14 @@ Empecemos con lo primero: qué elementos debo considerar para compartir los dato
 </div>
 </div>
 <div id="cuestionario" class="section level2">
-<h2><code>2. Cuestionario</code></h2>
+<h2><code id="cuestionario">2. Cuestionario</code></h2>
 <p>Debes asegurar que se cumplan los siguientes puntos</p>
 <p>🔴 El cuestionario disponible es el que efectivamente fue aplicado (¡no es trivial! muchas veces elaboramos varias versiones de este antes de aplicarlo)</p>
 <p>🔴 El orden y fraseo de preguntas y categorías de respuesta debe corresponder al efectivamente aplicado</p>
 <p>🗸 Para evitar ediciones posteriores, recomendamos mantener el cuestionario en <em>.pdf</em></p>
 </div>
 <div id="libro-de-códigos" class="section level2">
-<h2><code>3. Libro de códigos</code></h2>
+<h2><code id="codebook">3. Libro de códigos</code></h2>
 <p>Este documento es clave para que los (futuros) usuarios/as de sus datos cuenten con información suficiente para utilizarlos correctamente. Para que cumpla su objetivo debes verificar que hay coherencia entre</p>
 <p>🔴 La pregunta del cuestionario y la variable indicada</p>
 <p>🔴 El orden de las categorías de respuesta en el cuestionario y en los valores codificados en la base de datos</p>
@@ -326,7 +347,7 @@ Empecemos con lo primero: qué elementos debo considerar para compartir los dato
 <p><a class = "btn btn-template-main" href="https://lisa-coes.netlify.app/como-hacer-codebook">Crear libro de códigos</a></p>
 </div>
 <div id="ficha-técnica" class="section level2">
-<h2><code>4. Ficha Técnica</code></h2>
+<h2><code id="fichatecnica">4. Ficha Técnica</code></h2>
 <p>Este resumen sobre el diseño metodológico aplicado debe incluir como mínimo los siguientes puntos:</p>
 <p>🔴 <strong>Estrategia de recolección de información</strong>: se debe indicar el <em>tipo de instrumento</em> (eg. encuesta, datos administrativos, etc.), población y muestra objetivo.</p>
 <p>🔴 <strong>Descripción del terreno</strong>: cuándo, cómo y dónde fue aplicado el terreno. Es decir, se debe indicar la fecha de aplicación, formato (presencial, online,telefónica, cuestionario auto-aplicado) y ubicación geográfica. También si hubieron hitos o perturbaciones importantes al desarrollo del estudio.</p>
@@ -335,7 +356,7 @@ Empecemos con lo primero: qué elementos debo considerar para compartir los dato
 <p>De todas maneras, una ficha metodológica puede incluir muchos más elementos, por ejemplo, una revisión de la distribución de las variables y/o una presentación de los tópicos incluidos en la base de datos.</p>
 <p>🗸 Para evitar ediciones posteriores, recomendamos mantener la ficha técnica en <em>.pdf</em></p>
 </div>
-<div id="en-síntesis" class="section level2">
+<div id="sintesis" class="section level2">
 <h2>En síntesis</h2>
 <table class="table table-striped table-bordered table-condensed table-responsive" style="font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
@@ -504,7 +525,7 @@ Información mínima para la utilización del usuario
 <p><a class = "btn btn-template-main" href="/input/lisa-lista-recomendaciones.pdf">Descargar listado de recomendaciones para rellenar</a></p>
 </div>
 </div>
-<div id="paso-3-cómo-publicar" class="section level1">
+<div id="paso3" class="section level1">
 <h1>Paso 3 : ¿Cómo publicar?</h1>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kFhxs-EfUqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>

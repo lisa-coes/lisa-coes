@@ -147,6 +147,10 @@
   </url>
   
   <url>
+    <loc>https://lisa-coes.netlify.app/nosotros/</loc>
+  </url>
+  
+  <url>
     <loc>https://lisa-coes.netlify.app/test/</loc>
   </url>
   
@@ -160,6 +164,10 @@
   
   <url>
     <loc>https://lisa-coes.netlify.app/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://lisa-coes.netlify.app/contacto/</loc>
   </url>
   
   <url>
