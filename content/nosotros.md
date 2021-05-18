@@ -20,7 +20,7 @@
                                 <div class="icon"><i class="fas fa-envelope-open-text"></i>
                                 </div></a>
                                 <div class="name-picture">
-                                    <img class="" alt="" src="http://localhost:4321/img/testimonials/person-1.jpg">
+                                    <img class="" alt="" src="https://lisa-coes.netlify.app/img/testimonials/person-1.jpg">
                                     <h5>Juan Carlos Castillo</h5>
                                     <a href="https://juancarloscastillo.github.io/jc-castillo/">
                                     <p>Sitio web</p>
@@ -38,7 +38,7 @@
                                 <div class="icon"><i class="fas fa-envelope-open-text"></i>
                                 </div></a>
                                 <div class="name-picture">
-                                    <img class="" alt="" src="http://localhost:4321/img/testimonials/person-2.jpg">
+                                    <img class="" alt="" src="https://lisa-coes.netlify.app/img/testimonials/person-2.jpg">
                                     <h5>Julio Iturra Sanhueza</h5>
                                     <a href="https://coes.cl/integrantes/julio-cesar-iturra/">
                                     <p>Sitio web</p>
@@ -49,16 +49,14 @@
                     </li></div><div class="owl-item" style="width: 285px;"><li class="item">
                         <div class="testimonial same-height-always" style="height: 105.717px;">
                             <div class="text">
-                                <p>Asistente de investigación</p>
-                            </div>
+                                <p>Asistente de investigación</p>                            </div>
                             <div class="bottom">
                               <a href="mailto:%27valentina.vasquez.a@uchile.cl%27">
                                 <div class="icon"><i class="fas fa-envelope-open-text"></i>
                                 </div></a>
                                 <div class="name-picture">
-                                    <img class="" alt="" src="http://localhost:4321/img/testimonials/person-3.jpg">
-                                    <h5>Valentina Andrade</h5>
-                                    <a href="https://valentinaandrade.netlify.app/">
+                                    <img class="" alt="" src="https://lisa-coes.netlify.app/img/testimonials/person-3.jpg">
+                                    <h5>Valentina Andrade</h5>                                    <a href="https://valentinaandrade.netlify.app/">
                                     <p>Sitio web</p>
                                     </a>
                                 </div>
