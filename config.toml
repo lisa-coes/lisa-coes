@@ -62,10 +62,21 @@ paginate = 10
     weight = 4
 
 [[menu.main]]
-    identifier = "contact"
-    name = "Contacto"
+    identifier = "nosotros"
+    name = "Nosotros"
     url  = "/contact/"
     weight = 5
+
+[[menu.main]]
+    parent = "nosotros"
+    name = "Nosotros"
+    url = "/nosotros/"
+
+[[menu.main]]
+    parent = "nosotros"
+    name = "Contáctanos"
+    url = "/contacto/"
+    
 
 # Top bar social links menu
 
