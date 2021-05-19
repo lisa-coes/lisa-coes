@@ -3,6 +3,8 @@ description: Practicas LISA
 title: 
 ---
 
+![](../input/practica-small.png)
+
 # Convocatoria a práctica y pasantía de investigación
 
 El Laboratorio de Ciencia Social Abierta se encuentra en la búsqueda de practicantes y/o estudiantes que quieran realizar una pasantía de investigación. Estas actividades son desarrolladas bajo COES. 
@@ -30,8 +32,6 @@ El Laboratorio de Ciencia Social Abierta se encuentra en la búsqueda de practic
 - Se requiere que los postulantes cuenten con un computador personal.
 - Interesados enviar carta de motivación de 500 palabras y CV a **nzriquelme@uc.cl** y **valentinaandrade@uchile.cl** hasta el día 25 de mayo 2021.
 
-
-![](../input/practica-small.png)
 
 ---
 
