@@ -69,13 +69,15 @@ paginate = 10
 
 [[menu.main]]
     parent = "nosotros"
-    name = "Nosotros"
-    url = "/nosotros/"
+    name = "Equipo"
+    url = "/equipo/"
+    weight = 1
 
 [[menu.main]]
     parent = "nosotros"
     name = "Contáctanos"
     url = "/contacto/"
+    weight = 2
     
 
 # Top bar social links menu
@@ -106,10 +108,10 @@ paginate = 10
 
 [params]
     viewMorePostLink = "/blog/"
-    author = "OCS"
-    defaultKeywords = ["cohesion", "visualizador", "LAPOP"]
+    author = "LISA"
+    defaultKeywords = ["lisa", "coes"]
     mainSections = ["blog"]
-    defaultDescription = "Sitio desarrollado por valentinaandrade por template devcows usando hugo"
+    defaultDescription = "Sitio desarrollado por valentinaandrade"
 
     # Social media
     facebook_site = "coes2020" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
