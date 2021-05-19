@@ -26,7 +26,7 @@ El Laboratorio de Ciencia Social Abierta se encuentra en la búsqueda de practic
 
 ## Para postular
 
-- **Practicantes:** régimen de jornada definido (completa o parcial). Honorarios por 150.000 pesos mensuales brutos (dependiendo de la jornada)
+- **Practicantes:** régimen de jornada **definido** con pago a honorarios asociados dependiendo de la jornada.
 - **Pasantes:** régimen flexible basado en la entrega de productos.
 - Los postulantes que hayan sido seleccionados al cabo de la revisión de antecedentes conformarán una lista corta de candidatos, los que serán entrevistados por el equipo coordinador del proyecto.
 - Se requiere que los postulantes cuenten con un computador personal.
