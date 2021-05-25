@@ -129,8 +129,12 @@ Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una ini
       
       <guid>https://lisa-coes.netlify.app/equipo/</guid>
       <description>EquipoInvestigador principal
-Juan Carlos CastilloSitio web
-Otras personas que han colaborado con nosotros  Francisco Meneses, Practicante  </description>
+Juan Carlos CastilloSitio web
+Asistente de investigación
+Julio Iturra SanhuezaSitio web
+Asistente de investigación
+Valentina AndradeSitio web
+Otras personas que han colaborado con nosotros  Tomás Campos, Coordinador de proyectos COES Francisco Meneses, Practicante Natalia Riquelme, Coordinadora de proyectos COES  </description>
     </item>
     
     <item>
@@ -139,12 +143,10 @@ Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una ini
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://lisa-coes.netlify.app/links/</guid>
-      <description>Algunos sitios y herramientas que te podrían interesar 👇
-Para la apertura de datos  ¿Cómo hacer un libro de códigos en R, STATA o SPSS?  Libros   Open Scientist Handbook
+      <description>Aquí podrás encontrar algunos sitios y herramientas que se basan en la ciencia abierta y que te podrían interesar 👇
+ Referencias  Libros Artículos   Repositorios  Para datos Para publicaciones Para varios archivos   Herramientas  Tutoriales Softwares   Iniciativas de ciencia abierta  Referencias Libros   Open Scientist Handbook
   Open science training handbook
-  Introduction to reproducible science in R, from Brian Lee Yung Rowe
-  Artículos   Ciencia reproducible: qué, por qué, cómo (Rodríguez-Sánchez et al, 2016)
-  Internal replication of computational workflows in scientific research</description>
+  Introduction to reproducible science in R, from Brian Lee Yung Rowe</description>
     </item>
     
     <item>
