@@ -209,7 +209,7 @@ paginate = 10
 [params.see_more]
     enable = true
     icon = "fas fa-chart-line"
-    title = "Guía para la apertura de datos"
+    title = "**Guía para la apertura de datos**"
     subtitle = ""
     link_url = "/01componentes/"
     link_text = "¡Quiero aprender!"
