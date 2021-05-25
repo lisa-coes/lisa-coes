@@ -9,13 +9,23 @@ title:
 ---
 <br>
 
-Algunos sitios y herramientas que te podrían interesar 👇
+Aquí podrás encontrar algunos sitios y herramientas que se basan en la **ciencia abierta** y que te podrían interesar 👇
 
-# Para la apertura de datos
+- [Referencias](#referencias)
+  - [Libros](#libros)
+  - [Artículos](#articulos)
+- [Repositorios](#repositorios)
+  - [Para datos](#rep-datos)
+  - [Para publicaciones](#rep-pub)
+  - [Para varios archivos](#rep-varios)
+- [Herramientas](#herramientas)
+  - [Tutoriales](#tutoriales)
+  - [Softwares](#softwares)
+- [Iniciativas de ciencia abierta](#iniciativas)
 
-- [¿Cómo hacer un libro de códigos en R, STATA o SPSS?](https://lisa-coes.netlify.app/como-hacer-codebook)
+# Referencias{#referencias}
 
-# Libros
+## Libros{#libros}
 
 - [Open Scientist Handbook](https://openscientist.pubpub.org/pub/play/release/1)
 
@@ -24,7 +34,7 @@ Algunos sitios y herramientas que te podrían interesar 👇
 - [Introduction to reproducible science in R, from Brian Lee Yung Rowe](https://www.r-bloggers.com/2018/11/preview-my-new-book-introduction-to-reproducible-science-in-r/)
 
 
-# Artículos
+## Artículos{#articulos}
 
 - [Ciencia reproducible: qué, por qué, cómo (Rodríguez-Sánchez et al, 2016)](https://doi.org/10.7818/ECOS.2016.25-2.11)
 
@@ -34,23 +44,51 @@ Algunos sitios y herramientas que te podrían interesar 👇
 
 
 
-# Herramientas
+# Repositorios{#repositorios}
 
+## Para datos{#rep-datos}
+
+- [Universidad de Chile Dataverse](https://datos.uchile.cl/)
+
+- [Harvard Dataverse](https://dataverse.harvard.edu/)
+
+## Misceláneo{#rep-varios}
+
+- [GitHub](https://github.com/) y [GitLab](https://about.gitlab.com/)
+  
 - [Open Science Framework](https://osf.io/)
+
+## Publicaciones{#rep-pub}
 
 - [Gates Open Research](https://gatesopenresearch.org/)
 
 - [SocArxiv](https://socopen.org/welcome/), the open archive of the social sciences
 
-- [Unpaywall chrome extension](https://chrome.google.com/webstore/detail/unpaywall/iplffkdpngmdjhlpjmppncnlhomiipha) (Identifica con un ícono cuando el artículo se encuentra libre de pago).
+# Herramientas{#herramientas}
 
+## Tutoriales{#tutoriales}
 
-# Tutoriales
+- [¿Cómo hacer un libro de códigos en R, STATA o SPSS?](https://lisa-coes.netlify.app/como-hacer-codebook)
+
+- [¿Cómo publicar mis datos en Dataverse?](https://www.youtube.com/embed/kFhxs-EfUqA)
 
 - [Karl Broman Tutorias reproducibility, knitr, Git & more](https://kbroman.org/tutorials.html)
 
 
-# Iniciativas de Ciencia Abierta
+## Softwares{#softwares}
+
+- [Unpaywall chrome extension](https://chrome.google.com/webstore/detail/unpaywall/iplffkdpngmdjhlpjmppncnlhomiipha) (Identifica con un ícono cuando el artículo se encuentra libre de pago).
+
+- [R](https://www.r-project.org/),[RStudio](https://www.rstudio.com/) y [RStudioCloud](rstudio.cloud/)
+
+- [Python](https://www.python.org/)
+
+- [Anaconda](https://www.anaconda.com/)
+
+
+# Iniciativas de Ciencia Abierta{#iniciativas}
+
+- [Iniciativa de Ciencia Abierta-UNESCO](https://en.unesco.org/sites/default/files/open_science_brochure_sp.pdf)
 
 - [The Berkeley Initiative for Transparency in the Social Sciences](https://www.bitss.org/)
 
@@ -59,6 +97,7 @@ Algunos sitios y herramientas que te podrían interesar 👇
 - [Free our knowledge](http://freeourknowledge.org/)
 
 - [Paywall, the movie](https://paywallthemovie.com/)
+
 
 
 ---
