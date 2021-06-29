@@ -14,7 +14,6 @@
                 </p>
 
                 <!-- *** TESTIMONIALS CAROUSEL *** -->
-
                 <ul class="owl-carousel testimonials same-height-row">
                     {{ range .Site.Data.testimonials }}
                     <li class="item">
@@ -29,7 +28,7 @@
                                 </div></a>
                                 <div class="name-picture">
                                     <img class="" alt="" src="{{ .avatar | absURL }}">
-                                    <h5>{{ .name }}</h5>
+                                    <h6>{{ .name }}</h6>
                                     <a href = "{{.url}}" >
                                     <p>{{ .position }}</p>
                                     </a>
