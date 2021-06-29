@@ -1,5 +1,5 @@
 weight: 1
-name: "Datos Abiertos"
-icon: "fas fa-box-open"
+name: "Diseño Transparente"
+icon: "fas fa-book"
 url: "https://lisa-coes.netlify.app/01componentes/"
-description: "Disponer a la comunidad los datos y recursos utilizados en la investigación"
+description: "Transparentar las decisiones metodológicas del estudio"

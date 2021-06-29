@@ -1,5 +1,5 @@
-weight: 2
-name: "Análisis reproducible"
-icon: "fas fa-chart-line"
+weight: 1
+name: "Datos Abiertos"
+icon: "fas fa-box-open"
 url: "https://lisa-coes.netlify.app/02componentes/"
-description: "Permitir que las herramientras para generar análisis puedan reproducir los resultados obtenidos"
+description: "Disponer a la comunidad los datos y recursos utilizados en la investigación"
