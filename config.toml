@@ -23,9 +23,33 @@ paginate = 10
 
 [[menu.main]]
     identifier="home"
-    name = "Inicio"
+    name = "Ciencia social abierta"
     url  = "/"
     weight = 1
+
+[[menu.main]]
+    parent = "home"
+    name = "¿Qué es ciencia abierta?"
+    url = "/02novedades/"
+    weight = 1
+
+[[menu.main]]
+    parent = "home"
+    name = "Equipo"
+    url = "/equipo/"
+    weight = 2
+
+[[menu.main]]
+    parent = "home"
+    name = "Equipo"
+    url = "/equipo/"
+    weight = 3
+
+[[menu.main]]
+    parent = "home"
+    name = "Contáctanos"
+    url = "/contacto/"
+    weight = 4
 
 
 [[menu.main]]
@@ -36,56 +60,49 @@ paginate = 10
 
 [[menu.main]]
     parent = "blog"
-    name = "1. Datos Abiertos"
+    name = "1. Diseño Transparente"
     url = "/01componentes/"
 
 [[menu.main]]
     parent = "blog"
-    name = "2. Análisis reproducible"
+    name = "2. Datos Abiertos"
     url = "/02componentes/"
 
 [[menu.main]]
     parent = "blog"
-    name = "3. Publicaciones libres"
+    name = "3. Análisis reproducible"
     url = "/03componentes/"
 
 [[menu.main]]
-    identifier = "app"
-    name = "Links"
+    parent = "blog"
+    name = "4. Publicaciones libres"
+    url = "/04componentes/"
+
+[[menu.main]]
+    identifier = "news"
+    name = "Interés"
     url  = "/links"
     weight = 3
 
 [[menu.main]]
-    identifier = "news"
-    name = "Novedades"
-    url  = "https://lisa-coes.netlify.app/categories/novedades/"
-    weight = 4
-
-[[menu.main]]
-    identifier = "nosotros"
-    name = "Nosotros"
-    url  = "/contact/"
-    weight = 5
-
-[[menu.main]]
-    parent = "nosotros"
-    name = "Equipo"
-    url = "/equipo/"
+    parent = "news"
+    name = "Links"
+    url  = "/links"
     weight = 1
 
 [[menu.main]]
-    parent = "nosotros"
-    name = "Contáctanos"
-    url = "/contacto/"
+    parent = "news"
+    name = "Novedades"
+    url  = "https://lisa-coes.netlify.app/categories/novedades/"
     weight = 2
-    
+
 
 # Top bar social links menu
 
 [[menu.topbar]]
     weight = 1
     name = "GitHub"
-    url = "https://github.com/lisa/"
+    url = "https://github.com/lisa-coes/"
     pre = "<i class='fab fa-2x fa-github'></i>"
 
 [[menu.topbar]]
@@ -188,7 +205,7 @@ paginate = 10
 [params.test]
     enable = true
     title = "LISA"
-    subtitle = "El **Laboratorio de Ciencia Social Abierta** es una iniciativa del *Centro de Estudios de Conflicto y Cohesión Social* (COES) que tiene como propósito ser una guía para el desarrollo de una ciencia social abierta y reproducible para la comunidad científica y la ciudadanía. Nos enfocamos en promover y construir **herramientas de los tres componentes** principales de la ciencia abierta: *(1) apertura de datos, (2) análisis reproducibles y (3) publicaciones libres*."
+    subtitle = "El **Laboratorio de Ciencia Social Abierta** es una iniciativa del *Centro de Estudios de Conflicto y Cohesión Social* (COES) que tiene como propósito ser una guía para el desarrollo de una ciencia social abierta y reproducible para la comunidad científica y la ciudadanía. Nos enfocamos en promover y construir **herramientas de los tres componentes** principales de la ciencia abierta: *(1) diseño transparente, (2) apertura de datos, (3) análisis reproducibles y (4) publicaciones libres*."
 
 [params.features]
     enable = true
@@ -203,7 +220,7 @@ paginate = 10
     # All testimonials are defined in their own files. You can find example items
     # at 'exampleSite/data/testimonials'.
     # For more informtion take a look at the README.
-    title = "Equipo"
+    title = "Equipo central"
     subtitle = ""
 
 [params.see_more]
@@ -211,7 +228,7 @@ paginate = 10
     icon = "fas fa-chart-line"
     title = "**Guía para la apertura de datos**"
     subtitle = ""
-    link_url = "/01componentes/"
+    link_url = "/02componentes/"
     link_text = "¡Quiero aprender!"
 
 [params.clients]
