@@ -1,17 +1,18 @@
 ---
 author: LISA
-banner: img/banners/blog-4.png
+banner: img/banners/blog-3.png
 categories:
 - componentes
-date: "2020-12-20T12:50:46+02:00"
+date: "2020-12-20T11:50:46+02:00"
 description: 
 tags:
 - componentes
 - ciencia abierta
-- publicaciones
-title: Publicaciones libres
+- analisis
+- codigo
+title: Análisis reproducibles 
 ---
 
-# Guía para la publicación
+# Guía para realizar análisis reproducibles 
 
 **En desarrollo**
