@@ -1316,8 +1316,8 @@ fieldset[disabled] .btn-template-primary.active {
   width: 80%;
   text-align: right;
 }
-.testimonials .item .testimonial .name-picture h5 {
-  font-size: 16px;
+.testimonials .item .testimonial .name-picture h6 {
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
