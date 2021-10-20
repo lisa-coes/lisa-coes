@@ -2,110 +2,123 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Laboratorio de Ciencia Social Abierta</title>
-    <link>https://lisa-coes.netlify.app/</link>
+    <link>/</link>
     <description>Recent content on Laboratorio de Ciencia Social Abierta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-cl</language>
-    <lastBuildDate>Tue, 11 May 2021 10:50:46 +0200</lastBuildDate><atom:link href="https://lisa-coes.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Oct 2021 12:50:46 +0200</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Publicaciones libres</title>
+      <link>/04componentes/</link>
+      <pubDate>Mon, 18 Oct 2021 12:50:46 +0200</pubDate>
+      
+      <guid>/04componentes/</guid>
+      <description>Guía para las publicaciones libresCuando hablamos de publicación científica no solo nos referimos a la publicación en revistas indexadas y de acceso por suscripción, también existe una vía que permite a las/os investigadores publicar sus trabajos de manera abierta, es decir que el acceso a los resultados de la investigación sea gratuito, logrando de este modo mayor visibilidad, un potencial aumento de la tasa de citación y una incidencia positiva en la libre circulación del conocimiento.</description>
+    </item>
+    
     <item>
       <title>¿Cómo hacer un libro de códigos?</title>
-      <link>https://lisa-coes.netlify.app/como-hacer-codebook/</link>
+      <link>/como-hacer-codebook/</link>
       <pubDate>Tue, 11 May 2021 10:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/como-hacer-codebook/</guid>
+      <guid>/como-hacer-codebook/</guid>
       <description>Un libro de códigos es un documento que contiene información detallada de una fuente de datos, tales como nombres de variable, etiquetas de variable, etiquetas de valores o valores perdidos. Un libro de códigos bien documentado permite conocer el contenido, estructura y diseño de un estudio, lo cual facilita vincular las preguntas del cuestionario con cada una de las variables en la base de datos.
 Cuando nos encontramos frente a extensas fuentes de datos, el navegar por cada una de sus partes se puede hacer confuso y complicado.</description>
     </item>
     
     <item>
       <title>Publicaciones libres</title>
-      <link>https://lisa-coes.netlify.app/03componentes/</link>
+      <link>/novedades/03componentes/</link>
       <pubDate>Sun, 20 Dec 2020 12:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/03componentes/</guid>
-      <description>Guía para la publicación En desarrollo</description>
-    </item>
-    
-    <item>
-      <title>Publicaciones libres</title>
-      <link>https://lisa-coes.netlify.app/novedades/03componentes/</link>
-      <pubDate>Sun, 20 Dec 2020 12:50:46 +0200</pubDate>
-      
-      <guid>https://lisa-coes.netlify.app/novedades/03componentes/</guid>
+      <guid>/novedades/03componentes/</guid>
       <description>Guía para la publicación Razones Pasos Consejos Protocolo
 Contenidos</description>
     </item>
     
     <item>
       <title>Análisis reproducibles</title>
-      <link>https://lisa-coes.netlify.app/02componentes/</link>
+      <link>/03componentes/</link>
       <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/02componentes/</guid>
-      <description>Guía para realizar análisis reproducibles En desarrollo</description>
+      <guid>/03componentes/</guid>
+      <description>Análisis reproducibles </description>
     </item>
     
     <item>
       <title>Análisis reproducibles</title>
-      <link>https://lisa-coes.netlify.app/novedades/02componentes/</link>
+      <link>/novedades/02componentes/</link>
       <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/novedades/02componentes/</guid>
+      <guid>/novedades/02componentes/</guid>
       <description>Guía para realizar análisis reproducibles Razones Pasos Consejos </description>
     </item>
     
     <item>
+      <title>Diseño transparente</title>
+      <link>/01componentes/</link>
+      <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
+      
+      <guid>/01componentes/</guid>
+      <description>Guía para transparencia de diseñoUno de los principios que guía la producción científica es el escepticismo organizado. Esto quiere decir que la validez de los hallazgos científicos recae en la evaluación crítica de parte de los miembros comunidad científica. Sin embargo, la prevalencia de prácticas cuestionables de investigación en distintas disciplinas ha puesto en tela de juicio que esta evaluación crítica se esté logrando, suscitado el interés de los científicos por desarrollar herramientas que hagan la investigación más transparente.</description>
+    </item>
+    
+    <item>
       <title>Datos abiertos</title>
-      <link>https://lisa-coes.netlify.app/01componentes/</link>
+      <link>/02componentes/</link>
       <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/01componentes/</guid>
+      <guid>/02componentes/</guid>
       <description>Guía para la apertura de datosEn parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de compartir nuestros datos al resto de la comunidad científica pero muchas veces no sabemos cómo lograrlo. ¿Cómo abrir nuestros datos? ¿Qué criterios debo cumplir para que sean publicados? ¿Dónde y cómo publicarlos? En el siguiente blog te contestaremos estas preguntas.</description>
     </item>
     
     <item>
       <title>Datos abiertos</title>
-      <link>https://lisa-coes.netlify.app/input/01componentes/</link>
+      <link>/input/01componentes/</link>
       <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/input/01componentes/</guid>
+      <guid>/input/01componentes/</guid>
       <description>Guía para la apertura de datos En parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de compartir nuestros datos al resto de la comunidad científica pero muchas veces no sabemos cómo lograrlo. ¿Cómo abrir nuestros datos? ¿Qué criterios debo cumplir para que sean publicados? ¿Dónde y cómo publicarlos? En el siguiente blog te contestaremos estas preguntas.</description>
     </item>
     
     <item>
       <title>Datos abiertos</title>
-      <link>https://lisa-coes.netlify.app/novedades/01componentes/</link>
+      <link>/novedades/01componentes/</link>
       <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/novedades/01componentes/</guid>
+      <guid>/novedades/01componentes/</guid>
       <description>Guía para la apertura de datos Razones Pasos Consejos Protocolo
 Contenidos</description>
     </item>
     
     <item>
       <title>¿Qué es la Ciencia Abierta?</title>
-      <link>https://lisa-coes.netlify.app/02novedades/</link>
+      <link>/02novedades/</link>
       <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/02novedades/</guid>
+      <guid>/02novedades/</guid>
       <description>¿Qué es la Ciencia Abierta? ¿Porqué practicarla en Ciencias Sociales? Ciencia abierta en Ciencias Sociales Estado actual en Chile Qué ofrece LISA Herramientas disponibles </description>
     </item>
     
     <item>
       <title>¿Qué es la Ciencia Abierta?</title>
-      <link>https://lisa-coes.netlify.app/novedades/02novedades/</link>
+      <link>/novedades/02novedades/</link>
       <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/novedades/02novedades/</guid>
+      <guid>/novedades/02novedades/</guid>
       <description>¿Qué es la Ciencia Abierta? ¿Porqué practicarla en Ciencias Sociales? Ciencia abierta en Ciencias Sociales Estado actual en Chile Qué ofrece LISA Herramientas disponibles </description>
     </item>
     
     <item>
       <title>Lanzamiento Laboratorio Ciencia Social Abierta</title>
-      <link>https://lisa-coes.netlify.app/01novedades/</link>
+      <link>/01novedades/</link>
       <pubDate>Sat, 19 Dec 2020 13:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/01novedades/</guid>
+      <guid>/01novedades/</guid>
       <description>Lanzamiento Laboratorio Ciencia Social Abierta En &amp;hellip; realizada el &amp;hellip; a las &amp;hellip; horas se presentó el Laboratorio de Ciencia Social Abierta con su sitio web que aloja una guía para &amp;hellip; y herramientas para &amp;hellip;
 La actividad consistió en la presentación de &amp;hellip;, con la participación de &amp;hellip;
 Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una iniciativa innovadora en &amp;hellip; A su vez, &amp;hellip; indicó que &amp;hellip;.</description>
@@ -113,10 +126,10 @@ Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una ini
     
     <item>
       <title>Lanzamiento Laboratorio Ciencia Social Abierta</title>
-      <link>https://lisa-coes.netlify.app/novedades/01novedades/</link>
+      <link>/novedades/01novedades/</link>
       <pubDate>Sat, 19 Dec 2020 13:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/novedades/01novedades/</guid>
+      <guid>/novedades/01novedades/</guid>
       <description>Lanzamiento Laboratorio Ciencia Social Abierta En &amp;hellip; realizada el &amp;hellip; a las &amp;hellip; horas se presentó el Laboratorio de Ciencia Social Abierta con su sitio web que aloja una guía para &amp;hellip; y herramientas para &amp;hellip;
 La actividad consistió en la presentación de &amp;hellip;, con la participación de &amp;hellip;
 Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una iniciativa innovadora en &amp;hellip; A su vez, &amp;hellip; indicó que &amp;hellip;.</description>
@@ -124,10 +137,10 @@ Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una ini
     
     <item>
       <title></title>
-      <link>https://lisa-coes.netlify.app/equipo/</link>
+      <link>/equipo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/equipo/</guid>
+      <guid>/equipo/</guid>
       <description>Equipo centralInvestigador principal
 Juan Carlos CastilloSitio web
 Asistente de investigación
@@ -141,10 +154,10 @@ Pasantes de investigación Otoño 2021
     
     <item>
       <title></title>
-      <link>https://lisa-coes.netlify.app/links/</link>
+      <link>/links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/links/</guid>
+      <guid>/links/</guid>
       <description>Aquí podrás encontrar algunos sitios y herramientas que se basan en la ciencia abierta y que te podrían interesar 👇
  Referencias  Libros Artículos   Repositorios  Para datos Para publicaciones Para varios archivos   Herramientas  Tutoriales Softwares   Iniciativas de ciencia abierta  Referencias Libros   Open Scientist Handbook
   Open science training handbook
@@ -153,10 +166,10 @@ Pasantes de investigación Otoño 2021
     
     <item>
       <title></title>
-      <link>https://lisa-coes.netlify.app/practica/</link>
+      <link>/practica/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/practica/</guid>
+      <guid>/practica/</guid>
       <description>Convocatoria a práctica y pasantía de investigación El Laboratorio de Ciencia Social Abierta se encuentra en la búsqueda de practicantes y/o estudiantes que quieran realizar una pasantía de investigación. Estas actividades son desarrolladas bajo COES.
 Tareas a realizar   Apoyo en el proceso de construcción de herramientas para la apertura de datos, reproducibilidad de análisis y liberación de publicaciones.
   Elaboración de productos para la difusión a la comunidad científica, principalmente orientado en investigadoras/os de las ciencias sociales.</description>
@@ -164,20 +177,20 @@ Tareas a realizar   Apoyo en el proceso de construcción de herramientas para la
     
     <item>
       <title></title>
-      <link>https://lisa-coes.netlify.app/test/</link>
+      <link>/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/test/</guid>
+      <guid>/test/</guid>
       <description> En caso de que no puedas visualizar el visualizador o presentes problemas no dudes en contactarnos
  </description>
     </item>
     
     <item>
       <title>Buscador de bases de datos</title>
-      <link>https://lisa-coes.netlify.app/app/tool01/</link>
+      <link>/app/tool01/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/app/tool01/</guid>
+      <guid>/app/tool01/</guid>
       <description>Buscador de bases de datos Poner shiny aquí
  ¿Quieres comentar o tienes alguna duda? Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
   En caso de que no puedas visualizar el buscador o presentes problemas no dudes en contactarnos
@@ -186,41 +199,59 @@ Tareas a realizar   Apoyo en el proceso de construcción de herramientas para la
     
     <item>
       <title>Contacto</title>
-      <link>https://lisa-coes.netlify.app/contact/</link>
+      <link>/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/contact/</guid>
+      <guid>/contact/</guid>
       <description>Estamos aquí para ayudarte ¿Quieres saber más sobre el Laboratorio de Ciencia Social Abierta? ¿Tienes dudas sobre cómo nos organizamos? ¿Requieres de asesoría?
 En el siguiente formulario puedes contactarte con nosotros, intentaremos contestarte lo antes posible</description>
     </item>
     
     <item>
       <title>Contacto</title>
-      <link>https://lisa-coes.netlify.app/contacto/</link>
+      <link>/contacto/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/contacto/</guid>
+      <guid>/contacto/</guid>
       <description>Estamos aquí para ayudarte ¿Quieres saber más sobre el Laboratorio de Ciencia Social Abierta? ¿Tienes dudas sobre cómo nos organizamos? ¿Requieres de asesoría?
 En el siguiente formulario puedes contactarte con nosotros, intentaremos contestarte lo antes posible</description>
     </item>
     
     <item>
-      <title>Tesis bookdown</title>
-      <link>https://lisa-coes.netlify.app/app/tool02/</link>
+      <title>Publicaciones Libres</title>
+      <link>/componenteoa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/app/tool02/</guid>
+      <guid>/componenteoa/</guid>
+      <description>Cuando hablamos de publicación científica no solo nos referimos a la publicación en revistas indexadas y de acceso por suscripción, también existe una vía que permite a las/os investigadores publicar sus trabajos de manera abierta, es decir que el acceso a los resultados de la investigación sea gratuito, logrando de este modo mayor visibilidad, un potencial aumento de la tasa de citación y una incidencia positiva en la libre circulación del conocimiento.</description>
+    </item>
+    
+    <item>
+      <title>Tesis bookdown</title>
+      <link>/app/tool02/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/app/tool02/</guid>
       <description>Tesis bookdown ¿ Qué es bookdown? Razones para ocuparlo Cómo acceder a template  ¿Quieres comentar o tienes alguna duda? Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
   En caso de que no puedas visualizar el buscador o presentes problemas no dudes en contactarnos
  </description>
     </item>
     
     <item>
-      <title>Tutoriales</title>
-      <link>https://lisa-coes.netlify.app/app/tool03/</link>
+      <title>Transparencia del diseño de investigación</title>
+      <link>/componentetransparency/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/app/tool03/</guid>
+      <guid>/componentetransparency/</guid>
+      <description>Uno de los principios que guía la producción científica es el escepticismo organizado. Esto quiere decir que la validez de los hallazgos científicos recae en la evaluación crítica de parte de los miembros comunidad científica. Sin embargo, la prevalencia de prácticas cuestionables de investigación en distintas disciplinas ha puesto en tela de juicio que esta evaluación crítica se esté logrando, suscitado el interés de los científicos por desarrollar herramientas que hagan la investigación más transparente.</description>
+    </item>
+    
+    <item>
+      <title>Tutoriales</title>
+      <link>/app/tool03/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/app/tool03/</guid>
       <description> Rstudio Cloud + Youtube- Ahora se integra con Rmd en última versión R )   ¿Quieres comentar o tienes alguna duda? Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
   En caso de que no puedas visualizar el buscador o presentes problemas no dudes en contactarnos
  </description>

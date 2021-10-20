@@ -2,27 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>analisis on Laboratorio de Ciencia Social Abierta</title>
-    <link>https://lisa-coes.netlify.app/tags/analisis/</link>
+    <link>/tags/analisis/</link>
     <description>Recent content in analisis on Laboratorio de Ciencia Social Abierta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-cl</language>
-    <lastBuildDate>Sun, 20 Dec 2020 11:50:46 +0200</lastBuildDate><atom:link href="https://lisa-coes.netlify.app/tags/analisis/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 11:50:46 +0200</lastBuildDate>
+    
+	<atom:link href="/tags/analisis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Análisis reproducibles</title>
-      <link>https://lisa-coes.netlify.app/02componentes/</link>
+      <link>/03componentes/</link>
       <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/02componentes/</guid>
-      <description>Guía para realizar análisis reproducibles En desarrollo</description>
+      <guid>/03componentes/</guid>
+      <description>Análisis reproducibles </description>
     </item>
     
     <item>
       <title>Análisis reproducibles</title>
-      <link>https://lisa-coes.netlify.app/novedades/02componentes/</link>
+      <link>/novedades/02componentes/</link>
       <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/novedades/02componentes/</guid>
+      <guid>/novedades/02componentes/</guid>
       <description>Guía para realizar análisis reproducibles Razones Pasos Consejos </description>
+    </item>
+    
+    <item>
+      <title>Diseño transparente</title>
+      <link>/01componentes/</link>
+      <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
+      
+      <guid>/01componentes/</guid>
+      <description>Guía para transparencia de diseñoUno de los principios que guía la producción científica es el escepticismo organizado. Esto quiere decir que la validez de los hallazgos científicos recae en la evaluación crítica de parte de los miembros comunidad científica. Sin embargo, la prevalencia de prácticas cuestionables de investigación en distintas disciplinas ha puesto en tela de juicio que esta evaluación crítica se esté logrando, suscitado el interés de los científicos por desarrollar herramientas que hagan la investigación más transparente.</description>
     </item>
     
   </channel>

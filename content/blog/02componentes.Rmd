@@ -187,6 +187,6 @@ kableExtra::kbl(., full_width = T, linesep = "", escape = FALSE) %>%
 
 ## ¿Quieres comentar o tienes alguna duda?
 
-Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes [contactarnos](/contact/)
+Puedes dejar tus comentarios y dudas sobre el cómo publicar tus datos en nuestro foro. De todas formas puedes [contactarnos](/contact/)
 
 <div id="disqus_thread"></div>

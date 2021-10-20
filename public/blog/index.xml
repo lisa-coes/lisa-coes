@@ -2,56 +2,87 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Laboratorio de Ciencia Social Abierta</title>
-    <link>https://lisa-coes.netlify.app/blog/</link>
+    <link>/blog/</link>
     <description>Recent content in Blogs on Laboratorio de Ciencia Social Abierta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-cl</language>
-    <lastBuildDate>Sun, 20 Dec 2020 12:50:46 +0200</lastBuildDate><atom:link href="https://lisa-coes.netlify.app/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Oct 2021 12:50:46 +0200</lastBuildDate>
+    
+	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Publicaciones libres</title>
-      <link>https://lisa-coes.netlify.app/03componentes/</link>
-      <pubDate>Sun, 20 Dec 2020 12:50:46 +0200</pubDate>
+      <link>/04componentes/</link>
+      <pubDate>Mon, 18 Oct 2021 12:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/03componentes/</guid>
-      <description>Guía para la publicación En desarrollo</description>
+      <guid>/04componentes/</guid>
+      <description>Guía para las publicaciones libresCuando hablamos de publicación científica no solo nos referimos a la publicación en revistas indexadas y de acceso por suscripción, también existe una vía que permite a las/os investigadores publicar sus trabajos de manera abierta, es decir que el acceso a los resultados de la investigación sea gratuito, logrando de este modo mayor visibilidad, un potencial aumento de la tasa de citación y una incidencia positiva en la libre circulación del conocimiento.</description>
     </item>
     
     <item>
       <title>Análisis reproducibles</title>
-      <link>https://lisa-coes.netlify.app/02componentes/</link>
+      <link>/03componentes/</link>
       <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/02componentes/</guid>
-      <description>Guía para realizar análisis reproducibles En desarrollo</description>
+      <guid>/03componentes/</guid>
+      <description>Análisis reproducibles </description>
+    </item>
+    
+    <item>
+      <title>Diseño transparente</title>
+      <link>/01componentes/</link>
+      <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
+      
+      <guid>/01componentes/</guid>
+      <description>Guía para transparencia de diseñoUno de los principios que guía la producción científica es el escepticismo organizado. Esto quiere decir que la validez de los hallazgos científicos recae en la evaluación crítica de parte de los miembros comunidad científica. Sin embargo, la prevalencia de prácticas cuestionables de investigación en distintas disciplinas ha puesto en tela de juicio que esta evaluación crítica se esté logrando, suscitado el interés de los científicos por desarrollar herramientas que hagan la investigación más transparente.</description>
     </item>
     
     <item>
       <title>Datos abiertos</title>
-      <link>https://lisa-coes.netlify.app/01componentes/</link>
+      <link>/02componentes/</link>
       <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/01componentes/</guid>
+      <guid>/02componentes/</guid>
       <description>Guía para la apertura de datosEn parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de compartir nuestros datos al resto de la comunidad científica pero muchas veces no sabemos cómo lograrlo. ¿Cómo abrir nuestros datos? ¿Qué criterios debo cumplir para que sean publicados? ¿Dónde y cómo publicarlos? En el siguiente blog te contestaremos estas preguntas.</description>
     </item>
     
     <item>
       <title>¿Qué es la Ciencia Abierta?</title>
-      <link>https://lisa-coes.netlify.app/02novedades/</link>
+      <link>/02novedades/</link>
       <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/02novedades/</guid>
+      <guid>/02novedades/</guid>
       <description>¿Qué es la Ciencia Abierta? ¿Porqué practicarla en Ciencias Sociales? Ciencia abierta en Ciencias Sociales Estado actual en Chile Qué ofrece LISA Herramientas disponibles </description>
     </item>
     
     <item>
       <title>Lanzamiento Laboratorio Ciencia Social Abierta</title>
-      <link>https://lisa-coes.netlify.app/01novedades/</link>
+      <link>/01novedades/</link>
       <pubDate>Sat, 19 Dec 2020 13:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/01novedades/</guid>
+      <guid>/01novedades/</guid>
       <description>Lanzamiento Laboratorio Ciencia Social Abierta En &amp;hellip; realizada el &amp;hellip; a las &amp;hellip; horas se presentó el Laboratorio de Ciencia Social Abierta con su sitio web que aloja una guía para &amp;hellip; y herramientas para &amp;hellip;
 La actividad consistió en la presentación de &amp;hellip;, con la participación de &amp;hellip;
 Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una iniciativa innovadora en &amp;hellip; A su vez, &amp;hellip; indicó que &amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>Publicaciones Libres</title>
+      <link>/componenteoa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/componenteoa/</guid>
+      <description>Cuando hablamos de publicación científica no solo nos referimos a la publicación en revistas indexadas y de acceso por suscripción, también existe una vía que permite a las/os investigadores publicar sus trabajos de manera abierta, es decir que el acceso a los resultados de la investigación sea gratuito, logrando de este modo mayor visibilidad, un potencial aumento de la tasa de citación y una incidencia positiva en la libre circulación del conocimiento.</description>
+    </item>
+    
+    <item>
+      <title>Transparencia del diseño de investigación</title>
+      <link>/componentetransparency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/componentetransparency/</guid>
+      <description>Uno de los principios que guía la producción científica es el escepticismo organizado. Esto quiere decir que la validez de los hallazgos científicos recae en la evaluación crítica de parte de los miembros comunidad científica. Sin embargo, la prevalencia de prácticas cuestionables de investigación en distintas disciplinas ha puesto en tela de juicio que esta evaluación crítica se esté logrando, suscitado el interés de los científicos por desarrollar herramientas que hagan la investigación más transparente.</description>
     </item>
     
   </channel>

@@ -51,7 +51,7 @@ paginate = 10
     url = "/contacto/"
     weight = 4
 
-
+#-------------------------
 [[menu.main]]
     identifier = "blog"
     name = "Componentes"
@@ -78,6 +78,7 @@ paginate = 10
     name = "4. Publicaciones libres"
     url = "/04componentes/"
 
+#-------------------------
 [[menu.main]]
     identifier = "news"
     name = "Interés"

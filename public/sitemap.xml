@@ -3,183 +3,196 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://lisa-coes.netlify.app/categories/</loc>
+    <loc>/blog/</loc>
+    <lastmod>2021-10-18T12:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2021-10-18T12:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ciencia-abierta/</loc>
+    <lastmod>2021-10-18T12:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/componentes/</loc>
+    <lastmod>2021-10-18T12:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/componentes/</loc>
+    <lastmod>2021-10-18T12:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-10-18T12:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/publicaciones/</loc>
+    <lastmod>2021-10-18T12:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/04componentes/</loc>
+    <lastmod>2021-10-18T12:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-10-18T12:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/como-hacer-codebook/</loc>
     <lastmod>2021-05-11T10:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/categories/componentes/</loc>
-    <lastmod>2021-05-11T10:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lisa-coes.netlify.app/</loc>
-    <lastmod>2021-05-11T10:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lisa-coes.netlify.app/como-hacer-codebook/</loc>
-    <lastmod>2021-05-11T10:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lisa-coes.netlify.app/blog/</loc>
+    <loc>/novedades/</loc>
     <lastmod>2020-12-20T12:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/tags/ciencia-abierta/</loc>
+    <loc>/novedades/03componentes/</loc>
     <lastmod>2020-12-20T12:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/tags/componentes/</loc>
-    <lastmod>2020-12-20T12:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lisa-coes.netlify.app/novedades/</loc>
-    <lastmod>2020-12-20T12:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lisa-coes.netlify.app/tags/publicaciones/</loc>
-    <lastmod>2020-12-20T12:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lisa-coes.netlify.app/03componentes/</loc>
-    <lastmod>2020-12-20T12:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lisa-coes.netlify.app/novedades/03componentes/</loc>
-    <lastmod>2020-12-20T12:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lisa-coes.netlify.app/tags/</loc>
-    <lastmod>2020-12-20T12:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://lisa-coes.netlify.app/tags/analisis/</loc>
+    <loc>/tags/analisis/</loc>
     <lastmod>2020-12-20T11:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/02componentes/</loc>
+    <loc>/03componentes/</loc>
     <lastmod>2020-12-20T11:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/novedades/02componentes/</loc>
+    <loc>/novedades/02componentes/</loc>
     <lastmod>2020-12-20T11:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/tags/codigo/</loc>
+    <loc>/tags/codigo/</loc>
     <lastmod>2020-12-20T11:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/tags/datos/</loc>
+    <loc>/01componentes/</loc>
+    <lastmod>2020-12-20T11:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/datos/</loc>
     <lastmod>2020-12-20T10:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/01componentes/</loc>
+    <loc>/02componentes/</loc>
     <lastmod>2020-12-20T10:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/input/01componentes/</loc>
+    <loc>/input/01componentes/</loc>
     <lastmod>2020-12-20T10:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/novedades/01componentes/</loc>
+    <loc>/novedades/01componentes/</loc>
     <lastmod>2020-12-20T10:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/input/</loc>
+    <loc>/input/</loc>
     <lastmod>2020-12-20T10:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/categories/novedades/</loc>
+    <loc>/categories/novedades/</loc>
     <lastmod>2020-12-20T10:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/02novedades/</loc>
+    <loc>/02novedades/</loc>
     <lastmod>2020-12-20T10:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/novedades/02novedades/</loc>
+    <loc>/novedades/02novedades/</loc>
     <lastmod>2020-12-20T10:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/tags/abierta/</loc>
+    <loc>/tags/abierta/</loc>
     <lastmod>2020-12-19T13:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/tags/lanzamiento/</loc>
+    <loc>/tags/lanzamiento/</loc>
     <lastmod>2020-12-19T13:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/01novedades/</loc>
+    <loc>/01novedades/</loc>
     <lastmod>2020-12-19T13:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/novedades/01novedades/</loc>
+    <loc>/novedades/01novedades/</loc>
     <lastmod>2020-12-19T13:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/equipo/</loc>
+    <loc>/equipo/</loc>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/links/</loc>
+    <loc>/links/</loc>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/practica/</loc>
+    <loc>/practica/</loc>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/test/</loc>
+    <loc>/test/</loc>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/app/</loc>
+    <loc>/app/</loc>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/app/tool01/</loc>
+    <loc>/app/tool01/</loc>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/contact/</loc>
+    <loc>/contact/</loc>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/contacto/</loc>
+    <loc>/contacto/</loc>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/app/tool02/</loc>
+    <loc>/componenteoa/</loc>
   </url>
   
   <url>
-    <loc>https://lisa-coes.netlify.app/app/tool03/</loc>
+    <loc>/app/tool02/</loc>
+  </url>
+  
+  <url>
+    <loc>/componentetransparency/</loc>
+  </url>
+  
+  <url>
+    <loc>/app/tool03/</loc>
   </url>
   
 </urlset>

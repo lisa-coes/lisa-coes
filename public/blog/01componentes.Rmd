@@ -1,192 +1,97 @@
 ---
 author: LISA
-banner: img/banners/blog-2.png
+banner: img/banners/blog-3.png
 categories:
 - componentes
-date: "2020-12-20T10:50:46+02:00"
+date: "2020-12-20T11:50:46+02:00"
 description: 
 tags:
 - componentes
 - ciencia abierta
-- datos
-title: Datos abiertos
-linkcolor: blue
-link-citations: yes
-editor_options:
-  chunk_output_type: console
+- analisis
+- codigo
+title: Diseño transparente
 ---
 
+# Guía para transparencia de diseño
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(warning = FALSE, message = FALSE, cache = FALSE,echo = F)
-pacman::p_load(dplyr, kableExtra,sjlabelled, readxl)
-options(scipen=999,
-        knitr.kable.NA = '',
-        knitr.graphics.error = FALSE)
-Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
-```
+Uno de los principios que guía la producción científica es el escepticismo organizado. Esto quiere decir que la validez de los hallazgos científicos recae en la evaluación crítica de parte de los miembros comunidad científica. Sin embargo, la prevalencia de prácticas cuestionables de investigación en distintas disciplinas ha puesto en tela de juicio que esta evaluación crítica se esté logrando, suscitado el interés de los científicos por desarrollar herramientas que hagan la investigación más transparente. Una de las herramientas más utilizadas en el último tiempo son los preregistros. En el siguiente blog te entregaremos el paso a paso para preregistrar un artículo de acuerdo con las distintas situaciones y tipos de investigación.
 
-```{r load, echo = F}
-table<- readxl::read_excel("../input/summary-opendata.xlsx")
-```
+## ¿Qué son los pregistros?
 
-# Guía para la apertura de datos
 
-En parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de **compartir nuestros datos al resto de la comunidad científica** pero muchas veces no sabemos cómo lograrlo. *¿Cómo abrir nuestros datos? ¿Qué criterios debo cumplir para que sean publicados? ¿Dónde y cómo publicarlos?* En el siguiente blog te contestaremos estas preguntas.
 
-- [Paso 1: ¿Qué es lo que necesito?](#paso1)
-- [Paso 2: ¿Cómo darle en un formato aceptable?](#paso2)
-  - [Base de datos](#basedatos)
-  - [Cuestionario](#cuestionario)
-  - [Libro de códigos](#codebook)
-    - [¿Cómo hacer un libro de códigos de manera automática?](https://lisa-coes.netlify.app/como-hacer-codebook)
-  - [Ficha técnica](#fichatecnica)
-- [Paso 3 : ¿Cómo publicar?](#paso3)
+Los preregistros son una marca temporal sobre las decisiones que se han tomado respecto al diseño de investigación: qué hipótesis se pondrán a prueba, cómo se obtendrán los datos, cómo se analizarán etc. Su característica principal es que se efectúan antes de la recopilación y análisis de los datos, con tal de minimizar las oportunidades para realizar prácticas cuestionables de investigación (e.g. cambiar las hipótesis una vez que se conocen los resultados). Existen formas de preregistrar estudios en otras situaciones, como en estudios con datos secundarios o estudios de replicación, lo que nos lleva al primer paso de este blog.
 
-# Paso 1: ¿Qué es lo que necesito?{#paso1}
+### Paso 1: ¿Qué estudio estoy preregistrando?
 
-Empecemos con lo primero: qué elementos debo considerar para compartir los datos de mi proyecto. En general, lo que tenemos o recibimos (cuando encargamos el terreno) de nuestro estudio son cuatro elementos:
-<center>
 
-![](../input/lisa-elementos-3.png)
 
-</center>
 
-**`1. Bases de datos`**: archivo que contiene la información recopilada. Este archivo puede estar en  distintos formatos, como por ejemplo, en *.csv* y *.xlsx* (Excel), *.sav* (SPSS), *.dta* (STATA) o *.RData* (R).
+El primer paso es **clarificar las caracteristicas de nuestro estudio**. Esto es importante ya que la forma en la que preregistremos estará directamente relacionada al tipo de estudio que estamos efectuando, por ejemplo, si es un estudio experimental con datos primarios, o un estudio observacional con datos secundarios. También podría ser el caso que nuestro objetivo no sea elaborar un artículo original, sino que replicar uno ya existente. Considerando estas distintas situaciones, proponemos hacernos tres preguntas clave para dilucidar las características importantes de nuestro estudio:
 
-**`2. Cuestionario`**: en caso de estar trabajando con una encuesta, es el archivo que contiene las preguntas que se le realizaron a los participantes del estudio. Es un documento de texto que está en formato *.pdf* o *.docs*. 
+1. _¿Estoy publicando bajo el formato de publicación tradicional o el formato de registered reports?_  
+2. En el caso de que sea el modelo tradicional: _¿Nuestro estudio es un artículo original o una replicación?_  
+3. En el caso que sea un artículo original: _¿Usamos datos primarios o secundarios?_  
 
-**`3. Libro de códigos`**: es un documento donde aparece información de las variables, valores y etiquetas, correspondientes a la base de datos. En este podemos ver claramente indicada la asociación entre las preguntas del cuestionario y las variables de la base datos.
 
-<a class = "btn btn-template-main" href="https://lisa-coes.netlify.app/como-hacer-codebook">Crear libro de códigos</a> 
+<style>
+div.blue { background-color:#ec8686; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
 
+**¿Qué son los _registered reports_?**
 
-**`4. Ficha técnica`**: o también nombrado "informe metodológico", es el documento que nos permite conocer características del diseño metodológico propias del instrumento de análisis. En el encontraremos información sobre el terreno, tipo de instrumento y, en algunas ocasiones, una descripción sobre los datos recopilados.
+Los _registered reports_ (en español, informes registrados), son un modelo alternativo de publicación donde la revisión por pares ocurre antes del análisis de datos, en contraste al modelo tradicional donde la revisión por pares ocurre con el artículo finalizado. En el modelo de _registered reports_ la revisión se hace previo a la recolección y análisis de resultados con el objetivo de que el artículo sea aceptado por su su pregunta de investigación novedosa y su diseño novedoso, en vez de por sus hallazgos. Un artículo que pasa la revisión por pares se le considera aceptado preliminarmente (IPA, _in principle acceptance_) y una vez acabado (i.e. después de la recopilación y análisis de datos) debe pasar por otro proceso de revisión, donde se evalúa si el análisis se orientó bajo el diseño previamente establecido.
 
-En algunas ocasiones no todos estos elementos están presentes. Si es así ¡no es tiempo de abandonar la cruzada por abrir tus datos! En el siguiente paso podrás conocer cuál es su **formato admisibles** y **cómo elaborarlos en caso de que no los tengas**. 
+</div>
 
-# Paso 2: ¿Cómo darle en un formato aceptable?{#paso2}
 
-## `1. Bases de datos`{#base-datos}
 
-Para resguardar la calidad de nuestros datos debemos asegurar una correcta **codificación de las respuestas y nombramiento de las variables**, ambas bases fundamentales de los datos (filas y columnas). Un paso inicial es realizar un **análisis descriptivo de los datos** para reconocer posibles problemas producidos por digitación, por ejemplo.
+<style>
+div.blue { background-color:#ec8686; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
 
-### 1.1 Codificación de las respuestas
+**¿Qué son los estudios de replicación?**
 
-**1.1.2 Identificar casos perdidos**: se deben clasificar a los tipos de perdido de manera diferenciada. Esto implica que codificar con distintos números los perdidos como: *"No sabe", "No responde", "No aplica", "Sin dato", "Error de proceso/Dato no disponible".* Te proponemos el siguiente esquema
+Son estudios que buscan reproducir los hallazgos de una investigación usando datos distintos al estudio original. Su objetivo es conocer si los hallazgos obtenidos originalmente aplican a otros sujetos y otras circunstancias.
+</div>
 
-<center>
+La respuesta a estas preguntas estará estrechamente relacionada a las plantillas de pre-registro que usemos, lo que lleva al siguiente paso.
 
-| Respuesta        | Código numérico |
-| ---------------- |:-------------:|
-| No responde      | -999 |
-| No sabe          | -998 |
-| Error de proceso | -997 |
-| No aplica        | -996 |
-| Sin dato         | -995 |
-| No disponible    | -994 |
+## Paso 2: ¿Qué plantilla debo usar?
 
-</center>
-</br>
 
-**1.1.2. Identificación de unidades de observación**: debemos asegurarnos de tener tantas variables identificadoras como unidades de análisis tengamos. Esto quiere decir, que si nuestros datos incluyen información tanto a nivel individual como grupal de nuestras observaciones, debemos identificarlos en distintas variables. Por ejemplo, imaginémos que estamos realizando un estudio panel a empresas. En los datos tenemos que tener disponible una variable `id-empresa` y `id-empresa-tiempo` (que nos designará un identificador de la ocurrencia de respuesta). 
 
-### 1.2 Nombres de variables
+Una vez que tenemos claras las características de nuestro estudio, el siguiente paso es **elegir nuestra plantilla**. Las plantillas de preregistro son un conjunto de preguntas preestablecidas que orientan el registro de la información importante de nuestro estudio. Como equipo LISA proponemos categorizar las plantillas en cinco tipos: genéricas, para datos primarios, para datos secundarios, para replicaciones y para _registered reports_. Sus descripciones y el enlace a la plantilla se ven en la siguiente tabla:
 
-Las variables son el elemento con el cuál trabajamos cuando analizamos datos. Por ello deben responder a dos criterios
+####### Tabla 1. Categorización de plantillas
 
-**1.2.1. Claridad y coherencia**: para cada escala o módulo temático de tu instrumento, debes incorporar una letra distinta seguido de un número. Por ejemplo, para el módulo S `s_1`, `s_2` y para el módulo O `o_1`, `o_2`, ... 
+| Categoría de la plantilla | Nombre original plantilla                              | Descripción                                                                                                                                                                                                                                                                                               | Enlace                                                                                                 |
+|---------------------------|--------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| Genéricas                 | OSF Standard o AsPredicted                             | Se pueden usar para cualquier tipo de estudio, contienen preguntas generales. Las más conocidas son AsPredicted y OSF Estándar.                                                                                                                                                                           | - AsPredicted: https://aspredicted.org/    - OSF Estándar: https://osf.io/preprints/metaarxiv/epgjd/   |
+| Para datos primarios      | OSF-Standard Pre-Data Collection Registration          | Las plantillas genéricas son suficientes para este tipo de estudios. Sin embargo, existe una plantilla en particular que se utiliza en el caso de que el preregistro del estudio se haya hecho en un documento a parte y no en OSF. Esta plantilla registra la forma en la que se recolectaron los datos. | https://osf.io/9j6d7/                                                                                  |
+| Para datos secundarios    | Template Preregistration of Preexisting Data           | Se utilizan cuando los datos a utilizar son secundarios, por ejemplo, bases de datos de encuestas o datos administrativos.                                                                                                                                                                                | https://osf.io/p26rq/                                                                                  |
+| Para replicaciones        | Replication Recipe: Preregistration y Post-Compleition | Se utilizan cuando el objetivo de un estudio es la replicación de otro estudio. Existe una plantilla para antes de elaborar la replicación y otra para después.                                                                                                                                           | - Antes de la replicación: https://osf.io/4jd46/    - Después de la replicación: https://osf.io/9rp6j/ |
+| Para _registered reports_ | Registered Reports Protocol                            | Se utilizan cuando un artículo ha pasado la primera revisión por pares bajo el modelo de _registered reports_.                                                                                                                                                                                            | https://osf.io/gm36s/                                                                                  |
 
-Otra opción es trabajar con abreviaturas nemotécnicas, es decir, nombres corrtos de las variables que representan el significado del ítem. Por ejemplo, `nt_mujeres` para designar el *Número de trabajadores mujeres* en la empresa que estudiamos.  
 
+Las preguntas que nos hicimos en el primer paso nos ayudarán a escoger la plantilla de pre-registro. Siguiendo la tabla, podemos rastrear cómo llegar a cada plantilla. Si nuestro estudio está siguiendo el modelo de registered reports y ha sido aceptado preliminarmente (IPA) entonces utilizamos _Registered Reports Protocol_. En cambio, si nuestro estudio sigue el modelo tradicional nos preguntamos si es un artículo original o de replicación. Si es un articulo original con datos primarios, podemos usar las plantillas génericas de _AsPredicted_ y _OSF Standard_ o, si ya contamos con un documento aparte de preregistro, podemos utilizar la plantilla complementaria _OSF-Standard Pre-Data Colecction_. Si es un articulo original con datos secundarios utilizamos la plantilla  _Template Preregistration of Preexisting Data_. Por último, si nuestro estudio no es original sino que es un estudio de replicación, utilizamos la plantilla _Replication Recipe: Preregistration_ si la estamos rellenando previo a hacer el estudio y _Replication Recipe: Post-Compleiton_ si la estamos rellenando posterior al estudio. 
+ 
 
-**1.2.2 Utilizables**: como la idea central es poder compartir nuestros datos, estos deben ser poder abiertos por otros softwares. Para ello las variables deben cumplir estos puntos:
+## Paso 3: ¿Cómo relleno la plantilla?
 
-![](../input/lisa-tabla.png)
 
-</br>
+Una vez tenemos claro cuál es la plantilla que ocuparemos, es hora de **rellenarla**. El flujo de rellenado será distinto de acuerdo a la plantilla que hayamos escogido. En el video a continuación revisaremos cómo rellenar la plantilla de acuerdo a tres situaciones distintas: a) que hayamos escogido usar la plantilla génerica de AsPredicted, b) que hayamos escogido la plantilla estándar de OSF y c) que ya tengamos un documento de preregistro y decidimos usar la plantilla complementaria para datos primarios.
 
-🗸 Si decides etiquetar tus variables con alguna descripción sobre estas, debes guardarlas en un formato como *.sav, .dta o .RData* para que conserve esta característica
+## En síntesis
 
-## `2. Cuestionario`{#cuestionario}
+Existe una estrecha relación entre las características de nuestro estudio y la plantilla que usaremos para preregistrar. Un flujo de preguntas que sintetiza la elección de las plantillas se puede ver en la siguiente imagen:
 
-Debes asegurar que se cumplan los siguientes puntos
 
-🔴 El cuestionario disponible es el que efectivamente fue aplicado (¡no es trivial! muchas veces elaboramos varias versiones de este antes de aplicarlo)
+```{r echo=FALSE, out.width='50%', fig.align='center',fig.cap='Flujo de preguntas para escoger plantillas'}
+knitr::include_graphics("../input/flujopreg.png")
+``` 
 
-🔴 El orden y fraseo de preguntas y categorías de respuesta debe corresponder al efectivamente aplicado
-
-🗸 Para evitar ediciones posteriores, recomendamos mantener el cuestionario en *.pdf*
-
-## `3. Libro de códigos`{#codebook}
-
-Este documento es clave para que los (futuros) usuarios/as de sus datos cuenten con información suficiente para utilizarlos correctamente. Para que cumpla su objetivo debes verificar que hay coherencia entre 
-
-🔴 La pregunta del cuestionario y la variable indicada
-
-🔴 El orden de las categorías de respuesta en el cuestionario  y en los valores codificados en la base de datos
-
-🔴 El número de preguntas/ítems disponibles en el cuestionario y el número de variables disponibles en los datos. *Solo en algunos casos, por cuestiones de anonimización, no se disponen públicamente de todas las preguntas consultadas*
-
-🗸 Para evitar ediciones posteriores, recomendamos mantener el [libro de códigos](https://lisa-coes.netlify.app/como-hacer-codebook) en *.pdf*
-
-<a class = "btn btn-template-main" href="https://lisa-coes.netlify.app/como-hacer-codebook">Crear libro de códigos</a> 
-
-
-## `4. Ficha Técnica`{#fichatecnica}
-
-Este resumen sobre el diseño metodológico aplicado debe incluir como mínimo los siguientes puntos:
-
-🔴 **Estrategia de recolección de información**: se debe indicar el *tipo de instrumento* (eg. encuesta, datos administrativos, etc.), población y muestra objetivo. 
-
-
-🔴 **Descripción del terreno**: cuándo, cómo y dónde fue aplicado el terreno. Es decir, se debe indicar la fecha de aplicación, formato (presencial, online,telefónica, cuestionario auto-aplicado) y ubicación geográfica. También si hubieron hitos o perturbaciones importantes al desarrollo del estudio. 
-
-🔴 **Descripción muestral** (*solo en caso de encuestas*): indica el tipo de muestreo, tasa de respuesta y variables principales que permitieron construir los ponderadores y factores de expansión. 
-
-🔴 **Identificación de la institución responsable**: ya sea una consultora o el mismo equipo a cargo de la investigación, esto debe estar especificado en la ficha. 
-
-De todas maneras, una ficha metodológica puede incluir muchos más elementos, por ejemplo, una revisión de la distribución de las variables y/o una presentación de los tópicos incluidos en la base de datos. 
-
-🗸 Para evitar ediciones posteriores, recomendamos mantener la ficha técnica en *.pdf*
-
-## En síntesis{#sintesis}
-
-```{r, results='asis', echo = F}
-dt_url <- c("https://lisa-coes.netlify.app/input/ELSOC_Wide_2016_2019_v1.00_SPSS.sav",
-            "https://lisa-coes.netlify.app/input/ELSOC_Wide_2016_2019_v1.00_SPSS.sav",
-            "https://lisa-coes.netlify.app/input/datos-issp.zip",
-            "https://lisa-coes.netlify.app/input/datos-issp.zip",
-            "https://lisa-coes.netlify.app/input/cuestionario-elsoc.pdf",
-            "https://lisa-coes.netlify.app/input/cuestionario-issp.pdf",
-            "lisa-coes.netlify.app/input/codebook-ohl.pdf",
-            "https://lisa-coes.netlify.app/input/codebook-issp.pdf",
-            "https://lisa-coes.netlify.app/input/ficha-tecnica-elsoc.pdf",
-            "https://lisa-coes.netlify.app/input/ficha-tecnica-elsoc.pdf",
-            "https://lisa-coes.netlify.app/input/ficha-tecnica-issp.pdf",
-            "https://lisa-coes.netlify.app/input/ficha-tecnica-issp.pdf")
-
-table <- table %>% 
-mutate(model = cell_spec(Ejemplo, "html", link = dt_url))  
-table %>% select(-Ejemplo) %>% 
-kableExtra::kbl(., full_width = T, linesep = "", escape = FALSE) %>%
-  kable_styling(
-    full_width = F,
-    position = "center",
-    font_size = 14,
-    bootstrap_options=c("striped", "bordered", "condensed", "responsive")) %>%  kableExtra::collapse_rows(columns = 1:5)
-```
-
-<a class = "btn btn-template-main" href="/input/lisa-lista-recomendaciones.pdf">Descargar listado de recomendaciones para rellenar</a> 
-
-# Paso 3 : ¿Cómo publicar?{#paso3}
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kFhxs-EfUqA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
----
-
-## ¿Quieres comentar o tienes alguna duda?
-
-Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes [contactarnos](/contact/)
-
-<div id="disqus_thread"></div>
+<!-- ![](flujopreg.png) -->

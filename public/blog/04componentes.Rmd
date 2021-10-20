@@ -1,0 +1,115 @@
+---
+author: LISA
+banner: img/banners/blog-4.png
+categories:
+- componentes
+date: "2021-10-18T12:50:46+02:00"
+description: 
+tags:
+- componentes
+- ciencia abierta
+- publicaciones
+title: Publicaciones libres
+linkcolor: blue
+link-citations: yes
+editor_options:
+  chunk_output_type: console
+---
+
+# Guía para las publicaciones libres
+
+Cuando hablamos de publicación científica no solo nos referimos a la publicación en revistas indexadas y de acceso por suscripción, también existe una vía que permite a las/os investigadores publicar sus trabajos de manera abierta, es decir que el acceso a los resultados de la investigación sea gratuito, logrando de este modo mayor visibilidad, un potencial aumento de la tasa de citación y una incidencia positiva en la libre circulación del conocimiento. 
+
+En el siguiente blog te entregaremos el paso a paso de como adoptar practicas de acceso abierto para publicar tus investigaciones.
+
+- [¿Qué es el Open Access?](#paso1)
+  - [Tipos de licencias](#prop-intel)
+- [Paso 1: ¿Cuál es la política de OA de la revista?](#paso1)
+- [Paso 2: ¿En qué etapa está mi artículo?](#paso2)
+- [Paso 3: ¿Cómo publicar un preprint?](#paso3)
+
+
+# ¿Qué es el Open Access?{#def-oa}
+
+Open Access (OA) es un movimiento cuyo objetivo es promover el acceso libre a la producción de conocimiento científico digital y hacer uso de él sin restricciones de copyright. 
+
+Hoy en día, el Open Access nos abre un camino de accesibilidad pero también de perfeccionamiento y calidad, entregando así la posibilidad de reutilizar la información, los datos y los propios procesos de investigación. 
+
+
+<!-- Esto a la base de estándares internacionales que permiten instalar la posibilidad de que cualquier persona pueda reutilizar la información de la investigación en cuanto datos, procesos y resultados.  -->
+
+<!-- Publicar nuestros artículos de manera abierta permitirá hacer del acceso a la información un camino mucho más sencillo, rápido e inmediato. -->
+
+
+## Tipos de licencias {#prop-intel}
+
+Existen licencias que regulan la propiedad intelectual [(World Intelectual Propiety Organization, 2020)](https://www.wipo.int/about-ip/en/){target="_blank"}, pues protegen los derechos patrimoniales y establecen las reglas para el debido uso de la obra, las más importantes son:  
+
+`1.  Copyright:` permite que el autor se reserve todos los derechos sobre la obra y solo se puede hacer uso de ella bajo permiso del mismo.  
+
+`2.  Creative Commons (CC):` tiene el propósito de desarrollar herramientas digitales que faciliten la distribución de una obra, pues entrega al autor la responsabilidad de autorizar el modo de uso, difusión y citación de su obra. Al día de hoy existen seis tipos de licencias CC [(Creative Commons, 2019).](https://creativecommons.org/about/cclicenses/){target="_blank"}
+
+```{r echo=FALSE, out.width='50%', fig.align='center'}
+# knitr::include_graphics("https://lisa-coes.github.io/open-access/docs/images/licencias.png")
+```
+
+
+```{r echo=FALSE, out.width='75%', fig.align='center'}
+knitr::include_graphics("../input/lisa-open-access.gif")
+```
+
+
+# Paso 1: ¿Cuál es la política de OA de la revista?{#paso1}
+
+El primer paso para publicar en abierto tiene que ver con la elección de la revista o repositorio donde queremos alojar nuestro trabajo. Para saber si posee o no políticas que permitan la publicación abierta solo debes ingresar a [SherpaRomeo](https://v2.sherpa.ac.uk/romeo/){target="_blank"}, escribir el nombre de la revista y ¡listo! El servidor te entregará de manera automática un resumen del tipo de repositorio y las políticas de acceso abierto asociadas a la revista.
+
+En este paso es importante considerar que existen cinco tipos de repositorios (rutas) donde cada uno posee características singulares que debemos considerar a la hora de depositar nuestro trabajo.
+
+🔴  Ruta Dorada:  Corresponden a repositorios que publican trabajos de investigación en forma gratuita para el lector, por lo que se puede leer cualquier artículo inmediatamente después de ser publicado. 
+
+🔴  Ruta Verde: Consiste en un proceso de “auto-archivo o auto-depósito” donde los autores comparten sus documentos en sus páginas personales o en revistas que no son gratuitas, pero que poseen repositorios de acceso libre. 
+
+🔴  Ruta Híbrida: Gran parte de las editoriales académicas utilizan este modelo con el objetivo de ofrecer Acceso Abierto al mismo tiempo en el que mantienen su modelo de negocio habitual basado en suscripciones. 
+
+🔴  Ruta Diamante: Este posibilita la revisión por pares de los trabajos enviados por medio de investigadores que trabajan como voluntarios, obteniendo de esta forma reconocimiento académico y social. 
+
+🔴  Ruta Bronce: Corresponde a una nueva categoría donde los editores alojan artículos embargados en sitios web de su preferencia, de modo que los trabajos carecen de licencias que permitan su uso autorizado.
+
+🗸 Si deseas saber más de cada una de las rutas puedes hacer click aquí: 
+
+<a class = "btn btn-template-main" href="https://lisa-coes.github.io/lisa-book/formas-open-access.html" target="_blank">Rutas de Acceso Abierto</a> 
+
+
+# Paso 2: ¿En qué etapa está mi artículo?{#paso2}
+
+Una vez elegida la revista, en el segundo paso es necesario tener conciencia de la etapa en la que se encuentra nuestro documento, es decir si corresponde a un pre-print, un post-print o un print. Ello con el objetivo de alojar nuestro documento de manera eficaz en repositorios acordes a las características de nuestro artículo.
+
+🔴 **Pre-print**: Es lo que se conoce como el borrador del artículo que es enviado al proceso de revisión por pares de una revista. Las ventajas de este documento es que puede ser publicado de manera abierta en cualquier repositorio de ruta verde y ello permite que la información se encuentre disponible de manera inmediata sin perjudicar la posterior publicación oficial del artículo.
+
+🔴 **Post-print**: Corresponde al artículo aceptado tras la revisión por pares, pero cuyo formato de presentación no ha sido adaptado al requerido, por lo que no se encuentra publicado.
+
+🔴  **Print:** Es el artículo final que se encuentra publicado bajo el nombre de la revista, cuya editorial reserva para si los derechos patrimoniales de la obra y los equipos de investigación mantienen el derecho al reconocimiento.
+
+# Paso 3: ¿Cómo publicar un preprint?{#paso3} 
+
+Como mencionamos antes, un artículo en cualquiera de las tres etapas puede ser publicado de manera abierta, lo cual no afecta a la posterior indexación en revistas. Recomendamos alojar el pre-print o el post-print en [SocArxiv](https://osf.io/preprints/socarxiv){target="_blank"}.
+
+Para realizar esta labor, primero debemos dirigirnos a la plataforma de [OSF (Open Acience Framework)](https://osf.io/preprints/){target="_blank"}, crearnos una cuenta y subir el archivo en formato PDF a la plataforma. Las ventajas de alojar el documento en OSF es que se obtiene automáticamente un Identificador del Objeto Digital (DOI, en sus siglas en inglés) que permite ubicar el documento en la web.
+
+<!-- # En síntesis -->
+ 
+
+```{r echo=FALSE, out.width='50%', fig.align='center'}
+# knitr::include_graphics("https://lisa-coes.github.io/open-access/docs/images/flujo_lisa.png")
+``` 
+
+[VIDEO]
+
+<!-- ![](https://lisa-coes.github.io/open-access/docs/images/flujo_lisa.png) -->
+
+## ¿Quieres comentar o tienes alguna duda?
+
+Puedes dejar tus comentarios y dudas sobre cómo publicar tu artículo en nuestro foro. De todas formas puedes [contactarnos](/contact/)
+
+<div id="disqus_thread"></div>
+
