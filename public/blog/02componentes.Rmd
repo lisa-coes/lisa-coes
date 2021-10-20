@@ -4,7 +4,7 @@ banner: img/banners/blog-2.png
 categories:
 - componentes
 date: "2020-12-20T10:50:46+02:00"
-description: 
+description:
 tags:
 - componentes
 - ciencia abierta
@@ -29,8 +29,9 @@ Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
 ```{r load, echo = F}
 table<- readxl::read_excel("../input/summary-opendata.xlsx")
 ```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-# Guía para la apertura de datos
+# Guía para la apertura de datos <i class="ai ai-open-data ai-1.5x" style="color:lightgreen"></i>
 
 En parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de **compartir nuestros datos al resto de la comunidad científica** pero muchas veces no sabemos cómo lograrlo. *¿Cómo abrir nuestros datos? ¿Qué criterios debo cumplir para que sean publicados? ¿Dónde y cómo publicarlos?* En el siguiente blog te contestaremos estas preguntas.
 
@@ -54,16 +55,16 @@ Empecemos con lo primero: qué elementos debo considerar para compartir los dato
 
 **`1. Bases de datos`**: archivo que contiene la información recopilada. Este archivo puede estar en  distintos formatos, como por ejemplo, en *.csv* y *.xlsx* (Excel), *.sav* (SPSS), *.dta* (STATA) o *.RData* (R).
 
-**`2. Cuestionario`**: en caso de estar trabajando con una encuesta, es el archivo que contiene las preguntas que se le realizaron a los participantes del estudio. Es un documento de texto que está en formato *.pdf* o *.docs*. 
+**`2. Cuestionario`**: en caso de estar trabajando con una encuesta, es el archivo que contiene las preguntas que se le realizaron a los participantes del estudio. Es un documento de texto que está en formato *.pdf* o *.docs*.
 
 **`3. Libro de códigos`**: es un documento donde aparece información de las variables, valores y etiquetas, correspondientes a la base de datos. En este podemos ver claramente indicada la asociación entre las preguntas del cuestionario y las variables de la base datos.
 
-<a class = "btn btn-template-main" href="https://lisa-coes.netlify.app/como-hacer-codebook">Crear libro de códigos</a> 
+<a class = "btn btn-template-main" href="https://lisa-coes.netlify.app/como-hacer-codebook">Crear libro de códigos</a>
 
 
 **`4. Ficha técnica`**: o también nombrado "informe metodológico", es el documento que nos permite conocer características del diseño metodológico propias del instrumento de análisis. En el encontraremos información sobre el terreno, tipo de instrumento y, en algunas ocasiones, una descripción sobre los datos recopilados.
 
-En algunas ocasiones no todos estos elementos están presentes. Si es así ¡no es tiempo de abandonar la cruzada por abrir tus datos! En el siguiente paso podrás conocer cuál es su **formato admisibles** y **cómo elaborarlos en caso de que no los tengas**. 
+En algunas ocasiones no todos estos elementos están presentes. Si es así ¡no es tiempo de abandonar la cruzada por abrir tus datos! En el siguiente paso podrás conocer cuál es su **formato admisibles** y **cómo elaborarlos en caso de que no los tengas**.
 
 # Paso 2: ¿Cómo darle en un formato aceptable?{#paso2}
 
@@ -89,15 +90,15 @@ Para resguardar la calidad de nuestros datos debemos asegurar una correcta **cod
 </center>
 </br>
 
-**1.1.2. Identificación de unidades de observación**: debemos asegurarnos de tener tantas variables identificadoras como unidades de análisis tengamos. Esto quiere decir, que si nuestros datos incluyen información tanto a nivel individual como grupal de nuestras observaciones, debemos identificarlos en distintas variables. Por ejemplo, imaginémos que estamos realizando un estudio panel a empresas. En los datos tenemos que tener disponible una variable `id-empresa` y `id-empresa-tiempo` (que nos designará un identificador de la ocurrencia de respuesta). 
+**1.1.2. Identificación de unidades de observación**: debemos asegurarnos de tener tantas variables identificadoras como unidades de análisis tengamos. Esto quiere decir, que si nuestros datos incluyen información tanto a nivel individual como grupal de nuestras observaciones, debemos identificarlos en distintas variables. Por ejemplo, imaginémos que estamos realizando un estudio panel a empresas. En los datos tenemos que tener disponible una variable `id-empresa` y `id-empresa-tiempo` (que nos designará un identificador de la ocurrencia de respuesta).
 
 ### 1.2 Nombres de variables
 
 Las variables son el elemento con el cuál trabajamos cuando analizamos datos. Por ello deben responder a dos criterios
 
-**1.2.1. Claridad y coherencia**: para cada escala o módulo temático de tu instrumento, debes incorporar una letra distinta seguido de un número. Por ejemplo, para el módulo S `s_1`, `s_2` y para el módulo O `o_1`, `o_2`, ... 
+**1.2.1. Claridad y coherencia**: para cada escala o módulo temático de tu instrumento, debes incorporar una letra distinta seguido de un número. Por ejemplo, para el módulo S `s_1`, `s_2` y para el módulo O `o_1`, `o_2`, ...
 
-Otra opción es trabajar con abreviaturas nemotécnicas, es decir, nombres corrtos de las variables que representan el significado del ítem. Por ejemplo, `nt_mujeres` para designar el *Número de trabajadores mujeres* en la empresa que estudiamos.  
+Otra opción es trabajar con abreviaturas nemotécnicas, es decir, nombres corrtos de las variables que representan el significado del ítem. Por ejemplo, `nt_mujeres` para designar el *Número de trabajadores mujeres* en la empresa que estudiamos.
 
 
 **1.2.2 Utilizables**: como la idea central es poder compartir nuestros datos, estos deben ser poder abiertos por otros softwares. Para ello las variables deben cumplir estos puntos:
@@ -120,7 +121,7 @@ Debes asegurar que se cumplan los siguientes puntos
 
 ## `3. Libro de códigos`{#codebook}
 
-Este documento es clave para que los (futuros) usuarios/as de sus datos cuenten con información suficiente para utilizarlos correctamente. Para que cumpla su objetivo debes verificar que hay coherencia entre 
+Este documento es clave para que los (futuros) usuarios/as de sus datos cuenten con información suficiente para utilizarlos correctamente. Para que cumpla su objetivo debes verificar que hay coherencia entre
 
 🔴 La pregunta del cuestionario y la variable indicada
 
@@ -130,23 +131,23 @@ Este documento es clave para que los (futuros) usuarios/as de sus datos cuenten 
 
 🗸 Para evitar ediciones posteriores, recomendamos mantener el [libro de códigos](https://lisa-coes.netlify.app/como-hacer-codebook) en *.pdf*
 
-<a class = "btn btn-template-main" href="https://lisa-coes.netlify.app/como-hacer-codebook">Crear libro de códigos</a> 
+<a class = "btn btn-template-main" href="https://lisa-coes.netlify.app/como-hacer-codebook">Crear libro de códigos</a>
 
 
 ## `4. Ficha Técnica`{#fichatecnica}
 
 Este resumen sobre el diseño metodológico aplicado debe incluir como mínimo los siguientes puntos:
 
-🔴 **Estrategia de recolección de información**: se debe indicar el *tipo de instrumento* (eg. encuesta, datos administrativos, etc.), población y muestra objetivo. 
+🔴 **Estrategia de recolección de información**: se debe indicar el *tipo de instrumento* (eg. encuesta, datos administrativos, etc.), población y muestra objetivo.
 
 
-🔴 **Descripción del terreno**: cuándo, cómo y dónde fue aplicado el terreno. Es decir, se debe indicar la fecha de aplicación, formato (presencial, online,telefónica, cuestionario auto-aplicado) y ubicación geográfica. También si hubieron hitos o perturbaciones importantes al desarrollo del estudio. 
+🔴 **Descripción del terreno**: cuándo, cómo y dónde fue aplicado el terreno. Es decir, se debe indicar la fecha de aplicación, formato (presencial, online,telefónica, cuestionario auto-aplicado) y ubicación geográfica. También si hubieron hitos o perturbaciones importantes al desarrollo del estudio.
 
-🔴 **Descripción muestral** (*solo en caso de encuestas*): indica el tipo de muestreo, tasa de respuesta y variables principales que permitieron construir los ponderadores y factores de expansión. 
+🔴 **Descripción muestral** (*solo en caso de encuestas*): indica el tipo de muestreo, tasa de respuesta y variables principales que permitieron construir los ponderadores y factores de expansión.
 
-🔴 **Identificación de la institución responsable**: ya sea una consultora o el mismo equipo a cargo de la investigación, esto debe estar especificado en la ficha. 
+🔴 **Identificación de la institución responsable**: ya sea una consultora o el mismo equipo a cargo de la investigación, esto debe estar especificado en la ficha.
 
-De todas maneras, una ficha metodológica puede incluir muchos más elementos, por ejemplo, una revisión de la distribución de las variables y/o una presentación de los tópicos incluidos en la base de datos. 
+De todas maneras, una ficha metodológica puede incluir muchos más elementos, por ejemplo, una revisión de la distribución de las variables y/o una presentación de los tópicos incluidos en la base de datos.
 
 🗸 Para evitar ediciones posteriores, recomendamos mantener la ficha técnica en *.pdf*
 
@@ -166,9 +167,9 @@ dt_url <- c("https://lisa-coes.netlify.app/input/ELSOC_Wide_2016_2019_v1.00_SPSS
             "https://lisa-coes.netlify.app/input/ficha-tecnica-issp.pdf",
             "https://lisa-coes.netlify.app/input/ficha-tecnica-issp.pdf")
 
-table <- table %>% 
-mutate(model = cell_spec(Ejemplo, "html", link = dt_url))  
-table %>% select(-Ejemplo) %>% 
+table <- table %>%
+mutate(model = cell_spec(Ejemplo, "html", link = dt_url))
+table %>% select(-Ejemplo) %>%
 kableExtra::kbl(., full_width = T, linesep = "", escape = FALSE) %>%
   kable_styling(
     full_width = F,
@@ -177,7 +178,7 @@ kableExtra::kbl(., full_width = T, linesep = "", escape = FALSE) %>%
     bootstrap_options=c("striped", "bordered", "condensed", "responsive")) %>%  kableExtra::collapse_rows(columns = 1:5)
 ```
 
-<a class = "btn btn-template-main" href="/input/lisa-lista-recomendaciones.pdf">Descargar listado de recomendaciones para rellenar</a> 
+<a class = "btn btn-template-main" href="/input/lisa-lista-recomendaciones.pdf">Descargar listado de recomendaciones para rellenar</a>
 
 # Paso 3 : ¿Cómo publicar?{#paso3}
 

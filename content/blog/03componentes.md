@@ -13,4 +13,6 @@ tags:
 title: Análisis reproducibles
 ---
 
-# Análisis reproducibles 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+# Guía para los análisis reproducibles  <i class="ai ai-open-materials ai-1.5x" style="color:pink"></i>

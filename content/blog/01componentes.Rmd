@@ -4,7 +4,7 @@ banner: img/banners/blog-3.png
 categories:
 - componentes
 date: "2020-12-20T11:50:46+02:00"
-description: 
+description:
 tags:
 - componentes
 - ciencia abierta
@@ -12,8 +12,9 @@ tags:
 - codigo
 title: Diseño transparente
 ---
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-# Guía para transparencia de diseño
+# Guía para transparencia de diseño <i class="ai ai-preregistered ai-1.5x" style="color:lightblue"></i>
 
 Uno de los principios que guía la producción científica es el escepticismo organizado. Esto quiere decir que la validez de los hallazgos científicos recae en la evaluación crítica de parte de los miembros comunidad científica. Sin embargo, la prevalencia de prácticas cuestionables de investigación en distintas disciplinas ha puesto en tela de juicio que esta evaluación crítica se esté logrando, suscitado el interés de los científicos por desarrollar herramientas que hagan la investigación más transparente. Una de las herramientas más utilizadas en el último tiempo son los preregistros. En el siguiente blog te entregaremos el paso a paso para preregistrar un artículo de acuerdo con las distintas situaciones y tipos de investigación.
 
@@ -30,9 +31,9 @@ Los preregistros son una marca temporal sobre las decisiones que se han tomado r
 
 El primer paso es **clarificar las caracteristicas de nuestro estudio**. Esto es importante ya que la forma en la que preregistremos estará directamente relacionada al tipo de estudio que estamos efectuando, por ejemplo, si es un estudio experimental con datos primarios, o un estudio observacional con datos secundarios. También podría ser el caso que nuestro objetivo no sea elaborar un artículo original, sino que replicar uno ya existente. Considerando estas distintas situaciones, proponemos hacernos tres preguntas clave para dilucidar las características importantes de nuestro estudio:
 
-1. _¿Estoy publicando bajo el formato de publicación tradicional o el formato de registered reports?_  
-2. En el caso de que sea el modelo tradicional: _¿Nuestro estudio es un artículo original o una replicación?_  
-3. En el caso que sea un artículo original: _¿Usamos datos primarios o secundarios?_  
+1. _¿Estoy publicando bajo el formato de publicación tradicional o el formato de registered reports?_
+2. En el caso de que sea el modelo tradicional: _¿Nuestro estudio es un artículo original o una replicación?_
+3. En el caso que sea un artículo original: _¿Usamos datos primarios o secundarios?_
 
 
 <style>
@@ -77,8 +78,8 @@ Una vez que tenemos claras las características de nuestro estudio, el siguiente
 | Para _registered reports_ | Registered Reports Protocol                            | Se utilizan cuando un artículo ha pasado la primera revisión por pares bajo el modelo de _registered reports_.                                                                                                                                                                                            | https://osf.io/gm36s/                                                                                  |
 
 
-Las preguntas que nos hicimos en el primer paso nos ayudarán a escoger la plantilla de pre-registro. Siguiendo la tabla, podemos rastrear cómo llegar a cada plantilla. Si nuestro estudio está siguiendo el modelo de registered reports y ha sido aceptado preliminarmente (IPA) entonces utilizamos _Registered Reports Protocol_. En cambio, si nuestro estudio sigue el modelo tradicional nos preguntamos si es un artículo original o de replicación. Si es un articulo original con datos primarios, podemos usar las plantillas génericas de _AsPredicted_ y _OSF Standard_ o, si ya contamos con un documento aparte de preregistro, podemos utilizar la plantilla complementaria _OSF-Standard Pre-Data Colecction_. Si es un articulo original con datos secundarios utilizamos la plantilla  _Template Preregistration of Preexisting Data_. Por último, si nuestro estudio no es original sino que es un estudio de replicación, utilizamos la plantilla _Replication Recipe: Preregistration_ si la estamos rellenando previo a hacer el estudio y _Replication Recipe: Post-Compleiton_ si la estamos rellenando posterior al estudio. 
- 
+Las preguntas que nos hicimos en el primer paso nos ayudarán a escoger la plantilla de pre-registro. Siguiendo la tabla, podemos rastrear cómo llegar a cada plantilla. Si nuestro estudio está siguiendo el modelo de registered reports y ha sido aceptado preliminarmente (IPA) entonces utilizamos _Registered Reports Protocol_. En cambio, si nuestro estudio sigue el modelo tradicional nos preguntamos si es un artículo original o de replicación. Si es un articulo original con datos primarios, podemos usar las plantillas génericas de _AsPredicted_ y _OSF Standard_ o, si ya contamos con un documento aparte de preregistro, podemos utilizar la plantilla complementaria _OSF-Standard Pre-Data Colecction_. Si es un articulo original con datos secundarios utilizamos la plantilla  _Template Preregistration of Preexisting Data_. Por último, si nuestro estudio no es original sino que es un estudio de replicación, utilizamos la plantilla _Replication Recipe: Preregistration_ si la estamos rellenando previo a hacer el estudio y _Replication Recipe: Post-Compleiton_ si la estamos rellenando posterior al estudio.
+
 
 ## Paso 3: ¿Cómo relleno la plantilla?
 
@@ -92,6 +93,6 @@ Existe una estrecha relación entre las características de nuestro estudio y la
 
 ```{r echo=FALSE, out.width='50%', fig.align='center',fig.cap='Flujo de preguntas para escoger plantillas'}
 knitr::include_graphics("../input/flujopreg.png")
-``` 
+```
 
 <!-- ![](flujopreg.png) -->
