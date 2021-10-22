@@ -16,83 +16,111 @@ title: Diseño transparente
 
 # Guía para transparencia de diseño <i class="ai ai-preregistered ai-1.5x" style="color:lightblue"></i>
 
-Uno de los principios que guía la producción científica es el escepticismo organizado. Esto quiere decir que la validez de los hallazgos científicos recae en la evaluación crítica de parte de los miembros comunidad científica. Sin embargo, la prevalencia de prácticas cuestionables de investigación en distintas disciplinas ha puesto en tela de juicio que esta evaluación crítica se esté logrando, suscitado el interés de los científicos por desarrollar herramientas que hagan la investigación más transparente. Una de las herramientas más utilizadas en el último tiempo son los preregistros. En el siguiente blog te entregaremos el paso a paso para preregistrar un artículo de acuerdo con las distintas situaciones y tipos de investigación.
+Uno de los pilares que dan validez a la evidencia científica es el **escrutinio por parte de los pares**. Sin embargo, la prevalencia de prácticas cuestionables en distintas disciplinas ha puesto en debate que dicho principio esté siendo alcanzando y, como consecuencia de ello, se han incrementado los esfuerzos por establecer mayores **estándares de transparencia** en la investigación científica. En este contexto, una de las herramientas más utilizadas para hacer frente a este dilema han sido los **preregistros**. _¿Qué es un preregistro?_ _¿Cómo y en qué momento se utiliza?_  En el siguiente blog te entregaremos un paso a paso para la elaboración de un preregistro de acuerdo con las distintas situaciones y tipos de investigación.
 
-## ¿Qué son los pregistros?
+<br>
+
+<div style="background-color: #ff6f6f36 ; padding: 8px; border: 1px solid #ec8686;">
+- [¿Qué es un preregistro?](#def-prereg)
+- [¿Cuáles son los pasos a seguir?](#pasos)
+- [Paso 1: ¿Qué estudio estoy preregistrando?](#paso1)
+- [Paso 2: ¿Qué plantilla debo usar?](#paso2)
+- [Paso 3: ¿Cómo realizar el preregistro?](#paso3)
+</div>
 
 
+## ¿Qué es un pregistro? {#def-prereg}
 
-Los preregistros son una marca temporal sobre las decisiones que se han tomado respecto al diseño de investigación: qué hipótesis se pondrán a prueba, cómo se obtendrán los datos, cómo se analizarán etc. Su característica principal es que se efectúan antes de la recopilación y análisis de los datos, con tal de minimizar las oportunidades para realizar prácticas cuestionables de investigación (e.g. cambiar las hipótesis una vez que se conocen los resultados). Existen formas de preregistrar estudios en otras situaciones, como en estudios con datos secundarios o estudios de replicación, lo que nos lleva al primer paso de este blog.
+Un preregistro es una marca temporal que busca dar cuenta del **diseño de una investigación**: (1) principales hipótesis, (2) recolección de datos y (3) plan de análisis.
 
-### Paso 1: ¿Qué estudio estoy preregistrando?
+La principal característica de un preregistro es que estos tres elementos se declaran **antes** de la recopilación y análisis de los datos, con tal de minimizar prácticas cuestionables de investigación (p.ej. hipótesis _ad hoc_, p-hacking). Adicionalmente, es posible preregistrar estudios que emplean datos secundarios o estudios de replicación, lo cual nos lleva al primer paso de este blog.
 
+# ¿Cuáles son los pasos a seguir? {#pasos}
 
+```{r echo=FALSE, out.width='75%', fig.align='center'}
+ knitr::include_graphics("../input/lisa-transparency.gif")
+```
 
+`1. Tipo de estudio:`: debemos tener claridad de las características de nuestro estudio, es decir, si es un estudio original o de replicación, como también si estamos empleando datos primarios o secundarios.
 
-El primer paso es **clarificar las caracteristicas de nuestro estudio**. Esto es importante ya que la forma en la que preregistremos estará directamente relacionada al tipo de estudio que estamos efectuando, por ejemplo, si es un estudio experimental con datos primarios, o un estudio observacional con datos secundarios. También podría ser el caso que nuestro objetivo no sea elaborar un artículo original, sino que replicar uno ya existente. Considerando estas distintas situaciones, proponemos hacernos tres preguntas clave para dilucidar las características importantes de nuestro estudio:
+`2. Elegir plantilla:` teniendo identificado el tipo de estudio estamos proponiendo, debemos elegir una de las plantillas disponibles para la elaboración del preregistro.
 
-1. _¿Estoy publicando bajo el formato de publicación tradicional o el formato de registered reports?_
+`3. Realizar preregistro:` luego de elegir una plantilla adecuada para nuestra investigación, debemos seguir minuciosamente las instrucciones para poder preregistrar correctamente nuestro estudio.
+
+# Paso 1: ¿Qué estudio estoy preregistrando? {#paso1}
+
+El primer paso es **clarificar de qué tipo es nuestro estudio**. Por un lado debemos dilucidar qué tipo de diseño tiene la investigación. Es decir, esclarecer si es un (1) estudio experimental, (2) observacional con datos originales o secundarios; o  (3) la replicación de un estudio previo. Así, nos debemos hacer tres preguntas clave:
+
+1. _¿Mi estudio es una publicación tradicional o un registered report?_ 🔎
 2. En el caso de que sea el modelo tradicional: _¿Nuestro estudio es un artículo original o una replicación?_
 3. En el caso que sea un artículo original: _¿Usamos datos primarios o secundarios?_
 
 
-<style>
-div.blue { background-color:#ec8686; border-radius: 5px; padding: 20px;}
-</style>
-<div class = "blue">
-
-**¿Qué son los _registered reports_?**
-
-Los _registered reports_ (en español, informes registrados), son un modelo alternativo de publicación donde la revisión por pares ocurre antes del análisis de datos, en contraste al modelo tradicional donde la revisión por pares ocurre con el artículo finalizado. En el modelo de _registered reports_ la revisión se hace previo a la recolección y análisis de resultados con el objetivo de que el artículo sea aceptado por su su pregunta de investigación novedosa y su diseño novedoso, en vez de por sus hallazgos. Un artículo que pasa la revisión por pares se le considera aceptado preliminarmente (IPA, _in principle acceptance_) y una vez acabado (i.e. después de la recopilación y análisis de datos) debe pasar por otro proceso de revisión, donde se evalúa si el análisis se orientó bajo el diseño previamente establecido.
-
+<div style="background-color: #ff6f6f36 ; padding: 8px; border: 1px solid #ec8686;">
+🔎 En un  [**_registered report_**]() la revisión por pares ocurre antes de la recolección y análisis de datos, dando mayor relevancia a la novedad de su pregunta de investigación y métodos. Luego, si el estudio pasa la primera ronda revisión, se considera aceptado preliminarmente para luego transitar por una segunda ronda de revisión donde se evalúa si los procedimientos se orientaron por el diseño declarado originalmente.
 </div>
 
+<!-- **¿Qué son los estudios de replicación?**
+Son estudios que buscan **replicar** los hallazgos de una investigación usando **datos distintos** al estudio original. Su objetivo es conocer si los hallazgos obtenidos originalmente aplican a otros sujetos y otras circunstancias.
+La respuesta a estas preguntas estará estrechamente relacionada a las plantillas de pre-registro que usemos, lo que lleva al siguiente paso. -->
+
+# Paso 2: ¿Qué plantilla debo usar?
+
+Las plantillas de preregistro son un conjunto de preguntas que orientan el registro de las características de nuestro estudio, las cuales se pueden clasificar en cinco tipos: (1) genéricas, (2) para datos primarios, (3) para datos secundarios, (4) para replicación y (5) _registered reports_, las cuales se detallan en la siguiente tabla:
+
+```{r, results='asis', echo = F}
+ pacman::p_load(dplyr, kableExtra,sjlabelled, readxl)
+ tab01<- readxl::read_excel("../input/templates-preregister.xlsx")
 
 
-<style>
-div.blue { background-color:#ec8686; border-radius: 5px; padding: 20px;}
-</style>
-<div class = "blue">
-
-**¿Qué son los estudios de replicación?**
-
-Son estudios que buscan reproducir los hallazgos de una investigación usando datos distintos al estudio original. Su objetivo es conocer si los hallazgos obtenidos originalmente aplican a otros sujetos y otras circunstancias.
-</div>
-
-La respuesta a estas preguntas estará estrechamente relacionada a las plantillas de pre-registro que usemos, lo que lleva al siguiente paso.
-
-## Paso 2: ¿Qué plantilla debo usar?
-
-
-
-Una vez que tenemos claras las características de nuestro estudio, el siguiente paso es **elegir nuestra plantilla**. Las plantillas de preregistro son un conjunto de preguntas preestablecidas que orientan el registro de la información importante de nuestro estudio. Como equipo LISA proponemos categorizar las plantillas en cinco tipos: genéricas, para datos primarios, para datos secundarios, para replicaciones y para _registered reports_. Sus descripciones y el enlace a la plantilla se ven en la siguiente tabla:
-
-####### Tabla 1. Categorización de plantillas
-
-| Categoría de la plantilla | Nombre original plantilla                              | Descripción                                                                                                                                                                                                                                                                                               | Enlace                                                                                                 |
-|---------------------------|--------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Genéricas                 | OSF Standard o AsPredicted                             | Se pueden usar para cualquier tipo de estudio, contienen preguntas generales. Las más conocidas son AsPredicted y OSF Estándar.                                                                                                                                                                           | - AsPredicted: https://aspredicted.org/    - OSF Estándar: https://osf.io/preprints/metaarxiv/epgjd/   |
-| Para datos primarios      | OSF-Standard Pre-Data Collection Registration          | Las plantillas genéricas son suficientes para este tipo de estudios. Sin embargo, existe una plantilla en particular que se utiliza en el caso de que el preregistro del estudio se haya hecho en un documento a parte y no en OSF. Esta plantilla registra la forma en la que se recolectaron los datos. | https://osf.io/9j6d7/                                                                                  |
-| Para datos secundarios    | Template Preregistration of Preexisting Data           | Se utilizan cuando los datos a utilizar son secundarios, por ejemplo, bases de datos de encuestas o datos administrativos.                                                                                                                                                                                | https://osf.io/p26rq/                                                                                  |
-| Para replicaciones        | Replication Recipe: Preregistration y Post-Compleition | Se utilizan cuando el objetivo de un estudio es la replicación de otro estudio. Existe una plantilla para antes de elaborar la replicación y otra para después.                                                                                                                                           | - Antes de la replicación: https://osf.io/4jd46/    - Después de la replicación: https://osf.io/9rp6j/ |
-| Para _registered reports_ | Registered Reports Protocol                            | Se utilizan cuando un artículo ha pasado la primera revisión por pares bajo el modelo de _registered reports_.                                                                                                                                                                                            | https://osf.io/gm36s/                                                                                  |
-
-
-Las preguntas que nos hicimos en el primer paso nos ayudarán a escoger la plantilla de pre-registro. Siguiendo la tabla, podemos rastrear cómo llegar a cada plantilla. Si nuestro estudio está siguiendo el modelo de registered reports y ha sido aceptado preliminarmente (IPA) entonces utilizamos _Registered Reports Protocol_. En cambio, si nuestro estudio sigue el modelo tradicional nos preguntamos si es un artículo original o de replicación. Si es un articulo original con datos primarios, podemos usar las plantillas génericas de _AsPredicted_ y _OSF Standard_ o, si ya contamos con un documento aparte de preregistro, podemos utilizar la plantilla complementaria _OSF-Standard Pre-Data Colecction_. Si es un articulo original con datos secundarios utilizamos la plantilla  _Template Preregistration of Preexisting Data_. Por último, si nuestro estudio no es original sino que es un estudio de replicación, utilizamos la plantilla _Replication Recipe: Preregistration_ si la estamos rellenando previo a hacer el estudio y _Replication Recipe: Post-Compleiton_ si la estamos rellenando posterior al estudio.
-
-
-## Paso 3: ¿Cómo relleno la plantilla?
-
-
-Una vez tenemos claro cuál es la plantilla que ocuparemos, es hora de **rellenarla**. El flujo de rellenado será distinto de acuerdo a la plantilla que hayamos escogido. En el video a continuación revisaremos cómo rellenar la plantilla de acuerdo a tres situaciones distintas: a) que hayamos escogido usar la plantilla génerica de AsPredicted, b) que hayamos escogido la plantilla estándar de OSF y c) que ya tengamos un documento de preregistro y decidimos usar la plantilla complementaria para datos primarios.
-
-## En síntesis
-
-Existe una estrecha relación entre las características de nuestro estudio y la plantilla que usaremos para preregistrar. Un flujo de preguntas que sintetiza la elección de las plantillas se puede ver en la siguiente imagen:
-
-
-```{r echo=FALSE, out.width='50%', fig.align='center',fig.cap='Flujo de preguntas para escoger plantillas'}
-knitr::include_graphics("../input/flujopreg.png")
+ tab01 <- tab01 %>%
+ dplyr::mutate(enlace = cell_spec(enlace, "html", link = enlace))
+ tab01 %>%
+ kableExtra::kbl(., full_width = T, linesep = "", escape = FALSE,
+ col.names = c("Plantilla","Descripción","Nombre","Enlace"),row.names = F) %>%
+   kableExtra::kable_styling(
+     full_width = F,
+     position = "center",
+     font_size = 14,
+     bootstrap_options=c("striped", "bordered", "condensed", "responsive")) %>%
+   kableExtra::collapse_rows(columns = 1:4,valign = "middle")
 ```
+Entonces, luego de responder las preguntas del **[Paso 1](#paso1)** podemos elegir una pantilla adecuada:
 
-<!-- ![](flujopreg.png) -->
+* Cuando el estudio es **[original]()**:
+  - Para datos primarios, podemos usar las plantillas génericas de _AsPredicted_ y _OSF Standard_ o, si ya contamos con un documento aparte de preregistro, podemos utilizar la plantilla _OSF-Standard Pre-Data Colecction_.
+
+  - Para datos secundarios utilizaremos la plantilla  _Template Preregistration of Preexisting Data_.
+
+* Cuando el estudio es una **[replicación]()**:
+  - Si no hemos ejecutado el estudio, utilizaremos la _Replication Recipe: Preregistration_
+  - Si el estudio ya fue ejecutado, utilizaremos la _Replication Recipe: Post-Completion_.
+
+* Cuando el estudio es un **[_registered report_]()** y ha sido aceptado preliminarmente, utilizamos el _Registered Reports Protocol_.  
+
+🗸 Si deseas saber más sobre esta las plantillas puedes hacer click aquí:
+
+<a class = "btn btn-template-main" href="https://lisa-coes.github.io/lisa-book/herramientas-para-los-dise%C3%B1os-transparentes.html" target="_blank">Herramientas para los diseños transparentes</a>
+
+# Paso 3: ¿Cómo realizar el preregistro?
+
+Luego de seleccionar una plantilla, es hora de completarla y realizar el preregistro. El escenario para completar la plantilla será distinto según corresponda a: (1) plantilla génerica de _AsPredicted_, (2) plantilla estándar del OSF o (3) usando la plantilla complementaria para datos primarios.
+
+🔴 En el video a continuación revisaremos cómo completar una plantilla en cada uno de estos tres escenarios:  
+
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEqfJU0Al4&#x2F;watch?embed">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEqfJU0Al4&#x2F;watch?utm_content=DAEqfJU0Al4&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"> </a>
+
+# En síntesis
+
+Existe una estrecha relación entre las características de nuestro estudio y la plantilla que usaremos para preregistrar. Un flujo de preguntas que sintetiza la elección de las plantillas se puede ver en la siguiente figura:
+
+<iframe frameborder="0" style="width:100%;height:575px;" src="https://viewer.diagrams.net/?tags=%7B%7D&edit=_blank&layers=1&nav=1&title=Preguntas_plantillas#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1zuZuJjKFumyI-HqlbXxdU7I8ImnYBCOq%26export%3Ddownload"></iframe>
+
+<!-- link diagrama editable:  https://app.diagrams.net/#G1zuZuJjKFumyI-HqlbXxdU7I8ImnYBCOq-->

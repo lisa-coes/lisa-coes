@@ -35,6 +35,7 @@ table<- readxl::read_excel("../input/summary-opendata.xlsx")
 
 En parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de **compartir nuestros datos al resto de la comunidad científica** pero muchas veces no sabemos cómo lograrlo. *¿Cómo abrir nuestros datos? ¿Qué criterios debo cumplir para que sean publicados? ¿Dónde y cómo publicarlos?* En el siguiente blog te contestaremos estas preguntas.
 
+<div style="background-color: #ff6f6f36 ; padding: 8px; border: 1px solid #ec8686;">
 - [Paso 1: ¿Qué es lo que necesito?](#paso1)
 - [Paso 2: ¿Cómo darle en un formato aceptable?](#paso2)
   - [Base de datos](#basedatos)
@@ -43,6 +44,7 @@ En parte importante de nuestras investigaciones producimos datos: hacemos encues
     - [¿Cómo hacer un libro de códigos de manera automática?](https://lisa-coes.netlify.app/como-hacer-codebook)
   - [Ficha técnica](#fichatecnica)
 - [Paso 3 : ¿Cómo publicar?](#paso3)
+</div>
 
 # Paso 1: ¿Qué es lo que necesito?{#paso1}
 

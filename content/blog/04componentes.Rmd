@@ -21,14 +21,18 @@ editor_options:
 # Guía para las publicaciones libres <i class="ai ai-open-access-square ai-1x" style="color:orange"></i>
 
 
-La publicación de un trabajo científico es clave para dar a conocer los resultados y determinar su impacto. Al respecto, este momento puede trascender a algunas revistas indexadas donde  encontramos **barreras de acceso al conocimiento**. Por este motivo, podemos enfrentarnos al dilema respecto a cómo abrir una publicación, ya sea por desconocimiento o aprehensiones en torno a ello. _¿Cómo podemos abrir nuestras publicaciones?_ _¿Cómo elegir el momento adecuado?_ _¿Dónde publicarlas?_ En este blog te entregaremos recomendaciones para la adopción de prácticas para la apertura de las publicaciones científicas.
+La publicación de un trabajo científico es clave para dar a conocer los resultados y determinar su impacto. Al respecto, este momento puede trascender a algunas revistas indexadas donde  encontramos **barreras de acceso al conocimiento**. Por este motivo, podemos enfrentarnos al dilema respecto a cómo abrir una publicación, ya sea por desconocimiento o aprehensiones en torno a ello. _¿Cómo podemos abrir nuestras publicaciones?_ _¿Cómo elegir el momento adecuado?_ _¿Dónde publicarlas?_ En este blog te entregaremos recomendaciones para responder a estas interrogantes.
 
+<br>
+
+<div style="background-color: #ff6f6f36 ; padding: 8px; border: 1px solid #ec8686;">
 - [¿Qué es el Open Access?](#def-oa)  
   * [Tipos de licencias](#prop-intel)
 - [¿Cuáles son los pasos a seguir?](#pasos)
 - [Paso 1: ¿Cuál es la política de OA de la revista?](#paso1)
 - [Paso 2: ¿En qué etapa está mi artículo?](#paso2)
 - [Paso 3: ¿Cómo publicar un preprint?](#paso3)
+</div>
 
 # ¿Qué es el Open Access? {#def-oa}
 
@@ -44,11 +48,11 @@ Hoy en día, el OA nos abre un camino de accesibilidad pero también de perfecci
 
 ## Tipos de licencias {#prop-intel}
 
-Existen licencias que regulan la propiedad intelectual [(World Intelectual Propiety Organization, 2020)](https://www.wipo.int/about-ip/en/){target="_blank"}, pues protegen los derechos patrimoniales y establecen las reglas para el debido uso de la obra, las más importantes son:
+Existen licencias que regulan la propiedad intelectual ([World Intelectual Property Organization, 2020](https://www.wipo.int/about-ip/en/){target="_blank"}), pues protegen los derechos patrimoniales y establecen las reglas para el debido uso de la obra. Las más importantes son:
 
 `1.  Copyright:` permite que el autor se reserve todos los derechos sobre la obra y solo se puede hacer uso de ella bajo permiso del mismo.
 
-`2.  Creative Commons (CC):` tiene el propósito de desarrollar herramientas digitales que faciliten la distribución de una obra, pues entrega al autor la responsabilidad de autorizar el modo de uso, difusión y citación de su obra. Al día de hoy existen seis tipos de licencias CC [(Creative Commons, 2019).](https://creativecommons.org/about/cclicenses/){target="_blank"}
+`2.  Creative Commons (CC):` tiene el propósito de desarrollar herramientas digitales que faciliten la distribución de una obra, pues entrega al autor la responsabilidad de autorizar el modo de uso, difusión y citación de su obra. Al día de hoy existen seis tipos de licencias CC ([Creative Commons, 2019](https://creativecommons.org/about/cclicenses/){target="_blank"})
 
 ```{r echo=FALSE, out.width='50%', fig.align='center'}
 # knitr::include_graphics("https://lisa-coes.github.io/open-access/docs/images/licencias.png")
@@ -98,14 +102,16 @@ Un segundo momento es definir si el manuscrito corresponde a un pre-print, un po
 
 # Paso 3: ¿Cómo publicar un preprint?{#paso3}
 
-Un artículo en cualquiera de las tres etapas puede ser publicado de manera abierta, lo cual no afecta a la posterior indexación en revistas. Recomendamos hospedar el manuscrito en [SocArxiv](https://osf.io/preprints/socarxiv){target="_blank"}. Para ello, debemos ingresar al [OSF (Open Science Framework)](https://osf.io/preprints/){target="_blank"} y cargar el manuscrito en formato _.pdf_. Finalmente, obtenemos un Identificador del Objeto Digital (DOI) que permite encontrar y citar el documento.
+Un artículo en cualquiera de las tres etapas puede ser publicado de manera abierta, lo cual no afecta a la posterior indexación en revistas. Para el caso de los Pre-prints, recomendamos hospedar el manuscrito en [SocArxiv](https://osf.io/preprints/socarxiv){target="_blank"}. Para ello, debemos ingresar a la sección de Pre-prints del [OSF (Open Science Framework)](https://osf.io/preprints/){target="_blank"} y cargar el manuscrito en formato _.pdf_. Luego de esto, obtendremos un Identificador del Objeto Digital (DOI) que hace citable el documento.
 
 # En síntesis
 
-
-```{r echo=FALSE, out.width='85%', fig.align='center'}
+```{r echo=FALSE, out.width='80%', fig.align='center'}
 knitr::include_graphics("https://lisa-coes.github.io/open-access/docs/images/flujo_lisa.png")
 ```
+
+🔴 **Si deseas revisar más detalles de cómo abrir una publicación, revisa el video a continuación:**
+
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
  padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
  border-radius: 8px; will-change: transform;">
@@ -113,11 +119,11 @@ knitr::include_graphics("https://lisa-coes.github.io/open-access/docs/images/flu
     src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEoyGJC-4E&#x2F;watch?embed">
   </iframe>
 </div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEoyGJC-4E&#x2F;watch?utm_content=DAEoyGJC-4E&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEoyGJC-4E&#x2F;watch?utm_content=DAEoyGJC-4E&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"> </a>
 
 
 ## ¿Quieres comentar o tienes alguna duda?
 
-Puedes dejar tus comentarios y dudas sobre cómo publicar tu artículo en nuestro foro. De todas formas puedes [contactarnos](/contact/) 
+Puedes dejar tus comentarios y dudas sobre cómo publicar tu artículo en nuestro foro. De todas formas puedes [contactarnos](/contact/)
 
 <div id="disqus_thread"></div>
