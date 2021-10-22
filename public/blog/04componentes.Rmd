@@ -104,12 +104,6 @@ Un segundo momento es definir si el manuscrito corresponde a un pre-print, un po
 
 Un artículo en cualquiera de las tres etapas puede ser publicado de manera abierta, lo cual no afecta a la posterior indexación en revistas. Para el caso de los Pre-prints, recomendamos hospedar el manuscrito en [SocArxiv](https://osf.io/preprints/socarxiv){target="_blank"}. Para ello, debemos ingresar a la sección de Pre-prints del [OSF (Open Science Framework)](https://osf.io/preprints/){target="_blank"} y cargar el manuscrito en formato _.pdf_. Luego de esto, obtendremos un Identificador del Objeto Digital (DOI) que hace citable el documento.
 
-# En síntesis
-
-```{r echo=FALSE, out.width='80%', fig.align='center'}
-knitr::include_graphics("https://lisa-coes.github.io/open-access/docs/images/flujo_lisa.png")
-```
-
 🔴 **Si deseas revisar más detalles de cómo abrir una publicación, revisa el video a continuación:**
 
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
@@ -121,6 +115,13 @@ knitr::include_graphics("https://lisa-coes.github.io/open-access/docs/images/flu
 </div>
 <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEoyGJC-4E&#x2F;watch?utm_content=DAEoyGJC-4E&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"> </a>
 
+# En síntesis
+
+Existe una estrecha relación entre el estado de avance de nuestro manuscrito y dónde podemos publicarlo. El flujo para tomar una decisión adecuada se puede ver en la siguiente figura:
+
+```{r echo=FALSE, out.width='80%', fig.align='center'}
+knitr::include_graphics("https://lisa-coes.github.io/open-access/docs/images/flujo_lisa.png")
+```
 
 ## ¿Quieres comentar o tienes alguna duda?
 
