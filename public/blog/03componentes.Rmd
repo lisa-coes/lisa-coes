@@ -8,8 +8,8 @@ description:
 tags:
 - componentes
 - ciencia abierta
-- analisis
-- codigo
+- reproducibilidad
+- código
 title: Análisis reproducibles
 ---
 
@@ -114,8 +114,8 @@ Sugerimos seguir el siguiente flujo para realizar la preparación de los datos:
     full_width = F,
     position = "center",
     font_size = 14,
-    bootstrap_options=c("striped", "bordered", "condensed", "responsive")) %>% 
- column_spec(column = 1,width = "5cm") 
+    bootstrap_options=c("striped", "bordered", "condensed", "responsive")) %>%
+ column_spec(column = 1,width = "5cm")
 ```
 El seguir este flujo de manera sistemática facilitará la lectura tanto para terceros, como para nosotros mismos en el futuro.
 

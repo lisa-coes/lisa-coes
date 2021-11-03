@@ -1,15 +1,15 @@
 ---
 author: LISA
-banner: img/banners/blog-3.png
+banner: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Preregistered_small_color_%28vector%29.svg/939px-Preregistered_small_color_%28vector%29.svg.png"
 categories:
 - componentes
-date: "2021-11-03T11:50:46+02:00"
+date: "2021-10-02T11:50:46+02:00"
 description:
 tags:
 - componentes
 - ciencia abierta
-- analisis
-- codigo
+- preregistro
+- diseño transparente
 title: Diseño transparente
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -74,7 +74,7 @@ Las plantillas de preregistro son un conjunto de preguntas que orientan el regis
 
 
  tab01 <- tab01 %>%
- dplyr::mutate(nombre = cell_spec(nombre, "html", link = enlace)) %>% 
+ dplyr::mutate(nombre = cell_spec(nombre, "html", link = enlace)) %>%
    select(-enlace)
  tab01 %>%
  kableExtra::kbl(., full_width = T, linesep = "", escape = FALSE,

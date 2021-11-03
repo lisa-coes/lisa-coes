@@ -3,7 +3,7 @@ author: LISA
 banner: img/banners/blog-2.png
 categories:
 - componentes
-date: "2020-12-20T10:50:46+02:00"
+date: "2021-10-20T10:50:46+02:00"
 description:
 tags:
 - componentes
@@ -49,11 +49,11 @@ En parte importante de nuestras investigaciones producimos datos: hacemos encues
 # Paso 1: ¿Qué es lo que necesito?{#paso1}
 
 Empecemos con lo primero: qué elementos debo considerar para compartir los datos de mi proyecto. En general, lo que tenemos o recibimos (cuando encargamos el terreno) de nuestro estudio son cuatro elementos:
-<center>
 
-![](../input/lisa-elementos-3.png)
 
-</center>
+```{r echo=FALSE, out.width='75%', fig.align='center'}
+knitr::include_graphics("../input/lisa-open-data.gif")
+```
 
 **`1. Bases de datos`**: archivo que contiene la información recopilada. Este archivo puede estar en  distintos formatos, como por ejemplo, en *.csv* y *.xlsx* (Excel), *.sav* (SPSS), *.dta* (STATA) o *.RData* (R).
 
