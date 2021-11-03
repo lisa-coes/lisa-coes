@@ -6,24 +6,42 @@
     <description>Recent content in Tags on Laboratorio de Ciencia Social Abierta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-cl</language>
-    <lastBuildDate>Mon, 18 Oct 2021 12:50:46 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 03 Nov 2021 11:50:46 +0200</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>analisis</title>
+      <link>/tags/analisis/</link>
+      <pubDate>Wed, 03 Nov 2021 11:50:46 +0200</pubDate>
+      
+      <guid>/tags/analisis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ciencia abierta</title>
       <link>/tags/ciencia-abierta/</link>
-      <pubDate>Mon, 18 Oct 2021 12:50:46 +0200</pubDate>
+      <pubDate>Wed, 03 Nov 2021 11:50:46 +0200</pubDate>
       
       <guid>/tags/ciencia-abierta/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>codigo</title>
+      <link>/tags/codigo/</link>
+      <pubDate>Wed, 03 Nov 2021 11:50:46 +0200</pubDate>
+      
+      <guid>/tags/codigo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>componentes</title>
       <link>/tags/componentes/</link>
-      <pubDate>Mon, 18 Oct 2021 12:50:46 +0200</pubDate>
+      <pubDate>Wed, 03 Nov 2021 11:50:46 +0200</pubDate>
       
       <guid>/tags/componentes/</guid>
       <description></description>
@@ -35,24 +53,6 @@
       <pubDate>Mon, 18 Oct 2021 12:50:46 +0200</pubDate>
       
       <guid>/tags/publicaciones/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>analisis</title>
-      <link>/tags/analisis/</link>
-      <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
-      
-      <guid>/tags/analisis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>codigo</title>
-      <link>/tags/codigo/</link>
-      <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
-      
-      <guid>/tags/codigo/</guid>
       <description></description>
     </item>
     

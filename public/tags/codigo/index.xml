@@ -6,7 +6,7 @@
     <description>Recent content in codigo on Laboratorio de Ciencia Social Abierta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-cl</language>
-    <lastBuildDate>Sun, 20 Dec 2020 11:50:46 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 03 Nov 2021 11:50:46 +0200</lastBuildDate>
     
 	<atom:link href="/tags/codigo/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,10 +14,19 @@
     <item>
       <title>Análisis reproducibles</title>
       <link>/03componentes/</link>
-      <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
+      <pubDate>Wed, 03 Nov 2021 11:50:46 +0200</pubDate>
       
       <guid>/03componentes/</guid>
-      <description>Guía para los análisis reproducibles ¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales, y que por tanto, es imposible acceder a los procedimientos que dieron luces de sus resultados? En el marco de la denominada “crisis de la ciencia”, la comunidad científica se ha organizado para dar salida a este problema a través de una diversidad de iniciativas que, a modo general, buscan promover los principios de la ciencia abierta.</description>
+      <description>Guía para los análisis reproducibles ¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales, y que por tanto, es imposible acceder a los procedimientos que dieron luces a sus resultados? En este contexto, la reproducibilidad entendida como la posibilidad de regenerar de manera independiente los resultados usando los materiales originales de una investigación publicada. ¿Cómo organizamos un proyecto con análisis reproducibles? ¿Qué herramientas puedo utilizar?</description>
+    </item>
+    
+    <item>
+      <title>Diseño transparente</title>
+      <link>/01componentes/</link>
+      <pubDate>Wed, 03 Nov 2021 11:50:46 +0200</pubDate>
+      
+      <guid>/01componentes/</guid>
+      <description>Guía para transparencia de diseño Uno de los pilares que dan validez a la evidencia científica es el escrutinio por parte de los pares. Sin embargo, la prevalencia de prácticas cuestionables en distintas disciplinas ha puesto en debate que dicho principio esté siendo alcanzando y, como consecuencia de ello, se han incrementado los esfuerzos por establecer mayores estándares de transparencia en la investigación científica. En este contexto, una de las herramientas más utilizadas para hacer frente a este dilema han sido los preregistros.</description>
     </item>
     
     <item>
@@ -27,15 +36,6 @@
       
       <guid>/novedades/02componentes/</guid>
       <description>Guía para realizar análisis reproducibles Razones Pasos Consejos </description>
-    </item>
-    
-    <item>
-      <title>Diseño transparente</title>
-      <link>/01componentes/</link>
-      <pubDate>Sun, 20 Dec 2020 11:50:46 +0200</pubDate>
-      
-      <guid>/01componentes/</guid>
-      <description>Guía para transparencia de diseño Uno de los pilares que dan validez a la evidencia científica es el escrutinio por parte de los pares. Sin embargo, la prevalencia de prácticas cuestionables en distintas disciplinas ha puesto en debate que dicho principio esté siendo alcanzando y, como consecuencia de ello, se han incrementado los esfuerzos por establecer mayores estándares de transparencia en la investigación científica. En este contexto, una de las herramientas más utilizadas para hacer frente a este dilema han sido los preregistros.</description>
     </item>
     
   </channel>

@@ -3,7 +3,7 @@ author: LISA
 banner: img/banners/blog-3.png
 categories:
 - componentes
-date: "2020-12-20T11:50:46+02:00"
+date: "2021-11-03T11:50:46+02:00"
 description:
 tags:
 - componentes
@@ -74,16 +74,17 @@ Las plantillas de preregistro son un conjunto de preguntas que orientan el regis
 
 
  tab01 <- tab01 %>%
- dplyr::mutate(enlace = cell_spec(enlace, "html", link = enlace))
+ dplyr::mutate(nombre = cell_spec(nombre, "html", link = enlace)) %>% 
+   select(-enlace)
  tab01 %>%
  kableExtra::kbl(., full_width = T, linesep = "", escape = FALSE,
- col.names = c("Plantilla","Descripción","Nombre","Enlace"),row.names = F) %>%
+ col.names = c("Plantilla","Descripción","Nombre"),row.names = F) %>%
    kableExtra::kable_styling(
      full_width = F,
      position = "center",
      font_size = 14,
      bootstrap_options=c("striped", "bordered", "condensed", "responsive")) %>%
-   kableExtra::collapse_rows(columns = 1:4,valign = "middle")
+   kableExtra::collapse_rows(columns = 1:3,valign = "middle")
 ```
 Entonces, luego de responder las preguntas del **[Paso 1](#paso1)** podemos elegir una pantilla adecuada:
 

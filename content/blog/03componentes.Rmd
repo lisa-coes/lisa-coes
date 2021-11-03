@@ -3,7 +3,7 @@ author: LISA
 banner: img/banners/blog-3.png
 categories:
 - componentes
-date: "2020-12-20T11:50:46+02:00"
+date: "2021-11-03T11:50:46+02:00"
 description:
 tags:
 - componentes
@@ -17,7 +17,7 @@ title: Análisis reproducibles
 
 # Guía para los análisis reproducibles  <i class="ai ai-open-materials ai-1.5x" style="color:pink"></i>
 
-¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales, y que por tanto, es imposible acceder a los procedimientos que dieron luces de sus resultados? En el marco de la denominada "crisis de la ciencia", la comunidad científica se ha organizado para dar salida a este problema a través de una diversidad de iniciativas que, a modo general, buscan promover los principios de la ciencia abierta.
+¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales, y que por tanto, es imposible acceder a los procedimientos que dieron luces a sus resultados? En este contexto, la **reproducibilidad** entendida como la posibilidad de **regenerar** de manera independiente los resultados usando los materiales originales de una investigación publicada. _¿Cómo organizamos un proyecto con análisis reproducibles?_ _¿Qué herramientas puedo utilizar?_ _¿Cómo puedo compartir mis materiales?_ En este blog daremos algunas orientaciones generales respecto a cómo avanzar en esta dirección.
 
 <br>
 <div style="background-color: #ffff ; padding: 8px; border: 2px solid #ec8686;">
@@ -42,37 +42,36 @@ Un proyecto reproducible no se reduce solamente a un buen código, sino que cons
 
 `3. Documentos dinámicos`: la combinación de escritura en texto plano con el código de análisis hace de los documentos dinámicos una herramienta clave para la reproducibilidad dado que nos permiten generar reportes autocontenidos.
 
-`4. Control de versiones`: saber qué, quién y cuándo se ha realizado un cambio en nuestro proyecto, además del uso de repositorios públicos contribuye a realizar el seguimiento de un proyecto y así también identificar problemas para reproducir los resultados como también para colaborar de manera eficiente.
+`4. Control de versiones`: saber _qué_, _quién_ y _cuándo_ se ha realizado un cambio en nuestro proyecto, además del uso de repositorios públicos contribuye a realizar el seguimiento de un proyecto y así también identificar problemas para reproducir los resultados como también para colaborar de manera eficiente.
 
 # Paso 1: Estructura del proyecto {#paso1}
 
 La forma en que están organizadas las partes de un proyecto es fundamental para cumplir a cabalidad con el objetivo de hacerlo reproducible. Esta organización se puede sintetizar como un esquema que involucra tres elementos: `(1) Datos`, `(2) Métodos` y `(3) Resultados`.
 
-Este esquema busca sintetizar algunos de los protocolos más usados en ciencias sociales, describiendo los principales elementos de un proyecto reproducible.
+Este esquema busca sintetizar algunos de los protocolos más usados en ciencias sociales, describiendo los principales elementos de un proyecto con análisis reproducibles.
 
 ## Carpeta Raíz
 
-Para la organización de un proyecto, debemos pensar en una estructura digital de carpetas y subcarpetas. La carpeta raíz es donde se alberga toda la información de referencia para el proyecto, la cual tiene por objetivo:
+Para la organización de un proyecto, debemos pensar en una **estructura digital** de carpetas y subcarpetas. La carpeta raíz es donde se alberga toda la información de referencia para el proyecto, la cual tiene por objetivo:
 
 - **Documentar**: expone ordenadamente el contenido del proyecto de manera jerárquica (carpetas y subcarpetas).
 
 - **Orientar**:  instruye al usuario para una correcta ejecución de rutinas de código que permita regenerar los resultados de la investigación.
 
-Estas instrucciones pueden ir incluidas en un archivo `README` que puede seguir la siguiente organización:
+Estas instrucciones pueden ir incluidas en un archivo `README` organizado de la siguiente manera:
 </div>
 
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
  knitr::include_graphics("../input/estructura.png")  
 ```
 
-* Para ver mayores destalles respecto a el contenido y estructura de un proyecto reproducible, puedes hacer click aquí:
+🗸 Para mayores detalles respecto al contenido y estructura de un proyecto reproducible, puedes hacer click aquí:
 
 <a class = "btn btn-template-main" href="https://lisa-coes.github.io/lisa-book/herramientas-para-los-an%C3%A1lisis-reproducibles.html#estructura-del-proyecto" target="_blank">Estructura de un proyecto</a>
 
 ### <i class="fas fa-database" ></i> `Datos`
 
-
-Si bien los protocolos varían de acuerdo a cómo se organizan los datos dentro de la carpeta raíz (i.e. en qué carpeta se alojan), algo que suele ser común entre los protocolos y que relevante de recalcar acá es la diferenciación entre los datos **originales** o "brutos" (_raw data_) y los datos **procesados**. El albergar ambas versiones permite identificar los cambios generados a través del procesamiento.
+Si bien los protocolos varían de acuerdo a cómo se organizan los datos dentro de la carpeta raíz (i.e. en qué carpeta se alojan), algo que suele ser común entre los protocolos es la diferenciación entre los datos **originales** o "brutos" (_raw data_) y los datos **procesados**. El albergar ambas versiones permite identificar los cambios generados a través del procesamiento.
 
 Para toda fuente de datos original, se debe proveer la siguiente información:
 
@@ -80,8 +79,6 @@ Para toda fuente de datos original, se debe proveer la siguiente información:
 - Fecha de creación de la base de datos
 - Descripción respecto a cómo se puede acceder a una copia de la base de datos
 - Libro de códigos de todas las variables de la base de datos.
-
-Para toda fuente de datos procesada, tanto intermedia como final, se debe incluir el libro de códigos de la base, con sus variables correctamente etiquetadas, y la fecha de creación y versión de la misma.
 
 🗸 Para mayor detalle sobre la sección de datos, puedes hacer click aquí:
 
@@ -93,7 +90,7 @@ Con los métodos nos referimos a todos los procedimientos del proyecto relaciona
 
 #### **`(1) Preparación`**
 
-La preparación de los datos cumple una función muy importante para el desarrollo de un artículo: la de generar los datos que emplearemos en análisis del estudio. Considerando esto, el objetivo final de este documento es generar una base de datos procesada, que contenga solamente los datos importantes para analizar.
+La preparación de los datos cumple una función clave para el desarrollo de un artículo: la de generar los datos que emplearemos en análisis del estudio. Considerando esto, el objetivo final de este documento es generar una base de datos procesada, que contenga solamente los datos importantes para analizar.
 
 Sugerimos seguir el siguiente flujo para realizar la preparación de los datos:
 
@@ -117,19 +114,18 @@ Sugerimos seguir el siguiente flujo para realizar la preparación de los datos:
     full_width = F,
     position = "center",
     font_size = 14,
-    bootstrap_options=c("striped", "bordered", "condensed", "responsive"))
+    bootstrap_options=c("striped", "bordered", "condensed", "responsive")) %>% 
+ column_spec(column = 1,width = "5cm") 
 ```
 El seguir este flujo de manera sistemática facilitará la lectura tanto para terceros, como para nosotros mismos en el futuro.
 
 #### **`(2) Análisis`**
 
-Una vez contamos con nuestra base de datos procesada podemos analizar los datos. En el documento de análisis de datos se procede a elaborar todas las tablas, gráficos, pruebas estadísticas etc. que vayan a ser introducidos en el artículo final.
-
-Que contenga los análisis necesarios para probar las hipótesis de investigación.
+Una vez contamos con nuestra base de datos procesada podemos analizar los datos. En el documento de análisis de datos se procede a elaborar todas las tablas, gráficos y pruebas estadísticas que vayan a ser incluidas en el artículo final. En términos generales las secciones son
 
 1. Análisis descriptivos univariados de los datos.
 2. Análisis bivariado de los datos.
-3. Análisis multivariados.
+3. Análisis multivariado.
 
 #### **Documentación**
 
@@ -172,7 +168,7 @@ Los documentos dinámicos son una herramienta que incorpora lo mejor de dos mund
 
 🔴 Por un lado, trabajar con `texto plano` implica independencia de cualquier software comercial o plataformas específicas. Adicionalmente, un documento dinámico permite centrarnos en el contenido y menos en el formato, dado que existen distintas opciones para ello (p.ej. _.pdf_ o _.html_).
 
-🔴 Finalmente, al incorporar código de análisis es posible generar documentos **autocontenidos**, es decir, no es necesario recurrir a imágenes o tablas externas, sino que es posible producirlas en el mismo documento.
+🔴 Finalmente, al incorporar código de análisis es posible generar documentos **autocontenidos**, es decir, no es necesario recurrir a imágenes o tablas externas, sino que es posible generarlas en el mismo documento.
 
 Por ejemplo, este documento está escrito en `R Markdown`, lo que nos permite demostrar cómo combinar código en `R` con texto plano.
 
@@ -218,7 +214,7 @@ Usar documentos dinámicos escritos en `texto plano` abre un abanico de posibili
 
 ## Paso 4: Control de versiones {#paso4}
 
-A modo global, el **control de versiones** nos permite rastrear los cambios en un documento o conjunto de archivos, es decir, saber _cuáles/qué_, _cuándo_  y _quién_ ha realizado estos cambios.
+A modo global, el **control de versiones** nos permite rastrear los cambios en un documento o conjunto de archivos, es decir, saber _cuáles/qué_,   _quién_ y _cuándo_  se han realizado cambios.
 
 Al trabajar colaborativamente existen diferentes (y poco eficientes) maneras de controlar versiones. Por ejemplo:
 
@@ -235,7 +231,7 @@ No obstante, hoy en día existen sistemas de control de versiones especializados
 
 ⭕ Permite registrar (_snapshot_) la versión de una carpeta completa y su contenido  
 
-⭕ Registra _qué_, _cuándo_ y _quién_ realizó cambios
+⭕ Registra _qué_, _quién_ y _cuándo_ se realizaron cambios
 
 ⭕ Uso de repositorios (_repos_) locales (computadora) o remotos (_online_)
 
@@ -250,7 +246,10 @@ Recomendamos el uso de Git y Github cómo flujo de trabajo para aquellos cientí
 
 <a class = "btn btn-template-main" href="https://cienciasocialabierta.netlify.app/class/08-class/" target="_blank">Control de versiones/Git</a>
 
+
 # En síntesis
+
+🔴 Si deseas revisar más detalles de cómo elaborar un proyecto reproducible, en el siguiente video se detalla el paso a paso para ello:
 
 <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
  padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
