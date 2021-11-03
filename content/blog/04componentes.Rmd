@@ -25,7 +25,7 @@ La publicación de un trabajo científico es clave para dar a conocer los result
 
 <br>
 
-<div style="background-color: #ff6f6f36 ; padding: 8px; border: 1px solid #ec8686;">
+<div style="background-color: #fffff ; padding: 8px; border: 2px solid #ec8686;">
 - [¿Qué es el Open Access?](#def-oa)  
   * [Tipos de licencias](#prop-intel)
 - [¿Cuáles son los pasos a seguir?](#pasos)

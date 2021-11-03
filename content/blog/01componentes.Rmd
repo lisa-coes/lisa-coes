@@ -20,7 +20,7 @@ Uno de los pilares que dan validez a la evidencia científica es el **escrutinio
 
 <br>
 
-<div style="background-color: #ff6f6f36 ; padding: 8px; border: 1px solid #ec8686;">
+<div style="background-color: #ffff ; padding: 8px; border: 2px solid #ec8686;">
 - [¿Qué es un preregistro?](#def-prereg)
 - [¿Cuáles son los pasos a seguir?](#pasos)
 - [Paso 1: ¿Qué estudio estoy preregistrando?](#paso1)
@@ -120,7 +120,7 @@ Luego de seleccionar una plantilla, es hora de completarla y realizar el preregi
 # En síntesis
 
 Existe una estrecha relación entre las características de nuestro estudio y la plantilla que usaremos para preregistrar. Un flujo de preguntas que sintetiza la elección de las plantillas se puede ver en la siguiente figura:
- 
+
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
  knitr::include_graphics("../input/flujopreg.PNG")
 ```

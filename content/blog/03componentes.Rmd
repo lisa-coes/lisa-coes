@@ -1,0 +1,269 @@
+---
+author: LISA
+banner: img/banners/blog-3.png
+categories:
+- componentes
+date: "2020-12-20T11:50:46+02:00"
+description:
+tags:
+- componentes
+- ciencia abierta
+- analisis
+- codigo
+title: Análisis reproducibles
+---
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+# Guía para los análisis reproducibles  <i class="ai ai-open-materials ai-1.5x" style="color:pink"></i>
+
+¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales, y que por tanto, es imposible acceder a los procedimientos que dieron luces de sus resultados? En el marco de la denominada "crisis de la ciencia", la comunidad científica se ha organizado para dar salida a este problema a través de una diversidad de iniciativas que, a modo general, buscan promover los principios de la ciencia abierta.
+
+<br>
+<div style="background-color: #ffff ; padding: 8px; border: 2px solid #ec8686;">
+- [¿Cuáles son los pasos a seguir?](#pasos)
+- [Paso 1: Estructura del proyecto](#paso1)
+- [Paso 2: Prácticas de código](#paso2)
+- [Paso 3: Uso de documentos dinámicos](#paso3)
+- [Paso 4: Control de versiones](#paso4)
+</div>
+
+# ¿Cuáles son los pasos a seguir? {#pasos}
+
+```{r echo=FALSE, out.width='75%', fig.align='center'}
+ knitr::include_graphics("../input/lisa-reproducibilidad.gif")
+```
+
+Un proyecto reproducible no se reduce solamente a un buen código, sino que considera la vinculación entre los distintos elementos del proyecto que nos permitan **regenerar** los resultados de un estudio original. Por lo tanto, hemos organizado esta guía en cuatro pasos:
+
+`1. Estructura del proyecto`: la organización de los elementos de un proyecto es clave para lograr un estándar mínimo de reproducibilidad. Esto implica que tanto los materiales iniciales como los datos y rutinas de código deben estar correctamente vinculados para obtener los resultados.  
+
+`2. Prácticas de código`: la calidad de una hoja de código puede ser clave en lograr la regeneración de resultados. Por este motivo, cuestiones como los comentarios, indentación y organización del código son necesarias para un proyecto reproducible.
+
+`3. Documentos dinámicos`: la combinación de escritura en texto plano con el código de análisis hace de los documentos dinámicos una herramienta clave para la reproducibilidad dado que nos permiten generar reportes autocontenidos.
+
+`4. Control de versiones`: saber qué, quién y cuándo se ha realizado un cambio en nuestro proyecto, además del uso de repositorios públicos contribuye a realizar el seguimiento de un proyecto y así también identificar problemas para reproducir los resultados como también para colaborar de manera eficiente.
+
+# Paso 1: Estructura del proyecto {#paso1}
+
+La forma en que están organizadas las partes de un proyecto es fundamental para cumplir a cabalidad con el objetivo de hacerlo reproducible. Esta organización se puede sintetizar como un esquema que involucra tres elementos: `(1) Datos`, `(2) Métodos` y `(3) Resultados`.
+
+Este esquema busca sintetizar algunos de los protocolos más usados en ciencias sociales, describiendo los principales elementos de un proyecto reproducible.
+
+## Carpeta Raíz
+
+Para la organización de un proyecto, debemos pensar en una estructura digital de carpetas y subcarpetas. La carpeta raíz es donde se alberga toda la información de referencia para el proyecto, la cual tiene por objetivo:
+
+- **Documentar**: expone ordenadamente el contenido del proyecto de manera jerárquica (carpetas y subcarpetas).
+
+- **Orientar**:  instruye al usuario para una correcta ejecución de rutinas de código que permita regenerar los resultados de la investigación.
+
+Estas instrucciones pueden ir incluidas en un archivo `README` que puede seguir la siguiente organización:
+</div>
+
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+ knitr::include_graphics("../input/estructura.png")  
+```
+
+* Para ver mayores destalles respecto a el contenido y estructura de un proyecto reproducible, puedes hacer click aquí:
+
+<a class = "btn btn-template-main" href="https://lisa-coes.github.io/lisa-book/herramientas-para-los-an%C3%A1lisis-reproducibles.html#estructura-del-proyecto" target="_blank">Estructura de un proyecto</a>
+
+### <i class="fas fa-database" ></i> `Datos`
+
+
+Si bien los protocolos varían de acuerdo a cómo se organizan los datos dentro de la carpeta raíz (i.e. en qué carpeta se alojan), algo que suele ser común entre los protocolos y que relevante de recalcar acá es la diferenciación entre los datos **originales** o "brutos" (_raw data_) y los datos **procesados**. El albergar ambas versiones permite identificar los cambios generados a través del procesamiento.
+
+Para toda fuente de datos original, se debe proveer la siguiente información:
+
+- Citación bibliográfica en un formato estándar
+- Fecha de creación de la base de datos
+- Descripción respecto a cómo se puede acceder a una copia de la base de datos
+- Libro de códigos de todas las variables de la base de datos.
+
+Para toda fuente de datos procesada, tanto intermedia como final, se debe incluir el libro de códigos de la base, con sus variables correctamente etiquetadas, y la fecha de creación y versión de la misma.
+
+🗸 Para mayor detalle sobre la sección de datos, puedes hacer click aquí:
+
+<a class = "btn btn-template-main" href="https://lisa-coes.github.io/lisa-book/herramientas-para-los-an%C3%A1lisis-reproducibles.html#datos" target="_blank">Datos</a>
+
+### 📝 `Método`
+
+Con los métodos nos referimos a todos los procedimientos del proyecto relacionados con la **(1) preparación** y **(2) análisis** de datos.
+
+#### **`(1) Preparación`**
+
+La preparación de los datos cumple una función muy importante para el desarrollo de un artículo: la de generar los datos que emplearemos en análisis del estudio. Considerando esto, el objetivo final de este documento es generar una base de datos procesada, que contenga solamente los datos importantes para analizar.
+
+Sugerimos seguir el siguiente flujo para realizar la preparación de los datos:
+
+```{r echo=FALSE}
+ pacman::p_load(dplyr, kableExtra,sjlabelled, readxl)
+ text_tbl <- data.frame(
+  Procedimientos = c("1. Descriptivo inicial", "2. Recodificación",
+                     "3. Etiquetado", "4. Descriptivo final",
+                     "5. Otros ajustes"),
+  Descripción = c(
+    "Calcular una tabla de frecuencias o de medidas de tendencia central y dispersión para conocer el estado de la variable previo a cualquier modificación",
+    "Recodificación de los datos perdidos y otro tipo de valores a modificar (e.g. errores de tipeo)",
+    "Una base bien documentada trae etiquetas predeterminadas que hacen alusión a las preguntas del cuestionario",
+    "Revisar de nuevo las frecuencias o las medidas de tendencia central de las variables, para diagnosticar que no hemos cometido errores en el procesamiento",
+    "Efectuar toda modificación específica y relevante para la forma que analizaremos los datos"
+   )
+ )
+
+ kableExtra::kbl(text_tbl,full_width = T, linesep = "", escape = FALSE) %>%
+  kable_styling(
+    full_width = F,
+    position = "center",
+    font_size = 14,
+    bootstrap_options=c("striped", "bordered", "condensed", "responsive"))
+```
+El seguir este flujo de manera sistemática facilitará la lectura tanto para terceros, como para nosotros mismos en el futuro.
+
+#### **`(2) Análisis`**
+
+Una vez contamos con nuestra base de datos procesada podemos analizar los datos. En el documento de análisis de datos se procede a elaborar todas las tablas, gráficos, pruebas estadísticas etc. que vayan a ser introducidos en el artículo final.
+
+Que contenga los análisis necesarios para probar las hipótesis de investigación.
+
+1. Análisis descriptivos univariados de los datos.
+2. Análisis bivariado de los datos.
+3. Análisis multivariados.
+
+#### **Documentación**
+
+Para lograr una correcta ejecución de los documentos de preparación y análisis es clave tener correctamente explicado cómo utilizarlos y cómo se vinculan entre ellos. Para esto, sugerimos que documento `README` incluya las siguientes indicaciones:
+
+1. **Ejecución de la preparación**: Precisar la ubicación de la o las fuentes de datos originales.
+
+2. **Cierre de la preparación**: Precisar la ruta donde se deben almacenar la base de datos procesada.
+
+3. **Ejecución de análisis**: Precisar el origen de la base de datos procesada.
+
+4. **Archivos del análisis de datos**: Precisar ruta de almacenamiento y nombre.
+
+
+🗸  Más información sobre la sección de método, puedes hacer click aquí:
+
+<a class = "btn btn-template-main" href="https://lisa-coes.github.io/lisa-book/herramientas-para-los-an%C3%A1lisis-reproducibles.html#m%C3%A9todos" target="_blank">Preparación y análisis </a>
+
+### 📊 `Resultados`
+
+Con resultados, nos referimos a todo elemento obtenido del análisis de datos. Habitualmente toman la forma de figuras, gráficos o tablas. Es habitual que los protocolos sugieran que estos archivos se almacenen en una subcarpeta exclusiva para ello. Por este motivo, sugerimos se sigan las siguientes indicaciones:
+
+🔴  Para **imágenes**, sugerimos usar nombres breves e incorporar numeración. Por ejemplo "figura01.png", siguiendo el orden de aparición en la publicación.
+
+🔴 Para **tablas**, sugerimos emplear nombres cortos e incorporar numeración. Por ejemplo, "tabla01.xls", según el orden de aparición en la publicación.
+
+## Paso 2: Prácticas de código {#paso2}
+
+La escritura de un código de preparación o análisis requiere adoptar estándares mínimos, entre otras cosas, para facilitar la comprensión y ejecución de una rutina de código por **otros usuarios** que busquen regenerar nuestros resultados.
+
+La figura a continuación muestra algunas buenas prácticas de código que contribuyen a hacer el trabajo más transparente, y son aplicables a lenguajes de programación:
+
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+ knitr::include_graphics("../input/practicas.png")
+```
+
+## Paso 3: Uso de documentos dinámicos {#paso3}
+
+Los documentos dinámicos son una herramienta que incorpora lo mejor de dos mundos: documentos en texto plano y código de análisis.
+
+🔴 Por un lado, trabajar con `texto plano` implica independencia de cualquier software comercial o plataformas específicas. Adicionalmente, un documento dinámico permite centrarnos en el contenido y menos en el formato, dado que existen distintas opciones para ello (p.ej. _.pdf_ o _.html_).
+
+🔴 Finalmente, al incorporar código de análisis es posible generar documentos **autocontenidos**, es decir, no es necesario recurrir a imágenes o tablas externas, sino que es posible producirlas en el mismo documento.
+
+Por ejemplo, este documento está escrito en `R Markdown`, lo que nos permite demostrar cómo combinar código en `R` con texto plano.
+
+<div class = "row">
+
+<div class = "col-md-4">
+
+Así se ve el `código` en nuestro documento:
+
+```{r eval=FALSE}
+ library(ggplot2)
+
+ ggplot(mtcars, aes(x=mpg)) +
+  geom_histogram(fill="skyblue",
+                 alpha=0.5) +
+  theme_minimal()
+
+```
+</div>
+
+<div class = "col-md-8">
+
+Luego, el código se ejecuta y obtenemos el siguiente gráfico:
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, ,fig.align='center', fig.width=5, fig.height=2}
+library(ggplot2)
+ggplot(mtcars, aes(x=mpg)) +
+  geom_histogram(fill="skyblue", alpha=0.5) +
+  theme_minimal()
+```
+
+</div>
+
+Usar documentos dinámicos escritos en `texto plano` abre un abanico de posibilidades cuando buscamos avanzar hacia proyectos con análisis reproducibles. En este sentido, nos gustaría destacar tres opciones:
+
+```{r echo=FALSE, out.width='75%', fig.align='center'}
+ knitr::include_graphics("../input/docs-dynamic.gif")
+```
+
+🗸 Si deseas saber más sobre cómo funcionan los documentos dinámicos, puedes hacer click aquí:
+
+<a class = "btn btn-template-main" href="https://lisa-coes.github.io/lisa-book/herramientas-para-los-an%C3%A1lisis-reproducibles.html#texto-plano-y-documentos-din%C3%A1micos" target="_blank">Documentos dinámicos</a>
+
+## Paso 4: Control de versiones {#paso4}
+
+A modo global, el **control de versiones** nos permite rastrear los cambios en un documento o conjunto de archivos, es decir, saber _cuáles/qué_, _cuándo_  y _quién_ ha realizado estos cambios.
+
+Al trabajar colaborativamente existen diferentes (y poco eficientes) maneras de controlar versiones. Por ejemplo:
+
+  ❌ Fechas: `codigo_2021-03-01.R` → `codigo_2021-05-02.R`
+
+  ❌ Numeración: `analisis_v02.do` →  `analisis_v05.do`   
+
+No obstante, hoy en día existen sistemas de control de versiones especializados para el trabajo de programación. Al respecto, nuestra sugerencia es emplear versionamiento basado en <i class="fab fa-git-square"></i>
+, pero _¿qué es Git?_ Te lo explicamos a continuación.        
+
+### Git <i class="fab fa-git-alt"></i> y GitHub <i class="fab fa-github"></i>
+
+[**Git**](https://es.wikipedia.org/wiki/Git){target="_blank"} es un sistema de control de versiones de código abierto, tiene por objetivo hacer más eficiente el flujo de trabajo para proyectos de desarrollo de software. Algunas de sus principales características son:
+
+⭕ Permite registrar (_snapshot_) la versión de una carpeta completa y su contenido  
+
+⭕ Registra _qué_, _cuándo_ y _quién_ realizó cambios
+
+⭕ Uso de repositorios (_repos_) locales (computadora) o remotos (_online_)
+
+A la par existe [**GitHub**](https://github.com/){target="_blank"}, el cual es una plataforma de desarrollo colaborativo para hospedar proyectos que utilizan control de versiones basado en **Git**. Una de sus principales características es el uso de repositorios locales y remotos. La siguiente figura muestra un ejemplo:
+
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+ knitr::include_graphics("../input/github-colab.png")
+```
+Recomendamos el uso de Git y Github cómo flujo de trabajo para aquellos científicos sociales que trabajan con datos cuantitativos, especialmente cuando son grandes equipos de investigación o son proyectos con varias colaboraciones.
+
+🗸 Si deseas conocer más sobre Git y GitHub te invitamos a revisar la sesión del curso "Ciencia Social Abierta":
+
+<a class = "btn btn-template-main" href="https://cienciasocialabierta.netlify.app/class/08-class/" target="_blank">Control de versiones/Git</a>
+
+# En síntesis
+
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEtY9Ngapo&#x2F;watch?embed">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEtY9Ngapo&#x2F;watch?utm_content=DAEtY9Ngapo&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"> </a>
+
+
+## ¿Quieres comentar o tienes alguna duda?
+
+Puedes dejar tus comentarios y dudas sobre cómo generar un proyecto reproducible. De todas formas puedes [contactarnos](/contact/)
+
+<div id="disqus_thread"></div>
