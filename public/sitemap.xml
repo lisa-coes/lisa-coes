@@ -3,8 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/tags/analisis/</loc>
-    <lastmod>2021-11-03T11:50:46+02:00</lastmod>
+    <loc>/blog/</loc>
+    <lastmod>2021-11-03T12:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2021-11-03T12:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ciencia-abierta/</loc>
+    <lastmod>2021-11-03T12:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/componentes/</loc>
+    <lastmod>2021-11-03T12:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/componentes/</loc>
+    <lastmod>2021-11-03T12:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-11-03T12:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/publicaciones/</loc>
+    <lastmod>2021-11-03T12:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/04componentes/</loc>
+    <lastmod>2021-11-03T12:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-11-03T12:50:46+02:00</lastmod>
   </url>
   
   <url>
@@ -13,58 +53,33 @@
   </url>
   
   <url>
-    <loc>/blog/</loc>
+    <loc>/tags/c%C3%B3digo/</loc>
     <lastmod>2021-11-03T11:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/tags/reproducibilidad/</loc>
     <lastmod>2021-11-03T11:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/ciencia-abierta/</loc>
-    <lastmod>2021-11-03T11:50:46+02:00</lastmod>
+    <loc>/tags/datos/</loc>
+    <lastmod>2021-10-20T10:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/codigo/</loc>
-    <lastmod>2021-11-03T11:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/componentes/</loc>
-    <lastmod>2021-11-03T11:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/componentes/</loc>
-    <lastmod>2021-11-03T11:50:46+02:00</lastmod>
+    <loc>/02componentes/</loc>
+    <lastmod>2021-10-20T10:50:46+02:00</lastmod>
   </url>
   
   <url>
     <loc>/01componentes/</loc>
-    <lastmod>2021-11-03T11:50:46+02:00</lastmod>
+    <lastmod>2021-10-02T11:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2021-11-03T11:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2021-11-03T11:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/publicaciones/</loc>
-    <lastmod>2021-10-18T12:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/04componentes/</loc>
-    <lastmod>2021-10-18T12:50:46+02:00</lastmod>
+    <loc>/tags/preregistro/</loc>
+    <lastmod>2021-10-02T11:50:46+02:00</lastmod>
   </url>
   
   <url>
@@ -83,18 +98,18 @@
   </url>
   
   <url>
+    <loc>/tags/analisis/</loc>
+    <lastmod>2020-12-20T11:50:46+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/novedades/02componentes/</loc>
     <lastmod>2020-12-20T11:50:46+02:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/datos/</loc>
-    <lastmod>2020-12-20T10:50:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/02componentes/</loc>
-    <lastmod>2020-12-20T10:50:46+02:00</lastmod>
+    <loc>/tags/codigo/</loc>
+    <lastmod>2020-12-20T11:50:46+02:00</lastmod>
   </url>
   
   <url>

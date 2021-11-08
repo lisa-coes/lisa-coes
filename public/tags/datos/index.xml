@@ -6,7 +6,7 @@
     <description>Recent content in datos on Laboratorio de Ciencia Social Abierta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-cl</language>
-    <lastBuildDate>Sun, 20 Dec 2020 10:50:46 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 20 Oct 2021 10:50:46 +0200</lastBuildDate>
     
 	<atom:link href="/tags/datos/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Datos abiertos</title>
       <link>/02componentes/</link>
-      <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
+      <pubDate>Wed, 20 Oct 2021 10:50:46 +0200</pubDate>
       
       <guid>/02componentes/</guid>
       <description>Guía para la apertura de datos En parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de compartir nuestros datos al resto de la comunidad científica pero muchas veces no sabemos cómo lograrlo. ¿Cómo abrir nuestros datos? ¿Qué criterios debo cumplir para que sean publicados? ¿Dónde y cómo publicarlos? En el siguiente blog te contestaremos estas preguntas.</description>

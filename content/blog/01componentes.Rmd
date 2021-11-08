@@ -1,6 +1,6 @@
 ---
 author: LISA
-banner: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Preregistered_small_color_%28vector%29.svg/939px-Preregistered_small_color_%28vector%29.svg.png"
+banner: img/banners/blog-2.png
 categories:
 - componentes
 date: "2021-10-02T11:50:46+02:00"
@@ -9,7 +9,6 @@ tags:
 - componentes
 - ciencia abierta
 - preregistro
-- diseño transparente
 title: Diseño transparente
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
