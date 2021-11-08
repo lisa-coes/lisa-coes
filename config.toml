@@ -60,6 +60,11 @@ paginate = 10
 
 [[menu.main]]
     parent = "blog"
+    name = "0. Introducción"
+    url = "/00intro-componentes/"
+
+[[menu.main]]
+    parent = "blog"
     name = "1. Diseño Transparente"
     url = "/01componentes/"
 

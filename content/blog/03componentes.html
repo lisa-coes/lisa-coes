@@ -44,8 +44,10 @@ title: Análisis reproducibles
 </div>
 <div id="paso1" class="section level1">
 <h1>Paso 1: Estructura del proyecto</h1>
-<p>La forma en que están organizadas las partes de un proyecto es fundamental para cumplir a cabalidad con el objetivo de hacerlo reproducible. Esta organización se puede sintetizar como un esquema que involucra tres elementos: <code>(1) Datos</code>, <code>(2) Métodos</code> y <code>(3) Resultados</code>.</p>
-<p>Este esquema busca sintetizar algunos de los protocolos más usados en ciencias sociales, describiendo los principales elementos de un proyecto con análisis reproducibles.</p>
+<p>La forma en que están organizadas las partes de un proyecto es fundamental para cumplir a cabalidad con el objetivo de hacerlo reproducible. Esta organización se puede sintetizar como un esquema que involucra tres elementos: <code>(1) Input</code>, <code>(2) Procesamiento</code> y <code>(3) Output</code>.</p>
+<p>Este esquema se basa en una versión dell Protocolo IPO (Input-Procesamiento-Output) que se propone abordar brevemente todo lo referente a los <code>Datos</code>, <code>Métodos</code> y <code>Resultados</code>.</p>
+<p>🗸 Si deseas saber más sobre el <strong>Protocolo IPO</strong> puedes hacer click aquí:</p>
+<p><a class = "btn btn-template-main" href="../ipo-protocol/index.html" target="_blank">Protocolo IPO</a></p>
 <div id="carpeta-raíz" class="section level2">
 <h2>Carpeta Raíz</h2>
 <p>Para la organización de un proyecto, debemos pensar en una <strong>estructura digital</strong> de carpetas y subcarpetas. La carpeta raíz es donde se alberga toda la información de referencia para el proyecto, la cual tiene por objetivo:</p>
@@ -58,8 +60,8 @@ Estas instrucciones pueden ir incluidas en un archivo <code>README</code> organi
 <p><img src="../input/estructura.png" width="100%" style="display: block; margin: auto;" /></p>
 <p>🗸 Para mayores detalles respecto al contenido y estructura de un proyecto reproducible, puedes hacer click aquí:</p>
 <p><a class = "btn btn-template-main" href="https://lisa-coes.github.io/lisa-book/herramientas-para-los-an%C3%A1lisis-reproducibles.html#estructura-del-proyecto" target="_blank">Estructura de un proyecto</a></p>
-<div id="datos" class="section level3">
-<h3><i class="fas fa-database" ></i> <code>Datos</code></h3>
+<div id="input-i" class="section level3">
+<h3><i class="fas fa-database" ></i> <code>Input (I)</code></h3>
 <p>Si bien los protocolos varían de acuerdo a cómo se organizan los datos dentro de la carpeta raíz (i.e. en qué carpeta se alojan), algo que suele ser común entre los protocolos es la diferenciación entre los datos <strong>originales</strong> o “brutos” (<em>raw data</em>) y los datos <strong>procesados</strong>. El albergar ambas versiones permite identificar los cambios generados a través del procesamiento.</p>
 <p>Para toda fuente de datos original, se debe proveer la siguiente información:</p>
 <ul>
@@ -71,9 +73,9 @@ Estas instrucciones pueden ir incluidas en un archivo <code>README</code> organi
 <p>🗸 Para mayor detalle sobre la sección de datos, puedes hacer click aquí:</p>
 <p><a class = "btn btn-template-main" href="https://lisa-coes.github.io/lisa-book/herramientas-para-los-an%C3%A1lisis-reproducibles.html#datos" target="_blank">Datos</a></p>
 </div>
-<div id="método" class="section level3">
-<h3>📝 <code>Método</code></h3>
-<p>Con los métodos nos referimos a todos los procedimientos del proyecto relacionados con la <strong>(1) preparación</strong> y <strong>(2) análisis</strong> de datos.</p>
+<div id="procesamiento-p" class="section level3">
+<h3>📝 <code>Procesamiento (P)</code></h3>
+<p>Con <code>Pocesamiento</code> nos referimos a todos los procedimientos del proyecto relacionados con la <strong>(1) preparación</strong> y <strong>(2) análisis</strong> de datos.</p>
 <div id="preparación" class="section level4">
 <h4><strong><code>(1) Preparación</code></strong></h4>
 <p>La preparación de los datos cumple una función clave para el desarrollo de un artículo: la de generar los datos que emplearemos en análisis del estudio. Considerando esto, el objetivo final de este documento es generar una base de datos procesada, que contenga solamente los datos importantes para analizar.</p>
@@ -146,7 +148,9 @@ El seguir este flujo de manera sistemática facilitará la lectura tanto para te
 </div>
 <div id="análisis" class="section level4">
 <h4><strong><code>(2) Análisis</code></strong></h4>
-<p>Una vez contamos con nuestra base de datos procesada podemos analizar los datos. En el documento de análisis de datos se procede a elaborar todas las tablas, gráficos y pruebas estadísticas que vayan a ser incluidas en el artículo final. En términos generales las secciones son</p>
+<ul>
+<li>Una vez contamos con nuestra <strong>base de datos procesada</strong> podemos analizar los datos. En el documento de análisis de datos se procede a elaborar todas las tablas, gráficos y pruebas estadísticas que vayan a ser incluidas en el artículo final. En términos generales las secciones son</li>
+</ul>
 <ol style="list-style-type: decimal">
 <li>Análisis descriptivos univariados de los datos.</li>
 <li>Análisis bivariado de los datos.</li>
@@ -162,13 +166,13 @@ El seguir este flujo de manera sistemática facilitará la lectura tanto para te
 <li><p><strong>Ejecución de análisis</strong>: Precisar el origen de la base de datos procesada.</p></li>
 <li><p><strong>Archivos del análisis de datos</strong>: Precisar ruta de almacenamiento y nombre.</p></li>
 </ol>
-<p>🗸 Más información sobre la sección de método, puedes hacer click aquí:</p>
+<p>🗸 Más información sobre la sección de métodos, puedes hacer click aquí:</p>
 <p><a class = "btn btn-template-main" href="https://lisa-coes.github.io/lisa-book/herramientas-para-los-an%C3%A1lisis-reproducibles.html#m%C3%A9todos" target="_blank">Preparación y análisis </a></p>
 </div>
 </div>
-<div id="resultados" class="section level3">
-<h3>📊 <code>Resultados</code></h3>
-<p>Con resultados, nos referimos a todo elemento obtenido del análisis de datos. Habitualmente toman la forma de figuras, gráficos o tablas. Es habitual que los protocolos sugieran que estos archivos se almacenen en una subcarpeta exclusiva para ello. Por este motivo, sugerimos se sigan las siguientes indicaciones:</p>
+<div id="output-o" class="section level3">
+<h3>📊 <code>Output (O)</code></h3>
+<p>Con <code>Output</code>, nos referimos a todo elemento obtenido del análisis de datos. Habitualmente toman la forma de figuras, gráficos o tablas. Es habitual que los protocolos sugieran que estos archivos se almacenen en una subcarpeta exclusiva para ello. Por este motivo, sugerimos se sigan las siguientes indicaciones:</p>
 <p>🔴 Para <strong>imágenes</strong>, sugerimos usar nombres breves e incorporar numeración. Por ejemplo “figura01.png”, siguiendo el orden de aparición en la publicación.</p>
 <p>🔴 Para <strong>tablas</strong>, sugerimos emplear nombres cortos e incorporar numeración. Por ejemplo, “tabla01.xls”, según el orden de aparición en la publicación.</p>
 </div>

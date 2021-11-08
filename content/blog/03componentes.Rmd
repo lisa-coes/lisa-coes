@@ -46,9 +46,15 @@ Un proyecto reproducible no se reduce solamente a un buen código, sino que cons
 
 # Paso 1: Estructura del proyecto {#paso1}
 
-La forma en que están organizadas las partes de un proyecto es fundamental para cumplir a cabalidad con el objetivo de hacerlo reproducible. Esta organización se puede sintetizar como un esquema que involucra tres elementos: `(1) Datos`, `(2) Métodos` y `(3) Resultados`.
+La forma en que están organizadas las partes de un proyecto es fundamental para cumplir a cabalidad con el objetivo de hacerlo reproducible. Esta organización se puede sintetizar como un esquema que involucra tres elementos: `(1) Input`, `(2) Procesamiento` y `(3) Output`.
 
-Este esquema busca sintetizar algunos de los protocolos más usados en ciencias sociales, describiendo los principales elementos de un proyecto con análisis reproducibles.
+Este esquema se basa en una versión dell Protocolo IPO (Input-Procesamiento-Output) que se propone abordar brevemente todo lo referente a los `Datos`, `Métodos` y `Resultados`. 
+
+
+🗸 Si deseas saber más sobre el **Protocolo IPO** puedes hacer click aquí:
+
+<a class = "btn btn-template-main" href="../ipo-protocol/index.html" target="_blank">Protocolo IPO</a>
+
 
 ## Carpeta Raíz
 
@@ -69,7 +75,8 @@ Estas instrucciones pueden ir incluidas en un archivo `README` organizado de la 
 
 <a class = "btn btn-template-main" href="https://lisa-coes.github.io/lisa-book/herramientas-para-los-an%C3%A1lisis-reproducibles.html#estructura-del-proyecto" target="_blank">Estructura de un proyecto</a>
 
-### <i class="fas fa-database" ></i> `Datos`
+
+### <i class="fas fa-database" ></i> `Input (I)`
 
 Si bien los protocolos varían de acuerdo a cómo se organizan los datos dentro de la carpeta raíz (i.e. en qué carpeta se alojan), algo que suele ser común entre los protocolos es la diferenciación entre los datos **originales** o "brutos" (_raw data_) y los datos **procesados**. El albergar ambas versiones permite identificar los cambios generados a través del procesamiento.
 
@@ -84,9 +91,9 @@ Para toda fuente de datos original, se debe proveer la siguiente información:
 
 <a class = "btn btn-template-main" href="https://lisa-coes.github.io/lisa-book/herramientas-para-los-an%C3%A1lisis-reproducibles.html#datos" target="_blank">Datos</a>
 
-### 📝 `Método`
+### 📝 `Procesamiento (P)`
 
-Con los métodos nos referimos a todos los procedimientos del proyecto relacionados con la **(1) preparación** y **(2) análisis** de datos.
+Con `Pocesamiento` nos referimos a todos los procedimientos del proyecto relacionados con la **(1) preparación** y **(2) análisis** de datos.
 
 #### **`(1) Preparación`**
 
@@ -120,8 +127,8 @@ Sugerimos seguir el siguiente flujo para realizar la preparación de los datos:
 El seguir este flujo de manera sistemática facilitará la lectura tanto para terceros, como para nosotros mismos en el futuro.
 
 #### **`(2) Análisis`**
-
-Una vez contamos con nuestra base de datos procesada podemos analizar los datos. En el documento de análisis de datos se procede a elaborar todas las tablas, gráficos y pruebas estadísticas que vayan a ser incluidas en el artículo final. En términos generales las secciones son
+*
+Una vez contamos con nuestra **base de datos procesada** podemos analizar los datos. En el documento de análisis de datos se procede a elaborar todas las tablas, gráficos y pruebas estadísticas que vayan a ser incluidas en el artículo final. En términos generales las secciones son
 
 1. Análisis descriptivos univariados de los datos.
 2. Análisis bivariado de los datos.
@@ -137,16 +144,16 @@ Para lograr una correcta ejecución de los documentos de preparación y análisi
 
 3. **Ejecución de análisis**: Precisar el origen de la base de datos procesada.
 
-4. **Archivos del análisis de datos**: Precisar ruta de almacenamiento y nombre.
+4. **Archivos del análisis de datos**: Precisar ruta de almacenamiento y nombre. 
 
 
-🗸  Más información sobre la sección de método, puedes hacer click aquí:
+🗸  Más información sobre la sección de métodos, puedes hacer click aquí:
 
 <a class = "btn btn-template-main" href="https://lisa-coes.github.io/lisa-book/herramientas-para-los-an%C3%A1lisis-reproducibles.html#m%C3%A9todos" target="_blank">Preparación y análisis </a>
 
-### 📊 `Resultados`
+### 📊 `Output (O)`
 
-Con resultados, nos referimos a todo elemento obtenido del análisis de datos. Habitualmente toman la forma de figuras, gráficos o tablas. Es habitual que los protocolos sugieran que estos archivos se almacenen en una subcarpeta exclusiva para ello. Por este motivo, sugerimos se sigan las siguientes indicaciones:
+Con `Output`, nos referimos a todo elemento obtenido del análisis de datos. Habitualmente toman la forma de figuras, gráficos o tablas. Es habitual que los protocolos sugieran que estos archivos se almacenen en una subcarpeta exclusiva para ello. Por este motivo, sugerimos se sigan las siguientes indicaciones:
 
 🔴  Para **imágenes**, sugerimos usar nombres breves e incorporar numeración. Por ejemplo "figura01.png", siguiendo el orden de aparición en la publicación.
 

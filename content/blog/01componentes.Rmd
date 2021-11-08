@@ -13,6 +13,39 @@ title: Diseño transparente
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, cache = FALSE,echo = F)
+pacman::p_load(dplyr, kableExtra,sjlabelled, readxl)
+options(scipen=999,
+        knitr.kable.NA = '',
+        knitr.graphics.error = FALSE)
+Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
+```
+
+
+```{css}
+.btn-template-primary {
+    color: #ffffff;
+    background-color: lightblue;
+    border-width: inherit;
+}
+
+.btn-template-primary:hover,
+.btn-template-primary:focus,
+.btn-template-primary:active,
+.btn-template-primary.active,
+.open > .dropdown-toggle.btn-template-primary {
+  color: #ffffff;
+  background-color: #82D2ED;
+  border-color: #c22828;
+} 
+```
+
+
+
+
+
 # Guía para transparencia de diseño <i class="ai ai-preregistered ai-1.5x" style="color:lightblue"></i>
 
 Uno de los pilares que dan validez a la evidencia científica es el **escrutinio por parte de los pares**. Sin embargo, la prevalencia de prácticas cuestionables en distintas disciplinas ha puesto en debate que dicho principio esté siendo alcanzando y, como consecuencia de ello, se han incrementado los esfuerzos por establecer mayores **estándares de transparencia** en la investigación científica. En este contexto, una de las herramientas más utilizadas para hacer frente a este dilema han sido los **preregistros**. _¿Qué es un preregistro?_ _¿Cómo y en qué momento se utiliza?_  En el siguiente blog te entregaremos un paso a paso para la elaboración de un preregistro de acuerdo con las distintas situaciones y tipos de investigación.

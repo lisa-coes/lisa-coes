@@ -17,7 +17,7 @@
       <pubDate>Wed, 03 Nov 2021 12:50:46 +0200</pubDate>
       
       <guid>/04componentes/</guid>
-      <description>Guía para las publicaciones libres La publicación de un trabajo científico es clave para dar a conocer los resultados y determinar su impacto. Al respecto, este momento puede trascender a algunas revistas indexadas donde encontramos barreras de acceso al conocimiento. Por este motivo, podemos enfrentarnos al dilema respecto a cómo abrir una publicación, ya sea por desconocimiento o aprehensiones en torno a ello. ¿Cómo podemos abrir nuestras publicaciones?</description>
+      <description>.btn-template-primary {color: #ffffff;background-color: orange;border-width: inherit;}.btn-template-primary:hover,.btn-template-primary:focus,.btn-template-primary:active,.btn-template-primary.active,.open  .dropdown-toggle.btn-template-primary {color: #ffffff;background-color: #FF9500;border-color: #c22828;} Guía para las publicaciones libres La publicación de un trabajo científico es clave para dar a conocer los resultados y determinar su impacto. Al respecto, este momento puede trascender a algunas revistas indexadas donde encontramos barreras de acceso al conocimiento. Por este motivo, podemos enfrentarnos al dilema respecto a cómo abrir una publicación, ya sea por desconocimiento o aprehensiones en torno a ello.</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Wed, 20 Oct 2021 10:50:46 +0200</pubDate>
       
       <guid>/02componentes/</guid>
-      <description>Guía para la apertura de datos En parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de compartir nuestros datos al resto de la comunidad científica pero muchas veces no sabemos cómo lograrlo. ¿Cómo abrir nuestros datos? ¿Qué criterios debo cumplir para que sean publicados? ¿Dónde y cómo publicarlos? En el siguiente blog te contestaremos estas preguntas.</description>
+      <description>.btn-template-primary {color: #ffffff;background-color: lightgreen;border-width: inherit;}.btn-template-primary:hover,.btn-template-primary:focus,.btn-template-primary:active,.btn-template-primary.active,.open  .dropdown-toggle.btn-template-primary {color: #ffffff;background-color: #48E04B;border-color: #c22828;} Guía para la apertura de datos En parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de compartir nuestros datos al resto de la comunidad científica pero muchas veces no sabemos cómo lograrlo.</description>
     </item>
     
     <item>
@@ -44,7 +44,27 @@
       <pubDate>Sat, 02 Oct 2021 11:50:46 +0200</pubDate>
       
       <guid>/01componentes/</guid>
-      <description>Guía para transparencia de diseño Uno de los pilares que dan validez a la evidencia científica es el escrutinio por parte de los pares. Sin embargo, la prevalencia de prácticas cuestionables en distintas disciplinas ha puesto en debate que dicho principio esté siendo alcanzando y, como consecuencia de ello, se han incrementado los esfuerzos por establecer mayores estándares de transparencia en la investigación científica. En este contexto, una de las herramientas más utilizadas para hacer frente a este dilema han sido los preregistros.</description>
+      <description>.btn-template-primary {color: #ffffff;background-color: lightblue;border-width: inherit;}.btn-template-primary:hover,.btn-template-primary:focus,.btn-template-primary:active,.btn-template-primary.active,.open  .dropdown-toggle.btn-template-primary {color: #ffffff;background-color: #82D2ED;border-color: #c22828;} Guía para transparencia de diseño Uno de los pilares que dan validez a la evidencia científica es el escrutinio por parte de los pares. Sin embargo, la prevalencia de prácticas cuestionables en distintas disciplinas ha puesto en debate que dicho principio esté siendo alcanzando y, como consecuencia de ello, se han incrementado los esfuerzos por establecer mayores estándares de transparencia en la investigación científica.</description>
+    </item>
+    
+    <item>
+      <title>Introducción</title>
+      <link>/00intro-componentes/</link>
+      <pubDate>Sat, 02 Oct 2021 11:50:46 +0200</pubDate>
+      
+      <guid>/00intro-componentes/</guid>
+      <description># .btn-template-primary {# color: #ffffff;# background-color: lightblue;# border-width: inherit;# }# # .btn-template-primary:hover,# .btn-template-primary:focus,# .btn-template-primary:active,# .btn-template-primary.active,# .open  .dropdown-toggle.btn-template-primary {# color: #ffffff;# background-color: #82D2ED;# border-color: #c22828;# } Componentes </description>
+    </item>
+    
+    <item>
+      <title>IPO (Input-Procesamiento-Output)</title>
+      <link>/ipo-protocol/</link>
+      <pubDate>Tue, 11 May 2021 10:50:46 +0200</pubDate>
+      
+      <guid>/ipo-protocol/</guid>
+      <description>.btn-template-primary {color: #ffffff;background-color: lightblue;border-width: inherit;}.dropdown-toggle.btn-template-primary {color: #ffffff;background-color: blue;Protocolo para flujo de investigación reproducible Para bajar un ejemplo de la estructura de carpetas click aquí.
+Comentarios y sugerencias a: juancastillov@uchile.cl
+Esta es una plantilla/protocolo de carpetas de proyecto basada en el protocolo TIER (Integridad de Enseñanza en Investigación Empírica). TIER “promueve la integración de principios y prácticas relacionadas con la transparencia y la replicabilidad en el entrenamiento en investigación de los científicos sociales”.</description>
     </item>
     
     <item>

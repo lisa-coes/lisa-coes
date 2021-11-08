@@ -18,6 +18,37 @@ editor_options:
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, cache = FALSE,echo = F)
+pacman::p_load(dplyr, kableExtra,sjlabelled, readxl)
+options(scipen=999,
+        knitr.kable.NA = '',
+        knitr.graphics.error = FALSE)
+Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
+```
+
+
+```{css}
+.btn-template-primary {
+    color: #ffffff;
+    background-color: orange;
+    border-width: inherit;
+}
+
+.btn-template-primary:hover,
+.btn-template-primary:focus,
+.btn-template-primary:active,
+.btn-template-primary.active,
+.open > .dropdown-toggle.btn-template-primary {
+  color: #ffffff;
+  background-color: #FF9500;
+  border-color: #c22828;
+} 
+```
+
+
+
 # Guía para las publicaciones libres <i class="ai ai-open-access-square ai-1x" style="color:orange"></i>
 
 La publicación de un trabajo científico es clave para dar a conocer los resultados y determinar su impacto. Al respecto, este momento puede trascender a algunas revistas indexadas donde  encontramos **barreras de acceso al conocimiento**. Por este motivo, podemos enfrentarnos al dilema respecto a cómo abrir una publicación, ya sea por desconocimiento o aprehensiones en torno a ello. _¿Cómo podemos abrir nuestras publicaciones?_ _¿Cómo elegir el momento adecuado?_ _¿Dónde publicarlas?_ En este blog te entregaremos recomendaciones para responder a estas interrogantes.
