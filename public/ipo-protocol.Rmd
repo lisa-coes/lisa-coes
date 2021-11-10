@@ -38,13 +38,8 @@ Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
 ```
 
 
-#  IPO (Input-Procesamiento-Output)  <img src="../input/ipo-hex.png" alt=" " style="float: right;width: 25%;max-height: 100%" />
+#  IPO (Input-Procesamiento-Output)  <img src="../input/ipo-hex.png" alt=" " style="float: right;width: 30%;max-height: 100%" />
 ### Protocolo para flujo de investigación reproducible
-
-Para bajar un ejemplo de la estructura de carpetas click [aquí](https://lisa-coes.github.io/ipo/IPO_template/IPO-Project_template.tar.gz).
-
-Comentarios y sugerencias a: [juancastillov@uchile.cl](juancastillov@uchile.cl)
-
 
 Esta es una plantilla/protocolo de carpetas de proyecto basada en el protocolo **TIER** (Integridad de Enseñanza en Investigación Empírica). TIER "promueve la integración de principios y prácticas relacionadas con la transparencia y la replicabilidad en el entrenamiento en investigación de los científicos sociales". (más información en [https://www.projecttier.org/](https://www.projecttier.org/)).
 
@@ -67,10 +62,7 @@ El protocolo **IPO** sigue la lógica de TIER, pero con algunas innovaciones:
 
 ### Archivos y estructura de carpetas
 
-Para descargar un ejemplo de la estructura de carpetas del protocolo, haga click [aquí](https://juancarloscastillo.github.io/ipo/IPO_template/IPO-Project_template.tar.gz).
-
 La estructura se detalla en el siguiente esquema:
-
 
 ```
 ├── input: información externa como datos, imágenes, .bib:
@@ -93,6 +85,28 @@ La estructura se detalla en el siguiente esquema:
 - paper.md o paper.Rmd / paper.html / paper.pdf: el artículo/paper
 
 ```
+
+### Versiones de IPO: 
+
+```{r echo=FALSE}
+ pacman::p_load(dplyr, kableExtra,sjlabelled, readxl)
+ tab01<- readxl::read_excel(path = "input/templates-ipo.xlsx")
+
+ tab01 <- tab01 %>% 
+ dplyr::mutate(nombre = cell_spec(nombre, "html", link = Enlace)) %>% 
+  select(-Enlace)
+ tab01 %>%
+ kableExtra::kbl(., full_width = T, linesep = "", escape = FALSE,
+ col.names = c("Plantilla","Descripción","Software","Documentos dinámicos","Control de versiones","Enlace"),row.names = F) %>%
+   kableExtra::kable_styling(
+     full_width = F,
+     position = "center",
+     font_size = 14,
+     bootstrap_options=c("striped", "bordered", "condensed", "responsive"))
+```
+
+
+
 
 ### Principios básicos
 
@@ -156,17 +170,12 @@ dev.copy(png,"output/graphs/graph1.png",width=600,
 ![](output/graphs/graph1.png)
 ```
 
-### Trabajo futuro:
+<!-- ## Github activity feed -->
 
-- IPO-RGit: manteniendo la misma estructura básica, esta versión es una actualización para aprovechar todas las herramientas de reproducibilidad, colaboración y publicación ofrecidas por los entornos de trabajo Rmarkdown / Github. Se puede ver un ejemplo de esta implementación de trabajo en progreso [aquí.](https://juancarloscastillo.github.io/merit-scale/)
-
-
-## Github activity feed
-
-<div id="feed"></div>
+<!-- <div id="feed"></div> -->
 
 
-# {-}
+<!-- # {-} -->
 
 <br><br><br>
 </div>

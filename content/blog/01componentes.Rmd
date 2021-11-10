@@ -134,9 +134,20 @@ Existe una estrecha relación entre las características de nuestro estudio y la
 
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
  knitr::include_graphics("../input/flujopreg.PNG")
+
+
+
 ```
 
 <!-- link diagrama editable:  https://app.diagrams.net/#G1zuZuJjKFumyI-HqlbXxdU7I8ImnYBCOq-->
+
+
+## ¿Quieres comentar o tienes alguna duda?
+
+Puedes dejar tus comentarios y dudas sobre el diseño transparente en nuestro foro. De todas formas puedes [contactarnos](/contact/)
+
+<div id="disqus_thread"></div>
+
 
 <style>
 .btn-template-primary {
