@@ -106,8 +106,6 @@ La estructura se detalla en el siguiente esquema:
 ```
 
 
-
-
 ### Principios básicos
 
 - **orden**: trabajar pensando en alguien que no esté familiarizado con el proyecto  pueda entenderlo y reproducirlo sin mayores instrucciones que la referencia a este protocolo y otra información que esté en el archivo readme.md. O piense en usted dentro de 5 años: ¿podrá comprender y reproducir esto?
