@@ -28,13 +28,13 @@ Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
 ```{css}
 .btn-template-primary {
     color: #ffffff;
-    background-color: lightblue;
+    background-color: gray;
     border-width: inherit;
 }
 
 .dropdown-toggle.btn-template-primary {
   color: #ffffff;
-  background-color: blue;
+  background-color: gray;
 ```
 
 

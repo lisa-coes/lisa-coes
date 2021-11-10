@@ -35,15 +35,10 @@ paginate = 10
 
 [[menu.main]]
     parent = "home"
-    name = "Equipo"
+    name = "Colaboraciones"
     url = "/equipo/"
     weight = 2
 
-[[menu.main]]
-    parent = "home"
-    name = "Equipo"
-    url = "/equipo/"
-    weight = 3
 
 [[menu.main]]
     parent = "home"
@@ -207,7 +202,7 @@ paginate = 10
     # All carousel items are defined in their own files. You can find example items
     # at 'exampleSite/data/carousel'.
     # For more informtion take a look at the README.
-
+ 
 [params.test]
     enable = true
     title = "LISA"
@@ -215,22 +210,20 @@ paginate = 10
 
 [params.features]
     enable = true
+    cols = 4
     title = "Pasos para una Ciencia Abierta"
     subtitle = "Presiona cada uno de ellos para conocer más detalles"
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/features'.
     # For more informtion take a look at the README.
-
+ 
 [params.testimonials]
     enable = true
     # All testimonials are defined in their own files. You can find example items
     # at 'exampleSite/data/testimonials'.
     # For more informtion take a look at the README.
-    title = "Equipo central"
-    subtitle = "Han pasado por LISA"
+    title = "Equipo"
     
-
-
 [params.see_more]
     enable = false
     icon = "fas fa-chart-line"

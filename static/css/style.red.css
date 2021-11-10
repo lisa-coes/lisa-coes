@@ -128,7 +128,7 @@ div.section {
   width: 80px;
   height: 80px;
   color: #fff;
-  line-height: 80px;
+  line-height: 90px; /*modificado, original = 80px*/ 
   border-radius: 40px;
   border: solid 1px #fff;
   font-size: 20px;
