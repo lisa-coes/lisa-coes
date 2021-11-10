@@ -26,33 +26,14 @@ options(scipen=999,
 Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
 ```
 
-
-```{css}
-.btn-template-primary {
-    color: #ffffff;
-    background-color: lightgreen;
-    border-width: inherit;
-}
-
-.btn-template-primary:hover,
-.btn-template-primary:focus,
-.btn-template-primary:active,
-.btn-template-primary.active,
-.open > .dropdown-toggle.btn-template-primary {
-  color: #ffffff;
-  background-color: #48E04B;
-  border-color: #c22828;
-} 
-```
-
-
-
 ```{r load, echo = F}
 table<- readxl::read_excel("../input/summary-opendata.xlsx")
 ```
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-# Guía para la apertura de datos <i class="ai ai-open-data ai-1.5x" style="color:lightgreen"></i>
+# Guía para la apertura de datos
+
+<i class="ai ai-open-data ai-10x" style="color:lightgreen;float:right;"></i>
 
 En parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de **compartir nuestros datos al resto de la comunidad científica** pero muchas veces no sabemos cómo lograrlo. *¿Cómo abrir nuestros datos? ¿Qué criterios debo cumplir para que sean publicados? ¿Dónde y cómo publicarlos?* En el siguiente blog te contestaremos estas preguntas.
 
@@ -214,3 +195,21 @@ kableExtra::kbl(., full_width = T, linesep = "", escape = FALSE) %>%
 Puedes dejar tus comentarios y dudas sobre el cómo publicar tus datos en nuestro foro. De todas formas puedes [contactarnos](/contact/)
 
 <div id="disqus_thread"></div>
+
+```{css}
+.btn-template-primary {
+    color: #ffffff;
+    background-color: lightgreen;
+    border-width: inherit;
+}
+
+.btn-template-primary:hover,
+.btn-template-primary:focus,
+.btn-template-primary:active,
+.btn-template-primary.active,
+.open > .dropdown-toggle.btn-template-primary {
+  color: #ffffff;
+  background-color: #48E04B;
+  border-color: #c22828;
+}
+```

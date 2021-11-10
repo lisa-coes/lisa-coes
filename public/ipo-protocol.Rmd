@@ -8,7 +8,7 @@ keywords:
 - codebook
 - datos
 - abierto
-title: IPO (Input-Procesamiento-Output) 
+title: Protocolo
 linkcolor: blue
 link-citations: yes
 editor_options:
@@ -38,8 +38,8 @@ Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
 ```
 
 
-# Protocolo para flujo de investigación reproducible  <img src="../input/ipo-logo.png" alt=" " style="float: right;width: 25%;max-height: 100%" />
-
+#  IPO (Input-Procesamiento-Output)  <img src="../input/ipo-hex.png" alt=" " style="float: right;width: 25%;max-height: 100%" />
+### Protocolo para flujo de investigación reproducible
 
 Para bajar un ejemplo de la estructura de carpetas click [aquí](https://lisa-coes.github.io/ipo/IPO_template/IPO-Project_template.tar.gz).
 

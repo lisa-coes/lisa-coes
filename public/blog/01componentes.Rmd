@@ -1,6 +1,6 @@
 ---
 author: LISA
-banner: img/banners/blog-2.png
+banner: img/banners/blog-1.png
 categories:
 - componentes
 date: "2021-10-02T11:50:46+02:00"
@@ -22,31 +22,9 @@ options(scipen=999,
         knitr.graphics.error = FALSE)
 Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
 ```
+# Guía para transparencia de diseño
 
-
-```{css}
-.btn-template-primary {
-    color: #ffffff;
-    background-color: lightblue;
-    border-width: inherit;
-}
-
-.btn-template-primary:hover,
-.btn-template-primary:focus,
-.btn-template-primary:active,
-.btn-template-primary.active,
-.open > .dropdown-toggle.btn-template-primary {
-  color: #ffffff;
-  background-color: #82D2ED;
-  border-color: #c22828;
-} 
-```
-
-
-
-
-
-# Guía para transparencia de diseño <i class="ai ai-preregistered ai-1.5x" style="color:lightblue"></i>
+<i class="ai ai-preregistered ai-10x" style="color:lightblue;float:right; "></i>
 
 Uno de los pilares que dan validez a la evidencia científica es el **escrutinio por parte de los pares**. Sin embargo, la prevalencia de prácticas cuestionables en distintas disciplinas ha puesto en debate que dicho principio esté siendo alcanzando y, como consecuencia de ello, se han incrementado los esfuerzos por establecer mayores **estándares de transparencia** en la investigación científica. En este contexto, una de las herramientas más utilizadas para hacer frente a este dilema han sido los **preregistros**. _¿Qué es un preregistro?_ _¿Cómo y en qué momento se utiliza?_  En el siguiente blog te entregaremos un paso a paso para la elaboración de un preregistro de acuerdo con las distintas situaciones y tipos de investigación.
 
@@ -129,7 +107,7 @@ Entonces, luego de responder las preguntas del **[Paso 1](#paso1)** podemos eleg
   - Si no hemos ejecutado el estudio, utilizaremos la _Replication Recipe: Preregistration_
   - Si el estudio ya fue ejecutado, utilizaremos la _Replication Recipe: Post-Completion_.
 
-* Cuando el estudio es un **[_registered report_]()** y ha sido aceptado preliminarmente, utilizamos el _Registered Reports Protocol_.  
+* Cuando el estudio es un **[_registered report_]()** y ha sido aceptado preliminarmente, utilizamos el _Registered Reports Protocol_.
 
 🗸 Si deseas saber más sobre esta las plantillas puedes hacer click aquí:
 
@@ -159,3 +137,21 @@ Existe una estrecha relación entre las características de nuestro estudio y la
 ```
 
 <!-- link diagrama editable:  https://app.diagrams.net/#G1zuZuJjKFumyI-HqlbXxdU7I8ImnYBCOq-->
+
+<style>
+.btn-template-primary {
+    color: #ffffff;
+    background-color: lightblue;
+    border-width: inherit;
+}
+
+.btn-template-primary:hover,
+.btn-template-primary:focus,
+.btn-template-primary:active,
+.btn-template-primary.active,
+.open > .dropdown-toggle.btn-template-primary {
+  color: #ffffff;
+  background-color: #82D2ED;
+  border-color: #c22828;
+}
+</style>

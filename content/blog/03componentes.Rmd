@@ -15,7 +15,9 @@ title: Análisis reproducibles
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-# Guía para los análisis reproducibles  <i class="ai ai-open-materials ai-1.5x" style="color:pink"></i>
+# Guía para los análisis reproducibles
+
+<i class="ai ai-open-materials ai-10x" style="color:pink;float:right;"></i>
 
 ¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales, y que por tanto, es imposible acceder a los procedimientos que dieron luces a sus resultados? En este contexto, la **reproducibilidad** entendida como la posibilidad de **regenerar** de manera independiente los resultados usando los materiales originales de una investigación publicada. _¿Cómo organizamos un proyecto con análisis reproducibles?_ _¿Qué herramientas puedo utilizar?_ _¿Cómo puedo compartir mis materiales?_ En este blog daremos algunas orientaciones generales respecto a cómo avanzar en esta dirección.
 
@@ -36,7 +38,7 @@ title: Análisis reproducibles
 
 Un proyecto reproducible no se reduce solamente a un buen código, sino que considera la vinculación entre los distintos elementos del proyecto que nos permitan **regenerar** los resultados de un estudio original. Por lo tanto, hemos organizado esta guía en cuatro pasos:
 
-`1. Estructura del proyecto`: la organización de los elementos de un proyecto es clave para lograr un estándar mínimo de reproducibilidad. Esto implica que tanto los materiales iniciales como los datos y rutinas de código deben estar correctamente vinculados para obtener los resultados.  
+`1. Estructura del proyecto`: la organización de los elementos de un proyecto es clave para lograr un estándar mínimo de reproducibilidad. Esto implica que tanto los materiales iniciales como los datos y rutinas de código deben estar correctamente vinculados para obtener los resultados.
 
 `2. Prácticas de código`: la calidad de una hoja de código puede ser clave en lograr la regeneración de resultados. Por este motivo, cuestiones como los comentarios, indentación y organización del código son necesarias para un proyecto reproducible.
 
@@ -48,12 +50,23 @@ Un proyecto reproducible no se reduce solamente a un buen código, sino que cons
 
 La forma en que están organizadas las partes de un proyecto es fundamental para cumplir a cabalidad con el objetivo de hacerlo reproducible. Esta organización se puede sintetizar como un esquema que involucra tres elementos: `(1) Input`, `(2) Procesamiento` y `(3) Output`.
 
-Este esquema se basa en una versión dell Protocolo IPO (Input-Procesamiento-Output) que se propone abordar brevemente todo lo referente a los `Datos`, `Métodos` y `Resultados`. 
-
+Este esquema se basa en una versión dell Protocolo IPO (Input-Procesamiento-Output) que se propone abordar brevemente todo lo referente a los `Datos`, `Métodos` y `Resultados`.
 
 🗸 Si deseas saber más sobre el **Protocolo IPO** puedes hacer click aquí:
 
-<a class = "btn btn-template-main" href="../ipo-protocol/index.html" target="_blank">Protocolo IPO</a>
+<style>
+.center {
+  display: flex;
+  justify-content: center;
+}
+</style>
+
+<div class="center">
+<a class = "btn btn-template-main" href="../ipo-protocol/index.html" target="_blank">
+🔴 Protocolo IPO 🔴
+</a>
+</div>
+
 
 
 ## Carpeta Raíz
@@ -68,7 +81,7 @@ Estas instrucciones pueden ir incluidas en un archivo `README` organizado de la 
 </div>
 
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
- knitr::include_graphics("../input/estructura.png")  
+ knitr::include_graphics("../input/estructura.png")
 ```
 
 🗸 Para mayores detalles respecto al contenido y estructura de un proyecto reproducible, puedes hacer click aquí:
@@ -144,7 +157,7 @@ Para lograr una correcta ejecución de los documentos de preparación y análisi
 
 3. **Ejecución de análisis**: Precisar el origen de la base de datos procesada.
 
-4. **Archivos del análisis de datos**: Precisar ruta de almacenamiento y nombre. 
+4. **Archivos del análisis de datos**: Precisar ruta de almacenamiento y nombre.
 
 
 🗸  Más información sobre la sección de métodos, puedes hacer click aquí:
@@ -227,16 +240,16 @@ Al trabajar colaborativamente existen diferentes (y poco eficientes) maneras de 
 
   ❌ Fechas: `codigo_2021-03-01.R` → `codigo_2021-05-02.R`
 
-  ❌ Numeración: `analisis_v02.do` →  `analisis_v05.do`   
+  ❌ Numeración: `analisis_v02.do` →  `analisis_v05.do`
 
 No obstante, hoy en día existen sistemas de control de versiones especializados para el trabajo de programación. Al respecto, nuestra sugerencia es emplear versionamiento basado en <i class="fab fa-git-square"></i>
-, pero _¿qué es Git?_ Te lo explicamos a continuación.        
+, pero _¿qué es Git?_ Te lo explicamos a continuación.
 
 ### Git <i class="fab fa-git-alt"></i> y GitHub <i class="fab fa-github"></i>
 
 [**Git**](https://es.wikipedia.org/wiki/Git){target="_blank"} es un sistema de control de versiones de código abierto, tiene por objetivo hacer más eficiente el flujo de trabajo para proyectos de desarrollo de software. Algunas de sus principales características son:
 
-⭕ Permite registrar (_snapshot_) la versión de una carpeta completa y su contenido  
+⭕ Permite registrar (_snapshot_) la versión de una carpeta completa y su contenido
 
 ⭕ Registra _qué_, _quién_ y _cuándo_ se realizaron cambios
 
@@ -251,7 +264,7 @@ Recomendamos el uso de Git y Github cómo flujo de trabajo para aquellos cientí
 
 🗸 Si deseas conocer más sobre Git y GitHub te invitamos a revisar la sesión del curso "Ciencia Social Abierta":
 
-<a class = "btn btn-template-main" href="https://cienciasocialabierta.netlify.app/class/08-class/" target="_blank">Control de versiones/Git</a>
+<a class = "btn btn-template-main" href="https://version2020--cienciasocialabierta.netlify.app/class/07-class/" target="_blank">Control de Versiones/Git</a>
 
 
 # En síntesis

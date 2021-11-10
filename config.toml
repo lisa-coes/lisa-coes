@@ -24,7 +24,7 @@ paginate = 10
 [[menu.main]]
     identifier="home"
     name = "Ciencia social abierta"
-    url  = "/"
+    url  = "/" 
     weight = 1
 
 [[menu.main]]
@@ -227,10 +227,12 @@ paginate = 10
     # at 'exampleSite/data/testimonials'.
     # For more informtion take a look at the README.
     title = "Equipo central"
-    subtitle = ""
+    subtitle = "Han pasado por LISA"
+    
+
 
 [params.see_more]
-    enable = true
+    enable = false
     icon = "fas fa-chart-line"
     title = "**Guía para la apertura de datos**"
     subtitle = ""

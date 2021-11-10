@@ -17,7 +17,8 @@
       <pubDate>Wed, 03 Nov 2021 12:50:46 +0200</pubDate>
       
       <guid>/04componentes/</guid>
-      <description>.btn-template-primary {color: #ffffff;background-color: orange;border-width: inherit;}.btn-template-primary:hover,.btn-template-primary:focus,.btn-template-primary:active,.btn-template-primary.active,.open  .dropdown-toggle.btn-template-primary {color: #ffffff;background-color: #FF9500;border-color: #c22828;} Guía para las publicaciones libres La publicación de un trabajo científico es clave para dar a conocer los resultados y determinar su impacto. Al respecto, este momento puede trascender a algunas revistas indexadas donde encontramos barreras de acceso al conocimiento. Por este motivo, podemos enfrentarnos al dilema respecto a cómo abrir una publicación, ya sea por desconocimiento o aprehensiones en torno a ello.</description>
+      <description>Guía para las publicaciones libres
+La publicación de un trabajo científico es clave para dar a conocer los resultados y determinar su impacto. Al respecto, este momento puede trascender a algunas revistas indexadas donde encontramos barreras de acceso al conocimiento. Por este motivo, podemos enfrentarnos al dilema respecto a cómo abrir una publicación, ya sea por desconocimiento o aprehensiones en torno a ello. ¿Cómo podemos abrir nuestras publicaciones?</description>
     </item>
     
     <item>
@@ -26,7 +27,8 @@
       <pubDate>Wed, 03 Nov 2021 11:50:46 +0200</pubDate>
       
       <guid>/03componentes/</guid>
-      <description>Guía para los análisis reproducibles ¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales, y que por tanto, es imposible acceder a los procedimientos que dieron luces a sus resultados? En este contexto, la reproducibilidad entendida como la posibilidad de regenerar de manera independiente los resultados usando los materiales originales de una investigación publicada. ¿Cómo organizamos un proyecto con análisis reproducibles? ¿Qué herramientas puedo utilizar?</description>
+      <description>Guía para los análisis reproducibles
+¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales, y que por tanto, es imposible acceder a los procedimientos que dieron luces a sus resultados? En este contexto, la reproducibilidad entendida como la posibilidad de regenerar de manera independiente los resultados usando los materiales originales de una investigación publicada. ¿Cómo organizamos un proyecto con análisis reproducibles? ¿Qué herramientas puedo utilizar?</description>
     </item>
     
     <item>
@@ -35,7 +37,8 @@
       <pubDate>Wed, 20 Oct 2021 10:50:46 +0200</pubDate>
       
       <guid>/02componentes/</guid>
-      <description>.btn-template-primary {color: #ffffff;background-color: lightgreen;border-width: inherit;}.btn-template-primary:hover,.btn-template-primary:focus,.btn-template-primary:active,.btn-template-primary.active,.open  .dropdown-toggle.btn-template-primary {color: #ffffff;background-color: #48E04B;border-color: #c22828;} Guía para la apertura de datos En parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de compartir nuestros datos al resto de la comunidad científica pero muchas veces no sabemos cómo lograrlo.</description>
+      <description>Guía para la apertura de datos
+En parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de compartir nuestros datos al resto de la comunidad científica pero muchas veces no sabemos cómo lograrlo. ¿Cómo abrir nuestros datos? ¿Qué criterios debo cumplir para que sean publicados? ¿Dónde y cómo publicarlos? En el siguiente blog te contestaremos estas preguntas.</description>
     </item>
     
     <item>
@@ -44,7 +47,8 @@
       <pubDate>Sat, 02 Oct 2021 11:50:46 +0200</pubDate>
       
       <guid>/01componentes/</guid>
-      <description>.btn-template-primary {color: #ffffff;background-color: lightblue;border-width: inherit;}.btn-template-primary:hover,.btn-template-primary:focus,.btn-template-primary:active,.btn-template-primary.active,.open  .dropdown-toggle.btn-template-primary {color: #ffffff;background-color: #82D2ED;border-color: #c22828;} Guía para transparencia de diseño Uno de los pilares que dan validez a la evidencia científica es el escrutinio por parte de los pares. Sin embargo, la prevalencia de prácticas cuestionables en distintas disciplinas ha puesto en debate que dicho principio esté siendo alcanzando y, como consecuencia de ello, se han incrementado los esfuerzos por establecer mayores estándares de transparencia en la investigación científica.</description>
+      <description>Guía para transparencia de diseño
+Uno de los pilares que dan validez a la evidencia científica es el escrutinio por parte de los pares. Sin embargo, la prevalencia de prácticas cuestionables en distintas disciplinas ha puesto en debate que dicho principio esté siendo alcanzando y, como consecuencia de ello, se han incrementado los esfuerzos por establecer mayores estándares de transparencia en la investigación científica. En este contexto, una de las herramientas más utilizadas para hacer frente a este dilema han sido los preregistros.</description>
     </item>
     
     <item>
@@ -53,7 +57,7 @@
       <pubDate>Sat, 02 Oct 2021 11:50:46 +0200</pubDate>
       
       <guid>/00intro-componentes/</guid>
-      <description># .btn-template-primary {# color: #ffffff;# background-color: lightblue;# border-width: inherit;# }# # .btn-template-primary:hover,# .btn-template-primary:focus,# .btn-template-primary:active,# .btn-template-primary.active,# .open  .dropdown-toggle.btn-template-primary {# color: #ffffff;# background-color: #82D2ED;# border-color: #c22828;# } Componentes </description>
+      <description>.disegno{color: lightblue;}.datos{color: lightgreen;}.repro{color: pink;}.publibres{color: orange;}ComponentesUna de los objetivos Laboratorio de Investigación Social Abierta es generar una propuesta de trabajo siguiendo los principios y prácticas de la ciencia abierta. Esta propuesta se constituye a través de la elaboración de herramientas conceptuales y prácticas en cuatro componentes: (1) diseño transparente,  (2) apertura de datos,  (3) análisis reproducibles  y (4) publicaciones libres .</description>
     </item>
     
     <item>
