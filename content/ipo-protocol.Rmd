@@ -85,7 +85,7 @@ La estructura se detalla en el siguiente esquema:
 - paper.md o paper.Rmd / paper.html / paper.pdf: el artículo/paper
 
 ```
-
+ 
 ### Versiones de IPO: 
 
 ```{r echo=FALSE}
