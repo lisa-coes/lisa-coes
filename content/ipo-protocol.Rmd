@@ -28,13 +28,13 @@ Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
 ```{css}
 .btn-template-primary {
     color: #ffffff;
-    background-color: gray;
+    background-color: #EC104D;
     border-width: inherit;
 }
 
 .dropdown-toggle.btn-template-primary {
   color: #ffffff;
-  background-color: gray;
+  background-color: #EC104D;
 ```
 
 
@@ -47,7 +47,7 @@ La implementación de la reproducibilidad en este tipo de protocolos se basa en 
 
 
 ```{r, out.width='50%', fig.align='center'}
-knitr::include_graphics("https://mfr.de-1.osf.io/export?url=https://osf.io/ftkq8/?direct%26mode=render%26action=download%26public_file=True&initialWidth=848&childId=mfrIframe&parentTitle=OSF+%7C+reproducibiity_relocates_time.png&parentUrl=https://osf.io/ftkq8/&format=2400x2400.jpeg")
+knitr::include_graphics("https://mfr.de-1.osf.io/export?url=https://osf.io/ftkq8/?direct%26mode=render%26action=download%26public_file=True&initialWidth=848&childId=mfrIframe&parentTitle=OSF+%7C+reproducibiity_relocates_time.png&parentUrl=https://osf.io/ftkq8/&format=2400x2400.jpeg")  
 ```
 
 El protocolo **IPO** sigue la lógica de TIER, pero con algunas innovaciones:
@@ -64,7 +64,8 @@ El protocolo **IPO** sigue la lógica de TIER, pero con algunas innovaciones:
 
 La estructura se detalla en el siguiente esquema:
 
-```
+<pre style="font-size: 18px;">
+<code>
 ├── input: información externa como datos, imágenes, .bib:
 |   ├── data:
 │     ├── original : archivos de datos originales y metadatos disponibles
@@ -83,26 +84,27 @@ La estructura se detalla en el siguiente esquema:
 |
 - readme.md : archivo general de introducción
 - paper.md o paper.Rmd / paper.html / paper.pdf: el artículo/paper
-
-```
- 
-### Versiones de IPO: 
+</code>
+</pre>
+### Versiones de IPO:
 
 ```{r echo=FALSE}
  pacman::p_load(dplyr, kableExtra,sjlabelled, readxl)
  tab01<- readxl::read_excel(path = "input/templates-ipo.xlsx")
 
- tab01 <- tab01 %>% 
- dplyr::mutate(nombre = cell_spec(nombre, "html", link = Enlace)) %>% 
+ tab01 <- tab01 %>%
+ dplyr::mutate(nombre = cell_spec(nombre, "html", link = Enlace)) %>%
   select(-Enlace)
  tab01 %>%
- kableExtra::kbl(., full_width = T, linesep = "", escape = FALSE,
+ kableExtra::kbl(., full_width = T, linesep = "", escape = FALSE,align = "lllccl",
  col.names = c("Plantilla","Descripción","Software","Documentos dinámicos","Control de versiones","Enlace"),row.names = F) %>%
    kableExtra::kable_styling(
      full_width = F,
      position = "center",
      font_size = 14,
-     bootstrap_options=c("striped", "bordered", "condensed", "responsive"))
+     bootstrap_options=c("striped", "bordered", "condensed", "responsive")) %>% 
+ column_spec(column = 2,width = "10cm") %>% 
+ column_spec(column = 4:5,width = "3cm")
 ```
 
 

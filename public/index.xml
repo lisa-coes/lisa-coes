@@ -57,7 +57,7 @@ Uno de los pilares que dan validez a la evidencia científica es el escrutinio p
       <pubDate>Sat, 02 Oct 2021 11:50:46 +0200</pubDate>
       
       <guid>/00intro-componentes/</guid>
-      <description>.disegno{color: lightblue;}.datos{color: lightgreen;}.repro{color: pink;}.publibres{color: orange;}ComponentesUno de los objetivos Laboratorio de Investigación Social Abierta es generar una propuesta de trabajo siguiendo los principios y prácticas de la ciencia abierta. Esta propuesta se constituye a través de la elaboración de herramientas conceptuales y prácticas en cuatro componentes: (1) diseño transparente,  (2) apertura de datos,  (3) análisis reproducibles  y (4) publicaciones libres .</description>
+      <description>.disegno{color: lightblue;}.datos{color: lightgreen;}.repro{color: pink;}.publibres{color: orange;}.red{color: red;}ComponentesUno de los objetivos Laboratorio de Investigación Social Abierta es generar una propuesta de trabajo siguiendo los principios y prácticas de la ciencia abierta. Esta propuesta se constituye a través de la elaboración de herramientas conceptuales y prácticas en cuatro componentes: (1) diseño transparente,  (2) apertura de datos,  (3) análisis reproducibles  y (4) publicaciones libres .</description>
     </item>
     
     <item>
@@ -66,7 +66,7 @@ Uno de los pilares que dan validez a la evidencia científica es el escrutinio p
       <pubDate>Tue, 11 May 2021 10:50:46 +0200</pubDate>
       
       <guid>/ipo-protocol/</guid>
-      <description>.btn-template-primary {color: #ffffff;background-color: gray;border-width: inherit;}.dropdown-toggle.btn-template-primary {color: #ffffff;background-color: gray;IPO (Input-Procesamiento-Output) Protocolo para flujo de investigación reproducibleEsta es una plantilla/protocolo de carpetas de proyecto basada en el protocolo TIER (Integridad de Enseñanza en Investigación Empírica). TIER “promueve la integración de principios y prácticas relacionadas con la transparencia y la replicabilidad en el entrenamiento en investigación de los científicos sociales”.</description>
+      <description>.btn-template-primary {color: #ffffff;background-color: #EC104D;border-width: inherit;}.dropdown-toggle.btn-template-primary {color: #ffffff;background-color: #EC104D;IPO (Input-Procesamiento-Output) Protocolo para flujo de investigación reproducibleEsta es una plantilla/protocolo de carpetas de proyecto basada en el protocolo TIER (Integridad de Enseñanza en Investigación Empírica). TIER “promueve la integración de principios y prácticas relacionadas con la transparencia y la replicabilidad en el entrenamiento en investigación de los científicos sociales”.</description>
     </item>
     
     <item>

@@ -26,6 +26,8 @@ Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
 .datos{color: lightgreen;}
 .repro{color: pink;}
 .publibres{color: orange;}
+.red{color: red;}
+
 </style>
 
 # Componentes
@@ -38,11 +40,11 @@ Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
 
 </div>
 
-Uno de los objetivos [**Laboratorio de Investigación Social Abierta** ]() es generar una propuesta de trabajo siguiendo los principios y prácticas de la ciencia abierta. Esta propuesta se constituye a través de la elaboración de **herramientas** conceptuales y prácticas en cuatro componentes: <span class="disegno">(1) diseño transparente, </span>  <span class="datos"> (2) apertura de datos,  </span> <span class="repro"> (3) análisis reproducibles </span> y <span class="publibres"> (4) publicaciones libres </span>. Estos componentes representan cómo los cientistas sociales podemos contribuir con la apertura del proceso de investigación en sus distintos momentos.
+Uno de los objetivos **Laboratorio de Investigación Social <span class="red">Abierta</span>** es generar una propuesta de trabajo siguiendo los principios y prácticas de la ciencia abierta. Esta propuesta se constituye a través de la elaboración de **herramientas** conceptuales y prácticas en cuatro componentes: <span class="disegno">(1) diseño transparente, </span>  <span class="datos"> (2) apertura de datos,  </span> <span class="repro"> (3) análisis reproducibles </span> y <span class="publibres"> (4) publicaciones libres </span>. Estos componentes representan cómo los cientistas sociales podemos contribuir con la apertura del proceso de investigación en sus distintos momentos.
 
 En el ámbito de las ciencias sociales, los esfuerzos por incrementar la apertura de los procesos de investigación han sido **escasos** y su presencia ha sido predominante en las comunidades científicas de **habla inglesa**.  
 
-Por este motivo, **LISA** se propone contribuir a la comunidad de ciencias sociales de **habla hispana** a través de una serie de herramientas que contribuyan a incrementar la apertura de las investigaciones científicas.
+Por este motivo, **LIS<span class="red">A</span>**  se propone contribuir a la comunidad de ciencias sociales de **habla hispana** a través de una serie de herramientas que contribuyan a incrementar la apertura de las investigaciones científicas.
 
 En el siguiente video se resume nuestra propuesta:
 
@@ -53,4 +55,4 @@ En el siguiente video se resume nuestra propuesta:
     src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEvRIXYTBI&#x2F;watch?embed">
   </iframe>
 </div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEvRIXYTBI&#x2F;watch?utm_content=DAEvRIXYTBI&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> 
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEvRIXYTBI&#x2F;watch?utm_content=DAEvRIXYTBI&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>

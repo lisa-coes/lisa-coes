@@ -256,13 +256,13 @@
 <style type="text/css">
 .btn-template-primary {
     color: #ffffff;
-    background-color: gray;
+    background-color: #EC104D;
     border-width: inherit;
 }
 
 .dropdown-toggle.btn-template-primary {
   color: #ffffff;
-  background-color: gray;
+  background-color: #EC104D;
 </style>
 <div id="ipo-input-procesamiento-output" class="section level1">
 <h1>IPO (Input-Procesamiento-Output) <img src="../input/ipo-hex.png" alt=" " style="float: right;width: 30%;max-height: 100%" /></h1>
@@ -282,7 +282,9 @@
 <div id="archivos-y-estructura-de-carpetas" class="section level3">
 <h3>Archivos y estructura de carpetas</h3>
 <p>La estructura se detalla en el siguiente esquema:</p>
-<pre><code>├── input: información externa como datos, imágenes, .bib:
+<pre style="font-size: 18px;">
+<code>
+├── input: información externa como datos, imágenes, .bib:
 |   ├── data:
 │     ├── original : archivos de datos originales y metadatos disponibles
 │     ├── proc     : archivos de datos procesados
@@ -300,7 +302,8 @@
 |
 - readme.md : archivo general de introducción
 - paper.md o paper.Rmd / paper.html / paper.pdf: el artículo/paper
-</code></pre>
+</code>
+</pre>
 </div>
 <div id="versiones-de-ipo" class="section level3">
 <h3>Versiones de IPO:</h3>
@@ -316,10 +319,10 @@ Descripción
 <th style="text-align:left;">
 Software
 </th>
-<th style="text-align:left;">
+<th style="text-align:center;">
 Documentos dinámicos
 </th>
-<th style="text-align:left;">
+<th style="text-align:center;">
 Control de versiones
 </th>
 <th style="text-align:left;">
@@ -330,62 +333,62 @@ Enlace
 <tbody>
 <tr>
 <td style="text-align:left;">
-IPO-gen
+IPO-base
 </td>
-<td style="text-align:left;">
+<td style="text-align:left;width: 10cm; ">
 Orientado a cualquier software o paquete estadístico. Emplea la estructura de carpetas del protocolo.
 </td>
 <td style="text-align:left;">
 Cuaquiera
 </td>
-<td style="text-align:left;">
+<td style="text-align:center;width: 3cm; ">
+NO
+</td>
+<td style="text-align:center;width: 3cm; ">
 NO
 </td>
 <td style="text-align:left;">
-NO
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/jciturras/ipo-rgit/raw/main/IPO-generico.rar" style="     ">IPO Genérico</a>
+<a href="https://github.com/lisa-coes/ipo-rgit/raw/main/templates/IPO-base.rar" style="     ">IPO base</a>
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 IPO-R
 </td>
-<td style="text-align:left;">
+<td style="text-align:left;width: 10cm; ">
 Orientado a usuarios de R. Emplea la estructura general de carpetas y posee énfasis en la reproducibilidad de resultados (tablas, figuras, etc)
 </td>
 <td style="text-align:left;">
 R
 </td>
-<td style="text-align:left;">
+<td style="text-align:center;width: 3cm; ">
 SI
 </td>
-<td style="text-align:left;">
+<td style="text-align:center;width: 3cm; ">
 NO
 </td>
 <td style="text-align:left;">
-<a href="https://lisa-coes.github.io/ipo/IPO_template/IPO-Project_template.tar.gz" style="     ">IPO R</a>
+<a href="https://github.com/lisa-coes/ipo-rgit/raw/main/templates/IPO-R.rar" style="     ">IPO R</a>
 </td>
 </tr>
 <tr>
 <td style="text-align:left;">
 IPO-Rgit
 </td>
-<td style="text-align:left;">
+<td style="text-align:left;width: 10cm; ">
 Mantiene la misma estructura básica, esta versión es una actualización para aprovechar todas las herramientas de reproducibilidad, colaboración y publicación ofrecidas por los entornos de trabajo Rmarkdown / Github.
 </td>
 <td style="text-align:left;">
 R+Git
 </td>
-<td style="text-align:left;">
+<td style="text-align:center;width: 3cm; ">
+SI
+</td>
+<td style="text-align:center;width: 3cm; ">
 SI
 </td>
 <td style="text-align:left;">
-SI
-</td>
-<td style="text-align:left;">
-<a href="https://github.com/jciturras/ipo-rgit/archive/refs/heads/main.zip" style="     ">IPO R+Git</a>
+<a href="https://github.com/lisa-coes/ipo-rgit/generate" style="     ">IPO R+Git</a>
 </td>
 </tr>
 </tbody>
