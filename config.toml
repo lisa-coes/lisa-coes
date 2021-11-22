@@ -19,32 +19,20 @@ paginate = 10
 
 [menu]
 
-# Main menu
+# Main menu 
 
 [[menu.main]]
     identifier="home"
-    name = "Ciencia social abierta"
-    url  = "/" 
+    name = "Acerca de"
+    url = "/00intro-componentes/"
     weight = 1
 
-[[menu.main]]
-    parent = "home"
-    name = "¿Qué es ciencia abierta?"
-    url = "/02novedades/"
-    weight = 1
+#[[menu.main]]
+#    parent = "home"
+#    name = "¿Qué es ciencia abierta?"
+#    url = "/02novedades/"
+#    weight = 1
 
-[[menu.main]]
-    parent = "home"
-    name = "Colaboraciones"
-    url = "/equipo/"
-    weight = 2
-
-
-[[menu.main]]
-    parent = "home"
-    name = "Contáctanos"
-    url = "/contacto/"
-    weight = 4
 
 #-------------------------
 [[menu.main]]
@@ -52,11 +40,6 @@ paginate = 10
     name = "Componentes"
     url  = "/categories/componentes/"
     weight = 2
-
-[[menu.main]]
-    parent = "blog"
-    name = "0. Introducción"
-    url = "/00intro-componentes/"
 
 [[menu.main]]
     parent = "blog"
@@ -81,22 +64,9 @@ paginate = 10
 #-------------------------
 [[menu.main]]
     identifier = "news"
-    name = "Interés"
-    url  = "/links"
-    weight = 3
-
-[[menu.main]]
-    parent = "news"
     name = "Links"
     url  = "/links"
-    weight = 1
-
-[[menu.main]]
-    parent = "news"
-    name = "Novedades"
-    url  = "https://lisa-coes.netlify.app/categories/novedades/"
-    weight = 2
-
+    weight = 3
 
 # Top bar social links menu
 
@@ -241,6 +211,6 @@ paginate = 10
     subtitle = ""
 
 [params.recent_posts]
-    enable = true
+    enable = false
     title = "novedades"
     subtitle = "¿Quieres saber más sobre Ciencia Social Abierta?"

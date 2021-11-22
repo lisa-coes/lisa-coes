@@ -99,6 +99,9 @@ Aquí podrás encontrar algunos sitios y herramientas que se basan en la **cienc
 - [Paywall, the movie](https://paywallthemovie.com/)
 
 
+# Equipo 
+
+* [Han pasado por LISA](/equipo/)
 
 ---
 

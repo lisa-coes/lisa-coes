@@ -33,7 +33,7 @@ table<- readxl::read_excel("../input/summary-opendata.xlsx")
 
 # Guía para la apertura de datos
 
-<i class="ai ai-open-data ai-10x" style="color:lightgreen;float:right;"></i>
+<i class="ai ai-open-materials ai-10x" style="color:pink;float:right;"></i>
 
 En parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de **compartir nuestros datos al resto de la comunidad científica** pero muchas veces no sabemos cómo lograrlo. *¿Cómo abrir nuestros datos? ¿Qué criterios debo cumplir para que sean publicados? ¿Dónde y cómo publicarlos?* En el siguiente blog te contestaremos estas preguntas.
 
@@ -196,10 +196,10 @@ Puedes dejar tus comentarios y dudas sobre el cómo publicar tus datos en nuestr
 
 <div id="disqus_thread"></div>
 
-```{css}
+<style>
 .btn-template-primary {
     color: #ffffff;
-    background-color: lightgreen;
+    background-color: pink;
     border-width: inherit;
 }
 
@@ -209,7 +209,7 @@ Puedes dejar tus comentarios y dudas sobre el cómo publicar tus datos en nuestr
 .btn-template-primary.active,
 .open > .dropdown-toggle.btn-template-primary {
   color: #ffffff;
-  background-color: #48E04B;
-  border-color: #c22828;
+  background-color: #EC8686;
+  border-color: #EC8686;
 }
-```
+</style>

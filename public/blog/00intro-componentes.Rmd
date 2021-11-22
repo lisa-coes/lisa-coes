@@ -8,7 +8,7 @@ description:
 tags:
 - componentes
 - ciencia abierta
-title: Introducción
+title: Sobre LISA
 ---
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
@@ -23,24 +23,26 @@ Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
 ```
 <style>
 .disegno{color: lightblue;}
-.datos{color: lightgreen;}
-.repro{color: pink;}
+.datos{color: pink;}
+.repro{color: lightgreen;}
 .publibres{color: orange;}
 .red{color: red;}
 
 </style>
 
-# Componentes
-
 <div style="float: right;">
 
-| <i class="ai ai-preregistered ai-9x" style="color:lightblue; "></i> | <i class="ai ai-open-data ai-9x" style="color:lightgreen;;"></i>      |
+| <i class="ai ai-preregistered ai-9x" style="color:lightblue; "></i> | <i class="ai ai-open-materials ai-9x" style="color:pink;;"></i>      |
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| <i class="ai ai-open-materials ai-9x" style="color:pink;"></i>      | <i class="ai ai-open-access-square ai-9x" style="color:orange;"></i> |
+| <i class="ai ai-open-data ai-9x" style="color:lightgreen;"></i>      | <i class="ai ai-open-access-square ai-9x" style="color:orange;"></i> |
 
 </div>
 
-Uno de los objetivos **Laboratorio de Investigación Social <span class="red">Abierta</span>** es generar una propuesta de trabajo siguiendo los principios y prácticas de la ciencia abierta. Esta propuesta se constituye a través de la elaboración de **herramientas** conceptuales y prácticas en cuatro componentes: <span class="disegno">(1) diseño transparente, </span>  <span class="datos"> (2) apertura de datos,  </span> <span class="repro"> (3) análisis reproducibles </span> y <span class="publibres"> (4) publicaciones libres </span>. Estos componentes representan cómo los cientistas sociales podemos contribuir con la apertura del proceso de investigación en sus distintos momentos.
+
+El **Laboratorio de Investigación Social <span class="red">Abierta</span>** es una iniciativa del **Centro de Estudios de Conflicto y Cohesión Social (COES)** que ha realizado esfuerzos para fomentar una ciencia social abierta, por una lado, al interior de la comunidad académica, como también hacia la sociedad en general.
+
+
+Uno de sus objetivos ha sido generar una propuesta de trabajo, la cual se constituye a través de la elaboración de **herramientas** conceptuales y prácticas en cuatro componentes: <span class="disegno">(1) diseño transparente, </span>  <span class="datos"> (2) apertura de datos,  </span> <span class="repro"> (3) análisis reproducibles </span> y <span class="publibres"> (4) publicaciones libres </span>. Estos componentes representan cómo los cientistas sociales podemos contribuir con la apertura de los distintos momentos del proceso de investigación.
 
 En el ámbito de las ciencias sociales, los esfuerzos por incrementar la apertura de los procesos de investigación han sido **escasos** y su presencia ha sido predominante en las comunidades científicas de **habla inglesa**.  
 

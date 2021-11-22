@@ -17,7 +17,7 @@ title: Análisis reproducibles
 
 # Guía para los análisis reproducibles
 
-<i class="ai ai-open-materials ai-10x" style="color:pink;float:right;"></i>
+<i class="ai ai-open-data ai-10x" style="color:lightgreen;float:right;"></i>
 
 ¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales, y que por tanto, es imposible acceder a los procedimientos que dieron luces a sus resultados? En este contexto, la **reproducibilidad** entendida como la posibilidad de **regenerar** de manera independiente los resultados usando los materiales originales de una investigación publicada. _¿Cómo organizamos un proyecto con análisis reproducibles?_ _¿Qué herramientas puedo utilizar?_ _¿Cómo puedo compartir mis materiales?_ En este blog daremos algunas orientaciones generales respecto a cómo avanzar en esta dirección.
 
@@ -264,7 +264,7 @@ Recomendamos el uso de Git y Github cómo flujo de trabajo para aquellos cientí
 
 🗸 Si deseas conocer más sobre Git y GitHub te invitamos a revisar la sesión del curso "Ciencia Social Abierta":
 
-<a class = "btn btn-template-main" href="https://version2020--cienciasocialabierta.netlify.app/class/07-class/" target="_blank">Control de Versiones/Git</a>
+<a class = "btn btn-template-main" href="https://version2020--cienciasocialabierta.netlify.app/class/08-class/" target="_blank">Control de Versiones/Git</a>
 
 
 # En síntesis
@@ -284,5 +284,25 @@ Recomendamos el uso de Git y Github cómo flujo de trabajo para aquellos cientí
 ## ¿Quieres comentar o tienes alguna duda?
 
 Puedes dejar tus comentarios y dudas sobre cómo generar un proyecto reproducible. De todas formas puedes [contactarnos](/contact/)
+
+<style>
+.btn-template-primary {
+    color: #ffffff;
+    background-color: lightgreen;
+    border-width: inherit;
+}
+
+.btn-template-primary:hover,
+.btn-template-primary:focus,
+.btn-template-primary:active,
+.btn-template-primary.active,
+.open > .dropdown-toggle.btn-template-primary {
+  color: #ffffff;
+  background-color: #48E04B;
+  border-color: #c22828;
+}
+</style>
+
+
 
 <div id="disqus_thread"></div>
