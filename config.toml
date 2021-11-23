@@ -174,14 +174,14 @@ paginate = 10
     # For more informtion take a look at the README.
  
 [params.test]
-    enable = true
+    enable = false
     title = "LISA"
     subtitle = "El **Laboratorio de Ciencia Social Abierta** es una iniciativa del *Centro de Estudios de Conflicto y Cohesión Social* (COES) que tiene como propósito ser una guía para el desarrollo de una ciencia social abierta y reproducible para la comunidad científica y la ciudadanía. Nos enfocamos en promover y construir **herramientas de los cuatro componentes** principales de la ciencia abierta: *(1) diseño transparente, (2) apertura de datos, (3) análisis reproducibles y (4) publicaciones libres*."
 
 [params.features]
     enable = true
     cols = 4
-    title = "Pasos para una Ciencia Abierta"
+    title = "Componentes"
     subtitle = "Presiona cada uno de ellos para conocer más detalles"
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/features'.
