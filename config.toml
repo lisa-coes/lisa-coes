@@ -1,4 +1,4 @@
-baseurl = "https://lisa-coes.netlify.app/"
+baseurl = "https://lisa-coes.com/"
 title = "Laboratorio de Ciencia Social Abierta"
 theme = "hugo-universal-theme"
 languageCode = "es-cl"
@@ -19,7 +19,7 @@ paginate = 10
 
 [menu]
 
-# Main menu 
+# Main menu
 
 [[menu.main]]
     identifier="home"
@@ -63,10 +63,27 @@ paginate = 10
 
 #-------------------------
 [[menu.main]]
+    identifier = "protocol"
+    name = "Protocolos"
+    weight = 3
+    
+[[menu.main]]
+    parent = "protocol"
+    name = "1. Reproducibilidad"
+    url = "/ipo-protocol/"
+
+[[menu.main]]
+    parent = "protocol"
+    name = "2. Apertura de datos"
+    url = "https://lisa-coes.github.io/ipo-data/index.html"
+#-------------------------
+[[menu.main]]
     identifier = "news"
     name = "Links"
     url  = "/links"
-    weight = 3
+    weight = 4
+    
+    
 
 # Top bar social links menu
 
@@ -99,7 +116,7 @@ paginate = 10
     author = "LISA"
     defaultKeywords = ["lisa", "coes"]
     mainSections = ["blog"]
-    defaultDescription = "Sitio desarrollado por valentinaandrade"
+    defaultDescription = "el Laboratorio de Ciencia Social Abierta (LISA), iniciativa de COES que busca generar información y orientaciones para la apertura de la investigación científica en ciencias sociales."
 
     # Social media
     facebook_site = "coes2020" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
@@ -172,11 +189,11 @@ paginate = 10
     # All carousel items are defined in their own files. You can find example items
     # at 'exampleSite/data/carousel'.
     # For more informtion take a look at the README.
- 
+
 [params.test]
     enable = false
     title = "LISA"
-    subtitle = "El **Laboratorio de Ciencia Social Abierta** es una iniciativa del *Centro de Estudios de Conflicto y Cohesión Social* (COES) que tiene como propósito ser una guía para el desarrollo de una ciencia social abierta y reproducible para la comunidad científica y la ciudadanía. Nos enfocamos en promover y construir **herramientas de los cuatro componentes** principales de la ciencia abierta: *(1) diseño transparente, (2) apertura de datos, (3) análisis reproducibles y (4) publicaciones libres*."
+    subtitle = "Laboratorio de Ciencia Social Abierta (LISA), iniciativa de COES que busca generar información y orientaciones para la apertura de la investigación cientifica en ciencias sociales"
 
 [params.features]
     enable = true
@@ -186,14 +203,14 @@ paginate = 10
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/features'.
     # For more informtion take a look at the README.
- 
+
 [params.testimonials]
     enable = true
     # All testimonials are defined in their own files. You can find example items
     # at 'exampleSite/data/testimonials'.
     # For more informtion take a look at the README.
     title = "Equipo"
-    
+
 [params.see_more]
     enable = false
     icon = "fas fa-chart-line"
