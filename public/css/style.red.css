@@ -128,7 +128,7 @@ div.section {
   width: 80px;
   height: 80px;
   color: #fff;
-  line-height: 80px;
+  line-height: 90px; /*modificado, original = 80px*/ 
   border-radius: 40px;
   border: solid 1px #fff;
   font-size: 20px;
@@ -1734,7 +1734,7 @@ fieldset[disabled] .btn-template-primary.active {
   border: none;
 }
 #heading-breadcrumbs {
-  background: url('../img/texture-bw.png') center center repeat;
+/*  background: url('../img/texture-bw.png') center center repeat; */
   padding: 20px 0;
   margin-bottom: 40px;
 }
@@ -1763,7 +1763,7 @@ fieldset[disabled] .btn-template-primary.active {
   padding: 60px 0;
 }
 .bar.background-pentagon {
-  background: url('../img/texture-bw.png') center center repeat;
+  background: #ec8686;
   border-top: solid 1px #999999;
   border-bottom: solid 1px #999999;
 }
@@ -1782,6 +1782,12 @@ fieldset[disabled] .btn-template-primary.active {
   background: url('https://cutewallpaper.org/21/moving-wallpaper-gif/Background-GIFs-Get-the-best-GIF-on-GIPHY.gif') center center repeat;
   border-top: solid 1px #999999;
   border-bottom: solid 1px #999999;
+}
+
+
+
+.bar.background-white {
+  background: white;
 }
 
 .bar.background-gray {
@@ -3591,4 +3597,42 @@ a.list-group-item.active > .badge,
   display: inline-block;
   font-size: 16px;
   border-radius: 8px;
+}
+
+
+/* imagenes circulares
+<div class="image-cropper">
+  <img src="/avatar.jpg" alt="avatar" class="profile-pic">
+</div>
+*/
+
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+  
+}
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-right: inherit; 
+  height: 100%;
+  width: auto;
+}
+
+/* img hoover from bw to color */
+.color img{
+filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+-webkit-transition: all 1s ease;
+}
+
+.color img:hover{
+filter: grayscale(0%);
+filter: gray;
+-webkit-filter: grayscale(0%);
+filter: none;
+transition: 1s ease;
 }

@@ -1,4 +1,4 @@
-baseurl = "https://lisa-coes.netlify.app/"
+baseurl = "https://lisa-coes.com/"
 title = "Laboratorio de Ciencia Social Abierta"
 theme = "hugo-universal-theme"
 languageCode = "es-cl"
@@ -23,35 +23,18 @@ paginate = 10
 
 [[menu.main]]
     identifier="home"
-    name = "Ciencia social abierta"
-    url  = "/"
+    name = "Acerca de"
+    url = "/00intro-componentes/"
     weight = 1
 
-[[menu.main]]
-    parent = "home"
-    name = "¿Qué es ciencia abierta?"
-    url = "/02novedades/"
-    weight = 1
-
-[[menu.main]]
-    parent = "home"
-    name = "Equipo"
-    url = "/equipo/"
-    weight = 2
-
-[[menu.main]]
-    parent = "home"
-    name = "Equipo"
-    url = "/equipo/"
-    weight = 3
-
-[[menu.main]]
-    parent = "home"
-    name = "Contáctanos"
-    url = "/contacto/"
-    weight = 4
+#[[menu.main]]
+#    parent = "home"
+#    name = "¿Qué es ciencia abierta?"
+#    url = "/02novedades/"
+#    weight = 1
 
 
+#-------------------------
 [[menu.main]]
     identifier = "blog"
     name = "Componentes"
@@ -78,24 +61,29 @@ paginate = 10
     name = "4. Publicaciones libres"
     url = "/04componentes/"
 
+#-------------------------
+[[menu.main]]
+    identifier = "protocol"
+    name = "Protocolos"
+    weight = 3
+    
+[[menu.main]]
+    parent = "protocol"
+    name = "1. Reproducibilidad"
+    url = "/ipo-protocol/"
+
+[[menu.main]]
+    parent = "protocol"
+    name = "2. Apertura de datos"
+    url = "https://lisa-coes.github.io/ipo-data/index.html"
+#-------------------------
 [[menu.main]]
     identifier = "news"
-    name = "Interés"
-    url  = "/links"
-    weight = 3
-
-[[menu.main]]
-    parent = "news"
     name = "Links"
     url  = "/links"
-    weight = 1
-
-[[menu.main]]
-    parent = "news"
-    name = "Novedades"
-    url  = "https://lisa-coes.netlify.app/categories/novedades/"
-    weight = 2
-
+    weight = 4
+    
+    
 
 # Top bar social links menu
 
@@ -128,7 +116,7 @@ paginate = 10
     author = "LISA"
     defaultKeywords = ["lisa", "coes"]
     mainSections = ["blog"]
-    defaultDescription = "Sitio desarrollado por valentinaandrade"
+    defaultDescription = "el Laboratorio de Ciencia Social Abierta (LISA), iniciativa de COES que busca generar información y orientaciones para la apertura de la investigación científica en ciencias sociales."
 
     # Social media
     facebook_site = "coes2020" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
@@ -203,13 +191,14 @@ paginate = 10
     # For more informtion take a look at the README.
 
 [params.test]
-    enable = true
+    enable = false
     title = "LISA"
-    subtitle = "El **Laboratorio de Ciencia Social Abierta** es una iniciativa del *Centro de Estudios de Conflicto y Cohesión Social* (COES) que tiene como propósito ser una guía para el desarrollo de una ciencia social abierta y reproducible para la comunidad científica y la ciudadanía. Nos enfocamos en promover y construir **herramientas de los tres componentes** principales de la ciencia abierta: *(1) diseño transparente, (2) apertura de datos, (3) análisis reproducibles y (4) publicaciones libres*."
+    subtitle = "Laboratorio de Ciencia Social Abierta (LISA), iniciativa de COES que busca generar información y orientaciones para la apertura de la investigación cientifica en ciencias sociales"
 
 [params.features]
     enable = true
-    title = "Pasos para una Ciencia Abierta"
+    cols = 4
+    title = "Componentes"
     subtitle = "Presiona cada uno de ellos para conocer más detalles"
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/features'.
@@ -220,11 +209,10 @@ paginate = 10
     # All testimonials are defined in their own files. You can find example items
     # at 'exampleSite/data/testimonials'.
     # For more informtion take a look at the README.
-    title = "Equipo central"
-    subtitle = ""
+    title = "Equipo"
 
 [params.see_more]
-    enable = true
+    enable = false
     icon = "fas fa-chart-line"
     title = "**Guía para la apertura de datos**"
     subtitle = ""
@@ -240,6 +228,6 @@ paginate = 10
     subtitle = ""
 
 [params.recent_posts]
-    enable = true
+    enable = false
     title = "novedades"
     subtitle = "¿Quieres saber más sobre Ciencia Social Abierta?"

@@ -43,7 +43,6 @@ Aquí podrás encontrar algunos sitios y herramientas que se basan en la **cienc
 - [8 Easy Steps to Open Science: An Annotated Reading List](https://psyarxiv.com/cfzyx)
 
 
-
 # Repositorios{#repositorios}
 
 ## Para datos{#rep-datos}
@@ -92,6 +91,8 @@ Aquí podrás encontrar algunos sitios y herramientas que se basan en la **cienc
 
 - [The Berkeley Initiative for Transparency in the Social Sciences](https://www.bitss.org/)
 
+- [The Social Science Reproduction Platform (SSRP)](https://www.socialsciencereproduction.org/)
+
 - [ILDA - Iniciativa Latinoamericana por los Datos Abiertos](https://idatosabiertos.org/)
 
 - [Free our knowledge](http://freeourknowledge.org/)
@@ -99,6 +100,9 @@ Aquí podrás encontrar algunos sitios y herramientas que se basan en la **cienc
 - [Paywall, the movie](https://paywallthemovie.com/)
 
 
+# Equipo 
+
+* [Han pasado por LISA](/equipo/)
 
 ---
 

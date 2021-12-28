@@ -2,35 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>novedades on Laboratorio de Ciencia Social Abierta</title>
-    <link>https://lisa-coes.netlify.app/categories/novedades/</link>
+    <link>/categories/novedades/</link>
     <description>Recent content in novedades on Laboratorio de Ciencia Social Abierta</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-cl</language>
-    <lastBuildDate>Sun, 20 Dec 2020 10:50:46 +0200</lastBuildDate><atom:link href="https://lisa-coes.netlify.app/categories/novedades/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 10:50:46 +0200</lastBuildDate>
+    
+	<atom:link href="/categories/novedades/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>¿Qué es la Ciencia Abierta?</title>
-      <link>https://lisa-coes.netlify.app/02novedades/</link>
+      <link>/02novedades/</link>
       <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/02novedades/</guid>
+      <guid>/02novedades/</guid>
       <description>¿Qué es la Ciencia Abierta? ¿Porqué practicarla en Ciencias Sociales? Ciencia abierta en Ciencias Sociales Estado actual en Chile Qué ofrece LISA Herramientas disponibles </description>
     </item>
     
     <item>
       <title>¿Qué es la Ciencia Abierta?</title>
-      <link>https://lisa-coes.netlify.app/novedades/02novedades/</link>
+      <link>/novedades/02novedades/</link>
       <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/novedades/02novedades/</guid>
+      <guid>/novedades/02novedades/</guid>
       <description>¿Qué es la Ciencia Abierta? ¿Porqué practicarla en Ciencias Sociales? Ciencia abierta en Ciencias Sociales Estado actual en Chile Qué ofrece LISA Herramientas disponibles </description>
     </item>
     
     <item>
       <title>Lanzamiento Laboratorio Ciencia Social Abierta</title>
-      <link>https://lisa-coes.netlify.app/01novedades/</link>
+      <link>/01novedades/</link>
       <pubDate>Sat, 19 Dec 2020 13:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/01novedades/</guid>
+      <guid>/01novedades/</guid>
       <description>Lanzamiento Laboratorio Ciencia Social Abierta En &amp;hellip; realizada el &amp;hellip; a las &amp;hellip; horas se presentó el Laboratorio de Ciencia Social Abierta con su sitio web que aloja una guía para &amp;hellip; y herramientas para &amp;hellip;
 La actividad consistió en la presentación de &amp;hellip;, con la participación de &amp;hellip;
 Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una iniciativa innovadora en &amp;hellip; A su vez, &amp;hellip; indicó que &amp;hellip;.</description>
@@ -38,10 +42,10 @@ Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una ini
     
     <item>
       <title>Lanzamiento Laboratorio Ciencia Social Abierta</title>
-      <link>https://lisa-coes.netlify.app/novedades/01novedades/</link>
+      <link>/novedades/01novedades/</link>
       <pubDate>Sat, 19 Dec 2020 13:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.netlify.app/novedades/01novedades/</guid>
+      <guid>/novedades/01novedades/</guid>
       <description>Lanzamiento Laboratorio Ciencia Social Abierta En &amp;hellip; realizada el &amp;hellip; a las &amp;hellip; horas se presentó el Laboratorio de Ciencia Social Abierta con su sitio web que aloja una guía para &amp;hellip; y herramientas para &amp;hellip;
 La actividad consistió en la presentación de &amp;hellip;, con la participación de &amp;hellip;
 Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una iniciativa innovadora en &amp;hellip; A su vez, &amp;hellip; indicó que &amp;hellip;.</description>
