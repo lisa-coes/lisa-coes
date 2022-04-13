@@ -1,0 +1,138 @@
+---
+author: LISA
+categories:
+- protocolos
+date: "2021-05-11T10:50:46+02:00"
+description: ¿Cómo hacer un libro de códigos?
+keywords:
+- codebook
+- datos
+- apertura
+title: IPO-data
+linkcolor: blue
+link-citations: yes
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, cache = FALSE,echo = F)
+pacman::p_load(dplyr, kableExtra,sjlabelled, readxl)
+options(scipen=999,
+        knitr.kable.NA = '',
+        knitr.graphics.error = FALSE)
+Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
+```
+
+```{css}
+.btn-template-primary {
+    color: #ffffff;
+    background-color: #EC104D;
+    border-width: inherit;
+}
+
+.dropdown-toggle.btn-template-primary {
+  color: #ffffff;
+  background-color: #EC104D;
+```
+
+
+#  IPO-datos   <img src="../input/ipo-hex.png" alt=" " style="float: right;width: 30%;max-height: 100%" />
+
+### Protocolo de apertura de datos
+
+
+Siguiendo la lógica del protocolo [IPO-reproducibilidad](), el protocolor [IPO-datos]() es una plantilla/protocolo de estructura digital de carpetas que tiene por objetivo el **organizar**, **procesar** y **documentar** los datos de un proyecto de investigación con miras a la apertura de los datos en un repositorio público y de acceso libre.
+
+Al igual que los proyectos reproducibles, este protocolo propone los pasos a seguir para la apertura de datos, pasando por la preparación de la base de datos bruta, su documentación técnica y uso de los datos. Para ello, se emplea un conjunto de carpetas con archivos auto-contenidos para cada uno de estos pasos. A continuación presentaremos la estructura general de carpetas, su función y las tareas asociada a cada una de ellas.
+
+
+* [Aqui otro esquema... ?]
+
+
+### Archivos y estructura de carpetas
+
+La estructura se detalla en el siguiente esquema: 
+
+<div id="demobox">
+
+* <i class="fa fa-folder-open" aria-hidden="true"></i>   **1. Input**
+  - <i class="fa fa-database" aria-hidden="true"></i> Datos originales (.dta/.sav/.csv)
+  - <i class="fa fa-table" aria-hidden="true"></i> Tablas 
+  - <i class="fas fa-image"></i> Imágenes (.png/.jpg)
+  
+* <i class="fa fa-folder-open" aria-hidden="true"></i>  **2. Preparación**
+  - <i class="fa fa-code" aria-hidden="true"></i> Procedimientos de preparación de datos (.R/.Rmd/.do)
+  - <i class="fa fa-file" aria-hidden="true"></i> Documento ficha técnica (.odt/.md/.Rmd)
+  - <i class="fa fa-file"></i> Procedimientos preparación libro de códigos 
+  - <i class="fas fa-file-word"></i> Documento de intrumentos (.odt) 
+  
+* <i class="fa fa-folder-open" aria-hidden="true"></i>  **3. Output**
+  -  <i class="fa fa-database" aria-hidden="true"></i> Datos a publicar (.RData/.dta)
+  - <i class="fa fa-code" aria-hidden="true"></i> cita bibliográfica (.bib)
+  - <i class="fas fa-file-pdf"></i> ficha técnica  (.pdf/.html) 
+  - <i class="fas fa-file-pdf"></i> libro de códigos (.pdf/.html)   
+  - <i class="fas fa-file-pdf"></i> instrumentos (.pdf/.html)
+</div>
+
+
+### Principios básicos
+
+
+```{r, out.width='75%', fig.align='center'}
+knitr::include_graphics("input/ipo-data-esquema.png")
+```
+
+
+### Ejemplo
+
+Un ejemplo mínimo para probar la implementación del protocolo se puede bajar [aquí](https://lisa-coes.github.io/ipo/IPO_miniex/IPO_miniex.tar.gz)
+
+
+### Notas
+
+- como el entorno R / Rmarkdown permite combinar texto, análisis y resultados, las carpetas de procesamiento y output pueden resultar redundantes. Este es probablemente el caso de análisis e informes breves. Sin embargo, cuando se trabaja en un proyecto tipo artículo o tesis, es aconsejable separar input, procesamiento y output en aras del orden y la reproducibilidad a pesar de trabajar con Rmarkdown.
+
+- para facilitar el trabajo en Rstudio, es posible que desee hacer de la carpeta del proyecto una carpeta **Rproject**. Esto hará que el directorio de trabajo se remita automáticamente a la raíz, además de activar otras funciones dentro de Rstudio. Para esto, en Rstudio simplemente vaya a Archivo-> Nuevo proyecto-> Directorio existente y apunte a la carpeta del proyecto. Esto creará un archivo con la extensión .Rproj que, al hacer clic, abrirá Rstudio con la carpeta del proyecto como raíz. De esta manera, evita generar directorios de trabajo individuales locales (el comando R `setwd`), que no facilitan la reproducibilidad. Si se logra entender por qué no se debe referir en el código a un directorio local (como con `setwd`), entonces está más cerca de entender el sentido de la reproducibilidad.
+
+- además de tener una carpeta de proyecto donde está contenida toda la información, la clave técnica para trabajar dentro de esta estructura es guardar y cargar archivos ubicados en diferentes lugares a través de **rutas relativas** (relative paths), lo que permite conectar diferentes archivos dentro del mismo proyecto/carpeta. Por ejemplo, para cargar un archivo de datos desde la carpeta `original` desde el código `preparacion.Rmd`:
+
+</div>
+
+---
+
+## ¿Quieres comentar o tienes alguna duda?
+
+Puedes dejar tus comentarios y dudas sobre el **Protocolo IPO** en nuestro foro. De todas formas puedes [contactarnos](/contact/)
+
+<div id="disqus_thread"></div>
+
+
+<!-- javascript para acordiones -->
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+```{css}
+#demobox {
+  background-color: #ddd ;
+  font-family: monospace;
+  padding: 10px ;
+  border: 1px solid grey ;
+}
+```
+

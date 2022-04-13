@@ -69,13 +69,22 @@ paginate = 10
     
 [[menu.main]]
     parent = "protocol"
-    name = "1. Reproducibilidad"
-    url = "/ipo-protocol/"
+    name = "Presentación"
+    url = "/ipo-intro/"
+    weight = 1
+    
+[[menu.main]]
+    parent = "protocol"
+    name = "1. Apertura de datos"
+    url = "/ipo-data/"
+    weight = 2
 
 [[menu.main]]
     parent = "protocol"
-    name = "2. Apertura de datos"
-    url = "https://lisa-coes.github.io/ipo-data/index.html"
+    name = "2. Reproducibilidad"
+    url = "/ipo-repro/"
+    weight = 3
+
 #-------------------------
 [[menu.main]]
     identifier = "news"

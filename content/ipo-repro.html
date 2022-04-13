@@ -1,14 +1,14 @@
 ---
 author: LISA
 categories:
-- componentes
+- protocolos
 date: "2021-05-11T10:50:46+02:00"
 description: ¿Cómo hacer un libro de códigos?
 keywords:
 - codebook
-- datos
-- abierto
-title: Protocolo
+- reproducibilidad
+
+title: Protocolo Análisis reproducible
 linkcolor: blue
 link-citations: yes
 editor_options:
@@ -31,8 +31,8 @@ editor_options:
   color: #ffffff;
   background-color: #EC104D;
 </style>
-<div id="ipo-input-procesamiento-output" class="section level1">
-<h1>IPO (Input-Procesamiento-Output) <img src="../input/ipo-hex.png" alt=" " style="float: right;width: 30%;max-height: 100%" /></h1>
+<div id="ipo-reproducibilidad" class="section level1">
+<h1>IPO-reproducibilidad <img src="../input/ipo-hex.png" alt=" " style="float: right;width: 30%;max-height: 100%" /></h1>
 <div id="protocolo-para-flujo-de-investigación-reproducible" class="section level3">
 <h3>Protocolo para flujo de investigación reproducible</h3>
 <p>Esta es una plantilla/protocolo de carpetas de proyecto basada en el protocolo <strong>TIER</strong> (Integridad de Enseñanza en Investigación Empírica). TIER “promueve la integración de principios y prácticas relacionadas con la transparencia y la replicabilidad en el entrenamiento en investigación de los científicos sociales”. (más información en <a href="https://www.projecttier.org/">https://www.projecttier.org/</a>).</p>
@@ -52,9 +52,8 @@ editor_options:
 <pre style="font-size: 18px;">
 <code>
 ├── input: información externa como datos, imágenes, .bib:
-|   ├── data:
-│     ├── original : archivos de datos originales y metadatos disponibles
-│     ├── proc     : archivos de datos procesados
+|   ├── data-orig: archivos de datos originales y metadatos disponibles
+|   ├── data-proc: archivos de datos procesados
 │   ├── imagenes
 │   ├── bib: archivos de bibliografía
 │   ├── prereg: archivos de pre-registro si están disponibles

@@ -66,12 +66,33 @@ Uno de los pilares que dan validez a la evidencia científica es el escrutinio p
     </item>
     
     <item>
-      <title>Protocolo</title>
-      <link>https://lisa-coes.com/ipo-protocol/</link>
+      <title>IPO-data</title>
+      <link>https://lisa-coes.com/ipo-data/</link>
       <pubDate>Tue, 11 May 2021 10:50:46 +0200</pubDate>
       
-      <guid>https://lisa-coes.com/ipo-protocol/</guid>
+      <guid>https://lisa-coes.com/ipo-data/</guid>
+      <description>.btn-template-primary {color: #ffffff;background-color: #EC104D;border-width: inherit;}.dropdown-toggle.btn-template-primary {color: #ffffff;background-color: #EC104D;IPO-datos Protocolo de apertura de datosSiguiendo la lógica del protocolo IPO-reproducibilidad, el protocolor IPO-datos es una plantilla/protocolo de estructura digital de carpetas que tiene por objetivo el organizar, procesar y documentar los datos de un proyecto de investigación con miras a la apertura de los datos en un repositorio público y de acceso libre.</description>
+    </item>
+    
+    <item>
+      <title>IPO-reproducibilidad</title>
+      <link>https://lisa-coes.com/ipo-repro/</link>
+      <pubDate>Tue, 11 May 2021 10:50:46 +0200</pubDate>
+      
+      <guid>https://lisa-coes.com/ipo-repro/</guid>
       <description>.btn-template-primary {color: #ffffff;background-color: #EC104D;border-width: inherit;}.dropdown-toggle.btn-template-primary {color: #ffffff;background-color: #EC104D;IPO (Input-Procesamiento-Output) Protocolo para flujo de investigación reproducibleEsta es una plantilla/protocolo de carpetas de proyecto basada en el protocolo TIER (Integridad de Enseñanza en Investigación Empírica). TIER “promueve la integración de principios y prácticas relacionadas con la transparencia y la replicabilidad en el entrenamiento en investigación de los científicos sociales”.</description>
+    </item>
+    
+    <item>
+      <title>Presentación</title>
+      <link>https://lisa-coes.com/ipo-intro/</link>
+      <pubDate>Tue, 11 May 2021 10:50:46 +0200</pubDate>
+      
+      <guid>https://lisa-coes.com/ipo-intro/</guid>
+      <description>.btn-template-primary {color: #ffffff;background-color: #EC104D;border-width: inherit;}.dropdown-toggle.btn-template-primary {color: #ffffff;background-color: #EC104D;ProtocolosLos protocolos son…
+desde LISA…
+¿Quieres comentar o tienes alguna duda?Puedes dejar tus comentarios y dudas sobre el Protocolo IPO en nuestro foro. De todas formas puedes contactarnos
+</description>
     </item>
     
     <item>

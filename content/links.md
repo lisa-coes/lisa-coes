@@ -5,7 +5,7 @@ keywords:
 - buscador
 - datos
 - abierto
-title: 
+title:
 ---
 <br>
 
@@ -42,6 +42,8 @@ Aquí podrás encontrar algunos sitios y herramientas que se basan en la **cienc
 
 - [8 Easy Steps to Open Science: An Annotated Reading List](https://psyarxiv.com/cfzyx)
 
+- [Credit data generators for data reuse](https://www.nature.com/articles/d41586-019-01715-4)
+
 
 # Repositorios{#repositorios}
 
@@ -54,7 +56,7 @@ Aquí podrás encontrar algunos sitios y herramientas que se basan en la **cienc
 ## Misceláneo{#rep-varios}
 
 - [GitHub](https://github.com/) y [GitLab](https://about.gitlab.com/)
-  
+
 - [Open Science Framework](https://osf.io/)
 
 ## Publicaciones{#rep-pub}
@@ -62,6 +64,11 @@ Aquí podrás encontrar algunos sitios y herramientas que se basan en la **cienc
 - [Gates Open Research](https://gatesopenresearch.org/)
 
 - [SocArxiv](https://socopen.org/welcome/), the open archive of the social sciences
+
+- [ResearchEquals.com](https://researchequals.com/)
+
+- [](https://unesdoc.unesco.org/ark:/48223/pf0000379949_spa)
+
 
 # Herramientas{#herramientas}
 
@@ -73,6 +80,9 @@ Aquí podrás encontrar algunos sitios y herramientas que se basan en la **cienc
 
 - [Karl Broman Tutorias reproducibility, knitr, Git & more](https://kbroman.org/tutorials.html)
 
+- [LA Referencia](https://www.youtube.com/user/RepositoriosLA/videos)
+
+- [Framework for Open and Reproducible Research Training](https://forrt.org/glossary/)
 
 ## Softwares{#softwares}
 
@@ -99,8 +109,10 @@ Aquí podrás encontrar algunos sitios y herramientas que se basan en la **cienc
 
 - [Paywall, the movie](https://paywallthemovie.com/)
 
+- [A new publishing format: Research modules.](https://www.researchequals.com/)
 
-# Equipo 
+
+# Equipo
 
 * [Han pasado por LISA](/equipo/)
 

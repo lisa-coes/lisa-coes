@@ -1,14 +1,14 @@
 ---
 author: LISA
 categories:
-- componentes
+- protocolos
 date: "2021-05-11T10:50:46+02:00"
 description: ¿Cómo hacer un libro de códigos?
 keywords:
 - codebook
-- datos
-- abierto
-title: Protocolo
+- reproducibilidad
+
+title: IPO-reproducibilidad
 linkcolor: blue
 link-citations: yes
 editor_options:
