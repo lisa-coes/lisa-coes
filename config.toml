@@ -92,7 +92,12 @@ paginate = 10
     url  = "/links"
     weight = 4
     
-    
+#-------------------------
+[[menu.main]]
+    identifier = "present"
+    name = "Presentaciones"
+    url  = "/presentaciones"
+    weight = 5    
 
 # Top bar social links menu
 
