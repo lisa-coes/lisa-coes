@@ -13,7 +13,7 @@
       <pubDate>Tue, 28 Dec 2021 10:50:46 +0200</pubDate>
       
       <guid>https://lisa-coes.com/workshop/taller-intro/</guid>
-      <description>Taller Introducción a la Ciencia Abierta:Pre-registros y Pre-printsActualmente la ciencia vive una crisis de apertura, la cual se ha asociado principalmente a las barreras para acceder a los productos finales de la investigación (artículos), así como también a la transparencia general de los diseños de investigación, levantamiento de datos y análisis de la información. El presente taller entrega una breve introducción general a los orígenes, características y consecuencias del cierre científico, para luego enfocarse en dos herramientas prácticas para la apertura: los pre-registros y los pre-prints.</description>
+      <description>Taller Introducción a la Ciencia Abierta:Pre-registros y Pre-printsActualmente la ciencia vive una crisis de apertura, la cual se ha asociado principalmente a las barreras para acceder a los productos finales de la investigación (artículos), así como también a la transparencia general de los diseños de investigación, levantamiento de datos y análisis de la información. El presente taller entrega una breve introducción general a los orígenes, características y consecuencias del cierre científico, para luego enfocarse en dos herramientas prácticas para la apertura: los pre-registros y los pre-prints.</description>
     </item>
     
     <item>
@@ -22,8 +22,7 @@
       <pubDate>Wed, 03 Nov 2021 12:50:46 +0200</pubDate>
       
       <guid>https://lisa-coes.com/04componentes/</guid>
-      <description>Guía para las publicaciones libres
-La publicación de un trabajo científico es clave para dar a conocer los resultados y determinar su impacto. Al respecto, este momento puede trascender a algunas revistas indexadas donde encontramos barreras de acceso al conocimiento. Por este motivo, podemos enfrentarnos al dilema respecto a cómo abrir una publicación, ya sea por desconocimiento o aprehensiones en torno a ello. ¿Cómo podemos abrir nuestras publicaciones?</description>
+      <description>Guía para las publicaciones libresLa publicación de un trabajo científico es clave para dar a conocer los resultados y determinar su impacto. Al respecto, este momento puede trascender a algunas revistas indexadas donde encontramos barreras de acceso al conocimiento. Por este motivo, podemos enfrentarnos al dilema respecto a cómo abrir una publicación, ya sea por desconocimiento o aprehensiones en torno a ello. ¿Cómo podemos abrir nuestras publicaciones? ¿Cómo elegir el momento adecuado?</description>
     </item>
     
     <item>
@@ -32,8 +31,7 @@ La publicación de un trabajo científico es clave para dar a conocer los result
       <pubDate>Wed, 03 Nov 2021 11:50:46 +0200</pubDate>
       
       <guid>https://lisa-coes.com/03componentes/</guid>
-      <description>Guía para los análisis reproducibles
-¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales, y que por tanto, es imposible acceder a los procedimientos que dieron luces a sus resultados? En este contexto, la reproducibilidad entendida como la posibilidad de regenerar de manera independiente los resultados usando los materiales originales de una investigación publicada. ¿Cómo organizamos un proyecto con análisis reproducibles? ¿Qué herramientas puedo utilizar?</description>
+      <description>Guía para los análisis reproducibles¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales, y que por tanto, es imposible acceder a los procedimientos que dieron luces a sus resultados? En este contexto, la reproducibilidad entendida como la posibilidad de regenerar de manera independiente los resultados usando los materiales originales de una investigación publicada. ¿Cómo organizamos un proyecto con análisis reproducibles? ¿Qué herramientas puedo utilizar?</description>
     </item>
     
     <item>
@@ -42,8 +40,7 @@ La publicación de un trabajo científico es clave para dar a conocer los result
       <pubDate>Wed, 20 Oct 2021 10:50:46 +0200</pubDate>
       
       <guid>https://lisa-coes.com/02componentes/</guid>
-      <description>Guía para la apertura de datos
-En parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de compartir nuestros datos al resto de la comunidad científica pero muchas veces no sabemos cómo lograrlo. ¿Cómo abrir nuestros datos? ¿Qué criterios debo cumplir para que sean publicados? ¿Dónde y cómo publicarlos? En el siguiente blog te contestaremos estas preguntas.</description>
+      <description>Guía para la apertura de datosEn parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de compartir nuestros datos al resto de la comunidad científica pero muchas veces no sabemos cómo lograrlo. ¿Cómo abrir nuestros datos? ¿Qué criterios debo cumplir para que sean publicados? ¿Dónde y cómo publicarlos? En el siguiente blog te contestaremos estas preguntas.</description>
     </item>
     
     <item>
@@ -52,7 +49,8 @@ En parte importante de nuestras investigaciones producimos datos: hacemos encues
       <pubDate>Sat, 02 Oct 2021 11:50:46 +0200</pubDate>
       
       <guid>https://lisa-coes.com/00intro-componentes/</guid>
-      <description>.disegno{color: lightblue;}.datos{color: pink;}.repro{color: lightgreen;}.publibres{color: orange;}.red{color: red;}El Laboratorio de Investigación Social Abierta es una iniciativa del Centro de Estudios de Conflicto y Cohesión Social (COES) que tiene como propósito ser una guía para el desarrollo de una ciencia social abierta y reproducible para la comunidad científica y la ciudadanía.</description>
+      <description>El Laboratorio de Investigación Social Abierta es una iniciativa del Centro de Estudios de Conflicto y Cohesión Social (COES) que tiene como propósito ser una guía para el desarrollo de una ciencia social abierta y reproducible para la comunidad científica y la ciudadanía.
+Uno de sus objetivos ha sido generar una propuesta de trabajo, la cual se constituye a través de la elaboración de herramientas conceptuales y prácticas en cuatro componentes: (1) diseño transparente, (2) apertura de datos, (3) análisis reproducibles y (4) publicaciones libres .</description>
     </item>
     
     <item>
@@ -61,38 +59,7 @@ En parte importante de nuestras investigaciones producimos datos: hacemos encues
       <pubDate>Sat, 02 Oct 2021 11:50:46 +0200</pubDate>
       
       <guid>https://lisa-coes.com/01componentes/</guid>
-      <description>Guía para transparencia de diseño
-Uno de los pilares que dan validez a la evidencia científica es el escrutinio por parte de los pares. Sin embargo, la prevalencia de prácticas cuestionables en distintas disciplinas ha puesto en debate que dicho principio esté siendo alcanzando y, como consecuencia de ello, se han incrementado los esfuerzos por establecer mayores estándares de transparencia en la investigación científica. En este contexto, una de las herramientas más utilizadas para hacer frente a este dilema han sido los preregistros.</description>
-    </item>
-    
-    <item>
-      <title>IPO-data</title>
-      <link>https://lisa-coes.com/ipo-data/</link>
-      <pubDate>Tue, 11 May 2021 10:50:46 +0200</pubDate>
-      
-      <guid>https://lisa-coes.com/ipo-data/</guid>
-      <description>.btn-template-primary {color: #ffffff;background-color: #EC104D;border-width: inherit;}.dropdown-toggle.btn-template-primary {color: #ffffff;background-color: #EC104D;IPO-datos Protocolo de apertura de datosSiguiendo la lógica del protocolo IPO-reproducibilidad, el protocolor IPO-datos es una plantilla/protocolo de estructura digital de carpetas que tiene por objetivo el organizar, procesar y documentar los datos de un proyecto de investigación con miras a la apertura de los datos en un repositorio público y de acceso libre.</description>
-    </item>
-    
-    <item>
-      <title>IPO-reproducibilidad</title>
-      <link>https://lisa-coes.com/ipo-repro/</link>
-      <pubDate>Tue, 11 May 2021 10:50:46 +0200</pubDate>
-      
-      <guid>https://lisa-coes.com/ipo-repro/</guid>
-      <description>.btn-template-primary {color: #ffffff;background-color: #EC104D;border-width: inherit;}.dropdown-toggle.btn-template-primary {color: #ffffff;background-color: #EC104D;IPO (Input-Procesamiento-Output) Protocolo para flujo de investigación reproducibleEsta es una plantilla/protocolo de carpetas de proyecto basada en el protocolo TIER (Integridad de Enseñanza en Investigación Empírica). TIER “promueve la integración de principios y prácticas relacionadas con la transparencia y la replicabilidad en el entrenamiento en investigación de los científicos sociales”.</description>
-    </item>
-    
-    <item>
-      <title>Presentación</title>
-      <link>https://lisa-coes.com/ipo-intro/</link>
-      <pubDate>Tue, 11 May 2021 10:50:46 +0200</pubDate>
-      
-      <guid>https://lisa-coes.com/ipo-intro/</guid>
-      <description>.btn-template-primary {color: #ffffff;background-color: #EC104D;border-width: inherit;}.dropdown-toggle.btn-template-primary {color: #ffffff;background-color: #EC104D;ProtocolosLos protocolos son…
-desde LISA…
-¿Quieres comentar o tienes alguna duda?Puedes dejar tus comentarios y dudas sobre el Protocolo IPO en nuestro foro. De todas formas puedes contactarnos
-</description>
+      <description>Guía para transparencia de diseñoUno de los pilares que dan validez a la evidencia científica es el escrutinio por parte de los pares. Sin embargo, la prevalencia de prácticas cuestionables en distintas disciplinas ha puesto en debate que dicho principio esté siendo alcanzando y, como consecuencia de ello, se han incrementado los esfuerzos por establecer mayores estándares de transparencia en la investigación científica. En este contexto, una de las herramientas más utilizadas para hacer frente a este dilema han sido los preregistros.</description>
     </item>
     
     <item>
@@ -103,6 +70,35 @@ desde LISA…
       <guid>https://lisa-coes.com/como-hacer-codebook/</guid>
       <description>Un libro de códigos es un documento que contiene información detallada de una fuente de datos, tales como nombres de variable, etiquetas de variable, etiquetas de valores o valores perdidos. Un libro de códigos bien documentado permite conocer el contenido, estructura y diseño de un estudio, lo cual facilita vincular las preguntas del cuestionario con cada una de las variables en la base de datos.
 Cuando nos encontramos frente a extensas fuentes de datos, el navegar por cada una de sus partes se puede hacer confuso y complicado.</description>
+    </item>
+    
+    <item>
+      <title>Presentación</title>
+      <link>https://lisa-coes.com/ipo-intro/</link>
+      <pubDate>Tue, 11 May 2021 10:50:46 +0200</pubDate>
+      
+      <guid>https://lisa-coes.com/ipo-intro/</guid>
+      <description>ProtocolosDesde el Laboratorio de Investigación Social Abierta se ha buscado desarrollar herramientas que promuevan los principios de la ciencia abierta, pero que a su vez faciliten la implementación de prácticas de investigación a investigadores/as de las ciencias sociales. Para ello, se han desarrollado los denominados Protocolos IPO, los cuales buscan establecer orientaciones mínimas respecto a cómo y cuáles son los pasos a seguir en el camino de una ciencia social abierta y reproducible.</description>
+    </item>
+    
+    <item>
+      <title>Protocolo Análisis reproducible</title>
+      <link>https://lisa-coes.com/ipo-repro/</link>
+      <pubDate>Tue, 11 May 2021 10:50:46 +0200</pubDate>
+      
+      <guid>https://lisa-coes.com/ipo-repro/</guid>
+      <description>IPO-reproducibilidad Protocolo para flujo de investigación reproducibleEsta es una plantilla/protocolo de carpetas de proyecto basada en el protocolo TIER (Integridad de Enseñanza en Investigación Empírica). TIER “promueve la integración de principios y prácticas relacionadas con la transparencia y la replicabilidad en el entrenamiento en investigación de los científicos sociales”. (más información en https://www.projecttier.org/).
+La implementación de la reproducibilidad en este tipo de protocolos se basa en generar un conjunto de archivos auto-contenidos organizado en una estructura de proyecto que cualquier persona pueda compartir y ejecutar.</description>
+    </item>
+    
+    <item>
+      <title>Protocolo Apertura de Datos</title>
+      <link>https://lisa-coes.com/ipo-data/</link>
+      <pubDate>Tue, 11 May 2021 10:50:46 +0200</pubDate>
+      
+      <guid>https://lisa-coes.com/ipo-data/</guid>
+      <description>IPO-datos Protocolo de apertura de datosSiguiendo la lógica del protocolo IPO-reproducibilidad, el protocolor IPO-datos es una plantilla/protocolo de estructura digital de carpetas que tiene por objetivo el organizar, procesar y documentar los datos de un proyecto de investigación con miras a la apertura de los datos en un repositorio público y de acceso libre.
+Al igual que los proyectos reproducibles, este protocolo propone los pasos a seguir para la apertura de datos, pasando por la preparación de la base de datos bruta, su documentación técnica y uso de los datos.</description>
     </item>
     
     <item>
@@ -125,6 +121,24 @@ Contenidos</description>
     </item>
     
     <item>
+      <title>¿Qué es la Ciencia Abierta?</title>
+      <link>https://lisa-coes.com/02novedades/</link>
+      <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
+      
+      <guid>https://lisa-coes.com/02novedades/</guid>
+      <description>¿Qué es la Ciencia Abierta? ¿Porqué practicarla en Ciencias Sociales? Ciencia abierta en Ciencias Sociales Estado actual en Chile Qué ofrece LISA Herramientas disponibles </description>
+    </item>
+    
+    <item>
+      <title>¿Qué es la Ciencia Abierta?</title>
+      <link>https://lisa-coes.com/novedades/02novedades/</link>
+      <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
+      
+      <guid>https://lisa-coes.com/novedades/02novedades/</guid>
+      <description>¿Qué es la Ciencia Abierta? ¿Porqué practicarla en Ciencias Sociales? Ciencia abierta en Ciencias Sociales Estado actual en Chile Qué ofrece LISA Herramientas disponibles </description>
+    </item>
+    
+    <item>
       <title>Datos abiertos</title>
       <link>https://lisa-coes.com/input/01componentes/</link>
       <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
@@ -141,24 +155,6 @@ Contenidos</description>
       <guid>https://lisa-coes.com/novedades/01componentes/</guid>
       <description>Guía para la apertura de datos Razones Pasos Consejos Protocolo
 Contenidos</description>
-    </item>
-    
-    <item>
-      <title>¿Qué es la Ciencia Abierta?</title>
-      <link>https://lisa-coes.com/02novedades/</link>
-      <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
-      
-      <guid>https://lisa-coes.com/02novedades/</guid>
-      <description>¿Qué es la Ciencia Abierta? ¿Porqué practicarla en Ciencias Sociales? Ciencia abierta en Ciencias Sociales Estado actual en Chile Qué ofrece LISA Herramientas disponibles </description>
-    </item>
-    
-    <item>
-      <title>¿Qué es la Ciencia Abierta?</title>
-      <link>https://lisa-coes.com/novedades/02novedades/</link>
-      <pubDate>Sun, 20 Dec 2020 10:50:46 +0200</pubDate>
-      
-      <guid>https://lisa-coes.com/novedades/02novedades/</guid>
-      <description>¿Qué es la Ciencia Abierta? ¿Porqué practicarla en Ciencias Sociales? Ciencia abierta en Ciencias Sociales Estado actual en Chile Qué ofrece LISA Herramientas disponibles </description>
     </item>
     
     <item>
@@ -189,18 +185,26 @@ Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una ini
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://lisa-coes.com/equipo/</guid>
-      <description>Asistente de investigación  Valentina Andrade  valentinaandrade@uchile.cl
- valentinaandrade
- 2020 - 2021
-Pasante  Vanessa Leyton  vanessa.leyton@ug.uchile.cl
- vanessaleytoninostroza
- 2021
-Pasante  Martin Venegas  martin.venegas@ug.uchile.cl
- Martin-Venegas-M
- 2021
- Coordinador COES Tomás Campos  tcamposcastro@gmail.com
- 2020 - 2021
-Practicante Francisco Meneses  francisco.</description>
+      <description>Asistente de investigación Valentina Andrade valentinaandrade@uchile.cl
+valentinaandrade
+2020 - 2021
+Pasante Vanessa Leyton vanessa.leyton@ug.uchile.cl
+vanessaleytoninostroza
+2021
+Pasante Martin Venegas martin.venegas@ug.uchile.cl
+Martin-Venegas-M
+2021
+Coordinador COESTomás Campos tcamposcastro@gmail.com
+2020 - 2021
+PracticanteFrancisco Meneses francisco.meneses@ug.uchile.cl
+franciscomeneses
+2020 - 2021
+Asistente de Investigación Julio Iturra jciturra@uc.cl
+jciturras
+2018 - 2022
+Coordinadora COES Natalia Riquelme nzriquelme@uc.cl
+nataliariquelme
+2020 - 2022</description>
     </item>
     
     <item>
@@ -210,9 +214,10 @@ Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una ini
       
       <guid>https://lisa-coes.com/links/</guid>
       <description>Aquí podrás encontrar algunos sitios y herramientas que se basan en la ciencia abierta y que te podrían interesar 👇
- Referencias  Libros Artículos   Repositorios  Para datos Para publicaciones Para varios archivos   Herramientas  Tutoriales Softwares   Iniciativas de ciencia abierta  Referencias Libros   Open Scientist Handbook
-  Open science training handbook
-  Introduction to reproducible science in R, from Brian Lee Yung Rowe</description>
+Referencias Libros Artículos Repositorios Para datos Para publicaciones Para varios archivos Herramientas Tutoriales Softwares Iniciativas de ciencia abierta Referencias Libros Open Scientist Handbook
+Open science training handbook
+Introduction to reproducible science in R, from Brian Lee Yung Rowe
+Artículos Ciencia reproducible: qué, por qué, cómo (Rodríguez-Sánchez et al, 2016)</description>
     </item>
     
     <item>
@@ -222,8 +227,20 @@ Como señaló en académico, el Laboratorio de Ciencia Social Abierta es una ini
       
       <guid>https://lisa-coes.com/practica/</guid>
       <description>Convocatoria a práctica y pasantía de investigación El Laboratorio de Ciencia Social Abierta se encuentra en la búsqueda de practicantes y/o estudiantes que quieran realizar una pasantía de investigación. Estas actividades son desarrolladas bajo COES.
-Tareas a realizar   Apoyo en el proceso de construcción de herramientas para la apertura de datos, reproducibilidad de análisis y liberación de publicaciones.
-  Elaboración de productos para la difusión a la comunidad científica, principalmente orientado en investigadoras/os de las ciencias sociales.</description>
+Tareas a realizar Apoyo en el proceso de construcción de herramientas para la apertura de datos, reproducibilidad de análisis y liberación de publicaciones.
+Elaboración de productos para la difusión a la comunidad científica, principalmente orientado en investigadoras/os de las ciencias sociales.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://lisa-coes.com/presentaciones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://lisa-coes.com/presentaciones/</guid>
+      <description>Aquí podrás encontrar algunas de las presentaciones realizadas por el equipo de LISA en el marco de la ciencia abierta y que te podrían interesar 👇
+2023 2022 2023 Presentación Congreso de Bibliotecas Universitarias Especializadas - Universidad de Chile, Enero 2023 2022 Presentación Workshop Producción de artículos científicos con ELSOC - 30 de Septiembre de 2022
+Presentación Universidad Iberoamericana de México - 2022 (Online)
+Taller Pre-Registros y Pre-Prints Enero 2022</description>
     </item>
     
     <item>
@@ -232,8 +249,7 @@ Tareas a realizar   Apoyo en el proceso de construcción de herramientas para la
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://lisa-coes.com/test/</guid>
-      <description> En caso de que no puedas visualizar el visualizador o presentes problemas no dudes en contactarnos
- </description>
+      <description>En caso de que no puedas visualizar el visualizador o presentes problemas no dudes en contactarnos</description>
     </item>
     
     <item>
@@ -243,9 +259,8 @@ Tareas a realizar   Apoyo en el proceso de construcción de herramientas para la
       
       <guid>https://lisa-coes.com/app/tool01/</guid>
       <description>Buscador de bases de datos Poner shiny aquí
- ¿Quieres comentar o tienes alguna duda? Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
-  En caso de que no puedas visualizar el buscador o presentes problemas no dudes en contactarnos
- </description>
+¿Quieres comentar o tienes alguna duda? Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
+En caso de que no puedas visualizar el buscador o presentes problemas no dudes en contactarnos</description>
     </item>
     
     <item>
@@ -274,9 +289,8 @@ En el siguiente formulario puedes contactarte con nosotros, intentaremos contest
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://lisa-coes.com/app/tool02/</guid>
-      <description>Tesis bookdown ¿ Qué es bookdown? Razones para ocuparlo Cómo acceder a template  ¿Quieres comentar o tienes alguna duda? Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
-  En caso de que no puedas visualizar el buscador o presentes problemas no dudes en contactarnos
- </description>
+      <description>Tesis bookdown ¿ Qué es bookdown? Razones para ocuparlo Cómo acceder a template ¿Quieres comentar o tienes alguna duda? Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
+En caso de que no puedas visualizar el buscador o presentes problemas no dudes en contactarnos</description>
     </item>
     
     <item>
@@ -285,9 +299,8 @@ En el siguiente formulario puedes contactarte con nosotros, intentaremos contest
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://lisa-coes.com/app/tool03/</guid>
-      <description> Rstudio Cloud + Youtube- Ahora se integra con Rmd en última versión R )   ¿Quieres comentar o tienes alguna duda? Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
-  En caso de que no puedas visualizar el buscador o presentes problemas no dudes en contactarnos
- </description>
+      <description>Rstudio Cloud + Youtube- Ahora se integra con Rmd en última versión R ) ¿Quieres comentar o tienes alguna duda? Puedes dejar tus comentarios y dudas sobre el visualizador en nuestro foro. De todas formas puedes contactarnos
+En caso de que no puedas visualizar el buscador o presentes problemas no dudes en contactarnos</description>
     </item>
     
   </channel>

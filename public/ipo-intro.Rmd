@@ -24,7 +24,6 @@ options(scipen=999,
 Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
 ```
 
-
 ```{css}
 .btn-template-primary {
     color: #ffffff;
@@ -35,20 +34,43 @@ Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
 .dropdown-toggle.btn-template-primary {
   color: #ffffff;
   background-color: #EC104D;
+
 ```
 
 
-#  Protocolos
+# Protocolos
 
-Los protocolos son...
+Desde el **Laboratorio de Investigación Social <span class="red">Abierta</span>** se ha buscado desarrollar herramientas que promuevan los principios de la ciencia abierta, pero que a su vez faciliten la implementación de prácticas de investigación a investigadores/as de las ciencias sociales. Para ello, se han desarrollado los denominados [**Protocolos IPO**](), los cuales buscan establecer orientaciones mínimas respecto a **cómo** y **cuáles** son los pasos a seguir en el camino de una ciencia social abierta y reproducible.
 
-desde LISA...
+## IPO (Input-Procesamiento-Output)
+
+La familia de protocolos **IPO** tiene el objetivo de establecer un flujo de trabajo para la <span class="datos"> **Apertura de datos** </span> y los <span class="repro"> **Análisis reproducibles**  </span> . Al día de hoy, se han desarrollado dos versiones del protocolo:
 
 
----
+1. [IPO-datos](/ipo-data/): establece una organización de carpetas y archivos para la preparación y documentación para la apertura de datos.
+2. [IPO-reproducibilidad](/ipo-repro/): establece una organización de carpetas y archivos para el análisis de datos reproducible.
 
-## ¿Quieres comentar o tienes alguna duda?
+La Figura \@ref(fig:flow) muestra el flujo de trabajo de investigación social abierta, pasando por los cuatro momentos definidios en los componentes. Para el caso de los protocolos, se muestra que el protocolo **IPO-datos** establece estándares para la apertura de datos. Luego, el protocolo **IPO-reproducibilidad** ofrece un flujo de trabajo para el análisis de datos reproducible.
 
-Puedes dejar tus comentarios y dudas sobre el **Protocolo IPO** en nuestro foro. De todas formas puedes [contactarnos](/contact/)
+```{r flow, echo=FALSE, fig.align='center', fig.cap='Flujo de investigación social abierta', out.width='85%'}
+knitr::include_graphics("../input/lisa-workflow.png")
+```
 
-<div id="disqus_thread"></div>
+
+
+
+
+
+
+
+
+
+
+<style>
+.disegno{color: lightblue;}
+.datos{color: pink;}
+.repro{color: lightgreen;}
+.publibres{color: orange;}
+.red{color: red;}
+
+</style>    

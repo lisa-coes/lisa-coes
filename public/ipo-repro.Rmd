@@ -8,7 +8,7 @@ keywords:
 - codebook
 - reproducibilidad
 
-title: IPO-reproducibilidad
+title: Protocolo Análisis reproducible
 linkcolor: blue
 link-citations: yes
 editor_options:
@@ -38,7 +38,7 @@ Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
 ```
 
 
-#  IPO (Input-Procesamiento-Output)  <img src="../input/ipo-hex.png" alt=" " style="float: right;width: 30%;max-height: 100%" />
+#  IPO-reproducibilidad <img src="../input/ipo-hex.png" alt=" " style="float: right;width: 30%;max-height: 100%" />
 ### Protocolo para flujo de investigación reproducible
 
 Esta es una plantilla/protocolo de carpetas de proyecto basada en el protocolo **TIER** (Integridad de Enseñanza en Investigación Empírica). TIER "promueve la integración de principios y prácticas relacionadas con la transparencia y la replicabilidad en el entrenamiento en investigación de los científicos sociales". (más información en [https://www.projecttier.org/](https://www.projecttier.org/)).
@@ -67,9 +67,8 @@ La estructura se detalla en el siguiente esquema:
 <pre style="font-size: 18px;">
 <code>
 ├── input: información externa como datos, imágenes, .bib:
-|   ├── data:
-│     ├── original : archivos de datos originales y metadatos disponibles
-│     ├── proc     : archivos de datos procesados
+|   ├── data-orig: archivos de datos originales y metadatos disponibles
+|   ├── data-proc: archivos de datos procesados
 │   ├── imagenes
 │   ├── bib: archivos de bibliografía
 │   ├── prereg: archivos de pre-registro si están disponibles
@@ -86,6 +85,7 @@ La estructura se detalla en el siguiente esquema:
 - paper.md o paper.Rmd / paper.html / paper.pdf: el artículo/paper
 </code>
 </pre>
+
 ### Versiones de IPO:
 
 ```{r echo=FALSE}

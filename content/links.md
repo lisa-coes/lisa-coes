@@ -74,6 +74,8 @@ Aquí podrás encontrar algunos sitios y herramientas que se basan en la **cienc
 
 ## Tutoriales{#tutoriales}
 
+- [Open Research Summer School 2023](https://osf.io/nymr5/?s=31)
+
 - [¿Cómo hacer un libro de códigos en R, STATA o SPSS?](https://lisa-coes.netlify.app/como-hacer-codebook)
 
 - [¿Cómo publicar mis datos en Dataverse?](https://www.youtube.com/embed/kFhxs-EfUqA)
