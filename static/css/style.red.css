@@ -3636,3 +3636,6 @@ filter: gray;
 filter: none;
 transition: 1s ease;
 }
+.link-black {
+  color: black;
+}
