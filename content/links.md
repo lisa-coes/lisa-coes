@@ -113,6 +113,7 @@ Aquí podrás encontrar algunos sitios y herramientas que se basan en la **cienc
 
 - [A new publishing format: Research modules.](https://www.researchequals.com/)
 
+- [ENTAILab: Research Infraestructure and Innovation Lab](https://www.new-data-spaces.de/en-us/Start/Infrastructure-Priority-Programme/ENTAILab)
 
 # Equipo
 
