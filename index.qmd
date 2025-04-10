@@ -1,0 +1,90 @@
+---
+title: "Laboratorio de Investigación Social Abierta"
+pagetitle: "LISA Website"
+page-layout: full
+format: html
+page-navigation: false
+toc: false
+image: "resources/imagenes/sharing-default.png"
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rectangle
+  
+listing:
+  - id: componentes
+    contents: "componentes/*/index.qmd"
+    sort: "date desc"
+    template: resources/custom-listings/home-components.ejs
+    
+  - id: equipo
+    template: resources/custom-listings/people-box.ejs
+    contents: equipo/posts/*/*.qmd
+    sort: date desc
+    type: grid
+---
+
+::: {.section-text}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: center;"}
+
+<p align="center" style="font-size:36px; font-weight:bold;">Componentes</p>
+
+
+::: {#componentes}
+:::
+
+
+:::
+:::
+:::
+:::
+
+::: {.section-text}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: center;"}
+
+<p align="center" style="font-size:36px; font-weight:bold;">Equipo</p>
+
+
+::: {#equipo}
+:::
+
+::: {.button style="text-align: right;"}
+[Pasaron por LISA>>](/alumni/index.qmd){.btn-template-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-top: 0em;"}
+:::
+
+:::
+:::
+:::
+:::
+
+::: {.section-text .logos-bg}
+::: {.section-container}
+::: {.section-block}
+::: {style="text-align: center;"}
+
+
+::: {layout-ncol=5}
+
+[![](resources/imagenes/anid.png)](https://anid.cl)
+
+[![](resources/imagenes/uch.png)](https://uchile.cl)
+
+[![](resources/imagenes/puc.png)](https://www.uc.cl)
+
+[![](resources/imagenes/udp.png)](https://www.udp.cl)
+
+[![](resources/imagenes/uai.png)](https://www.uai.cl)
+
+:::
+
+
+
+
+:::
+:::
+:::
+:::

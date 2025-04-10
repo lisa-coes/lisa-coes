@@ -1,0 +1,149 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Laboratorio de Investigación Social Abierta",
+    "section": "",
+    "text": "Componentes\n\n\n  \n  \n  Listado de Contenido\n  \n\n\n     \n      Diseño transparente \n      \n        \n          \n          \n            Transparentar las decisiones metodológicas del estudio\n\n          \n        \n      \n    \n     \n      Datos Abiertos \n      \n        \n          \n          \n            Disponer a la comunidad los datos y recursos utilizados en la investigación\n\n          \n        \n      \n    \n     \n      Análisis Reproducible \n      \n        \n          \n          \n            Permitir que las herramientras para generar análisis puedan reproducir los resultados obtenidos\n\n          \n        \n      \n    \n     \n      Publicaciones Libres \n      \n        \n          \n          \n            Dar libre acceso a los resultados de los productos de la investigación\n\n          \n        \n      \n    \n\n\nNo matching items\n\n\n\n\n\n\n\n\n\n\n\nEquipo\n\n\n\n   \n    \n      \n        \n          \n            \n          \n          \n            \n              Juan Carlos Castillo \n            \n            \n              Investigador Principal\n            \n             \n              \n            \n           \n    \n       Contacto\n    \n\n           \n    \n       Github\n    \n\n           \n    \n       Web Personal\n    \n\n            \n          \n    \n    \n      \n        \n          \n            \n          \n          \n            \n              Kevin Carrasco \n            \n            \n              Asistente de Investigación COES\n            \n             \n              \n            \n           \n    \n       Contacto\n    \n\n           \n    \n       Github\n    \n\n           \n    \n       Web Personal\n    \n\n            \n          \n    \n    \n      \n        \n          \n            \n          \n          \n            \n              Gabriel Cortés \n            \n            \n              Asistente de Investigación OCS\n            \n             \n              \n            \n           \n    \n       Contacto\n    \n\n           \n    \n       Github\n    \n\n           \n    \n       Web Personal\n    \n\n            \n          \n    \n    \n      \n        \n          \n            \n          \n          \n            \n              TBA \n            \n            \n              Ayudante de Investigación\n            \n             \n              \n            \n           \n    \n       Contacto\n    \n\n           \n    \n       Github\n    \n\n           \n    \n       Web Personal\n    \n\n            \n          \n    \n\n\n\nNo matching items\n\n\n\nPasaron por LISA&gt;&gt;"
+  },
+  {
+    "objectID": "componentes/d-publibres/index.html",
+    "href": "componentes/d-publibres/index.html",
+    "title": "Publicaciones Libres",
+    "section": "",
+    "text": "La publicación de un trabajo científico es clave para dar a conocer los resultados y determinar su impacto. Al respecto, este momento puede trascender a algunas revistas indexadas donde encontramos barreras de acceso al conocimiento. Por este motivo, podemos enfrentarnos al dilema respecto a cómo abrir una publicación, ya sea por desconocimiento o aprehensiones en torno a ello. ¿Cómo podemos abrir nuestras publicaciones? ¿Cómo elegir el momento adecuado? ¿Dónde publicarlas? En este blog te entregaremos recomendaciones para responder a estas interrogantes."
+  },
+  {
+    "objectID": "componentes/d-publibres/index.html#prop-intel",
+    "href": "componentes/d-publibres/index.html#prop-intel",
+    "title": "Publicaciones Libres",
+    "section": "Tipos de licencias",
+    "text": "Tipos de licencias\nExisten licencias que regulan la propiedad intelectual (World Intelectual Property Organization, 2020), pues protegen los derechos patrimoniales y establecen las reglas para el debido uso de la obra. Las más importantes son:\n1.  Copyright: permite que el autor se reserve todos los derechos sobre la obra y solo se puede hacer uso de ella bajo permiso del mismo.\n2.  Creative Commons (CC): tiene el propósito de desarrollar herramientas digitales que faciliten la distribución de una obra, pues entrega al autor la responsabilidad de autorizar el modo de uso, difusión y citación de su obra. Al día de hoy existen seis tipos de licencias CC (Creative Commons, 2019)"
+  },
+  {
+    "objectID": "componentes/c-repro/index.html",
+    "href": "componentes/c-repro/index.html",
+    "title": "Análisis Reproducible",
+    "section": "",
+    "text": "¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales, y que por tanto, es imposible acceder a los procedimientos que dieron luces a sus resultados? En este contexto, la reproducibilidad entendida como la posibilidad de regenerar de manera independiente los resultados usando los materiales originales de una investigación publicada. ¿Cómo organizamos un proyecto con análisis reproducibles? ¿Qué herramientas puedo utilizar? ¿Cómo puedo compartir mis materiales? En este blog daremos algunas orientaciones generales respecto a cómo avanzar en esta dirección."
+  },
+  {
+    "objectID": "componentes/c-repro/index.html#carpeta-raíz",
+    "href": "componentes/c-repro/index.html#carpeta-raíz",
+    "title": "Análisis Reproducible",
+    "section": "Carpeta Raíz",
+    "text": "Carpeta Raíz\nPara la organización de un proyecto, debemos pensar en una estructura digital de carpetas y subcarpetas. La carpeta raíz es donde se alberga toda la información de referencia para el proyecto, la cual tiene por objetivo:\n\nDocumentar: expone ordenadamente el contenido del proyecto de manera jerárquica (carpetas y subcarpetas).\nOrientar: instruye al usuario para una correcta ejecución de rutinas de código que permita regenerar los resultados de la investigación.\n\nEstas instrucciones pueden ir incluidas en un archivo README organizado de la siguiente manera:\n\n\n\n\n\n\n\n\n\n🗸 Para mayores detalles respecto al contenido y estructura de un proyecto reproducible, puedes hacer click aquí:\nEstructura de un proyecto\n\n Input (I)\nSi bien los protocolos varían de acuerdo a cómo se organizan los datos dentro de la carpeta raíz (i.e. en qué carpeta se alojan), algo que suele ser común entre los protocolos es la diferenciación entre los datos originales o “brutos” (raw data) y los datos procesados. El albergar ambas versiones permite identificar los cambios generados a través del procesamiento.\nPara toda fuente de datos original, se debe proveer la siguiente información:\n\nCitación bibliográfica en un formato estándar\nFecha de creación de la base de datos\nDescripción respecto a cómo se puede acceder a una copia de la base de datos\nLibro de códigos de todas las variables de la base de datos.\n\n🗸 Para mayor detalle sobre la sección de datos, puedes hacer click aquí:\nDatos\n\n\n📝 Procesamiento (P)\nCon Pocesamiento nos referimos a todos los procedimientos del proyecto relacionados con la (1) preparación y (2) análisis de datos.\n\n(1) Preparación\nLa preparación de los datos cumple una función clave para el desarrollo de un artículo: la de generar los datos que emplearemos en análisis del estudio. Considerando esto, el objetivo final de este documento es generar una base de datos procesada, que contenga solamente los datos importantes para analizar.\nSugerimos seguir el siguiente flujo para realizar la preparación de los datos:\n\n\n\n\n\n\nProcedimientos\nDescripción\n\n\n\n\n1. Descriptivo inicial\nCalcular una tabla de frecuencias o de medidas de tendencia central y dispersión para conocer el estado de la variable previo a cualquier modificación\n\n\n2. Recodificación\nRecodificación de los datos perdidos y otro tipo de valores a modificar (e.g. errores de tipeo)\n\n\n3. Etiquetado\nUna base bien documentada trae etiquetas predeterminadas que hacen alusión a las preguntas del cuestionario\n\n\n4. Descriptivo final\nRevisar de nuevo las frecuencias o las medidas de tendencia central de las variables, para diagnosticar que no hemos cometido errores en el procesamiento\n\n\n5. Otros ajustes\nEfectuar toda modificación específica y relevante para la forma que analizaremos los datos\n\n\n\n\n\n\nEl seguir este flujo de manera sistemática facilitará la lectura tanto para terceros, como para nosotros mismos en el futuro.\n\n\n(2) Análisis\n\nUna vez contamos con nuestra base de datos procesada podemos analizar los datos. En el documento de análisis de datos se procede a elaborar todas las tablas, gráficos y pruebas estadísticas que vayan a ser incluidas en el artículo final. En términos generales las secciones son\n\n\nAnálisis descriptivos univariados de los datos.\nAnálisis bivariado de los datos.\nAnálisis multivariado.\n\n\n\nDocumentación\nPara lograr una correcta ejecución de los documentos de preparación y análisis es clave tener correctamente explicado cómo utilizarlos y cómo se vinculan entre ellos. Para esto, sugerimos que documento README incluya las siguientes indicaciones:\n\nEjecución de la preparación: Precisar la ubicación de la o las fuentes de datos originales.\nCierre de la preparación: Precisar la ruta donde se deben almacenar la base de datos procesada.\nEjecución de análisis: Precisar el origen de la base de datos procesada.\nArchivos del análisis de datos: Precisar ruta de almacenamiento y nombre.\n\n🗸 Más información sobre la sección de métodos, puedes hacer click aquí:\nPreparación y análisis \n\n\n\n📊 Output (O)\nCon Output, nos referimos a todo elemento obtenido del análisis de datos. Habitualmente toman la forma de figuras, gráficos o tablas. Es habitual que los protocolos sugieran que estos archivos se almacenen en una subcarpeta exclusiva para ello. Por este motivo, sugerimos se sigan las siguientes indicaciones:\n🔴 Para imágenes, sugerimos usar nombres breves e incorporar numeración. Por ejemplo “figura01.png”, siguiendo el orden de aparición en la publicación.\n🔴 Para tablas, sugerimos emplear nombres cortos e incorporar numeración. Por ejemplo, “tabla01.xls”, según el orden de aparición en la publicación."
+  },
+  {
+    "objectID": "componentes/c-repro/index.html#paso2",
+    "href": "componentes/c-repro/index.html#paso2",
+    "title": "Análisis Reproducible",
+    "section": "Paso 2: Prácticas de código",
+    "text": "Paso 2: Prácticas de código\nLa escritura de un código de preparación o análisis requiere adoptar estándares mínimos, entre otras cosas, para facilitar la comprensión y ejecución de una rutina de código por otros usuarios que busquen regenerar nuestros resultados.\nLa figura a continuación muestra algunas buenas prácticas de código que contribuyen a hacer el trabajo más transparente, y son aplicables a lenguajes de programación:"
+  },
+  {
+    "objectID": "componentes/c-repro/index.html#paso3",
+    "href": "componentes/c-repro/index.html#paso3",
+    "title": "Análisis Reproducible",
+    "section": "Paso 3: Uso de documentos dinámicos",
+    "text": "Paso 3: Uso de documentos dinámicos\nLos documentos dinámicos son una herramienta que incorpora lo mejor de dos mundos: documentos en texto plano y código de análisis.\n🔴 Por un lado, trabajar con texto plano implica independencia de cualquier software comercial o plataformas específicas. Adicionalmente, un documento dinámico permite centrarnos en el contenido y menos en el formato, dado que existen distintas opciones para ello (p.ej. .pdf o .html).\n🔴 Finalmente, al incorporar código de análisis es posible generar documentos autocontenidos, es decir, no es necesario recurrir a imágenes o tablas externas, sino que es posible generarlas en el mismo documento.\nPor ejemplo, este documento está escrito en R Markdown, lo que nos permite demostrar cómo combinar código en R con texto plano.\n\n\nAsí se ve el código en nuestro documento:\n\n library(ggplot2)\n\n ggplot(mtcars, aes(x=mpg)) +\n  geom_histogram(fill=\"skyblue\",\n                 alpha=0.5) +\n  theme_minimal()\n\n\n\nLuego, el código se ejecuta y obtenemos el siguiente gráfico:\n\n\n\n\n\n\n\n\n\n\nUsar documentos dinámicos escritos en texto plano abre un abanico de posibilidades cuando buscamos avanzar hacia proyectos con análisis reproducibles. En este sentido, nos gustaría destacar tres opciones:\n\n\n\n\n\n\n\n\n\n🗸 Si deseas saber más sobre cómo funcionan los documentos dinámicos, puedes hacer click aquí:\nDocumentos dinámicos\n\nPaso 4: Control de versiones\nA modo global, el control de versiones nos permite rastrear los cambios en un documento o conjunto de archivos, es decir, saber cuáles/qué, quién y cuándo se han realizado cambios.\nAl trabajar colaborativamente existen diferentes (y poco eficientes) maneras de controlar versiones. Por ejemplo:\n❌ Fechas: codigo_2021-03-01.R → codigo_2021-05-02.R\n❌ Numeración: analisis_v02.do → analisis_v05.do\nNo obstante, hoy en día existen sistemas de control de versiones especializados para el trabajo de programación. Al respecto, nuestra sugerencia es emplear versionamiento basado en  , pero ¿qué es Git? Te lo explicamos a continuación.\n\nGit  y GitHub \nGit es un sistema de control de versiones de código abierto, tiene por objetivo hacer más eficiente el flujo de trabajo para proyectos de desarrollo de software. Algunas de sus principales características son:\n⭕ Permite registrar (snapshot) la versión de una carpeta completa y su contenido\n⭕ Registra qué, quién y cuándo se realizaron cambios\n⭕ Uso de repositorios (repos) locales (computadora) o remotos (online)\nA la par existe GitHub, el cual es una plataforma de desarrollo colaborativo para hospedar proyectos que utilizan control de versiones basado en Git. Una de sus principales características es el uso de repositorios locales y remotos. La siguiente figura muestra un ejemplo:\n\n\n\n\n\n\n\n\n\nRecomendamos el uso de Git y Github cómo flujo de trabajo para aquellos científicos sociales que trabajan con datos cuantitativos, especialmente cuando son grandes equipos de investigación o son proyectos con varias colaboraciones.\n🗸 Si deseas conocer más sobre Git y GitHub te invitamos a revisar la sesión del curso “Ciencia Social Abierta”:\nControl de Versiones/Git\n\n\n\nEn síntesis\n🔴 Si deseas revisar más detalles de cómo elaborar un proyecto reproducible, en el siguiente video se detalla el paso a paso para ello:"
+  },
+  {
+    "objectID": "componentes/c-repro/index.html#paso4",
+    "href": "componentes/c-repro/index.html#paso4",
+    "title": "Análisis Reproducible",
+    "section": "Paso 4: Control de versiones",
+    "text": "Paso 4: Control de versiones\nA modo global, el control de versiones nos permite rastrear los cambios en un documento o conjunto de archivos, es decir, saber cuáles/qué, quién y cuándo se han realizado cambios.\nAl trabajar colaborativamente existen diferentes (y poco eficientes) maneras de controlar versiones. Por ejemplo:\n❌ Fechas: codigo_2021-03-01.R → codigo_2021-05-02.R\n❌ Numeración: analisis_v02.do → analisis_v05.do\nNo obstante, hoy en día existen sistemas de control de versiones especializados para el trabajo de programación. Al respecto, nuestra sugerencia es emplear versionamiento basado en  , pero ¿qué es Git? Te lo explicamos a continuación.\n\nGit  y GitHub \nGit es un sistema de control de versiones de código abierto, tiene por objetivo hacer más eficiente el flujo de trabajo para proyectos de desarrollo de software. Algunas de sus principales características son:\n⭕ Permite registrar (snapshot) la versión de una carpeta completa y su contenido\n⭕ Registra qué, quién y cuándo se realizaron cambios\n⭕ Uso de repositorios (repos) locales (computadora) o remotos (online)\nA la par existe GitHub, el cual es una plataforma de desarrollo colaborativo para hospedar proyectos que utilizan control de versiones basado en Git. Una de sus principales características es el uso de repositorios locales y remotos. La siguiente figura muestra un ejemplo:\n\n\n\n\n\n\n\n\n\nRecomendamos el uso de Git y Github cómo flujo de trabajo para aquellos científicos sociales que trabajan con datos cuantitativos, especialmente cuando son grandes equipos de investigación o son proyectos con varias colaboraciones.\n🗸 Si deseas conocer más sobre Git y GitHub te invitamos a revisar la sesión del curso “Ciencia Social Abierta”:\nControl de Versiones/Git"
+  },
+  {
+    "objectID": "componentes/a-diseño/index.html",
+    "href": "componentes/a-diseño/index.html",
+    "title": "Diseño transparente",
+    "section": "",
+    "text": "Uno de los pilares que dan validez a la evidencia científica es el escrutinio por parte de los pares. Sin embargo, la prevalencia de prácticas cuestionables en distintas disciplinas ha puesto en debate que dicho principio esté siendo alcanzando y, como consecuencia de ello, se han incrementado los esfuerzos por establecer mayores estándares de transparencia en la investigación científica. En este contexto, una de las herramientas más utilizadas para hacer frente a este dilema han sido los preregistros. ¿Qué es un preregistro? ¿Cómo y en qué momento se utiliza? En el siguiente blog te entregaremos un paso a paso para la elaboración de un preregistro de acuerdo con las distintas situaciones y tipos de investigación."
+  },
+  {
+    "objectID": "componentes/a-diseño/index.html#def-prereg",
+    "href": "componentes/a-diseño/index.html#def-prereg",
+    "title": "Diseño transparente",
+    "section": "¿Qué es un pregistro?",
+    "text": "¿Qué es un pregistro?\nUn preregistro es una marca temporal que busca dar cuenta del diseño de una investigación: (1) principales hipótesis, (2) recolección de datos y (3) plan de análisis.\nLa principal característica de un preregistro es que estos tres elementos se declaran antes de la recopilación y análisis de los datos, con tal de minimizar prácticas cuestionables de investigación (p.ej. hipótesis ad hoc, p-hacking). Adicionalmente, es posible preregistrar estudios que emplean datos secundarios o estudios de replicación, lo cual nos lleva al primer paso de este blog."
+  },
+  {
+    "objectID": "componentes/b-data/index.html",
+    "href": "componentes/b-data/index.html",
+    "title": "Datos Abiertos",
+    "section": "",
+    "text": "En parte importante de nuestras investigaciones producimos datos: hacemos encuestas, recopilamos datos administrativos e indicadores. En el desarrollo de nuestros proyectos muchas/os nos encontramos con el dilema de compartir nuestros datos al resto de la comunidad científica pero muchas veces no sabemos cómo lograrlo. ¿Cómo abrir nuestros datos? ¿Qué criterios debo cumplir para que sean publicados? ¿Dónde y cómo publicarlos? En el siguiente blog te contestaremos estas preguntas."
+  },
+  {
+    "objectID": "componentes/b-data/index.html#bases-de-datos",
+    "href": "componentes/b-data/index.html#bases-de-datos",
+    "title": "Datos Abiertos",
+    "section": "1. Bases de datos",
+    "text": "1. Bases de datos\nPara resguardar la calidad de nuestros datos debemos asegurar una correcta codificación de las respuestas y nombramiento de las variables, ambas bases fundamentales de los datos (filas y columnas). Un paso inicial es realizar un análisis descriptivo de los datos para reconocer posibles problemas producidos por digitación, por ejemplo.\n\n1.1 Codificación de las respuestas\n1.1.2 Identificar casos perdidos: se deben clasificar a los tipos de perdido de manera diferenciada. Esto implica que codificar con distintos números los perdidos como: “No sabe”, “No responde”, “No aplica”, “Sin dato”, “Error de proceso/Dato no disponible”. Te proponemos el siguiente esquema\n\n\n\n\nRespuesta\nCódigo numérico\n\n\n\n\nNo responde\n-999\n\n\nNo sabe\n-998\n\n\nError de proceso\n-997\n\n\nNo aplica\n-996\n\n\nSin dato\n-995\n\n\nNo disponible\n-994\n\n\n\n\n\n1.1.2. Identificación de unidades de observación: debemos asegurarnos de tener tantas variables identificadoras como unidades de análisis tengamos. Esto quiere decir, que si nuestros datos incluyen información tanto a nivel individual como grupal de nuestras observaciones, debemos identificarlos en distintas variables. Por ejemplo, imaginémos que estamos realizando un estudio panel a empresas. En los datos tenemos que tener disponible una variable id-empresa y id-empresa-tiempo (que nos designará un identificador de la ocurrencia de respuesta).\n\n\n1.2 Nombres de variables\nLas variables son el elemento con el cuál trabajamos cuando analizamos datos. Por ello deben responder a dos criterios\n1.2.1. Claridad y coherencia: para cada escala o módulo temático de tu instrumento, debes incorporar una letra distinta seguido de un número. Por ejemplo, para el módulo S s_1, s_2 y para el módulo O o_1, o_2, …\nOtra opción es trabajar con abreviaturas nemotécnicas, es decir, nombres corrtos de las variables que representan el significado del ítem. Por ejemplo, nt_mujeres para designar el Número de trabajadores mujeres en la empresa que estudiamos.\n1.2.2 Utilizables: como la idea central es poder compartir nuestros datos, estos deben ser poder abiertos por otros softwares. Para ello las variables deben cumplir estos puntos:\n\n\n🗸 Si decides etiquetar tus variables con alguna descripción sobre estas, debes guardarlas en un formato como .sav, .dta o .RData para que conserve esta característica"
+  },
+  {
+    "objectID": "componentes/b-data/index.html#cuestionario",
+    "href": "componentes/b-data/index.html#cuestionario",
+    "title": "Datos Abiertos",
+    "section": "2. Cuestionario",
+    "text": "2. Cuestionario\nDebes asegurar que se cumplan los siguientes puntos\n🔴 El cuestionario disponible es el que efectivamente fue aplicado (¡no es trivial! muchas veces elaboramos varias versiones de este antes de aplicarlo)\n🔴 El orden y fraseo de preguntas y categorías de respuesta debe corresponder al efectivamente aplicado\n🔴 Para evitar ediciones posteriores, recomendamos mantener el cuestionario en .pdf"
+  },
+  {
+    "objectID": "componentes/b-data/index.html#libro-de-códigos",
+    "href": "componentes/b-data/index.html#libro-de-códigos",
+    "title": "Datos Abiertos",
+    "section": "3. Libro de códigos",
+    "text": "3. Libro de códigos\nEste documento es clave para que los (futuros) usuarios/as de sus datos cuenten con información suficiente para utilizarlos correctamente. Para que cumpla su objetivo debes verificar que hay coherencia entre\n🔴 La pregunta del cuestionario y la variable indicada\n🔴 El orden de las categorías de respuesta en el cuestionario y en los valores codificados en la base de datos\n🔴 El número de preguntas/ítems disponibles en el cuestionario y el número de variables disponibles en los datos. Solo en algunos casos, por cuestiones de anonimización, no se disponen públicamente de todas las preguntas consultadas\n🔴 Para evitar ediciones posteriores, recomendamos mantener el libro de códigos en .pdf\nCrear libro de códigos"
+  },
+  {
+    "objectID": "componentes/b-data/index.html#ficha-técnica",
+    "href": "componentes/b-data/index.html#ficha-técnica",
+    "title": "Datos Abiertos",
+    "section": "4. Ficha Técnica",
+    "text": "4. Ficha Técnica\nEste resumen sobre el diseño metodológico aplicado debe incluir como mínimo los siguientes puntos:\n🔴 Estrategia de recolección de información: se debe indicar el tipo de instrumento (eg. encuesta, datos administrativos, etc.), población y muestra objetivo.\n🔴 Descripción del terreno: cuándo, cómo y dónde fue aplicado el terreno. Es decir, se debe indicar la fecha de aplicación, formato (presencial, online,telefónica, cuestionario auto-aplicado) y ubicación geográfica. También si hubieron hitos o perturbaciones importantes al desarrollo del estudio.\n🔴 Descripción muestral (solo en caso de encuestas): indica el tipo de muestreo, tasa de respuesta y variables principales que permitieron construir los ponderadores y factores de expansión.\n🔴 Identificación de la institución responsable: ya sea una consultora o el mismo equipo a cargo de la investigación, esto debe estar especificado en la ficha.\nDe todas maneras, una ficha metodológica puede incluir muchos más elementos, por ejemplo, una revisión de la distribución de las variables y/o una presentación de los tópicos incluidos en la base de datos.\n🗸 Para evitar ediciones posteriores, recomendamos mantener la ficha técnica en .pdf"
+  },
+  {
+    "objectID": "componentes/b-data/index.html#sintesis",
+    "href": "componentes/b-data/index.html#sintesis",
+    "title": "Datos Abiertos",
+    "section": "En síntesis",
+    "text": "En síntesis\n\n\n\n\nElemento\nCriterio\nRecomendación\nFormato\nmodel\n\n\n\n\nBase de datos\nCodificación correcta de respuestas\n1. Identificar casos perdidos\n.sav, .dta o .Rdata\n1. 1 Ejemplo de base de datos\n\n\n2. Identificar unidades de observación\n\n\nNombres de variables claros\n1. Claridad y coherencia en su orden\n1.2 Ejemplo de base de datos\n\n\n2. Ser utilizables por otros softwares\n\n\nCuestionario\nCongruencia con base de datos\n1. Verificar la versión del cuestionario\nArchivo documento .pdf\n1.1 Ejemplo de cuestionario\n\n\n2. Verficar orden y frases de categorías de preguntas y categorías de respuesta\n1.2 Ejemplo de cuestionario\n\n\nLibro de códigos\nCoherencia entre base de datos y cuestionario\n1. Verificar que la pregunta y la variable sean las mismas\n1.1 Ejemplo de libro de códigos\n\n\n2. Verificar el orden de las categorías y valores de la base\n1.2 Ejemplo de libro de códigos\n\n\nFicha Técnica\nInformación mínima para la utilización del usuario\n1. Indicar tipo de tipo de instrumento, población y muestra objetivo.\n1.1 Ejemplo de ficha técnica\n\n\n2. Indicar la fecha de aplicación, formato (presencial, online,telefónica, cuestionario auto-aplicado) y ubicación geográfica\n\n\n3. Indicar el tipo de muestreo, tasa de respuesta y ponderadores y factores de expansión.\n1.2 Ejemplo de ficha técnica\n\n\n4. Identificar institución o grupo ejecutor\n\n\n\n\nDescargar listado de recomendaciones para rellenar"
+  },
+  {
+    "objectID": "componentes/componentes.html",
+    "href": "componentes/componentes.html",
+    "title": "Sobre LISA",
+    "section": "",
+    "text": "El Laboratorio de Investigación Social Abierta es una iniciativa del Centro de Estudios de Conflicto y Cohesión Social (COES) que tiene como propósito ser una guía para el desarrollo de una ciencia social abierta y reproducible para la comunidad científica y la ciudadanía.\nUno de sus objetivos ha sido generar una propuesta de trabajo, la cual se constituye a través de la elaboración de herramientas conceptuales y prácticas en cuatro componentes: (1) diseño transparente,   (2) apertura de datos,   (3) análisis reproducibles  y  (4) publicaciones libres . Estos componentes representan cómo los cientistas sociales podemos contribuir con la apertura de los distintos momentos del proceso de investigación.\nEn el ámbito de las ciencias sociales, los esfuerzos por incrementar la apertura de los procesos de investigación han sido escasos y su presencia ha sido predominante en las comunidades científicas de habla inglesa.\nPor este motivo, LISA se propone contribuir a la comunidad de ciencias sociales de habla hispana a través de una serie de herramientas que contribuyan a incrementar la apertura de las investigaciones científicas.\nEn el siguiente video se resume nuestra propuesta:"
+  },
+  {
+    "objectID": "componentes/componentes.html#componentes",
+    "href": "componentes/componentes.html#componentes",
+    "title": "Sobre LISA",
+    "section": "Componentes",
+    "text": "Componentes\n\n  \n  \n  Listado de Contenido\n  \n\n  \n      \n        \n          \n          \n            Diseño transparente\n          \n        \n      \n      \n        \n          \n          \n            Datos Abiertos\n          \n        \n      \n      \n        \n          \n          \n            Análisis Reproducible\n          \n        \n      \n      \n        \n          \n          \n            Publicaciones Libres\n          \n        \n      \n  \n\nNo matching items"
+  },
+  {
+    "objectID": "equipo/equipo.html",
+    "href": "equipo/equipo.html",
+    "title": "Equipo",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "equipo/posts/alumni/index.html",
+    "href": "equipo/posts/alumni/index.html",
+    "title": "Pasaron por LISA",
+    "section": "",
+    "text": "Valentina Andrade \n          \n          \n            Asistente de Investigación\n          \n          \n            \n               Contacto\n            \n          \n          \n            \n               Github\n            \n          \n          \n            \n               Web Personal\n            \n          \n          \n             2020-2021"
+  },
+  {
+    "objectID": "alumni/index.html",
+    "href": "alumni/index.html",
+    "title": "Pasaron por LISA",
+    "section": "",
+    "text": "Valentina Andrade \n          \n          \n            Asistente de Investigación\n          \n          \n            \n               Contacto\n            \n          \n          \n            \n               Github\n            \n          \n          \n            \n               Web Personal\n            \n          \n          \n             2020-2021"
+  }
+]
