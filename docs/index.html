@@ -40,6 +40,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-dcc22d4be935df2cf5005a2b706be927.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -158,7 +160,7 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -176,9 +178,35 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./componentes/componentes.html"> 
+    <a class="nav-link" href="./componentes/componentes.html"> <i class="bi bi-info-circle-fill" role="img">
+</i> 
 <span class="menu-text">Sobre LISA</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-componentes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-puzzle-fill" role="img">
+</i> 
+ <span class="menu-text">Componentes</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-componentes">    
+        <li>
+    <a class="dropdown-item" href="./componentes/a-diseño/">
+ <span class="dropdown-text"><i class="ai  ai-preregistered" aria-label="preregistered"></i> Diseño Transparente</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./componentes/b-data/">
+ <span class="dropdown-text"><i class="ai  ai-open-data" aria-label="open-data"></i> Datos Abiertos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./componentes/c-repro/">
+ <span class="dropdown-text"><i class="ai  ai-open-materials" aria-label="open-materials"></i> Análisis Reproducible</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./componentes/d-publibres/">
+ <span class="dropdown-text"><i class="ai  ai-open-access-square" aria-label="open-access-square"></i> Publicaciones Libres</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -188,33 +216,36 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
 <!-- main -->
-<div class="quarto-about-jolla column-page">
-  <img src="resources/imagenes/sharing-default.png" class="about-image
-  rectangle " style="width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Laboratorio de Investigación Social Abierta</h1>
+
+
+
+
+<div class="hero-heading">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/imagenes/sharing-default.png" class="img-fluid mb-3 quarto-figure quarto-figure-center figure-img" style="width:90.0%"></p>
+</figure>
 </div>
-<div class="quarto-title-meta column-page">
-  </div>
-</header><main class="content column-page" id="quarto-document-content">
+</div>
 <div class="section-text">
 <div class="section-container">
-<div class="section-block">
 <div style="text-align: center;">
 <p align="center" style="font-size:36px; font-weight:bold;">
-Componentes
+<i class="bi bi-puzzle-fill" style="margin-right: 10px;"></i>Componentes
 </p>
 <div id="listing-componentes" class="quarto-listing quarto-listing-container-custom">
+
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Listado de Contenido</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&amp;display=swap" rel="stylesheet">
+
 <style>
   .wrap {
     margin: 20px auto;
@@ -226,6 +257,7 @@ Componentes
     max-width: 1500px;
     background-color: transparent;
   }
+
   .tile {
     width: 263px;
     height: 285px;
@@ -238,6 +270,7 @@ Componentes
     color: white;
     font-family: 'Roboto';
   }
+
   .tile img {
     height: 100%;
     width: 100%;
@@ -250,6 +283,7 @@ Componentes
     filter: none;
     mix-blend-mode: normal;
   }
+
   .tile .text {
     position: absolute;
     z-index: 1;
@@ -258,12 +292,14 @@ Componentes
     height: calc(100% - 60px);
     background: transparent;
   }
+
 .tile-container h1 {
   font-weight: 300;
   margin: 0;
   font-size: 24px; /* Disminuye el tamaño de la fuente */
   color: black;
 }
+
   .tile p {
     font-weight: 300;
     margin-top: 20px;
@@ -273,21 +309,25 @@ Componentes
     opacity: 0;
     color: black
   }
+
 .tile:hover {
   transform:scale(1.05);
   border-style: solid;
   border-color: #ECA0A0;
   opacity: 1;
 }
+
   .tile:hover img {
     transform:scale(1.05);
     opacity: 1;
     transform: translateX(0);
   }
+
   .tile:hover p {
     transform: translateX(0);
     opacity: 1;
   }
+
   @media (max-width: 768px) {
     .tile {
       width: 90%;
@@ -295,7 +335,12 @@ Componentes
     }
   }
 </style>
+
+
+
+
 <div class="wrap">
+  
     <div class="tile-container"> <!-- Contenedor de la tarjeta -->
       <h1>Diseño transparente</h1> <!-- Título por encima de la tarjeta -->
       <div class="tile">
@@ -308,6 +353,7 @@ Componentes
         </a>
       </div>
     </div>
+  
     <div class="tile-container"> <!-- Contenedor de la tarjeta -->
       <h1>Datos Abiertos</h1> <!-- Título por encima de la tarjeta -->
       <div class="tile">
@@ -320,6 +366,7 @@ Componentes
         </a>
       </div>
     </div>
+  
     <div class="tile-container"> <!-- Contenedor de la tarjeta -->
       <h1>Análisis Reproducible</h1> <!-- Título por encima de la tarjeta -->
       <div class="tile">
@@ -332,6 +379,7 @@ Componentes
         </a>
       </div>
     </div>
+  
     <div class="tile-container"> <!-- Contenedor de la tarjeta -->
       <h1>Publicaciones Libres</h1> <!-- Título por encima de la tarjeta -->
       <div class="tile">
@@ -344,10 +392,13 @@ Componentes
         </a>
       </div>
     </div>
+  
 </div>
+
+
+
 <div class="listing-no-matching d-none">
 No matching items
-</div>
 </div>
 </div>
 </div>
@@ -358,149 +409,275 @@ No matching items
 <div class="section-block">
 <div style="text-align: center;">
 <p align="center" style="font-size:36px; font-weight:bold;">
-Equipo
+<i class="bi bi-people-fill" style="margin-right: 10px;"></i>Equipo
 </p>
 <div id="listing-equipo" class="quarto-listing quarto-listing-container-custom">
-<div class="quarto-listing quarto-listing-container-grid">
+
+<div class="quarto-listing quarto-listing-container-grid" section-block="">
+  
   <div class="list grid quarto-listing-cols-4"> 
+
+     
+    
     <div class="g-col-1 listing-box">
+      
+      
+      
       <a href="./equipo/posts/1. pi/index.html" role="button" class="quarto-grid-link">
         </a><div class="quarto-grid-item card h-100 card-left"><a href="./equipo/posts/1. pi/index.html" role="button" class="quarto-grid-link">
+          
+          
           <p class="card-img-top">
             <img alt="Juan Carlos Castillo" src="./equipo/posts/1. pi/featured.jpg" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
+
           </p>
+          
           </a><div class="card-body post-contents"><a href="./equipo/posts/1. pi/index.html" role="button" class="quarto-grid-link">
+            
             <div class="listing-box-title">
               Juan Carlos Castillo<br> 
             </div>
+               
             <div class="listing-box-subtitle">
               Investigador Principal<br>
             </div>
+            
              <div class="listing-box-links">
               <br>
             </div>
+                
+            
+              
            </a><div class="listing-box-contacto"><a href="./equipo/posts/1. pi/index.html" role="button" class="quarto-grid-link">
+  
     </a><a href="mailto:juancastillov@uchile" class="contact-link">
       <i class="bi bi-envelope"></i> Contacto
     </a>
+  
 </div>
+
            <div class="listing-box-github">
+  
     <a href="https://github.com/juancarloscastillo" class="github-link">
       <i class="bi bi-github"></i> Github
     </a>
+  
 </div>
+
            <div class="listing-box-web">
+  
     <a href="https://jc-castillo.com" class="web-link">
       <i class="bi bi-globe"></i> Web Personal
     </a>
+  
 </div>
+                  
+
+            
+            
           </div>  
         </div>  
+      
+      
     </div>
+  
+     
+    
     <div class="g-col-1 listing-box">
+      
+      
+      
       <a href="./equipo/posts/2. asit-coes/index.html" role="button" class="quarto-grid-link">
         </a><div class="quarto-grid-item card h-100 card-left"><a href="./equipo/posts/2. asit-coes/index.html" role="button" class="quarto-grid-link">
+          
+          
           <p class="card-img-top">
             <img alt="Kevin Carrasco" src="./equipo/posts/2. asit-coes/featured.jpg" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
+
           </p>
+          
           </a><div class="card-body post-contents"><a href="./equipo/posts/2. asit-coes/index.html" role="button" class="quarto-grid-link">
+            
             <div class="listing-box-title">
               Kevin Carrasco<br> 
             </div>
+               
             <div class="listing-box-subtitle">
               Asistente de Investigación COES<br>
             </div>
+            
              <div class="listing-box-links">
               <br>
             </div>
+                
+            
+              
            </a><div class="listing-box-contacto"><a href="./equipo/posts/2. asit-coes/index.html" role="button" class="quarto-grid-link">
+  
     </a><a href="mailto:kevin.carrasco@ug.uchile.cl" class="contact-link">
       <i class="bi bi-envelope"></i> Contacto
     </a>
+  
 </div>
+
            <div class="listing-box-github">
+  
     <a href="https://github.com/Kevin-carrasco" class="github-link">
       <i class="bi bi-github"></i> Github
     </a>
+  
 </div>
+
            <div class="listing-box-web">
+  
     <a href="https://www.linkedin.com/in/kevin-carrasco-quintanilla/" class="web-link">
       <i class="bi bi-globe"></i> Web Personal
     </a>
+  
 </div>
+                  
+
+            
+            
           </div>  
         </div>  
+      
+      
     </div>
+  
+     
+    
     <div class="g-col-1 listing-box">
+      
+      
+      
       <a href="./equipo/posts/3. asis-ocs/index.html" role="button" class="quarto-grid-link">
         </a><div class="quarto-grid-item card h-100 card-left"><a href="./equipo/posts/3. asis-ocs/index.html" role="button" class="quarto-grid-link">
+          
+          
           <p class="card-img-top">
             <img alt="Gabriel Cortés" src="./equipo/posts/3. asis-ocs/featured.png" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
+
           </p>
+          
           </a><div class="card-body post-contents"><a href="./equipo/posts/3. asis-ocs/index.html" role="button" class="quarto-grid-link">
+            
             <div class="listing-box-title">
               Gabriel Cortés<br> 
             </div>
+               
             <div class="listing-box-subtitle">
-              Asistente de Investigación OCS<br>
+              Asistente de Investigación LISA<br>
             </div>
+            
              <div class="listing-box-links">
               <br>
             </div>
+                
+            
+              
            </a><div class="listing-box-contacto"><a href="./equipo/posts/3. asis-ocs/index.html" role="button" class="quarto-grid-link">
+  
     </a><a href="mailto:gabriel.cortes@uchile.cl" class="contact-link">
       <i class="bi bi-envelope"></i> Contacto
     </a>
+  
 </div>
+
            <div class="listing-box-github">
+  
     <a href="https://github.com/gabcortes97" class="github-link">
       <i class="bi bi-github"></i> Github
     </a>
+  
 </div>
+
            <div class="listing-box-web">
+  
     <a href="https://www.linkedin.com/in/gabriel-cortés-paredes-80780a181/" class="web-link">
       <i class="bi bi-globe"></i> Web Personal
     </a>
+  
 </div>
+                  
+
+            
+            
           </div>  
         </div>  
+      
+      
     </div>
+  
+     
+    
     <div class="g-col-1 listing-box">
+      
+      
+      
       <a href="./equipo/posts/4. ayudante-ocs/index.html" role="button" class="quarto-grid-link">
         </a><div class="quarto-grid-item card h-100 card-left"><a href="./equipo/posts/4. ayudante-ocs/index.html" role="button" class="quarto-grid-link">
+          
+          
           <p class="card-img-top">
             <img alt="TBA" src="./equipo/posts/4. ayudante-ocs/featured.png" class="thumbnail-image card-img listing-box-image" style="height: 250px; object-fit: cover; width: 100%;">
+
           </p>
+          
           </a><div class="card-body post-contents"><a href="./equipo/posts/4. ayudante-ocs/index.html" role="button" class="quarto-grid-link">
+            
             <div class="listing-box-title">
               TBA<br> 
             </div>
+               
             <div class="listing-box-subtitle">
               Ayudante de Investigación<br>
             </div>
+            
              <div class="listing-box-links">
               <br>
             </div>
+                
+            
+              
            </a><div class="listing-box-contacto"><a href="./equipo/posts/4. ayudante-ocs/index.html" role="button" class="quarto-grid-link">
+  
     </a><a href="mailto:tba" class="contact-link">
       <i class="bi bi-envelope"></i> Contacto
     </a>
+  
 </div>
+
            <div class="listing-box-github">
+  
     <a href="tba" class="github-link">
       <i class="bi bi-github"></i> Github
     </a>
+  
 </div>
+
            <div class="listing-box-web">
+  
     <a href="tba" class="web-link">
       <i class="bi bi-globe"></i> Web Personal
     </a>
+  
 </div>
+                  
+
+            
+            
           </div>  
         </div>  
+      
+      
     </div>
+  
+    
+  
 </div>
 </div>
+
 <div class="listing-no-matching d-none">
 No matching items
 </div>
@@ -517,6 +694,7 @@ No matching items
 <div class="section-block">
 <div style="text-align: center;">
 <div>
+
 </div>
 <div class="quarto-layout-panel" data-layout-ncol="5">
 <div class="quarto-layout-row">
@@ -543,9 +721,10 @@ No matching items
 </div>
 
 
-</main>  
-</div>
- <!-- /main -->
+
+
+
+
 <!-- FOOTER QUE IGNORA LA GRID DE QUARTO -->
 <div style="background-color: #1f1f1f; color: white;
             grid-column: 1 / -1;">
@@ -559,15 +738,7 @@ No matching items
     <!-- Logo -->
     <div style="flex: 1; min-width: 250px; text-align: center; margin-bottom: 2rem;">
   <a href="https://coes.cl">
- <img id="logo-coes" src="resources/imagenes/COES_Logo_sello1.png" alt="Logo COES" style="width: 50%;" onerror="
-        if (!this.attempted) {
-            this.attempted = 1;
-            this.src = '../resources/imagenes/COES_Logo_sello1.png';
-        } else if (this.attempted === 1) {
-            this.attempted = 2;
-            this.src = '../../resources/imagenes/COES_Logo_sello1.png';
-        }
-     ">
+ <img id="logo-coes" src="./COES_Logo_sello1.png" alt="Logo COES" style="width: 50%;">
 
   </a>
 </div>
@@ -1015,7 +1186,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </ul>
     </div>
     <div class="nav-footer-right">
-<p>Last Update: 2025-04-10</p>
+<p>Last Update: 2025-04-15</p>
 </div>
   </div>
 </footer>

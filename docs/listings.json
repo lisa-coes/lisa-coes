@@ -1,16 +1,7 @@
 [
   {
-    "listing": "/index.html",
-    "items": [
-      "/componentes/a-diseño/index.html",
-      "/componentes/b-data/index.html",
-      "/componentes/c-repro/index.html",
-      "/componentes/d-publibres/index.html",
-      "/equipo/posts/1. pi/index.html",
-      "/equipo/posts/2. asit-coes/index.html",
-      "/equipo/posts/3. asis-ocs/index.html",
-      "/equipo/posts/4. ayudante-ocs/index.html"
-    ]
+    "listing": "/equipo/equipo.html",
+    "items": []
   },
   {
     "listing": "/componentes/componentes.html",
@@ -22,7 +13,16 @@
     ]
   },
   {
-    "listing": "/equipo/equipo.html",
-    "items": []
+    "listing": "/index.html",
+    "items": [
+      "/componentes/a-diseño/index.html",
+      "/componentes/b-data/index.html",
+      "/componentes/c-repro/index.html",
+      "/componentes/d-publibres/index.html",
+      "/equipo/posts/1. pi/index.html",
+      "/equipo/posts/2. asit-coes/index.html",
+      "/equipo/posts/3. asis-ocs/index.html",
+      "/equipo/posts/4. ayudante-ocs/index.html"
+    ]
   }
 ]

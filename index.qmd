@@ -1,12 +1,12 @@
 ---
 title: "Laboratorio de Investigación Social Abierta"
 pagetitle: "LISA Website"
-page-layout: full
+page-layout: custom
 format: html
 page-navigation: false
 toc: false
-image: "resources/imagenes/sharing-default.png"
 about:
+  image: "resources/imagenes/sharing-default.png"
   id: hero-heading
   template: jolla
   image-shape: rectangle
@@ -24,12 +24,21 @@ listing:
     type: grid
 ---
 
+:::hero-heading
+![](resources/imagenes/sharing-default.png){.img-fluid .mb-3 width=90% fig-align="center"}
+:::
+
+
+
+
 ::: {.section-text}
 ::: {.section-container}
-::: {.section-block}
 ::: {style="text-align: center;"}
 
-<p align="center" style="font-size:36px; font-weight:bold;">Componentes</p>
+<p align="center" style="font-size:36px; font-weight:bold;">
+<i class="bi bi-puzzle-fill" style="margin-right: 10px;"></i>Componentes</p>
+
+
 
 
 ::: {#componentes}
@@ -39,15 +48,14 @@ listing:
 :::
 :::
 :::
-:::
 
 ::: {.section-text}
 ::: {.section-container}
 ::: {.section-block}
 ::: {style="text-align: center;"}
 
-<p align="center" style="font-size:36px; font-weight:bold;">Equipo</p>
-
+<p align="center" style="font-size:36px; font-weight:bold;">
+<i class="bi bi-people-fill" style="margin-right: 10px;"></i>Equipo</p>
 
 ::: {#equipo}
 :::
