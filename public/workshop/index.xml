@@ -1,20 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Workshops on Laboratorio de Ciencia Social Abierta</title>
-    <link>https://lisa-coes.com/workshop/</link>
-    <description>Recent content in Workshops on Laboratorio de Ciencia Social Abierta</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>es-cl</language>
-    <lastBuildDate>Tue, 28 Dec 2021 10:50:46 +0200</lastBuildDate><atom:link href="https://lisa-coes.com/workshop/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Taller Introducción a la Ciencia Abierta</title>
-      <link>https://lisa-coes.com/workshop/taller-intro/</link>
-      <pubDate>Tue, 28 Dec 2021 10:50:46 +0200</pubDate>
-      
-      <guid>https://lisa-coes.com/workshop/taller-intro/</guid>
-      <description>Taller Introducción a la Ciencia Abierta:Pre-registros y Pre-printsActualmente la ciencia vive una crisis de apertura, la cual se ha asociado principalmente a las barreras para acceder a los productos finales de la investigación (artículos), así como también a la transparencia general de los diseños de investigación, levantamiento de datos y análisis de la información. El presente taller entrega una breve introducción general a los orígenes, características y consecuencias del cierre científico, para luego enfocarse en dos herramientas prácticas para la apertura: los pre-registros y los pre-prints.</description>
-    </item>
-    
-  </channel>
-</rss>

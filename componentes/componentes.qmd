@@ -1,0 +1,47 @@
+---
+title: "Sobre LISA"
+listing:
+  - id: componentes
+    contents: "*/index.qmd"
+    sort: "date desc"
+    template: components.ejs
+page-layout: full
+title-block-banner: false
+# include-in-header: meta.html
+comments: false
+toc: false
+about:
+  id: hero-heading
+  image: componentes.png
+  template: solana
+  image-shape: rounded
+---
+::: hero-heading
+
+El **Laboratorio de Investigación Social <span class="red">Abierta</span>** es una iniciativa del **Centro de Estudios de Conflicto y Cohesión Social (COES)** que tiene como propósito ser una guía para el desarrollo de una ciencia social abierta y reproducible para la comunidad científica y la ciudadanía.
+
+Uno de sus objetivos ha sido generar una propuesta de trabajo, la cual se constituye a través de la elaboración de herramientas conceptuales y prácticas en cuatro **componentes**: <span class="disegno">(1) diseño transparente, </span>  <span class="datos"> (2) apertura de datos,  </span> <span class="repro"> (3) análisis reproducibles </span> y <span class="publibres"> (4) publicaciones libres </span>. Estos componentes representan cómo los cientistas sociales podemos contribuir con la apertura de los distintos momentos del proceso de investigación.
+
+En el ámbito de las ciencias sociales, los esfuerzos por incrementar la apertura de los procesos de investigación han sido **escasos** y su presencia ha sido predominante en las comunidades científicas de **habla inglesa**.  
+
+Por este motivo, **LIS<span class="red">A</span>**  se propone contribuir a la comunidad de ciencias sociales de **habla hispana** a través de una serie de herramientas que contribuyan a incrementar la apertura de las investigaciones científicas.
+
+:::
+
+En el siguiente video se resume nuestra propuesta:
+
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEvRIXYTBI&#x2F;watch?embed">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEvRIXYTBI&#x2F;watch?utm_content=DAEvRIXYTBI&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a>
+
+## Componentes
+
+:::{#componentes}
+:::
+
+

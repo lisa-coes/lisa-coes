@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="LISA">
+<meta name="dcterms.date" content="2021-10-02">
+<meta name="description" content="Permitir que las herramientras para generar análisis puedan reproducir los resultados obtenidos">
+
+<title>Análisis Reproducible</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-b874d4503c39bd17ea556a5f448b2f50.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../resources/imagenes/logo.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../componentes/componentes.html"> <i class="bi bi-info-circle-fill" role="img">
+</i> 
+<span class="menu-text">Sobre LISA</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-componentes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-puzzle-fill" role="img">
+</i> 
+ <span class="menu-text">Componentes</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-componentes">    
+        <li>
+    <a class="dropdown-item" href="../../componentes/a-diseño/">
+ <span class="dropdown-text"><i class="ai  ai-preregistered" aria-label="preregistered"></i> Diseño Transparente</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../componentes/b-data/">
+ <span class="dropdown-text"><i class="ai  ai-open-data" aria-label="open-data"></i> Datos Abiertos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../componentes/c-repro/">
+ <span class="dropdown-text"><i class="ai  ai-open-materials" aria-label="open-materials"></i> Análisis Reproducible</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../componentes/d-publibres/">
+ <span class="dropdown-text"><i class="ai  ai-open-access-square" aria-label="open-access-square"></i> Publicaciones Libres</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="https://github.com/lisa-coes/lisa-coes" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<div class="quarto-about-solana column-body">
+  <div class="about-entity">
+    <div class="entity-contents">
+      <header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Análisis Reproducible</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">componentes</div>
+  </div>
+  </div>
+<div>
+  <div class="description">
+    <p>Permitir que las herramientras para generar análisis puedan reproducir los resultados obtenidos</p>
+  </div>
+</div>
+<div class="quarto-title-meta">
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>LISA </p>
+          </div>
+  </div>
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 2, 2021</p>
+    </div>
+  </div>
+  </div>
+</header> 
+      <div class="about-contents"><main class="content" id="quarto-document-content">
+<div class="{hero-heading}">
+<p>¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales, y que por tanto, es imposible acceder a los procedimientos que dieron luces a sus resultados? En este contexto, la <strong>reproducibilidad</strong> entendida como la posibilidad de <strong>regenerar</strong> de manera independiente los resultados usando los materiales originales de una investigación publicada. <em>¿Cómo organizamos un proyecto con análisis reproducibles?</em> <em>¿Qué herramientas puedo utilizar?</em> <em>¿Cómo puedo compartir mis materiales?</em> En este blog daremos algunas orientaciones generales respecto a cómo avanzar en esta dirección.</p>
+</div>
+<br>
+<div style="background-color: #ffff ; padding: 8px; border: 2px solid #ec8686;">
+<ul>
+<li><a href="#pasos">¿Cuáles son los pasos a seguir?</a></li>
+<li><a href="#paso1">Paso 1: Estructura del proyecto</a></li>
+<li><a href="#paso2">Paso 2: Prácticas de código</a></li>
+<li><a href="#paso3">Paso 3: Uso de documentos dinámicos</a></li>
+<li><a href="#paso4">Paso 4: Control de versiones</a></li>
+</ul>
+</div>
+<section id="pasos" class="level1">
+<h1>¿Cuáles son los pasos a seguir?</h1>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="lisa-reproducibilidad.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Un proyecto reproducible no se reduce solamente a un buen código, sino que considera la vinculación entre los distintos elementos del proyecto que nos permitan <strong>regenerar</strong> los resultados de un estudio original. Por lo tanto, hemos organizado esta guía en cuatro pasos:</p>
+<p><code>1. Estructura del proyecto</code>: la organización de los elementos de un proyecto es clave para lograr un estándar mínimo de reproducibilidad. Esto implica que tanto los materiales iniciales como los datos y rutinas de código deben estar correctamente vinculados para obtener los resultados.</p>
+<p><code>2. Prácticas de código</code>: la calidad de una hoja de código puede ser clave en lograr la regeneración de resultados. Por este motivo, cuestiones como los comentarios, indentación y organización del código son necesarias para un proyecto reproducible.</p>
+<p><code>3. Documentos dinámicos</code>: la combinación de escritura en texto plano con el código de análisis hace de los documentos dinámicos una herramienta clave para la reproducibilidad dado que nos permiten generar reportes autocontenidos.</p>
+<p><code>4. Control de versiones</code>: saber <em>qué</em>, <em>quién</em> y <em>cuándo</em> se ha realizado un cambio en nuestro proyecto, además del uso de repositorios públicos contribuye a realizar el seguimiento de un proyecto y así también identificar problemas para reproducir los resultados como también para colaborar de manera eficiente.</p>
+</section>
+<section id="paso1" class="level1">
+<h1>Paso 1: Estructura del proyecto</h1>
+<p>La forma en que están organizadas las partes de un proyecto es fundamental para cumplir a cabalidad con el objetivo de hacerlo reproducible. Esta organización se puede sintetizar como un esquema que involucra tres elementos: <code>(1) Input</code>, <code>(2) Procesamiento</code> y <code>(3) Output</code>.</p>
+<p>Este esquema se basa en una versión dell Protocolo IPO (Input-Procesamiento-Output) que se propone abordar brevemente todo lo referente a los <code>Datos</code>, <code>Métodos</code> y <code>Resultados</code>.</p>
+<p>🗸 Si deseas saber más sobre el <strong>Protocolo IPO</strong> puedes hacer click aquí:</p>
+<style>
+.center {
+  display: flex;
+  justify-content: center;
+}
+</style>
+<div class="center">
+<p><a class="btn btn-template-primary" href="../ipo-protocol/index.html" target="_blank"> 🔴 Protocolo IPO 🔴 </a></p>
+</div>
+<section id="carpeta-raíz" class="level2">
+<h2 data-anchor-id="carpeta-raíz">Carpeta Raíz</h2>
+<p>Para la organización de un proyecto, debemos pensar en una <strong>estructura digital</strong> de carpetas y subcarpetas. La carpeta raíz es donde se alberga toda la información de referencia para el proyecto, la cual tiene por objetivo:</p>
+<ul>
+<li><p><strong>Documentar</strong>: expone ordenadamente el contenido del proyecto de manera jerárquica (carpetas y subcarpetas).</p></li>
+<li><p><strong>Orientar</strong>: instruye al usuario para una correcta ejecución de rutinas de código que permita regenerar los resultados de la investigación.</p></li>
+</ul>
+<p>Estas instrucciones pueden ir incluidas en un archivo <code>README</code> organizado de la siguiente manera:</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="estructura.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>🗸 Para mayores detalles respecto al contenido y estructura de un proyecto reproducible, puedes hacer click aquí:</p>
+<p><a class="btn btn-template-primary" href="https://lisa-coes.github.io/lisa-book/herramientas-para-los-an%C3%A1lisis-reproducibles.html#estructura-del-proyecto" target="_blank">Estructura de un proyecto</a></p>
+<section id="input-i" class="level3">
+<h3 data-anchor-id="input-i"><i class="fas fa-database"></i> <code>Input (I)</code></h3>
+<p>Si bien los protocolos varían de acuerdo a cómo se organizan los datos dentro de la carpeta raíz (i.e.&nbsp;en qué carpeta se alojan), algo que suele ser común entre los protocolos es la diferenciación entre los datos <strong>originales</strong> o “brutos” (<em>raw data</em>) y los datos <strong>procesados</strong>. El albergar ambas versiones permite identificar los cambios generados a través del procesamiento.</p>
+<p>Para toda fuente de datos original, se debe proveer la siguiente información:</p>
+<ul>
+<li>Citación bibliográfica en un formato estándar</li>
+<li>Fecha de creación de la base de datos</li>
+<li>Descripción respecto a cómo se puede acceder a una copia de la base de datos</li>
+<li>Libro de códigos de todas las variables de la base de datos.</li>
+</ul>
+<p>🗸 Para mayor detalle sobre la sección de datos, puedes hacer click aquí:</p>
+<p><a class="btn btn-template-primary" href="https://lisa-coes.github.io/lisa-book/herramientas-para-los-an%C3%A1lisis-reproducibles.html#datos" target="_blank">Datos</a></p>
+</section>
+<section id="procesamiento-p" class="level3">
+<h3 data-anchor-id="procesamiento-p">📝 <code>Procesamiento (P)</code></h3>
+<p>Con <code>Pocesamiento</code> nos referimos a todos los procedimientos del proyecto relacionados con la <strong>(1) preparación</strong> y <strong>(2) análisis</strong> de datos.</p>
+<section id="preparación" class="level4">
+<h4 data-anchor-id="preparación"><strong><code>(1) Preparación</code></strong></h4>
+<p>La preparación de los datos cumple una función clave para el desarrollo de un artículo: la de generar los datos que emplearemos en análisis del estudio. Considerando esto, el objetivo final de este documento es generar una base de datos procesada, que contenga solamente los datos importantes para analizar.</p>
+<p>Sugerimos seguir el siguiente flujo para realizar la preparación de los datos:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="table-responsive">
+<table class="table table-striped table-bordered table-condensed caption-top table-sm small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Procedimientos</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 5cm;">1. Descriptivo inicial</td>
+<td style="text-align: left;">Calcular una tabla de frecuencias o de medidas de tendencia central y dispersión para conocer el estado de la variable previo a cualquier modificación</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 5cm;">2. Recodificación</td>
+<td style="text-align: left;">Recodificación de los datos perdidos y otro tipo de valores a modificar (e.g. errores de tipeo)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 5cm;">3. Etiquetado</td>
+<td style="text-align: left;">Una base bien documentada trae etiquetas predeterminadas que hacen alusión a las preguntas del cuestionario</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 5cm;">4. Descriptivo final</td>
+<td style="text-align: left;">Revisar de nuevo las frecuencias o las medidas de tendencia central de las variables, para diagnosticar que no hemos cometido errores en el procesamiento</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 5cm;">5. Otros ajustes</td>
+<td style="text-align: left;">Efectuar toda modificación específica y relevante para la forma que analizaremos los datos</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>El seguir este flujo de manera sistemática facilitará la lectura tanto para terceros, como para nosotros mismos en el futuro.</p>
+</section>
+<section id="análisis" class="level4">
+<h4 data-anchor-id="análisis"><strong><code>(2) Análisis</code></strong></h4>
+<ul>
+<li>Una vez contamos con nuestra <strong>base de datos procesada</strong> podemos analizar los datos. En el documento de análisis de datos se procede a elaborar todas las tablas, gráficos y pruebas estadísticas que vayan a ser incluidas en el artículo final. En términos generales las secciones son</li>
+</ul>
+<ol type="1">
+<li>Análisis descriptivos univariados de los datos.</li>
+<li>Análisis bivariado de los datos.</li>
+<li>Análisis multivariado.</li>
+</ol>
+</section>
+<section id="documentación" class="level4">
+<h4 data-anchor-id="documentación"><strong>Documentación</strong></h4>
+<p>Para lograr una correcta ejecución de los documentos de preparación y análisis es clave tener correctamente explicado cómo utilizarlos y cómo se vinculan entre ellos. Para esto, sugerimos que documento <code>README</code> incluya las siguientes indicaciones:</p>
+<ol type="1">
+<li><p><strong>Ejecución de la preparación</strong>: Precisar la ubicación de la o las fuentes de datos originales.</p></li>
+<li><p><strong>Cierre de la preparación</strong>: Precisar la ruta donde se deben almacenar la base de datos procesada.</p></li>
+<li><p><strong>Ejecución de análisis</strong>: Precisar el origen de la base de datos procesada.</p></li>
+<li><p><strong>Archivos del análisis de datos</strong>: Precisar ruta de almacenamiento y nombre.</p></li>
+</ol>
+<p>🗸 Más información sobre la sección de métodos, puedes hacer click aquí:</p>
+<p><a class="btn btn-template-primary" href="https://lisa-coes.github.io/lisa-book/herramientas-para-los-an%C3%A1lisis-reproducibles.html#m%C3%A9todos" target="_blank">Preparación y análisis </a></p>
+</section>
+</section>
+<section id="output-o" class="level3">
+<h3 data-anchor-id="output-o">📊 <code>Output (O)</code></h3>
+<p>Con <code>Output</code>, nos referimos a todo elemento obtenido del análisis de datos. Habitualmente toman la forma de figuras, gráficos o tablas. Es habitual que los protocolos sugieran que estos archivos se almacenen en una subcarpeta exclusiva para ello. Por este motivo, sugerimos se sigan las siguientes indicaciones:</p>
+<p>🔴 Para <strong>imágenes</strong>, sugerimos usar nombres breves e incorporar numeración. Por ejemplo “figura01.png”, siguiendo el orden de aparición en la publicación.</p>
+<p>🔴 Para <strong>tablas</strong>, sugerimos emplear nombres cortos e incorporar numeración. Por ejemplo, “tabla01.xls”, según el orden de aparición en la publicación.</p>
+</section>
+</section>
+<section id="paso2" class="level2">
+<h2 data-anchor-id="paso2">Paso 2: Prácticas de código</h2>
+<p>La escritura de un código de preparación o análisis requiere adoptar estándares mínimos, entre otras cosas, para facilitar la comprensión y ejecución de una rutina de código por <strong>otros usuarios</strong> que busquen regenerar nuestros resultados.</p>
+<p>La figura a continuación muestra algunas buenas prácticas de código que contribuyen a hacer el trabajo más transparente, y son aplicables a lenguajes de programación:</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="practicas.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="paso3" class="level2">
+<h2 data-anchor-id="paso3">Paso 3: Uso de documentos dinámicos</h2>
+<p>Los documentos dinámicos son una herramienta que incorpora lo mejor de dos mundos: documentos en texto plano y código de análisis.</p>
+<p>🔴 Por un lado, trabajar con <code>texto plano</code> implica independencia de cualquier software comercial o plataformas específicas. Adicionalmente, un documento dinámico permite centrarnos en el contenido y menos en el formato, dado que existen distintas opciones para ello (p.ej. <em>.pdf</em> o <em>.html</em>).</p>
+<p>🔴 Finalmente, al incorporar código de análisis es posible generar documentos <strong>autocontenidos</strong>, es decir, no es necesario recurrir a imágenes o tablas externas, sino que es posible generarlas en el mismo documento.</p>
+<p>Por ejemplo, este documento está escrito en <code>R Markdown</code>, lo que nos permite demostrar cómo combinar código en <code>R</code> con texto plano.</p>
+<div class="row">
+<div class="col-md-4">
+<p>Así se ve el <code>código</code> en nuestro documento:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a> <span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a> <span class="fu">ggplot</span>(mtcars, <span class="fu">aes</span>(<span class="at">x=</span>mpg)) <span class="sc">+</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">fill=</span><span class="st">"skyblue"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">alpha=</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div class="col-md-8">
+<p>Luego, el código se ejecuta y obtenemos el siguiente gráfico:</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>Usar documentos dinámicos escritos en <code>texto plano</code> abre un abanico de posibilidades cuando buscamos avanzar hacia proyectos con análisis reproducibles. En este sentido, nos gustaría destacar tres opciones:</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="docs-dynamic.gif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>🗸 Si deseas saber más sobre cómo funcionan los documentos dinámicos, puedes hacer click aquí:</p>
+<p><a class="btn btn-template-primary" href="https://lisa-coes.github.io/lisa-book/herramientas-para-los-an%C3%A1lisis-reproducibles.html#texto-plano-y-documentos-din%C3%A1micos" target="_blank">Documentos dinámicos</a></p>
+<section id="paso4" class="level2">
+<h2 data-anchor-id="paso4">Paso 4: Control de versiones</h2>
+<p>A modo global, el <strong>control de versiones</strong> nos permite rastrear los cambios en un documento o conjunto de archivos, es decir, saber <em>cuáles/qué</em>, <em>quién</em> y <em>cuándo</em> se han realizado cambios.</p>
+<p>Al trabajar colaborativamente existen diferentes (y poco eficientes) maneras de controlar versiones. Por ejemplo:</p>
+<p>❌ Fechas: <code>codigo_2021-03-01.R</code> → <code>codigo_2021-05-02.R</code></p>
+<p>❌ Numeración: <code>analisis_v02.do</code> → <code>analisis_v05.do</code></p>
+<p>No obstante, hoy en día existen sistemas de control de versiones especializados para el trabajo de programación. Al respecto, nuestra sugerencia es emplear versionamiento basado en <i class="fab fa-git-square"></i> , pero <em>¿qué es Git?</em> Te lo explicamos a continuación.</p>
+<section id="git-y-github" class="level3">
+<h3 data-anchor-id="git-y-github">Git <i class="fab fa-git-alt"></i> y GitHub <i class="fab fa-github"></i></h3>
+<p><a href="https://es.wikipedia.org/wiki/Git" target="_blank"><strong>Git</strong></a> es un sistema de control de versiones de código abierto, tiene por objetivo hacer más eficiente el flujo de trabajo para proyectos de desarrollo de software. Algunas de sus principales características son:</p>
+<p>⭕ Permite registrar (<em>snapshot</em>) la versión de una carpeta completa y su contenido</p>
+<p>⭕ Registra <em>qué</em>, <em>quién</em> y <em>cuándo</em> se realizaron cambios</p>
+<p>⭕ Uso de repositorios (<em>repos</em>) locales (computadora) o remotos (<em>online</em>)</p>
+<p>A la par existe <a href="https://github.com/" target="_blank"><strong>GitHub</strong></a>, el cual es una plataforma de desarrollo colaborativo para hospedar proyectos que utilizan control de versiones basado en <strong>Git</strong>. Una de sus principales características es el uso de repositorios locales y remotos. La siguiente figura muestra un ejemplo:</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="github-colab.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Recomendamos el uso de Git y Github cómo flujo de trabajo para aquellos científicos sociales que trabajan con datos cuantitativos, especialmente cuando son grandes equipos de investigación o son proyectos con varias colaboraciones.</p>
+<p>🗸 Si deseas conocer más sobre Git y GitHub te invitamos a revisar la sesión del curso “Ciencia Social Abierta”:</p>
+<p><a class="btn btn-template-primary" href="https://version2020--cienciasocialabierta.netlify.app/class/08-class/" target="_blank">Control de Versiones/Git</a></p>
+</section>
+</section>
+<section id="en-síntesis" class="level1">
+<h1>En síntesis</h1>
+<p>🔴 Si deseas revisar más detalles de cómo elaborar un proyecto reproducible, en el siguiente video se detalla el paso a paso para ello:</p>
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+<p><iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" src="https://www.canva.com/design/DAEtY9Ngapo/watch?embed"> </iframe></p>
+</div>
+<p><a href="https://www.canva.com/design/DAEtY9Ngapo/watch?utm_content=DAEtY9Ngapo&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"> </a></p>
+
+
+</section>
+</div>
+</section>
+</section>
+</main></div>
+    </div>
+    <img src="featured.png" class="about-image
+  rounded " style="width: 15em;">
+  </div>
+</div>
+ <!-- /main -->
+<!-- FOOTER QUE IGNORA LA GRID DE QUARTO -->
+<div style="background-color: #1f1f1f; color: white;
+            grid-column: 1 / -1;">
+
+  <!-- TÍTULO -->
+  <h2 style="text-align: center; font-size: 36px; font-weight: bold; margin-bottom: 2rem;">Acerca de Nosotros</h2>
+  
+  <!-- CONTENIDO FLEXIBLE -->
+  <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; width: 100%; max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 0 2rem;">
+    
+    <!-- Logo -->
+    <div style="flex: 1; min-width: 250px; text-align: center; margin-bottom: 2rem;">
+  <a href="https://coes.cl">
+ <img id="logo-coes" src="../../COES_Logo_sello1.png" alt="Logo COES" style="width: 50%;">
+
+  </a>
+</div>
+
+    <!-- Centro de Estudios -->
+    <div style="flex: 1; min-width: 250px; margin-bottom: 2rem;">
+      <h3>Centro de Estudios de Conflicto y de Cohesión Social</h3>
+      <p>Diagonal Paraguay 257, <br> Torre 26, Oficina 1504 <br> Santiago – RM</p>
+      <p>Los Navegantes 1963 <br> Providencia - RM</p>
+      <p>Contáctenos: <a href="mailto:comunicaciones@coes.cl" style="color: #61dafb;">comunicaciones@coes.cl</a></p>
+    </div>
+
+    <!-- Observatorio -->
+    <div style="flex: 1; min-width: 250px; margin-bottom: 2rem;">
+      <h3>Observatorio de Cohesión Social</h3>
+      <p>Capitán Ignacio Carrera Pinto 1045, <br> Facultad de Ciencias Sociales, Departamento de Sociología <br> Ñuñoa – RM</p>
+    </div>
+
+  </div>
+</div>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><a href="">2025</a></p>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/lisa-coes/lisa-coes">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+<p>Last Update: 2025-04-10</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

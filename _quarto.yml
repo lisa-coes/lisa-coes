@@ -1,0 +1,53 @@
+project:
+  type: website
+  # resources:
+  render:
+        - "*.qmd"
+  output-dir: "docs"
+website:
+  title: ""
+  page-footer:
+    background: "#121212"
+    left: |
+      [2025]()
+    center:
+      - href: https://github.com/lisa-coes/lisa-coes
+        icon: github
+        aria-label: GitHub
+    right: |
+       Last Update: {{< modified isodate>}}
+  navbar:
+    logo: resources/imagenes/logo.png
+    background: "#FFFFFF"
+    tools: 
+       - icon: github
+         href: https://github.com/lisa-coes/lisa-coes
+    # pinned: true
+    left:
+      - href: componentes/componentes.qmd
+        text: Sobre LISA
+        icon: info-circle-fill
+      - text: Componentes
+        icon: puzzle-fill
+        menu: 
+         - href: componentes/a-diseño/
+           text: "{{<ai preregistered>}} Diseño Transparente"
+         - href: componentes/b-data/
+           text: "{{<ai open-data>}} Datos Abiertos"
+         - href: componentes/c-repro/
+           text: "{{<ai open-materials>}} Análisis Reproducible"
+         - href: componentes/d-publibres/
+           text: "{{<ai open-access-square>}} Publicaciones Libres"
+         
+format:
+  html:
+    theme: 
+      light: flatly
+    css: 
+      - styles.css
+    linkcolor: "#ECA0A0"
+include-after-body: footer/footer.html
+
+
+
+
