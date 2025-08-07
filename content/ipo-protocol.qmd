@@ -1,0 +1,164 @@
+---
+title: "Protocolo Análisis reproducible"
+author: "LISA"
+description: "¿Cómo hacer un libro de códigos?"
+date: 2021-05-11
+categories: [protocolos]
+keywords: [codebook, reproducibilidad]
+format: html
+execute:
+  warning: false
+  message: false
+  echo: false
+  cache: false
+editor:
+  markdown:
+    wrap: 80
+---
+
+```{r}
+#| include: false
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, cache = FALSE, echo = FALSE)
+pacman::p_load(dplyr, kableExtra, sjlabelled, readxl)
+options(
+  scipen = 999,
+  knitr.kable.NA = '',
+  knitr.graphics.error = FALSE
+)
+Sys.setlocale("LC_ALL", "ES_ES.UTF-8")
+```
+
+# IPO-reproducibilidad
+
+![](../input/ipo-hex.png){fig-align="right" width="30%"}
+
+### Protocolo para flujo de investigación reproducible
+
+Esta es una plantilla/protocolo de carpetas de proyecto basada en el protocolo
+**TIER** (Integridad de Enseñanza en Investigación Empírica). TIER "promueve la
+integración de principios y prácticas relacionadas con la transparencia y la
+replicabilidad en el entrenamiento en investigación de los científicos
+sociales". (más información en <https://www.projecttier.org/>).
+
+La implementación de la reproducibilidad en este tipo de protocolos se basa en
+generar un **conjunto de archivos auto-contenidos** organizado en una estructura
+de proyecto que cualquier persona pueda compartir y ejecutar. En otras palabras,
+debe tener todo lo que necesita para ejecutar y volver a ejecutar el análisis.
+
+```{r}
+#| out-width: "50%"
+#| fig-align: "center"
+
+
+knitr::include_graphics("https://mfr.de-1.osf.io/export?url=https://osf.io/ftkq8/?direct%26mode=render%26action=download%26public_file=True&initialWidth=848&childId=mfrIframe&parentTitle=OSF+%7C+reproducibiity_relocates_time.png&parentUrl=https://osf.io/ftkq8/&format=2400x2400.jpeg")  
+```
+
+El protocolo **IPO** sigue la lógica de
+[TIER](https://www.projecttier.org/tier-protocol/protocol-4-0/), pero con
+algunas innovaciones:
+
+-   intenta un modelo fácil de memorizar y relacionado con el flujo de trabajo
+    de análisis (Input-Procesamiento-Output = IPO), donde el procesamiento se
+    refiere a la preparación y análisis de datos.
+
+-   agrega una carpeta "Input", que tiene un alcance más amplio que la carpeta
+    "Datos"[original en
+    TIER](https://www.projecttier.org/tier-protocol/protocol-4-0/root/data/),
+    pero también otras posibles entradas, como imágenes externas y archivos de
+    bibliografía.
+
+-   la carpeta de datos también se simplifica, incluyendo ahora solo una
+    estructura "original" y "procesada".
+
+-   modifica los archivos a .md/.Rmd (archivos Markdown) en lugar de .txt.
+    Markdown es un lenguaje de texto con marcas mínimas de formato que luego se
+    pueden convertir a otros formatos como pdf y / o html (por ejemplo, cuando
+    se usa R / Rmarkdown). Pero, en el fondo, son simples archivos txt con solo
+    otra extensión.
+
+### Archivos y estructura de carpetas
+
+```         
+├── input: información externa como datos, imágenes, .bib:
+|   ├── data-orig: archivos de datos originales y metadatos disponibles
+|   ├── data-proc: archivos de datos procesados
+│   ├── imagenes
+│   ├── bib: archivos de bibliografía
+│   ├── prereg: archivos de pre-registro si están disponibles
+|
+├── procesamiento:
+│   - preparacion.qmd
+│   - analisis.qmd
+|
+├── output: tablas, gráficos y otras salidas del procesamiento.
+│   ├── graphs
+│   ├── tables
+|
+- readme.md : archivo general de introducción
+- paper.qmd / paper.html / paper.pdf: el artículo/paper
+```
+
+### Versiones de IPO
+
+```{r}
+#| echo: false
+tab01 <- readxl::read_excel(path = "input/templates-ipo.xlsx")
+
+tab01 <- tab01 %>%
+  dplyr::mutate(nombre = cell_spec(nombre, "html", link = Enlace)) %>%
+  select(-Enlace)
+
+tab01 %>%
+  kableExtra::kbl(
+    full_width = TRUE, linesep = "", escape = FALSE,
+    align = "lllccl",
+    col.names = c("Plantilla", "Descripción", "Software", "Documentos dinámicos", "Control de versiones", "Enlace"),
+    row.names = FALSE
+  ) %>%
+  kableExtra::kable_styling(
+    full_width = FALSE,
+    position = "center",
+    font_size = 14,
+    bootstrap_options = c("striped", "bordered", "condensed", "responsive")
+  ) %>%
+  column_spec(column = 2, width = "10cm") %>%
+  column_spec(column = 4:5, width = "3cm")
+```
+
+### Principios básicos
+
+-   **orden**: trabajar pensando en alguien que no esté familiarizado con el
+    proyecto pueda entenderlo y reproducirlo sin mayores instrucciones que la
+    referencia a este protocolo y otra información que esté en el archivo
+    readme.md. O piense en usted dentro de 5 años: ¿podrá comprender y
+    reproducir esto?
+
+-   **comentar los códigos**: registrar brevemente los motivos de cualquier
+    decisión
+
+-   el código de preparación debería comenzar cargando los datos originales y
+    terminar guardando los datos procesados en la carpeta correspondiente
+    (proc).
+
+El flujo de trabajo asociado a estos principios se presenta en el siguiente
+esquema:
+
+```{r}
+#| out-width: "75%"
+#| fig-align: "center"
+knitr::include_graphics("https://multivariada.netlify.app/images/produccion2.png")
+```
+
+### Ejemplo
+
+Un ejemplo mínimo para probar la implementación del protocolo se puede bajar
+[aquí](https://lisa-coes.github.io/ipo/IPO_miniex/IPO_miniex.tar.gz)
+
+--------------------------------------------------------------------------------
+
+## ¿Quieres comentar o tienes alguna duda?
+
+Puedes dejar tus comentarios y dudas sobre el **Protocolo IPO** en nuestro foro.
+De todas formas puedes [contactarnos](/contact/)
+
+<div id="disqus_thread"></div>
