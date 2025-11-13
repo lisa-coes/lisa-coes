@@ -50,7 +50,7 @@ debe tener todo lo que necesita para ejecutar y volver a ejecutar el análisis.
 #| fig-align: "center"
 
 
-knitr::include_graphics("https://mfr.de-1.osf.io/export?url=https://osf.io/ftkq8/?direct%26mode=render%26action=download%26public_file=True&initialWidth=848&childId=mfrIframe&parentTitle=OSF+%7C+reproducibiity_relocates_time.png&parentUrl=https://osf.io/ftkq8/&format=2400x2400.jpeg")  
+knitr::include_graphics("https://osf.io/ftkq8/?direct%26mode=render%26action=download%26public_file=True&initialWidth=848&childId=mfrIframe&parentTitle=OSF+%7C+reproducibiity_relocates_time.png")  
 ```
 
 El protocolo **IPO** sigue la lógica de

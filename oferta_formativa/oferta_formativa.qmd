@@ -66,38 +66,38 @@ Apoyamos la difusión del conocimiento a través de publicaciones de acceso abie
 
 Ofrecemos capacitación especializada en las siguientes herramientas tecnológicas:
 
-::: {.grid .g-cols-5}
+::: {.grid}
 
 ::: {.g-col-5}
-![](../resources/imagenes/r-logo.png){fig-alt="R logo" width="40"}
+![](../resources/imagenes/r-logo.png){fig-alt="R logo" width="4cm" height="4cm"}
 
 **R**
 Análisis estadístico y visualización de datos
 :::
 
 ::: {.g-col-5}
-![](../resources/imagenes/quarto-logo.png){fig-alt="Quarto logo" width="40"}
+![](../resources/imagenes/quarto-logo.png){fig-alt="Quarto logo" width="4cm" height="4cm"}
 
 **Quarto**
 Publicación científica reproducible
 :::
 
 ::: {.g-col-5}
-![](../resources/imagenes/osf-logo.png){fig-alt="OSF logo" width="40"}
+![](../resources/imagenes/osf-logo.png){fig-alt="OSF logo" width="4cm" height="4cm"}
 
 **OSF**
 Gestión y organización de prerregistros
 :::
 
 ::: {.g-col-5}
-![](../resources/imagenes/vscode-logo.png){fig-alt="VSCode logo" width="40"}
+![](../resources/imagenes/vscode-logo.png){fig-alt="VSCode logo" width="4cm" height="4cm"}
 
 **VSCode**
 Entorno de desarrollo integrado
 :::
 
 ::: {.g-col-5}
-![](../resources/imagenes/github-logo.png){fig-alt="GitHub logo" width="40"}
+![](../resources/imagenes/github-logo.png){fig-alt="GitHub logo" width="4cm" height="4cm"}
 
 **GitHub**
 Control de versiones y colaboración
