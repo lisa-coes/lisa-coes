@@ -63,20 +63,6 @@
     "text": "Protocolo de apertura de datos\nSiguiendo la lógica del protocolo IPO-reproducibilidad, el protocolor IPO-datos es una plantilla/protocolo de estructura digital de carpetas que tiene por objetivo el organizar, procesar y documentar los datos de un proyecto de investigación con miras a la apertura de los datos en un repositorio público y de acceso libre.\nAl igual que los proyectos reproducibles, este protocolo propone los pasos a seguir para la apertura de datos, pasando por la preparación de la base de datos bruta, su documentación técnica y uso de los datos. Para ello, se emplea un conjunto de carpetas con archivos auto-contenidos para cada uno de estos pasos.\nA continuación presentaremos la estructura general de carpetas, su función y las tareas asociada a cada una de ellas.\n\n\n\nArchivos y estructura de carpetas\nLa estructura se detalla en el siguiente esquema:\n\n\n 1. Input\n\n Datos originales (.dta/.sav/.csv)\n Tablas\n Imágenes (.png/.jpg)\n\n 2. Preparación\n\n Procedimientos de preparación de datos (.R/.Rmd/.do)\n Documento ficha técnica (.odt/.md/.Rmd)\n Procedimientos preparación libro de códigos\n Documento de intrumentos (.odt)\n\n 3. Output\n\n Datos a publicar (.RData/.dta)\n cita bibliográfica (.bib)\n ficha técnica (.pdf/.html)\n libro de códigos (.pdf/.html)\n\n instrumentos (.pdf/.html)\n\n\n\n\n\n 1. Input\n\n Datos originales\n\n\nLos datos originales corresponden a la base o las bases de datos en su formato original sin modificaciones en la posición de las variables, nombres y etiquetas de variables y valores de variable.\nPor ejemplo, tenemos un archivo en formato original .sav (SPSS):\n\nArchivo: Estudio3_ola1.sav\n\n\n\n Tablas /  Imágenes\n\n\nTablas\nEn el caso de emplear información de tablas con información complementaria para la documentación (p.ej. descripciones, categorías para clasificación, etc.) deben almacenarse en esta carpeta en el formato a emplear.\nSugerimos emplear formatos Valores separados por commas (.csv) u hojas de cálculo (.ods, .xls).\nImágenes\nLas imágenes empleadas y que serán incluidas en la documentación pueden almacenarse en formatos como .png o .jpeg. Deben ser correctamente individualizadas y el nombre del archivo debe describir su contenido.\n\n\n\n 2. Preparación\n\n Preparación de datos\n\n\nSe sugiere que el procedimiento de organización, asignación de nombres y etiquetado, tanto de las variables como de valores de variable, se realice en una rutina de código. Los datos originales se encuentran almacenados en la carpeta Input\n\nArchivo: prod_prep.Rmd/.R/.do\n\nEl siguiente cuadro resume el proceso:\n\nResumen de preparación\n\n\nDatos originales\n\nPreparación\n\nDatos a publicar\n\n\n`Estudio3_ola1.sav`\n-&gt;\n`prod_prep.R/.do`\n-&gt;\n`study_w01.RData/.dta`\n\n\n\nLa preparación se compone de:\n1. Organizar variables\n\n\nSe deben organizar las variables según su función en la base de datos. Por ejemplo, variables de identificación individual o pertenencia a unidades de nivel superior (p.ej. estudiantes en escuelas) pueden ir primero, luego las características sociodemográficas, preguntas de opinión pública o variables que identifiquen pertenencia a grupos (p.ej. tratamiento o control).\n\n2. Asignar nombres\n\n\nLa asignación de nombres a las variables juega un rol clave en la identificación de la información.\nExisten distintos estándares para el nombramiento de variables, por tanto se debe decidir de qué manera lo realizamos para que sean claras y empleables en distintos softwares. Algunos ejemplos pueden ser:\n\n“V” y enumeración (V001, V002)\nLetras y números para agrupar variables según escalas o temas (Q1,Q2a,Q2b)\nAbreviaturas mnemotécnicas (educpadr para “educación del padre”)\n\n3.Etiquetar\n\n\nEtiquetas de variable: se asigna a la variable y ofrece información sobre su contenido.\nEtiquetas de valores de variable: se asignan a los valores de una variable.\nCodificación de datos perdidos: identificar correctamente un dato que se clasifica como perdido\n\nLa siguiente tabla muestra un ejemplo:\n\nResumen preparación variable\n\n\nNombre Variable\nEtiqueta variable\nValores\nEtiqueta valores\n\n\nd01_01\nVotó en última elección\n0\nNo votó\n\n\n\n\n1\nVotó\n\n\n\n\n99\nPerdido\n\n\n\nPara almacenar la base de datos resultante del procesamiento, sugerimos considerar los siguientes puntos:\n\nNombre del archivo: usar nombre corto y que identifique el estudio ([nombre]_01)\nFormato del archivo: poner a disposición el archivo en formatos de uso frecuente en ciencias sociales (.dta, .RData o .sav)\n\nLos datos resultantes de la preparación, corresponden al archivo final que unifica los datos que pondremos a disposición pública y que deben ser almacenados en la carpeta Output\nSi deseas saber mayores detalles visita nuestra guía completa:  Preparación de datos\n\n\n\nFicha técnica\n\n\nContenidos\n\nLa ficha técnica es un documento que describe las principales características técnicas del estudio.\nPodemos encontrar información referente a la población objetivo del estudio, estrategia y tamaño muestral, estadísticos de logro (p.ej. tasa de respuesta), fecha de trabajo de campo, entre otros.\n\n\nCreando la ficha técnica\n\n\nAlgunas sugerencias para la creación de la ficha técnica son las siguientes:\n\nSi el estudio contiene una o más fuentes de datos, se debe generar una ficha técnica para cada una.\nLa ficha técnica debe estar organizada en secciones para según las característica del estudio:\n\nTipo de muestra\nEstrategia de Campo\nEntidad a cargo del trabajo de campo\nModo de aplicación\nNúmero de respuestas\nDetalle de la muestra\nIdioma\nPonderadores\nOtros\n\nSe recomienda que la versión final de la ficha técnica se almacene en fomato .pdf en la carpeta Output\n\n\n\n Libro de códigos\n\n\nContenidos\n\nUn libro de códigos es un documento que contiene información detallada de una fuente de datos, tales como nombres de variable, etiquetas de variable, etiquetas de valores o valores perdidos.\nUn libro de códigos bien documentado permite conocer el contenido, estructura y diseño de un estudio, lo cual facilita vincular las preguntas del cuestionario con cada una de las variables en la base de datos\n\n\nCreando el libro de códigos\n\n\nAlgunas sugerencias básicas de lo que puede incluir libro de códigos son las siguientes:\n\nNombre de variable: El nombre o numeración asignada a cada variable en la base de datos. En algunas ocasiones se utilizan abreviaciones mnemotécnicas (TOPBOTOM) o patrones alfanuméricos (d01_01). Para los datos provenientes de encuestas se sugiere emplear los números de las preguntas (P01, P02).\nEtiqueta de variable: Una descripción breve que permite identificar la variable. Si es posible, se sugiere utilizar un fragmento del fraseo de la pregunta en el cuestionario. Valores: Los valores reales de la variable (p.ej: 1, 2, 3, 4, 5)\nEtiquetas de valores: El texto asignado a cada uno de los valores de variable (Totalmente en desacuerdo, En desacuerdo, Ni de acuerdo ni en desacuerdo, De acuerdo, Totalmente de acuerdo)\nValores perdidos: Si aplica, son los valores y etiquetas de valores para los datos perdidos. La correcta descripción de estos datos evita problemas en los análisis, por lo cual deben estar correctamente descritos (ver sección de Bases de datos, Codificación de las respuesta)\nSe recomienda que la versión final del libro de códigos se almacene un archivo formato .pdf en la carpeta Output\n\n\n\n Instrumento(s)\n\n\nContenidos\n\nEstos documentos son lo instrumentos empleados en la producción de los datos. En el caso de las encuestas, corresponden al cuestionario con todas las preguntas que se han realizado a los participantes del estudio.\n\nUn cuestionario debe contener las preguntas y las alternativas o campos de respuesta (preguntas abiertas) acompañado de un identificador que permita vincularlos con la variable en la base de datos que se indica en el libro de códigos.\n\n\nDocumentando los instrumentos\n\n\nAlgunas sugerencias de lo que debe incluir un instrumento son las siguientes:\n\nEl documento debe ser ilustrar adecuadamente cómo fueron realizadas las preguntas a los participantes. Debe mostrar el fraseo original de las preguntas y alternativas de respuesta.\nDebe estar organizado en secciones a través de las cuales se organizaron originalmente las preguntas en el cuestionario.\nSe recomienda que la versión final del los instrumentos se almacene en un archivo formato .pdf en la carpeta Output\n\n\n\n 3. Output\n\n Datos a publicar\n\n\n\nCorresponden a los datos finales para publicar y que fueron preparados en la carpeta Preparación\nArchivo: study_w01.RData/.dta/.sav\n\n\n\n Documentación\n\n\nLos archivos de documentación son aquellos que describen el contenido de los datos, uso y correcta identificación.\n  Ficha técnica\n\n\nEl documento en formato pdf de la ficha técnica del estudio.\n\n\n\n Libro de códigos\n\n\n\nEl documento en formato pdf del libro de códigos de los datos.\n\n\n\n Instrumento(s)\n\n\n\nEl documento en formato pdf de los instrumentos de producción de datos.\n\n\n\n Cita bibliográfica\n\n\n\nRecomendamos emplear formatos de citación como APA o Chicago. Al momento de publicar nuestros datos en repositorios como Dataverse, obtendremos un DOI (Digital Object Identifier) que permitirá individualizar y hacer encontrables los datos.\nIdealmente, este documento debe generarse posteriormente a almacenar la fuente de datos en un repositorio, dado que previo a ello no se dispone de un DOI.\nEl archivo puede ser en formato .bib (BibTeX) .\n\n\n\nPrincipios básicos\n\norden: pensar que estás trabajando en equipos y en ocasiones no todos se encuentran familiarizados con el proyecto. De la misma manera, pensar en que alguien en el futuro (o usted mismo) pueda emplear esta información sin dificultad.\nestandarizar: establecer procedimientos mínimos para la estandarización de el proceso de preparación de datos previo a su publicación.\ndocumentar: una base de datos debe estar correctamente documentada para su uso. Establecer formas de documentar (ficha técnica, libro de códigos, etc) facilitan la publicación y usabilidad de los datos por parte de investigadores externos.\n\nEl flujo de trabajo asociado a estos principios se presenta en el siguiente esquema:\n\n\n\n\n\n\n\n\n\n\n\nEjemplo\nUn ejemplo mínimo para probar la implementación del protocolo se puede bajar aquí\n\n\nNotas\n\ncomo el entorno R / Rmarkdown permite combinar texto, análisis y resultados, las carpetas de preparación y output pueden resultar redundantes. Este es probablemente el caso de análisis e informes breves. Sin embargo, cuando se trabaja con documentos independientes como puede ser la ficha técnica o el libro de códigos, es aconsejable separar los archivos de preparación y sus resultados en carpetas independientes, a pesar de trabajar con Rmarkdown.\npara facilitar el trabajo en RStudio, es posible que desee hacer de la carpeta del proyecto una carpeta Rproject. Esto hará que el directorio de trabajo se remita automáticamente a la raíz, además de activar otras funciones dentro de Rstudio. Para esto, en RStudio simplemente vaya a Archivo -&gt; Nuevo proyecto-&gt; Directorio existente y apunte a la carpeta del proyecto. Esto creará un archivo con la extensión .Rproj que, al hacer clic, abrirá Rstudio con la carpeta del proyecto como raíz. De esta manera, evita generar directorios de trabajo individuales locales (el comando R setwd), que no facilitan la reproducibilidad. Si se logra entender por qué no se debe referir en el código a un directorio local (como con setwd), entonces está más cerca de entender el sentido de la reproducibilidad.\nademás de tener una carpeta de proyecto donde está contenida toda la información, la clave técnica para trabajar dentro de esta estructura es guardar y cargar archivos ubicados en diferentes lugares a través de rutas relativas (relative paths), lo que permite conectar diferentes archivos dentro del mismo proyecto/carpeta. Por ejemplo, para cargar un archivo de datos desde la carpeta original desde el código proc_preparacion.Rmd."
   },
   {
-    "objectID": "oferta_formativa/oferta_formativa.html",
-    "href": "oferta_formativa/oferta_formativa.html",
-    "title": "Oferta Formativa",
-    "section": "",
-    "text": "En LISA fomentamos el desarrollo de una ciencia social abierta y reproducible para la comunidad científica y la ciudadanía."
-  },
-  {
-    "objectID": "oferta_formativa/oferta_formativa.html#nuestra-misión",
-    "href": "oferta_formativa/oferta_formativa.html#nuestra-misión",
-    "title": "Oferta Formativa",
-    "section": "",
-    "text": "En LISA fomentamos el desarrollo de una ciencia social abierta y reproducible para la comunidad científica y la ciudadanía."
-  },
-  {
     "objectID": "oferta_formativa/oferta_formativa.html#nuestro-enfoque",
     "href": "oferta_formativa/oferta_formativa.html#nuestro-enfoque",
     "title": "Oferta Formativa",
@@ -88,14 +74,14 @@
     "href": "oferta_formativa/oferta_formativa.html#herramientas-de-capacitación",
     "title": "Oferta Formativa",
     "section": "Herramientas de Capacitación",
-    "text": "Herramientas de Capacitación\nOfrecemos capacitación especializada en las siguientes herramientas tecnológicas:\n\n\n\nR Análisis estadístico y visualización de datos\n\n\n\nQuarto Publicación científica reproducible\n\n\n\nVSCode Entorno de desarrollo integrado\n\n\n\nGitHub Control de versiones y colaboración"
+    "text": "Herramientas de Capacitación\nOfrecemos capacitación especializada en las siguientes herramientas tecnológicas:\n\n\n\nR Análisis estadístico y visualización de datos\n\n\n\nQuarto Publicación científica reproducible\n\n\n\nOSF Gestión y organización de prerregistros\n\n\n\nVSCode Entorno de desarrollo integrado\n\n\n\nGitHub Control de versiones y colaboración"
   },
   {
     "objectID": "oferta_formativa/oferta_formativa.html#nuestros-cursos-y-talleres",
     "href": "oferta_formativa/oferta_formativa.html#nuestros-cursos-y-talleres",
     "title": "Oferta Formativa",
     "section": "Nuestros Cursos y Talleres",
-    "text": "Nuestros Cursos y Talleres\nHacemos cursos y talleres sobre los siguientes temas:\n\n🔄 Talleres de Flujo Reproducible\n\nIntroducción a la reproducibilidad en ciencias sociales\nFlujo de trabajo desde el diseño hasta la publicación\nBuenas prácticas en documentación y organización de proyectos\n\n\n\n💻 Talleres sobre Herramientas Computacionales para las Ciencias Sociales\n\nProgramación en R para ciencias sociales\nAnálisis de datos con herramientas abiertas\nVisualización de datos efectiva\nManejo de repositorios y control de versiones\n\n\n\n📊 Capacitaciones Especializadas\n\nDiseño de investigación transparente\nGestión y apertura de datos de investigación\nRedacción y publicación en acceso abierto\nPreregistros y planes de análisis"
+    "text": "Nuestros Cursos y Talleres\nHacemos cursos y talleres sobre los siguientes temas:\n\n🔄 Talleres de Flujo Reproducible\n\nIntroducción a la reproducibilidad en ciencias sociales\nFlujo de trabajo desde el diseño hasta la publicación\nBuenas prácticas en documentación y organización de proyectos\n\n\n\n💻 Talleres sobre Herramientas Computacionales para las Ciencias Sociales\n\nProgramación en R para ciencias sociales\nAnálisis de datos con herramientas abiertas\nVisualización de datos efectiva\nManejo de repositorios y control de versiones\nUso de OSF para preregistros y gestión de proyectos abiertos\n\n\n\n📊 Capacitaciones Especializadas\n\nPreregistros y Diseño Transparente: Uso de OSF, preregistros, y estrategias para el diseño de investigación transparente.\nGestión y Apertura de Datos: Principios FAIR, buenas prácticas para compartir, documentar y abrir datos de investigación.\nEscritura y Publicación en Acceso Abierto: Uso de templates/protocolos IPO, escritura científica reproducible, y presentaciones en Quarto."
   },
   {
     "objectID": "oferta_formativa/oferta_formativa.html#contacto-y-participación",
@@ -103,6 +89,27 @@
     "title": "Oferta Formativa",
     "section": "Contacto y Participación",
     "text": "Contacto y Participación\n¿Interesado en nuestras capacitaciones? Contáctanos para conocer más sobre nuestros próximos talleres y cursos."
+  },
+  {
+    "objectID": "noticias/posts/plantilla-quarto/index.html#presentación",
+    "href": "noticias/posts/plantilla-quarto/index.html#presentación",
+    "title": "Nueva Plantilla Quarto para reportes FACSO",
+    "section": "Presentación",
+    "text": "Presentación\nEl Equipo LISA presenta la plantilla Quarto “Reportes FACSO”, una evolución de tesisfacsodown orientada a que estudiantes, docentes y equipos de investigación escriban en Markdown (.qmd) y publiquen simultáneamente en HTML y PDF con identidad institucional, bibliografía APA y un flujo reproducible protocolo IPO. La propuesta separa contenido de formato, estandariza portadas y estilos, y facilita la trazabilidad del trabajo técnico.\nEl objetivo es elevar el estándar técnico de informes académicos e institucionales en FACSO, reduciendo tiempos de maquetación y revisión. La plantilla es útil para informes de curso y seminario, tesis y proyectos de investigación, asistencia técnica y documentos docentes que requieren paridad entre HTML y PDF, citación consistente y publicación web.\nLos resultados se ven asi: HTML y PDF"
+  },
+  {
+    "objectID": "noticias/posts/plantilla-quarto/index.html#requisitos-y-cómo-empezar",
+    "href": "noticias/posts/plantilla-quarto/index.html#requisitos-y-cómo-empezar",
+    "title": "Nueva Plantilla Quarto para reportes FACSO",
+    "section": "Requisitos y cómo empezar",
+    "text": "Requisitos y cómo empezar\nPara operar de forma fluida se recomienda Quarto ≥ 1.5 y un motor LaTeX (tinytex) para el PDF. Git es aconsejable para versionado y despliegue en GitHub Pages. El uso de R / Python / Julia es opcional: permite integrar análisis reproducibles, pero no es obligatorio para redactar.\n\nObtener la plantilla: clonar el repositorio base o descargar el ZIP.\n\nAbrir el proyecto: VS Code o RStudio funcionan bien para editar .qmd.\n\nAjustar metadatos: en _quarto.yml y includes/cover-config.tex (para portadas título, autoría, idioma, estilos).\n\nRenderizar: ejecutar en el terminal: quarto render para generar HTML y PDF en docs/.\n\nPublicar: activar GitHub Pages apuntando a la carpeta docs/ para compartir.\n\nPara mas informacion sobre la estructura de la plantilla visitar README en github."
+  },
+  {
+    "objectID": "noticias/posts/plantilla-quarto/index.html#resultados",
+    "href": "noticias/posts/plantilla-quarto/index.html#resultados",
+    "title": "Nueva Plantilla Quarto para reportes FACSO",
+    "section": "Resultados",
+    "text": "Resultados\nSe invita a la comunidad a aportar sugerencias vía issues y pull requests o contactar directamente al equipo (LISA) para mejorar la plantilla, fortalecer su documentación y ampliar casos de uso.\n\n\n\n\nCovers de las salidas en HTML y PDF de la plantilla"
   },
   {
     "objectID": "noticias/posts/actualizacion-web/index.html",
@@ -133,18 +140,214 @@
     "text": "No matching items"
   },
   {
-    "objectID": "componentes/componentes.html",
-    "href": "componentes/componentes.html",
-    "title": "Sobre LISA",
+    "objectID": "componentes/d-publibres/index.html",
+    "href": "componentes/d-publibres/index.html",
+    "title": "Publicaciones Libres",
     "section": "",
-    "text": "El Laboratorio de Investigación Social Abierta es una iniciativa del Centro de Estudios de Conflicto y Cohesión Social (COES) que tiene como propósito ser una guía para el desarrollo de una ciencia social abierta y reproducible para la comunidad científica y la ciudadanía.\nUno de sus objetivos ha sido generar una propuesta de trabajo, la cual se constituye a través de la elaboración de herramientas conceptuales y prácticas en cuatro componentes: (1) diseño transparente,   (2) apertura de datos,   (3) análisis reproducibles  y  (4) publicaciones libres . Estos componentes representan cómo los cientistas sociales podemos contribuir con la apertura de los distintos momentos del proceso de investigación.\nEn el ámbito de las ciencias sociales, los esfuerzos por incrementar la apertura de los procesos de investigación han sido escasos y su presencia ha sido predominante en las comunidades científicas de habla inglesa.\nPor este motivo, LISA se propone contribuir a la comunidad de ciencias sociales de habla hispana a través de una serie de herramientas que contribuyan a incrementar la apertura de las investigaciones científicas.\nEn el siguiente video se resume nuestra propuesta:"
+    "text": "La publicación de un trabajo científico es clave para dar a conocer los resultados y determinar su impacto. Al respecto, este momento puede trascender a algunas revistas indexadas donde encontramos barreras de acceso al conocimiento. Por este motivo, podemos enfrentarnos al dilema respecto a cómo abrir una publicación, ya sea por desconocimiento o aprehensiones en torno a ello. ¿Cómo podemos abrir nuestras publicaciones? ¿Cómo elegir el momento adecuado? ¿Dónde publicarlas? En este blog te entregaremos recomendaciones para responder a estas interrogantes."
   },
   {
-    "objectID": "componentes/componentes.html#componentes",
-    "href": "componentes/componentes.html#componentes",
-    "title": "Sobre LISA",
-    "section": "Componentes",
-    "text": "Componentes\n\n  \n  \n  Listado de Contenido\n  \n\n  \n      \n        \n          \n          \n            Diseño transparente\n          \n        \n      \n      \n        \n          \n          \n            Datos Abiertos\n          \n        \n      \n      \n        \n          \n          \n            Análisis Reproducible\n          \n        \n      \n      \n        \n          \n          \n            Publicaciones Libres\n          \n        \n      \n  \nNo matching items"
+    "objectID": "componentes/d-publibres/index.html#prop-intel",
+    "href": "componentes/d-publibres/index.html#prop-intel",
+    "title": "Publicaciones Libres",
+    "section": "Tipos de licencias",
+    "text": "Tipos de licencias\nExisten licencias que regulan la propiedad intelectual (World Intelectual Property Organization, 2020), pues protegen los derechos patrimoniales y establecen las reglas para el debido uso de la obra. Las más importantes son:\n1.  Copyright: permite que el autor se reserve todos los derechos sobre la obra y solo se puede hacer uso de ella bajo permiso del mismo.\n2.  Creative Commons (CC): tiene el propósito de desarrollar herramientas digitales que faciliten la distribución de una obra, pues entrega al autor la responsabilidad de autorizar el modo de uso, difusión y citación de su obra. Al día de hoy existen seis tipos de licencias CC (Creative Commons, 2019)"
+  },
+  {
+    "objectID": "componentes/c-repro/index.html",
+    "href": "componentes/c-repro/index.html",
+    "title": "Análisis Reproducible",
+    "section": "",
+    "text": "¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales, y que por tanto, es imposible acceder a los procedimientos que dieron luces a sus resultados? En este contexto, la reproducibilidad entendida como la posibilidad de regenerar de manera independiente los resultados usando los materiales originales de una investigación publicada. ¿Cómo organizamos un proyecto con análisis reproducibles? ¿Qué herramientas puedo utilizar? ¿Cómo puedo compartir mis materiales? En este blog daremos algunas orientaciones generales respecto a cómo avanzar en esta dirección."
+  },
+  {
+    "objectID": "componentes/c-repro/index.html#carpeta-raíz",
+    "href": "componentes/c-repro/index.html#carpeta-raíz",
+    "title": "Análisis Reproducible",
+    "section": "Carpeta Raíz",
+    "text": "Carpeta Raíz\nPara la organización de un proyecto, debemos pensar en una estructura digital de carpetas y subcarpetas. La carpeta raíz es donde se alberga toda la información de referencia para el proyecto, la cual tiene por objetivo:\n\nDocumentar: expone ordenadamente el contenido del proyecto de manera jerárquica (carpetas y subcarpetas).\nOrientar: instruye al usuario para una correcta ejecución de rutinas de código que permita regenerar los resultados de la investigación.\n\nEstas instrucciones pueden ir incluidas en un archivo README organizado de la siguiente manera:\n\n\n\n\n\n\n\n\n\n🗸 Para mayores detalles respecto al contenido y estructura de un proyecto reproducible, puedes hacer click aquí:\nEstructura de un proyecto\n\n Input (I)\nSi bien los protocolos varían de acuerdo a cómo se organizan los datos dentro de la carpeta raíz (i.e. en qué carpeta se alojan), algo que suele ser común entre los protocolos es la diferenciación entre los datos originales o “brutos” (raw data) y los datos procesados. El albergar ambas versiones permite identificar los cambios generados a través del procesamiento.\nPara toda fuente de datos original, se debe proveer la siguiente información:\n\nCitación bibliográfica en un formato estándar\nFecha de creación de la base de datos\nDescripción respecto a cómo se puede acceder a una copia de la base de datos\nLibro de códigos de todas las variables de la base de datos.\n\n🗸 Para mayor detalle sobre la sección de datos, puedes hacer click aquí:\nDatos\n\n\n📝 Procesamiento (P)\nCon Pocesamiento nos referimos a todos los procedimientos del proyecto relacionados con la (1) preparación y (2) análisis de datos.\n\n(1) Preparación\nLa preparación de los datos cumple una función clave para el desarrollo de un artículo: la de generar los datos que emplearemos en análisis del estudio. Considerando esto, el objetivo final de este documento es generar una base de datos procesada, que contenga solamente los datos importantes para analizar.\nSugerimos seguir el siguiente flujo para realizar la preparación de los datos:\n\n\n\n\n\n\nProcedimientos\nDescripción\n\n\n\n\n1. Descriptivo inicial\nCalcular una tabla de frecuencias o de medidas de tendencia central y dispersión para conocer el estado de la variable previo a cualquier modificación\n\n\n2. Recodificación\nRecodificación de los datos perdidos y otro tipo de valores a modificar (e.g. errores de tipeo)\n\n\n3. Etiquetado\nUna base bien documentada trae etiquetas predeterminadas que hacen alusión a las preguntas del cuestionario\n\n\n4. Descriptivo final\nRevisar de nuevo las frecuencias o las medidas de tendencia central de las variables, para diagnosticar que no hemos cometido errores en el procesamiento\n\n\n5. Otros ajustes\nEfectuar toda modificación específica y relevante para la forma que analizaremos los datos\n\n\n\n\n\n\nEl seguir este flujo de manera sistemática facilitará la lectura tanto para terceros, como para nosotros mismos en el futuro.\n\n\n(2) Análisis\n\nUna vez contamos con nuestra base de datos procesada podemos analizar los datos. En el documento de análisis de datos se procede a elaborar todas las tablas, gráficos y pruebas estadísticas que vayan a ser incluidas en el artículo final. En términos generales las secciones son\n\n\nAnálisis descriptivos univariados de los datos.\nAnálisis bivariado de los datos.\nAnálisis multivariado.\n\n\n\nDocumentación\nPara lograr una correcta ejecución de los documentos de preparación y análisis es clave tener correctamente explicado cómo utilizarlos y cómo se vinculan entre ellos. Para esto, sugerimos que documento README incluya las siguientes indicaciones:\n\nEjecución de la preparación: Precisar la ubicación de la o las fuentes de datos originales.\nCierre de la preparación: Precisar la ruta donde se deben almacenar la base de datos procesada.\nEjecución de análisis: Precisar el origen de la base de datos procesada.\nArchivos del análisis de datos: Precisar ruta de almacenamiento y nombre.\n\n🗸 Más información sobre la sección de métodos, puedes hacer click aquí:\nPreparación y análisis \n\n\n\n📊 Output (O)\nCon Output, nos referimos a todo elemento obtenido del análisis de datos. Habitualmente toman la forma de figuras, gráficos o tablas. Es habitual que los protocolos sugieran que estos archivos se almacenen en una subcarpeta exclusiva para ello. Por este motivo, sugerimos se sigan las siguientes indicaciones:\n🔴 Para imágenes, sugerimos usar nombres breves e incorporar numeración. Por ejemplo “figura01.png”, siguiendo el orden de aparición en la publicación.\n🔴 Para tablas, sugerimos emplear nombres cortos e incorporar numeración. Por ejemplo, “tabla01.xls”, según el orden de aparición en la publicación."
+  },
+  {
+    "objectID": "componentes/c-repro/index.html#paso2",
+    "href": "componentes/c-repro/index.html#paso2",
+    "title": "Análisis Reproducible",
+    "section": "Paso 2: Prácticas de código",
+    "text": "Paso 2: Prácticas de código\nLa escritura de un código de preparación o análisis requiere adoptar estándares mínimos, entre otras cosas, para facilitar la comprensión y ejecución de una rutina de código por otros usuarios que busquen regenerar nuestros resultados.\nLa figura a continuación muestra algunas buenas prácticas de código que contribuyen a hacer el trabajo más transparente, y son aplicables a lenguajes de programación:"
+  },
+  {
+    "objectID": "componentes/c-repro/index.html#paso3",
+    "href": "componentes/c-repro/index.html#paso3",
+    "title": "Análisis Reproducible",
+    "section": "Paso 3: Uso de documentos dinámicos",
+    "text": "Paso 3: Uso de documentos dinámicos\nLos documentos dinámicos son una herramienta que incorpora lo mejor de dos mundos: documentos en texto plano y código de análisis.\n🔴 Por un lado, trabajar con texto plano implica independencia de cualquier software comercial o plataformas específicas. Adicionalmente, un documento dinámico permite centrarnos en el contenido y menos en el formato, dado que existen distintas opciones para ello (p.ej. .pdf o .html).\n🔴 Finalmente, al incorporar código de análisis es posible generar documentos autocontenidos, es decir, no es necesario recurrir a imágenes o tablas externas, sino que es posible generarlas en el mismo documento.\nPor ejemplo, este documento está escrito en R Markdown, lo que nos permite demostrar cómo combinar código en R con texto plano.\n\n\nAsí se ve el código en nuestro documento:\n\n library(ggplot2)\n\n ggplot(mtcars, aes(x=mpg)) +\n  geom_histogram(fill=\"skyblue\",\n                 alpha=0.5) +\n  theme_minimal()\n\n\n\nLuego, el código se ejecuta y obtenemos el siguiente gráfico:\n\n\n\n\n\n\n\n\n\n\nUsar documentos dinámicos escritos en texto plano abre un abanico de posibilidades cuando buscamos avanzar hacia proyectos con análisis reproducibles. En este sentido, nos gustaría destacar tres opciones:\n\n\n\n\n\n\n\n\n\n🗸 Si deseas saber más sobre cómo funcionan los documentos dinámicos, puedes hacer click aquí:\nDocumentos dinámicos\n\nPaso 4: Control de versiones\nA modo global, el control de versiones nos permite rastrear los cambios en un documento o conjunto de archivos, es decir, saber cuáles/qué, quién y cuándo se han realizado cambios.\nAl trabajar colaborativamente existen diferentes (y poco eficientes) maneras de controlar versiones. Por ejemplo:\n❌ Fechas: codigo_2021-03-01.R → codigo_2021-05-02.R\n❌ Numeración: analisis_v02.do → analisis_v05.do\nNo obstante, hoy en día existen sistemas de control de versiones especializados para el trabajo de programación. Al respecto, nuestra sugerencia es emplear versionamiento basado en  , pero ¿qué es Git? Te lo explicamos a continuación.\n\nGit  y GitHub \nGit es un sistema de control de versiones de código abierto, tiene por objetivo hacer más eficiente el flujo de trabajo para proyectos de desarrollo de software. Algunas de sus principales características son:\n⭕ Permite registrar (snapshot) la versión de una carpeta completa y su contenido\n⭕ Registra qué, quién y cuándo se realizaron cambios\n⭕ Uso de repositorios (repos) locales (computadora) o remotos (online)\nA la par existe GitHub, el cual es una plataforma de desarrollo colaborativo para hospedar proyectos que utilizan control de versiones basado en Git. Una de sus principales características es el uso de repositorios locales y remotos. La siguiente figura muestra un ejemplo:\n\n\n\n\n\n\n\n\n\nRecomendamos el uso de Git y Github cómo flujo de trabajo para aquellos científicos sociales que trabajan con datos cuantitativos, especialmente cuando son grandes equipos de investigación o son proyectos con varias colaboraciones.\n🗸 Si deseas conocer más sobre Git y GitHub te invitamos a revisar la sesión del curso “Ciencia Social Abierta”:\nControl de Versiones/Git\n\n\n\nEn síntesis\n🔴 Si deseas revisar más detalles de cómo elaborar un proyecto reproducible, en el siguiente video se detalla el paso a paso para ello:"
+  },
+  {
+    "objectID": "componentes/c-repro/index.html#paso4",
+    "href": "componentes/c-repro/index.html#paso4",
+    "title": "Análisis Reproducible",
+    "section": "Paso 4: Control de versiones",
+    "text": "Paso 4: Control de versiones\nA modo global, el control de versiones nos permite rastrear los cambios en un documento o conjunto de archivos, es decir, saber cuáles/qué, quién y cuándo se han realizado cambios.\nAl trabajar colaborativamente existen diferentes (y poco eficientes) maneras de controlar versiones. Por ejemplo:\n❌ Fechas: codigo_2021-03-01.R → codigo_2021-05-02.R\n❌ Numeración: analisis_v02.do → analisis_v05.do\nNo obstante, hoy en día existen sistemas de control de versiones especializados para el trabajo de programación. Al respecto, nuestra sugerencia es emplear versionamiento basado en  , pero ¿qué es Git? Te lo explicamos a continuación.\n\nGit  y GitHub \nGit es un sistema de control de versiones de código abierto, tiene por objetivo hacer más eficiente el flujo de trabajo para proyectos de desarrollo de software. Algunas de sus principales características son:\n⭕ Permite registrar (snapshot) la versión de una carpeta completa y su contenido\n⭕ Registra qué, quién y cuándo se realizaron cambios\n⭕ Uso de repositorios (repos) locales (computadora) o remotos (online)\nA la par existe GitHub, el cual es una plataforma de desarrollo colaborativo para hospedar proyectos que utilizan control de versiones basado en Git. Una de sus principales características es el uso de repositorios locales y remotos. La siguiente figura muestra un ejemplo:\n\n\n\n\n\n\n\n\n\nRecomendamos el uso de Git y Github cómo flujo de trabajo para aquellos científicos sociales que trabajan con datos cuantitativos, especialmente cuando son grandes equipos de investigación o son proyectos con varias colaboraciones.\n🗸 Si deseas conocer más sobre Git y GitHub te invitamos a revisar la sesión del curso “Ciencia Social Abierta”:\nControl de Versiones/Git"
+  },
+  {
+    "objectID": "componentes/a-diseño/index.html",
+    "href": "componentes/a-diseño/index.html",
+    "title": "Diseño transparente",
+    "section": "",
+    "text": "Uno de los pilares que dan validez a la evidencia científica es el escrutinio por parte de los pares. Sin embargo, la prevalencia de prácticas cuestionables en distintas disciplinas ha puesto en debate que dicho principio esté siendo alcanzando y, como consecuencia de ello, se han incrementado los esfuerzos por establecer mayores estándares de transparencia en la investigación científica. En este contexto, una de las herramientas más utilizadas para hacer frente a este dilema han sido los preregistros. ¿Qué es un preregistro? ¿Cómo y en qué momento se utiliza? En el siguiente blog te entregaremos un paso a paso para la elaboración de un preregistro de acuerdo con las distintas situaciones y tipos de investigación."
+  },
+  {
+    "objectID": "componentes/a-diseño/index.html#def-prereg",
+    "href": "componentes/a-diseño/index.html#def-prereg",
+    "title": "Diseño transparente",
+    "section": "¿Qué es un pregistro?",
+    "text": "¿Qué es un pregistro?\nUn preregistro es una marca temporal que busca dar cuenta del diseño de una investigación: (1) principales hipótesis, (2) recolección de datos y (3) plan de análisis.\nLa principal característica de un preregistro es que estos tres elementos se declaran antes de la recopilación y análisis de los datos, con tal de minimizar prácticas cuestionables de investigación (p.ej. hipótesis ad hoc, p-hacking). Adicionalmente, es posible preregistrar estudios que emplean datos secundarios o estudios de replicación, lo cual nos lleva al primer paso de este blog."
+  },
+  {
+    "objectID": "actividades/presentaciones/taller-elsoc-vscode/index.html",
+    "href": "actividades/presentaciones/taller-elsoc-vscode/index.html",
+    "title": "Taller Flujo de Investigación Reproducible con Github, VSCode y Quarto",
+    "section": "",
+    "text": "En este taller abordamos distintas herramientas para implementar un flujo de Investigación reproduble.\n\nIntroducción al flujo de investigación reprodubile\nVisual Studio Code\nGithub\nQuarto\n\nEl taller está disponible a continuación:"
+  },
+  {
+    "objectID": "actividades/presentaciones/2025-taller-semilleros-coes-junio-2025-introduccion-al-flujo-de-investigacion-abierto/index.html",
+    "href": "actividades/presentaciones/2025-taller-semilleros-coes-junio-2025-introduccion-al-flujo-de-investigacion-abierto/index.html",
+    "title": "Taller semilleros COES junio 2025 - Introducción al flujo de investigación abierto",
+    "section": "",
+    "text": "Introducción al flujo de investigación reproducible Talleres Semilleros COES 2025- Línea interacciones grupales e individuales\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/semilleros-coes-junio2025/semilleros-coes-junio2025.html#/section\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nCarrasco, Kevin. 2025. «Taller semilleros COES junio 2025 - Introducción al flujo de investigación abierto». COES, junio. https://lisa-coes.github.io/presentaciones/semilleros-coes-junio2025/semilleros-coes-junio2025.html#/section."
+  },
+  {
+    "objectID": "actividades/presentaciones/2025-introduccion-a-la-ciencia-abierta-antropologia-facso-2025/index.html",
+    "href": "actividades/presentaciones/2025-introduccion-a-la-ciencia-abierta-antropologia-facso-2025/index.html",
+    "title": "Introducción a la Ciencia Abierta - Antropología FACSO 2025",
+    "section": "",
+    "text": "Introducción a la Ciencia Abierta Acceso, reproducibilidad y transparencia en la investigación social\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/intro-csabierta-antropologia2025/intro-csabierta-antropologia2025.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nCarrasco, Kevin. 2025. «Introducción a la Ciencia Abierta - Antropología FACSO 2025». Departamento de Antropología FACSO, abril. https://lisa-coes.github.io/presentaciones/intro-csabierta-antropologia2025/intro-csabierta-antropologia2025.html#1."
+  },
+  {
+    "objectID": "actividades/presentaciones/2024-taller-introduccion-al-flujo-de-investigacion-reproducible-escuela-de-invierno-elsoc-2024/index.html",
+    "href": "actividades/presentaciones/2024-taller-introduccion-al-flujo-de-investigacion-reproducible-escuela-de-invierno-elsoc-2024/index.html",
+    "title": "Taller Introducción al flujo de investigación reproducible - Escuela de invierno ELSOC 2024",
+    "section": "",
+    "text": "Taller Introducción al flujo de investigación reproducible - Escuela de invierno ELSOC 2024\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/escuela-elsoc-julio2024/escuela-elsoc-julio2024.html#/section\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nCarrasco, Kevin. 2024. «Taller Introducción al flujo de investigación reproducible - Escuela de invierno ELSOC 2024». Taller, enero. https://lisa-coes.github.io/presentaciones/escuela-elsoc-julio2024/escuela-elsoc-julio2024.html#/section."
+  },
+  {
+    "objectID": "actividades/presentaciones/2024-barreras-para-la-ciencia-abierta-en-la-investigacion-en-ciencias-sociales-en-chile-congreso-chileno-de-sociologia-2024/index.html",
+    "href": "actividades/presentaciones/2024-barreras-para-la-ciencia-abierta-en-la-investigacion-en-ciencias-sociales-en-chile-congreso-chileno-de-sociologia-2024/index.html",
+    "title": "Barreras para la Ciencia Abierta en la investigación en Ciencias Sociales en Chile - Congreso Chileno de Sociología 2024",
+    "section": "",
+    "text": "Presentación en el Congreso de Sociología 2024, sobre barreras para la implementación de ciencia abierta en Chile.\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/congreso-sociologia-stgo-Mayo2024/congreso-sociologia-stgo-Mayo2024.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nCastillo, Juan Carlos, Cristóbal Ortiz, Kevin Carrasco, Moira Martínez, y Valentina Frometa. 2024. «Barreras para la Ciencia Abierta en la investigación en Ciencias Sociales en Chile - Congreso Chileno de Sociología 2024». Presentación, mayo. https://lisa-coes.github.io/presentaciones/congreso-sociologia-stgo-Mayo2024/congreso-sociologia-stgo-Mayo2024.html#1."
+  },
+  {
+    "objectID": "actividades/presentaciones/2023-taller-herramientas-de-ciencia-abierta-noviembre-2023-nudos/index.html",
+    "href": "actividades/presentaciones/2023-taller-herramientas-de-ciencia-abierta-noviembre-2023-nudos/index.html",
+    "title": "Taller Herramientas de Ciencia Abierta Noviembre 2023 - NUDOS",
+    "section": "",
+    "text": "Taller Herramientas CA Nudos Noviembre 2023 Herramientas de Ciencia Abierta\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/Nudos-herramientas-Nov2023/Nudos-herramientas-Nov2023.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nCastillo, Juan Carlos. 2023. «Taller Herramientas de Ciencia Abierta Noviembre 2023 - NUDOS». Núcleo Milenio de Desigualdades y Oportunidades Digitales (NUDOS), noviembre. https://lisa-coes.github.io/presentaciones/Nudos-herramientas-Nov2023/Nudos-herramientas-Nov2023.html#1."
+  },
+  {
+    "objectID": "actividades/presentaciones/2023-presentacion-escuela-de-verano-conocimiento-y-ciencia-abierta-universidad-central/index.html",
+    "href": "actividades/presentaciones/2023-presentacion-escuela-de-verano-conocimiento-y-ciencia-abierta-universidad-central/index.html",
+    "title": "Presentación Escuela de Verano Conocimiento y Ciencia Abierta - Universidad Central",
+    "section": "",
+    "text": "El Laboratorio de Investigación Social Abierta (LISA) tiene por objetivo ofrecer herramientas y orientaciones para la apertura científica de las distintas etapas de los proyectos de investigación en ciencias sociales.\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/flujo-UCEN-Ene2023/UCEN-Ene2023.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nCastillo, Juan Carlos. 2023. «Presentación Escuela de Verano Conocimiento y Ciencia Abierta - Universidad Central». Universidad Central, enero. https://lisa-coes.github.io/presentaciones/flujo-UCEN-Ene2023/UCEN-Ene2023.html#1."
+  },
+  {
+    "objectID": "actividades/presentaciones/2022-workshop-produccion-de-articulos-cientificos-con-elsoc-30-de-septiembre-de-2022/index.html",
+    "href": "actividades/presentaciones/2022-workshop-produccion-de-articulos-cientificos-con-elsoc-30-de-septiembre-de-2022/index.html",
+    "title": "Workshop Producción de artículos científicos con ELSOC - 30 de Septiembre de 2022",
+    "section": "",
+    "text": "Workshop Producción de artículos científicos con ELSOC - 30 de Septiembre de 2022\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/workshopelsoc-septiembre2022/workshopelsoc-sept2022.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nCastillo, Juan Carlos, y Kevin Carrasco. 2022. «Workshop Producción de artículos científicos con ELSOC - 30 de Septiembre de 2022». septiembre. https://lisa-coes.github.io/presentaciones/workshopelsoc-septiembre2022/workshopelsoc-sept2022.html#1."
+  },
+  {
+    "objectID": "actividades/presentaciones/2022-taller-pre-registros-y-pre-prints-enero-2022/index.html",
+    "href": "actividades/presentaciones/2022-taller-pre-registros-y-pre-prints-enero-2022/index.html",
+    "title": "Taller Pre-Registros y Pre-Prints Enero 2022",
+    "section": "",
+    "text": "Introducción a la Ciencia Abierta: Pre-registro y Pre-prints\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/tallerPrereg-PreprintEnero2022/tallerLISAenero2022.html#2\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nCastillo, Juan Carlos, y Julio Iturra. 2022. «Taller Pre-Registros y Pre-Prints Enero 2022». enero. https://lisa-coes.github.io/presentaciones/tallerPrereg-PreprintEnero2022/tallerLISAenero2022.html#2."
+  },
+  {
+    "objectID": "actividades/presentaciones/2022-presentacion-workshop-produccion-de-articulos-cientificos-con-elsoc-30-de-septiembre-de-2022/index.html",
+    "href": "actividades/presentaciones/2022-presentacion-workshop-produccion-de-articulos-cientificos-con-elsoc-30-de-septiembre-de-2022/index.html",
+    "title": "Presentación Workshop Producción de artículos científicos con ELSOC - 30 de Septiembre de 2022",
+    "section": "",
+    "text": "Presentación Workshop Producción de artículos científicos con ELSOC - 30 de Septiembre de 2022\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/workshopelsoc-septiembre2022/osf1.html\n\n\n\n\n\n\n\nCómo citar (APA)"
+  },
+  {
+    "objectID": "actividades/actividades.html",
+    "href": "actividades/actividades.html",
+    "title": "Actividades",
+    "section": "",
+    "text": "Herramientas computacionales para la investigación social reproducible\n\n\nHerramientas computacionales para la investigación social reproducible Talleres de formación interna - CIAE octubre 2025\n\n\n\n\n\noct 2025\n\n\nJuan Carlos Castillo, Kevin Carrasco, René Canales, Katherine Aravena, Tomás Urzúa\n\n\n\n\n\n\n\nTaller Flujo de Investigación Reproducible con Github, VSCode y Quarto\n\n\nEn este taller abordamos distintas herramientas para implementar un flujo de Investigación reproduble. Introducción al flujo de investigación reprodubile, Visual Studio Code, Github y Quarto\n\n\n\n\n\njul 2025\n\n\nJuan Carlos Castillo, Tomás Urzúa\n\n\n\n\n\n\n\nTaller Flujo de Investigación Reproducible con Github, VSCode y Quarto\n\n\nEn este taller abordamos distintas herramientas para implementar un flujo de Investigación reproduble.\n\n\n\n\n\njul 2025\n\n\nTomas Urzúa & Juan Carlos Castillo\n\n\n\n\n\n\n\nTaller semilleros COES junio 2025 - Introducción al flujo de investigación abierto\n\n\nIntroducción al flujo de investigación reproducible Talleres Semilleros COES 2025- Línea interacciones grupales e individuales\n\n\n\n\n\njun 2025\n\n\nKevin Carrasco\n\n\n\n\n\n\n\nIntroducción a la Ciencia Abierta - Antropología FACSO 2025\n\n\nIntroducción a la Ciencia Abierta Acceso, reproducibilidad y transparencia en la investigación social\n\n\n\n\n\nabr 2025\n\n\nKevin Carrasco\n\n\n\n\n\n\n\nBarreras para la Ciencia Abierta en la investigación en Ciencias Sociales en Chile - Congreso Chileno de Sociología 2024\n\n\nPresentación en el Congreso de Sociología 2024, sobre barreras para la implementación de ciencia abierta en Chile.\n\n\n\n\n\nmay 2024\n\n\nJuan Carlos Castillo, Cristóbal Ortiz, Kevin Carrasco, Moira Martínez, Valentina Frometa\n\n\n\n\n\n\n\nTaller Flujo de investigación abierto - Enero 2024 - Universidad de Valparaíso\n\n\nTaller Herramientas CA UValpo Enero 2024 Herramientas de Ciencia Abierta Apertura y reproducibilidad de proyectos de investigación\n\n\n\n\n\nene 2024\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nTaller Introducción al flujo de investigación reproducible - Escuela de invierno ELSOC 2024\n\n\nTaller Introducción al flujo de investigación reproducible - Escuela de invierno ELSOC 2024\n\n\n\n\n\nene 2024\n\n\nKevin Carrasco\n\n\n\n\n\n\n\nTaller Herramientas de Ciencia Abierta Noviembre 2023 - NUDOS\n\n\nTaller Herramientas CA Nudos Noviembre 2023 Herramientas de Ciencia Abierta\n\n\n\n\n\nnov 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nTaller Reproducibilidad y Repositorios Abiertos Junio 2023 - Aprendiendo metodología por Valentina\n\n\nOnline\n\n\n\n\n\njun 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nPresentación Congreso de Bibliotecas Universitarias Especializadas - Universidad de Chile, Enero 2023\n\n\nUniversidad de Chile,\n\n\n\n\n\nene 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nPresentación Escuela de Verano Conocimiento y Ciencia Abierta - Universidad Central\n\n\nEl Laboratorio de Investigación Social Abierta (LISA) tiene por objetivo ofrecer herramientas y orientaciones para la apertura científica de las distintas etapas de los proyectos de investigación en ciencias sociales.\n\n\n\n\n\nene 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nPresentación Universidad Iberoamericana de México - 2023 (Online)\n\n\nHerramientas para la apertura del flujo de investigación científica\n\n\n\n\n\nene 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nPresentación Workshop Producción de artículos científicos con ELSOC - 30 de Septiembre de 2022\n\n\nPresentación Workshop Producción de artículos científicos con ELSOC - 30 de Septiembre de 2022\n\n\n\n\n\nsep 2022\n\n\n\n\n\n\n\nWorkshop Producción de artículos científicos con ELSOC - 30 de Septiembre de 2022\n\n\nWorkshop Producción de artículos científicos con ELSOC - 30 de Septiembre de 2022\n\n\n\n\n\nsep 2022\n\n\nJuan Carlos Castillo, Kevin Carrasco\n\n\n\n\n\n\n\nTaller Introducción a Shiny Enero 2022 - Aprendiendo Metodología por Valentina\n\n\nIntroducción a la Visualización de Datos con Shiny\n\n\n\n\n\nene 2022\n\n\nJulio Iturra\n\n\n\n\n\n\n\nTaller Pre-Registros y Pre-Prints Enero 2022\n\n\nIntroducción a la Ciencia Abierta: Pre-registro y Pre-prints\n\n\n\n\n\nene 2022\n\n\nJuan Carlos Castillo, Julio Iturra\n\n\n\n\n\n\n\nTaller Reproducibilidad Enero 2022 - Aprendiendo Metodología por Valentina\n\n\nProtocolos de análisis reproducible y reportes dinámicos\n\n\n\n\n\nene 2022\n\n\nJuan Carlos Castillo\n\n\n\n\n\nNo hay resultados"
+  },
+  {
+    "objectID": "actividades/presentaciones/2022-taller-introduccion-a-shiny-enero-2022-aprendiendo-metodologia-por-valentina/index.html",
+    "href": "actividades/presentaciones/2022-taller-introduccion-a-shiny-enero-2022-aprendiendo-metodologia-por-valentina/index.html",
+    "title": "Taller Introducción a Shiny Enero 2022 - Aprendiendo Metodología por Valentina",
+    "section": "",
+    "text": "Introducción a la Visualización de Datos con Shiny\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/tallerShiny-Enero2022/taller-shiny-enero2022.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nIturra, Julio. 2022. «Taller Introducción a Shiny Enero 2022 - Aprendiendo Metodología por Valentina». enero. https://lisa-coes.github.io/presentaciones/tallerShiny-Enero2022/taller-shiny-enero2022.html#1."
+  },
+  {
+    "objectID": "actividades/presentaciones/2022-taller-reproducibilidad-enero-2022-aprendiendo-metodologia-por-valentina/index.html",
+    "href": "actividades/presentaciones/2022-taller-reproducibilidad-enero-2022-aprendiendo-metodologia-por-valentina/index.html",
+    "title": "Taller Reproducibilidad Enero 2022 - Aprendiendo Metodología por Valentina",
+    "section": "",
+    "text": "Protocolos de análisis reproducible y reportes dinámicos\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/tallerRmarkdown-IPOEnero2022/taller-reprod-enero2022.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nCastillo, Juan Carlos. 2022. «Taller Reproducibilidad Enero 2022 - Aprendiendo Metodología por Valentina». enero. https://lisa-coes.github.io/presentaciones/tallerRmarkdown-IPOEnero2022/taller-reprod-enero2022.html#1."
+  },
+  {
+    "objectID": "actividades/presentaciones/2023-presentacion-congreso-de-bibliotecas-universitarias-especializadas-universidad-de-chile-enero-2023/index.html",
+    "href": "actividades/presentaciones/2023-presentacion-congreso-de-bibliotecas-universitarias-especializadas-universidad-de-chile-enero-2023/index.html",
+    "title": "Presentación Congreso de Bibliotecas Universitarias Especializadas - Universidad de Chile, Enero 2023",
+    "section": "",
+    "text": "Universidad de Chile,\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/tallerPrereg-PreprintEnero2022/bibliotecas-Enero2023.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nCastillo, Juan Carlos. 2023. «Presentación Congreso de Bibliotecas Universitarias Especializadas - Universidad de Chile, Enero 2023». Universidad de Chile, enero. https://lisa-coes.github.io/presentaciones/tallerPrereg-PreprintEnero2022/bibliotecas-Enero2023.html#1."
+  },
+  {
+    "objectID": "actividades/presentaciones/2023-presentacion-universidad-iberoamericana-de-mexico-2023-online-/index.html",
+    "href": "actividades/presentaciones/2023-presentacion-universidad-iberoamericana-de-mexico-2023-online-/index.html",
+    "title": "Presentación Universidad Iberoamericana de México - 2023 (Online)",
+    "section": "",
+    "text": "Herramientas para la apertura del flujo de investigación científica\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/Ibero-MEX-Jun2022/iberomex2022.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nCastillo, Juan Carlos. 2023. «Presentación Universidad Iberoamericana de México - 2023 (Online)». Universidad Iberoamericana de México. https://lisa-coes.github.io/presentaciones/Ibero-MEX-Jun2022/iberomex2022.html#1."
+  },
+  {
+    "objectID": "actividades/presentaciones/2023-taller-reproducibilidad-y-repositorios-abiertos-junio-2023-aprendiendo-metodologia-por-valentina/index.html",
+    "href": "actividades/presentaciones/2023-taller-reproducibilidad-y-repositorios-abiertos-junio-2023-aprendiendo-metodologia-por-valentina/index.html",
+    "title": "Taller Reproducibilidad y Repositorios Abiertos Junio 2023 - Aprendiendo metodología por Valentina",
+    "section": "",
+    "text": "Online\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/reprod-repos-Vale-Junio20203/reprod-repos-Vale-Junio2023.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nCastillo, Juan Carlos. 2023. «Taller Reproducibilidad y Repositorios Abiertos Junio 2023 - Aprendiendo metodología por Valentina». Online, junio. https://lisa-coes.github.io/presentaciones/reprod-repos-Vale-Junio20203/reprod-repos-Vale-Junio2023.html#1."
+  },
+  {
+    "objectID": "actividades/presentaciones/2024-taller-flujo-de-investigacion-abierto-enero-2024-universidad-de-valparaiso/index.html",
+    "href": "actividades/presentaciones/2024-taller-flujo-de-investigacion-abierto-enero-2024-universidad-de-valparaiso/index.html",
+    "title": "Taller Flujo de investigación abierto - Enero 2024 - Universidad de Valparaíso",
+    "section": "",
+    "text": "Taller Herramientas CA UValpo Enero 2024 Herramientas de Ciencia Abierta Apertura y reproducibilidad de proyectos de investigación\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/UValpo-herramientas-Enero2024/UValpo-herramientas-Ene2024.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nCastillo, Juan Carlos. 2024. «Taller Flujo de investigación abierto - Enero 2024 - Universidad de Valparaíso». Universidad de Valparaíso, enero. https://lisa-coes.github.io/presentaciones/UValpo-herramientas-Enero2024/UValpo-herramientas-Ene2024.html#1."
+  },
+  {
+    "objectID": "actividades/presentaciones/2025-herramientas-computacionales-para-la-investigacion-social-reproducible/index.html",
+    "href": "actividades/presentaciones/2025-herramientas-computacionales-para-la-investigacion-social-reproducible/index.html",
+    "title": "Herramientas computacionales para la investigación social reproducible",
+    "section": "",
+    "text": "Herramientas computacionales para la investigación social reproducible Talleres de formación interna - CIAE octubre 2025\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/taller-vsc-github/taller-ciae/taller-ciae2025.html#/section\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nCastillo, Juan Carlos, Kevin Carrasco, René Canales, Katherine Aravena, y Tomás Urzúa. 2025. «Herramientas computacionales para la investigación social reproducible». CIAE Uchile, octubre. https://lisa-coes.github.io/taller-vsc-github/taller-ciae/taller-ciae2025.html#/section."
+  },
+  {
+    "objectID": "actividades/presentaciones/2025-taller-flujo-de-investigacion-reproducible-con-github-vscode-y-quarto/index.html",
+    "href": "actividades/presentaciones/2025-taller-flujo-de-investigacion-reproducible-con-github-vscode-y-quarto/index.html",
+    "title": "Taller Flujo de Investigación Reproducible con Github, VSCode y Quarto",
+    "section": "",
+    "text": "En este taller abordamos distintas herramientas para implementar un flujo de Investigación reproduble. Introducción al flujo de investigación reprodubile, Visual Studio Code, Github y Quarto\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/taller-vsc-github/taller-elsoc/taller-elsoc-2025.html#/section\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nCastillo, Juan Carlos, y Tomás Urzúa. 2025. «Taller Flujo de Investigación Reproducible con Github, VSCode y Quarto». julio. https://lisa-coes.github.io/taller-vsc-github/taller-elsoc/taller-elsoc-2025.html#/section."
+  },
+  {
+    "objectID": "actividades/presentaciones/index.html",
+    "href": "actividades/presentaciones/index.html",
+    "title": "Presentaciones, talleres y charlas",
+    "section": "",
+    "text": "Herramientas computacionales para la investigación social reproducible\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nOct 1, 2025\n\n\nJuan Carlos Castillo, Kevin Carrasco, René Canales, Katherine Aravena, Tomás Urzúa\n\n\n\n\n\n\n\nTaller Flujo de Investigación Reproducible con Github, VSCode y Quarto\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJul 1, 2025\n\n\nJuan Carlos Castillo, Tomás Urzúa\n\n\n\n\n\n\n\nTaller Flujo de Investigación Reproducible con Github, VSCode y Quarto\n\n\n\nnoticias\n\n\n\n\n\n\nJul 1, 2025\n\n\nTomas Urzúa & Juan Carlos Castillo\n\n\n\n\n\n\n\nTaller semilleros COES junio 2025 - Introducción al flujo de investigación abierto\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJun 1, 2025\n\n\nKevin Carrasco\n\n\n\n\n\n\n\nIntroducción a la Ciencia Abierta - Antropología FACSO 2025\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nApr 1, 2025\n\n\nKevin Carrasco\n\n\n\n\n\n\n\nBarreras para la Ciencia Abierta en la investigación en Ciencias Sociales en Chile - Congreso Chileno de Sociología 2024\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nMay 1, 2024\n\n\nJuan Carlos Castillo, Cristóbal Ortiz, Kevin Carrasco, Moira Martínez, Valentina Frometa\n\n\n\n\n\n\n\nTaller Flujo de investigación abierto - Enero 2024 - Universidad de Valparaíso\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJan 1, 2024\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nTaller Introducción al flujo de investigación reproducible - Escuela de invierno ELSOC 2024\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJan 1, 2024\n\n\nKevin Carrasco\n\n\n\n\n\n\n\nTaller Herramientas de Ciencia Abierta Noviembre 2023 - NUDOS\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nNov 1, 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nTaller Reproducibilidad y Repositorios Abiertos Junio 2023 - Aprendiendo metodología por Valentina\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJun 1, 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nPresentación Congreso de Bibliotecas Universitarias Especializadas - Universidad de Chile, Enero 2023\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJan 1, 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nPresentación Escuela de Verano Conocimiento y Ciencia Abierta - Universidad Central\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJan 1, 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nPresentación Universidad Iberoamericana de México - 2023 (Online)\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJan 1, 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nPresentación Workshop Producción de artículos científicos con ELSOC - 30 de Septiembre de 2022\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nSep 1, 2022\n\n\n\n\n\n\n\nWorkshop Producción de artículos científicos con ELSOC - 30 de Septiembre de 2022\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nSep 1, 2022\n\n\nJuan Carlos Castillo, Kevin Carrasco\n\n\n\n\n\n\n\nTaller Introducción a Shiny Enero 2022 - Aprendiendo Metodología por Valentina\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJan 1, 2022\n\n\nJulio Iturra\n\n\n\n\n\n\n\nTaller Pre-Registros y Pre-Prints Enero 2022\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJan 1, 2022\n\n\nJuan Carlos Castillo, Julio Iturra\n\n\n\n\n\n\n\nTaller Reproducibilidad Enero 2022 - Aprendiendo Metodología por Valentina\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJan 1, 2022\n\n\nJuan Carlos Castillo\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "alumni/index.html",
+    "href": "alumni/index.html",
+    "title": "Pasaron por LISA",
+    "section": "",
+    "text": "Valentina Andrade \n          \n          \n            Asistente de Investigación\n          \n          \n            \n               Contacto\n            \n          \n          \n            \n               Github\n            \n          \n          \n            \n               Web Personal\n            \n          \n          \n             2020-2021"
   },
   {
     "objectID": "componentes/b-data/index.html",
@@ -189,186 +392,32 @@
     "text": "En síntesis\n\n\n\n\nElemento\nCriterio\nRecomendación\nFormato\nmodel\n\n\n\n\nBase de datos\nCodificación correcta de respuestas\n1. Identificar casos perdidos\n.sav, .dta o .Rdata\n1. 1 Ejemplo de base de datos\n\n\n2. Identificar unidades de observación\n\n\nNombres de variables claros\n1. Claridad y coherencia en su orden\n1.2 Ejemplo de base de datos\n\n\n2. Ser utilizables por otros softwares\n\n\nCuestionario\nCongruencia con base de datos\n1. Verificar la versión del cuestionario\nArchivo documento .pdf\n1.1 Ejemplo de cuestionario\n\n\n2. Verficar orden y frases de categorías de preguntas y categorías de respuesta\n1.2 Ejemplo de cuestionario\n\n\nLibro de códigos\nCoherencia entre base de datos y cuestionario\n1. Verificar que la pregunta y la variable sean las mismas\n1.1 Ejemplo de libro de códigos\n\n\n2. Verificar el orden de las categorías y valores de la base\n1.2 Ejemplo de libro de códigos\n\n\nFicha Técnica\nInformación mínima para la utilización del usuario\n1. Indicar tipo de tipo de instrumento, población y muestra objetivo.\n1.1 Ejemplo de ficha técnica\n\n\n2. Indicar la fecha de aplicación, formato (presencial, online,telefónica, cuestionario auto-aplicado) y ubicación geográfica\n\n\n3. Indicar el tipo de muestreo, tasa de respuesta y ponderadores y factores de expansión.\n1.2 Ejemplo de ficha técnica\n\n\n4. Identificar institución o grupo ejecutor\n\n\n\n\nDescargar listado de recomendaciones para rellenar"
   },
   {
-    "objectID": "alumni/index.html",
-    "href": "alumni/index.html",
-    "title": "Pasaron por LISA",
+    "objectID": "componentes/componentes.html",
+    "href": "componentes/componentes.html",
+    "title": "Sobre LISA",
     "section": "",
-    "text": "Valentina Andrade \n          \n          \n            Asistente de Investigación\n          \n          \n            \n               Contacto\n            \n          \n          \n            \n               Github\n            \n          \n          \n            \n               Web Personal\n            \n          \n          \n             2020-2021"
+    "text": "El Laboratorio de Investigación Social Abierta es una iniciativa del Centro de Estudios de Conflicto y Cohesión Social (COES) que tiene como propósito ser una guía para el desarrollo de una ciencia social abierta y reproducible para la comunidad científica y la ciudadanía.\nUno de sus objetivos ha sido generar una propuesta de trabajo, la cual se constituye a través de la elaboración de herramientas conceptuales y prácticas en cuatro componentes: (1) diseño transparente,   (2) apertura de datos,   (3) análisis reproducibles  y  (4) publicaciones libres . Estos componentes representan cómo los cientistas sociales podemos contribuir con la apertura de los distintos momentos del proceso de investigación.\nEn el ámbito de las ciencias sociales, los esfuerzos por incrementar la apertura de los procesos de investigación han sido escasos y su presencia ha sido predominante en las comunidades científicas de habla inglesa.\nPor este motivo, LISA se propone contribuir a la comunidad de ciencias sociales de habla hispana a través de una serie de herramientas que contribuyan a incrementar la apertura de las investigaciones científicas.\nEn el siguiente video se resume nuestra propuesta:"
   },
   {
-    "objectID": "actividades/presentaciones/index.html",
-    "href": "actividades/presentaciones/index.html",
-    "title": "Presentaciones, talleres y charlas",
+    "objectID": "componentes/componentes.html#componentes",
+    "href": "componentes/componentes.html#componentes",
+    "title": "Sobre LISA",
+    "section": "Componentes",
+    "text": "Componentes\n\n  \n  \n  Listado de Contenido\n  \n\n  \n      \n        \n          \n          \n            Diseño transparente\n          \n        \n      \n      \n        \n          \n          \n            Datos Abiertos\n          \n        \n      \n      \n        \n          \n          \n            Análisis Reproducible\n          \n        \n      \n      \n        \n          \n          \n            Publicaciones Libres\n          \n        \n      \n  \nNo matching items"
+  },
+  {
+    "objectID": "contactos/contactos.html",
+    "href": "contactos/contactos.html",
+    "title": "Contáctenos",
     "section": "",
-    "text": "Talleres de formación interna - CIAE octubre 2025 - Herramientas computacionales para la investigación social reproducible\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nOct 1, 2025\n\n\nJuan Carlos Castillo, Kevin Carrasco, René Canales, Katherine Aravena & Tomás Urzúa\n\n\n\n\n\n\n\nTaller Flujo de Investigación Reproducible con Github, VSCode y Quarto\n\n\n\nnoticias\n\n\n\n\n\n\nJul 1, 2025\n\n\nTomas Urzúa & Juan Carlos Castillo\n\n\n\n\n\n\n\nTaller semilleros COES junio 2025 - Introducción al flujo de investigación abierto\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJun 1, 2025\n\n\nKevin Carrasco\n\n\n\n\n\n\n\nIntroducción a la Ciencia Abierta - Antropología FACSO 2025\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nApr 1, 2025\n\n\nKevin Carrasco\n\n\n\n\n\n\n\nTaller Flujo de investigación abierto - Enero 2024 - Universidad de Valparaíso\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJan 1, 2024\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nTaller Herramientas de Ciencia Abierta Noviembre 2023 - NUDOS\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nNov 1, 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nTaller Reproducibilidad y Repositorios Abiertos Junio 2023 - Aprendiendo metodología por Valentina\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJun 1, 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nPresentación Congreso de Bibliotecas Universitarias Especializadas - Universidad de Chile, Enero 2023\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJan 1, 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nPresentación Escuela de Verano Conocimiento y Ciencia Abierta - Universidad Central\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJan 1, 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nPresentación Universidad Iberoamericana de México - 2023 (Online)\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJan 1, 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nPresentación Workshop Producción de artículos científicos con ELSOC - 30 de Septiembre de 2022\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nSep 1, 2022\n\n\n\n\n\n\n\nTaller Introducción a Shiny Enero 2022 - Aprendiendo Metodología por Valentina\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJan 1, 2022\n\n\nJulio Iturra\n\n\n\n\n\n\n\nTaller Pre-Registros y Pre-Prints Enero 2022\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJan 1, 2022\n\n\nJuan Carlos Castillo, Julio Iturra\n\n\n\n\n\n\n\nTaller Reproducibilidad Enero 2022 - Aprendiendo Metodología por Valentina\n\n\n\ncharla\n\nLISA\n\n\n\n\n\n\nJan 1, 2022\n\n\nJuan Carlos Castillo\n\n\n\n\n\nNo matching items"
+    "text": "No completar: \n  \n\n  \n    \n      Nombre\n      \n    \n    \n      Correo\n      \n    \n    \n      Asunto\n      \n    \n    \n      Mensaje\n      \n      Incluye fechas, público y enlaces si aplica.\n    \n\n    \n  \n\n  \n    Enviar"
   },
   {
-    "objectID": "actividades/presentaciones/2025-taller-semilleros-coes-junio-2025-introduccion-al-flujo-de-investigacion-abierto/index.html",
-    "href": "actividades/presentaciones/2025-taller-semilleros-coes-junio-2025-introduccion-al-flujo-de-investigacion-abierto/index.html",
-    "title": "Taller semilleros COES junio 2025 - Introducción al flujo de investigación abierto",
-    "section": "",
-    "text": "Introducción al flujo de investigación reproducible Talleres Semilleros COES 2025- Línea interacciones grupales e individuales\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/semilleros-coes-junio2025/semilleros-coes-junio2025.html#/section\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nKevin Carrasco. 2025. «Taller semilleros COES junio 2025 - Introducción al flujo de investigación abierto». COES, junio. https://lisa-coes.github.io/presentaciones/semilleros-coes-junio2025/semilleros-coes-junio2025.html#/section."
-  },
-  {
-    "objectID": "actividades/presentaciones/2024-taller-flujo-de-investigacion-abierto-enero-2024-universidad-de-valparaiso/index.html",
-    "href": "actividades/presentaciones/2024-taller-flujo-de-investigacion-abierto-enero-2024-universidad-de-valparaiso/index.html",
-    "title": "Taller Flujo de investigación abierto - Enero 2024 - Universidad de Valparaíso",
-    "section": "",
-    "text": "Taller Herramientas CA UValpo Enero 2024 Herramientas de Ciencia Abierta Apertura y reproducibilidad de proyectos de investigación\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/UValpo-herramientas-Enero2024/UValpo-herramientas-Ene2024.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nJuan Carlos Castillo. 2024. «Taller Flujo de investigación abierto - Enero 2024 - Universidad de Valparaíso». Universidad de Valparaíso, enero. https://lisa-coes.github.io/presentaciones/UValpo-herramientas-Enero2024/UValpo-herramientas-Ene2024.html#1."
-  },
-  {
-    "objectID": "actividades/presentaciones/2023-taller-herramientas-de-ciencia-abierta-noviembre-2023-nudos/index.html",
-    "href": "actividades/presentaciones/2023-taller-herramientas-de-ciencia-abierta-noviembre-2023-nudos/index.html",
-    "title": "Taller Herramientas de Ciencia Abierta Noviembre 2023 - NUDOS",
-    "section": "",
-    "text": "Taller Herramientas CA Nudos Noviembre 2023 Herramientas de Ciencia Abierta\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/Nudos-herramientas-Nov2023/Nudos-herramientas-Nov2023.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nJuan Carlos Castillo. 2023. «Taller Herramientas de Ciencia Abierta Noviembre 2023 - NUDOS». Núcleo Milenio de Desigualdades y Oportunidades Digitales (NUDOS), noviembre. https://lisa-coes.github.io/presentaciones/Nudos-herramientas-Nov2023/Nudos-herramientas-Nov2023.html#1."
-  },
-  {
-    "objectID": "actividades/presentaciones/2023-presentacion-escuela-de-verano-conocimiento-y-ciencia-abierta-universidad-central/index.html",
-    "href": "actividades/presentaciones/2023-presentacion-escuela-de-verano-conocimiento-y-ciencia-abierta-universidad-central/index.html",
-    "title": "Presentación Escuela de Verano Conocimiento y Ciencia Abierta - Universidad Central",
-    "section": "",
-    "text": "El Laboratorio de Investigación Social Abierta (LISA) tiene por objetivo ofrecer herramientas y orientaciones para la apertura científica de las distintas etapas de los proyectos de investigación en ciencias sociales.\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/flujo-UCEN-Ene2023/UCEN-Ene2023.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nJuan Carlos Castillo. 2023. «Presentación Escuela de Verano Conocimiento y Ciencia Abierta - Universidad Central». Universidad Central, enero. https://lisa-coes.github.io/presentaciones/flujo-UCEN-Ene2023/UCEN-Ene2023.html#1."
-  },
-  {
-    "objectID": "actividades/presentaciones/2022-taller-reproducibilidad-enero-2022-aprendiendo-metodologia-por-valentina/index.html",
-    "href": "actividades/presentaciones/2022-taller-reproducibilidad-enero-2022-aprendiendo-metodologia-por-valentina/index.html",
-    "title": "Taller Reproducibilidad Enero 2022 - Aprendiendo Metodología por Valentina",
-    "section": "",
-    "text": "Protocolos de análisis reproducible y reportes dinámicos\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/tallerRmarkdown-IPOEnero2022/taller-reprod-enero2022.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nJuan Carlos Castillo. 2022. «Taller Reproducibilidad Enero 2022 - Aprendiendo Metodología por Valentina». enero. https://lisa-coes.github.io/presentaciones/tallerRmarkdown-IPOEnero2022/taller-reprod-enero2022.html#1."
-  },
-  {
-    "objectID": "actividades/presentaciones/2022-taller-introduccion-a-shiny-enero-2022-aprendiendo-metodologia-por-valentina/index.html",
-    "href": "actividades/presentaciones/2022-taller-introduccion-a-shiny-enero-2022-aprendiendo-metodologia-por-valentina/index.html",
-    "title": "Taller Introducción a Shiny Enero 2022 - Aprendiendo Metodología por Valentina",
-    "section": "",
-    "text": "Introducción a la Visualización de Datos con Shiny\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/tallerShiny-Enero2022/taller-shiny-enero2022.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nJulio Iturra. 2022. «Taller Introducción a Shiny Enero 2022 - Aprendiendo Metodología por Valentina». enero. https://lisa-coes.github.io/presentaciones/tallerShiny-Enero2022/taller-shiny-enero2022.html#1."
-  },
-  {
-    "objectID": "actividades/actividades.html",
-    "href": "actividades/actividades.html",
-    "title": "Actividades",
-    "section": "",
-    "text": "Talleres de formación interna - CIAE octubre 2025 - Herramientas computacionales para la investigación social reproducible\n\n\nHerramientas computacionales para la investigación social reproducible Talleres de formación interna - CIAE octubre 2025\n\n\n\n\n\noct 2025\n\n\nJuan Carlos Castillo, Kevin Carrasco, René Canales, Katherine Aravena & Tomás Urzúa\n\n\n\n\n\n\n\nTaller Flujo de Investigación Reproducible con Github, VSCode y Quarto\n\n\nEn este taller abordamos distintas herramientas para implementar un flujo de Investigación reproduble.\n\n\n\n\n\njul 2025\n\n\nTomas Urzúa & Juan Carlos Castillo\n\n\n\n\n\n\n\nTaller semilleros COES junio 2025 - Introducción al flujo de investigación abierto\n\n\nIntroducción al flujo de investigación reproducible Talleres Semilleros COES 2025- Línea interacciones grupales e individuales\n\n\n\n\n\njun 2025\n\n\nKevin Carrasco\n\n\n\n\n\n\n\nIntroducción a la Ciencia Abierta - Antropología FACSO 2025\n\n\nIntroducción a la Ciencia Abierta Acceso, reproducibilidad y transparencia en la investigación social\n\n\n\n\n\nabr 2025\n\n\nKevin Carrasco\n\n\n\n\n\n\n\nTaller Flujo de investigación abierto - Enero 2024 - Universidad de Valparaíso\n\n\nTaller Herramientas CA UValpo Enero 2024 Herramientas de Ciencia Abierta Apertura y reproducibilidad de proyectos de investigación\n\n\n\n\n\nene 2024\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nTaller Herramientas de Ciencia Abierta Noviembre 2023 - NUDOS\n\n\nTaller Herramientas CA Nudos Noviembre 2023 Herramientas de Ciencia Abierta\n\n\n\n\n\nnov 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nTaller Reproducibilidad y Repositorios Abiertos Junio 2023 - Aprendiendo metodología por Valentina\n\n\nOnline\n\n\n\n\n\njun 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nPresentación Congreso de Bibliotecas Universitarias Especializadas - Universidad de Chile, Enero 2023\n\n\nUniversidad de Chile,\n\n\n\n\n\nene 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nPresentación Escuela de Verano Conocimiento y Ciencia Abierta - Universidad Central\n\n\nEl Laboratorio de Investigación Social Abierta (LISA) tiene por objetivo ofrecer herramientas y orientaciones para la apertura científica de las distintas etapas de los proyectos de investigación en ciencias sociales.\n\n\n\n\n\nene 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nPresentación Universidad Iberoamericana de México - 2023 (Online)\n\n\nHerramientas para la apertura del flujo de investigación científica\n\n\n\n\n\nene 2023\n\n\nJuan Carlos Castillo\n\n\n\n\n\n\n\nPresentación Workshop Producción de artículos científicos con ELSOC - 30 de Septiembre de 2022\n\n\nPresentación Workshop Producción de artículos científicos con ELSOC - 30 de Septiembre de 2022\n\n\n\n\n\nsep 2022\n\n\n\n\n\n\n\nTaller Introducción a Shiny Enero 2022 - Aprendiendo Metodología por Valentina\n\n\nIntroducción a la Visualización de Datos con Shiny\n\n\n\n\n\nene 2022\n\n\nJulio Iturra\n\n\n\n\n\n\n\nTaller Pre-Registros y Pre-Prints Enero 2022\n\n\nIntroducción a la Ciencia Abierta: Pre-registro y Pre-prints\n\n\n\n\n\nene 2022\n\n\nJuan Carlos Castillo, Julio Iturra\n\n\n\n\n\n\n\nTaller Reproducibilidad Enero 2022 - Aprendiendo Metodología por Valentina\n\n\nProtocolos de análisis reproducible y reportes dinámicos\n\n\n\n\n\nene 2022\n\n\nJuan Carlos Castillo\n\n\n\n\n\nNo hay resultados"
-  },
-  {
-    "objectID": "actividades/presentaciones/2022-presentacion-workshop-produccion-de-articulos-cientificos-con-elsoc-30-de-septiembre-de-2022/index.html",
-    "href": "actividades/presentaciones/2022-presentacion-workshop-produccion-de-articulos-cientificos-con-elsoc-30-de-septiembre-de-2022/index.html",
-    "title": "Presentación Workshop Producción de artículos científicos con ELSOC - 30 de Septiembre de 2022",
-    "section": "",
-    "text": "Presentación Workshop Producción de artículos científicos con ELSOC - 30 de Septiembre de 2022\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/workshopelsoc-septiembre2022/osf1.html\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\n«Presentación Workshop Producción de Artículos Científicos Con ELSOC - 30 de Septiembre de 2022». 2022. septiembre. https://lisa-coes.github.io/presentaciones/workshopelsoc-septiembre2022/osf1.html."
-  },
-  {
-    "objectID": "actividades/presentaciones/2022-taller-pre-registros-y-pre-prints-enero-2022/index.html",
-    "href": "actividades/presentaciones/2022-taller-pre-registros-y-pre-prints-enero-2022/index.html",
-    "title": "Taller Pre-Registros y Pre-Prints Enero 2022",
-    "section": "",
-    "text": "Introducción a la Ciencia Abierta: Pre-registro y Pre-prints\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/tallerPrereg-PreprintEnero2022/tallerLISAenero2022.html#2\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nJuan Carlos Castillo, y Julio Iturra. 2022. «Taller Pre-Registros y Pre-Prints Enero 2022». https://lisa-coes.github.io/presentaciones/tallerPrereg-PreprintEnero2022/tallerLISAenero2022.html#2."
-  },
-  {
-    "objectID": "actividades/presentaciones/2023-presentacion-congreso-de-bibliotecas-universitarias-especializadas-universidad-de-chile-enero-2023/index.html",
-    "href": "actividades/presentaciones/2023-presentacion-congreso-de-bibliotecas-universitarias-especializadas-universidad-de-chile-enero-2023/index.html",
-    "title": "Presentación Congreso de Bibliotecas Universitarias Especializadas - Universidad de Chile, Enero 2023",
-    "section": "",
-    "text": "Universidad de Chile,\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/tallerPrereg-PreprintEnero2022/bibliotecas-Enero2023.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nJuan Carlos Castillo. 2023. «Presentación Congreso de Bibliotecas Universitarias Especializadas - Universidad de Chile, Enero 2023». Universidad de Chile, enero. https://lisa-coes.github.io/presentaciones/tallerPrereg-PreprintEnero2022/bibliotecas-Enero2023.html#1."
-  },
-  {
-    "objectID": "actividades/presentaciones/2023-presentacion-universidad-iberoamericana-de-mexico-2023-online-/index.html",
-    "href": "actividades/presentaciones/2023-presentacion-universidad-iberoamericana-de-mexico-2023-online-/index.html",
-    "title": "Presentación Universidad Iberoamericana de México - 2023 (Online)",
-    "section": "",
-    "text": "Herramientas para la apertura del flujo de investigación científica\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/Ibero-MEX-Jun2022/iberomex2022.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nJuan Carlos Castillo. 2023. «Presentación Universidad Iberoamericana de México - 2023 (Online)». Universidad Iberoamericana de México. https://lisa-coes.github.io/presentaciones/Ibero-MEX-Jun2022/iberomex2022.html#1."
-  },
-  {
-    "objectID": "actividades/presentaciones/2023-taller-reproducibilidad-y-repositorios-abiertos-junio-2023-aprendiendo-metodologia-por-valentina/index.html",
-    "href": "actividades/presentaciones/2023-taller-reproducibilidad-y-repositorios-abiertos-junio-2023-aprendiendo-metodologia-por-valentina/index.html",
-    "title": "Taller Reproducibilidad y Repositorios Abiertos Junio 2023 - Aprendiendo metodología por Valentina",
-    "section": "",
-    "text": "Online\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/reprod-repos-Vale-Junio20203/reprod-repos-Vale-Junio2023.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nJuan Carlos Castillo. 2023. «Taller Reproducibilidad y Repositorios Abiertos Junio 2023 - Aprendiendo metodología por Valentina». Online, junio. https://lisa-coes.github.io/presentaciones/reprod-repos-Vale-Junio20203/reprod-repos-Vale-Junio2023.html#1."
-  },
-  {
-    "objectID": "actividades/presentaciones/2025-introduccion-a-la-ciencia-abierta-antropologia-facso-2025/index.html",
-    "href": "actividades/presentaciones/2025-introduccion-a-la-ciencia-abierta-antropologia-facso-2025/index.html",
-    "title": "Introducción a la Ciencia Abierta - Antropología FACSO 2025",
-    "section": "",
-    "text": "Introducción a la Ciencia Abierta Acceso, reproducibilidad y transparencia en la investigación social\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/presentaciones/intro-csabierta-antropologia2025/intro-csabierta-antropologia2025.html#1\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nKevin Carrasco. 2025. «Introducción a la Ciencia Abierta - Antropología FACSO 2025». Departamento de Antropología FACSO, abril. https://lisa-coes.github.io/presentaciones/intro-csabierta-antropologia2025/intro-csabierta-antropologia2025.html#1."
-  },
-  {
-    "objectID": "actividades/presentaciones/2025-talleres-de-formacion-interna-ciae-octubre-2025-herramientas-computacionales-para-la-investigacion-social-reproducible/index.html",
-    "href": "actividades/presentaciones/2025-talleres-de-formacion-interna-ciae-octubre-2025-herramientas-computacionales-para-la-investigacion-social-reproducible/index.html",
-    "title": "Talleres de formación interna - CIAE octubre 2025 - Herramientas computacionales para la investigación social reproducible",
-    "section": "",
-    "text": "Herramientas computacionales para la investigación social reproducible Talleres de formación interna - CIAE octubre 2025\n\nPresentación\n\n\n\n\nRecursos\n\nEnlace principal: https://lisa-coes.github.io/taller-vsc-github/taller-ciae/taller-ciae2025.html#/section\n\n\n\n\n\n\n\nCómo citar (APA)\n\n\n\n\n\nKevin Carrasco. 2025. «Taller semilleros COES junio 2025 - Introducción al flujo de investigación abierto». COES, junio. https://lisa-coes.github.io/presentaciones/semilleros-coes-junio2025/semilleros-coes-junio2025.html#/section."
-  },
-  {
-    "objectID": "actividades/presentaciones/taller-elsoc-vscode/index.html",
-    "href": "actividades/presentaciones/taller-elsoc-vscode/index.html",
-    "title": "Taller Flujo de Investigación Reproducible con Github, VSCode y Quarto",
-    "section": "",
-    "text": "En este taller abordamos distintas herramientas para implementar un flujo de Investigación reproduble.\n\nIntroducción al flujo de investigación reprodubile\nVisual Studio Code\nGithub\nQuarto\n\nEl taller está disponible a continuación:"
-  },
-  {
-    "objectID": "componentes/a-diseño/index.html",
-    "href": "componentes/a-diseño/index.html",
-    "title": "Diseño transparente",
-    "section": "",
-    "text": "Uno de los pilares que dan validez a la evidencia científica es el escrutinio por parte de los pares. Sin embargo, la prevalencia de prácticas cuestionables en distintas disciplinas ha puesto en debate que dicho principio esté siendo alcanzando y, como consecuencia de ello, se han incrementado los esfuerzos por establecer mayores estándares de transparencia en la investigación científica. En este contexto, una de las herramientas más utilizadas para hacer frente a este dilema han sido los preregistros. ¿Qué es un preregistro? ¿Cómo y en qué momento se utiliza? En el siguiente blog te entregaremos un paso a paso para la elaboración de un preregistro de acuerdo con las distintas situaciones y tipos de investigación."
-  },
-  {
-    "objectID": "componentes/a-diseño/index.html#def-prereg",
-    "href": "componentes/a-diseño/index.html#def-prereg",
-    "title": "Diseño transparente",
-    "section": "¿Qué es un pregistro?",
-    "text": "¿Qué es un pregistro?\nUn preregistro es una marca temporal que busca dar cuenta del diseño de una investigación: (1) principales hipótesis, (2) recolección de datos y (3) plan de análisis.\nLa principal característica de un preregistro es que estos tres elementos se declaran antes de la recopilación y análisis de los datos, con tal de minimizar prácticas cuestionables de investigación (p.ej. hipótesis ad hoc, p-hacking). Adicionalmente, es posible preregistrar estudios que emplean datos secundarios o estudios de replicación, lo cual nos lleva al primer paso de este blog."
-  },
-  {
-    "objectID": "componentes/c-repro/index.html",
-    "href": "componentes/c-repro/index.html",
-    "title": "Análisis Reproducible",
-    "section": "",
-    "text": "¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales, y que por tanto, es imposible acceder a los procedimientos que dieron luces a sus resultados? En este contexto, la reproducibilidad entendida como la posibilidad de regenerar de manera independiente los resultados usando los materiales originales de una investigación publicada. ¿Cómo organizamos un proyecto con análisis reproducibles? ¿Qué herramientas puedo utilizar? ¿Cómo puedo compartir mis materiales? En este blog daremos algunas orientaciones generales respecto a cómo avanzar en esta dirección."
-  },
-  {
-    "objectID": "componentes/c-repro/index.html#carpeta-raíz",
-    "href": "componentes/c-repro/index.html#carpeta-raíz",
-    "title": "Análisis Reproducible",
-    "section": "Carpeta Raíz",
-    "text": "Carpeta Raíz\nPara la organización de un proyecto, debemos pensar en una estructura digital de carpetas y subcarpetas. La carpeta raíz es donde se alberga toda la información de referencia para el proyecto, la cual tiene por objetivo:\n\nDocumentar: expone ordenadamente el contenido del proyecto de manera jerárquica (carpetas y subcarpetas).\nOrientar: instruye al usuario para una correcta ejecución de rutinas de código que permita regenerar los resultados de la investigación.\n\nEstas instrucciones pueden ir incluidas en un archivo README organizado de la siguiente manera:\n\n\n\n\n\n\n\n\n\n🗸 Para mayores detalles respecto al contenido y estructura de un proyecto reproducible, puedes hacer click aquí:\nEstructura de un proyecto\n\n Input (I)\nSi bien los protocolos varían de acuerdo a cómo se organizan los datos dentro de la carpeta raíz (i.e. en qué carpeta se alojan), algo que suele ser común entre los protocolos es la diferenciación entre los datos originales o “brutos” (raw data) y los datos procesados. El albergar ambas versiones permite identificar los cambios generados a través del procesamiento.\nPara toda fuente de datos original, se debe proveer la siguiente información:\n\nCitación bibliográfica en un formato estándar\nFecha de creación de la base de datos\nDescripción respecto a cómo se puede acceder a una copia de la base de datos\nLibro de códigos de todas las variables de la base de datos.\n\n🗸 Para mayor detalle sobre la sección de datos, puedes hacer click aquí:\nDatos\n\n\n📝 Procesamiento (P)\nCon Pocesamiento nos referimos a todos los procedimientos del proyecto relacionados con la (1) preparación y (2) análisis de datos.\n\n(1) Preparación\nLa preparación de los datos cumple una función clave para el desarrollo de un artículo: la de generar los datos que emplearemos en análisis del estudio. Considerando esto, el objetivo final de este documento es generar una base de datos procesada, que contenga solamente los datos importantes para analizar.\nSugerimos seguir el siguiente flujo para realizar la preparación de los datos:\n\n\n\n\n\n\nProcedimientos\nDescripción\n\n\n\n\n1. Descriptivo inicial\nCalcular una tabla de frecuencias o de medidas de tendencia central y dispersión para conocer el estado de la variable previo a cualquier modificación\n\n\n2. Recodificación\nRecodificación de los datos perdidos y otro tipo de valores a modificar (e.g. errores de tipeo)\n\n\n3. Etiquetado\nUna base bien documentada trae etiquetas predeterminadas que hacen alusión a las preguntas del cuestionario\n\n\n4. Descriptivo final\nRevisar de nuevo las frecuencias o las medidas de tendencia central de las variables, para diagnosticar que no hemos cometido errores en el procesamiento\n\n\n5. Otros ajustes\nEfectuar toda modificación específica y relevante para la forma que analizaremos los datos\n\n\n\n\n\n\nEl seguir este flujo de manera sistemática facilitará la lectura tanto para terceros, como para nosotros mismos en el futuro.\n\n\n(2) Análisis\n\nUna vez contamos con nuestra base de datos procesada podemos analizar los datos. En el documento de análisis de datos se procede a elaborar todas las tablas, gráficos y pruebas estadísticas que vayan a ser incluidas en el artículo final. En términos generales las secciones son\n\n\nAnálisis descriptivos univariados de los datos.\nAnálisis bivariado de los datos.\nAnálisis multivariado.\n\n\n\nDocumentación\nPara lograr una correcta ejecución de los documentos de preparación y análisis es clave tener correctamente explicado cómo utilizarlos y cómo se vinculan entre ellos. Para esto, sugerimos que documento README incluya las siguientes indicaciones:\n\nEjecución de la preparación: Precisar la ubicación de la o las fuentes de datos originales.\nCierre de la preparación: Precisar la ruta donde se deben almacenar la base de datos procesada.\nEjecución de análisis: Precisar el origen de la base de datos procesada.\nArchivos del análisis de datos: Precisar ruta de almacenamiento y nombre.\n\n🗸 Más información sobre la sección de métodos, puedes hacer click aquí:\nPreparación y análisis \n\n\n\n📊 Output (O)\nCon Output, nos referimos a todo elemento obtenido del análisis de datos. Habitualmente toman la forma de figuras, gráficos o tablas. Es habitual que los protocolos sugieran que estos archivos se almacenen en una subcarpeta exclusiva para ello. Por este motivo, sugerimos se sigan las siguientes indicaciones:\n🔴 Para imágenes, sugerimos usar nombres breves e incorporar numeración. Por ejemplo “figura01.png”, siguiendo el orden de aparición en la publicación.\n🔴 Para tablas, sugerimos emplear nombres cortos e incorporar numeración. Por ejemplo, “tabla01.xls”, según el orden de aparición en la publicación."
-  },
-  {
-    "objectID": "componentes/c-repro/index.html#paso2",
-    "href": "componentes/c-repro/index.html#paso2",
-    "title": "Análisis Reproducible",
-    "section": "Paso 2: Prácticas de código",
-    "text": "Paso 2: Prácticas de código\nLa escritura de un código de preparación o análisis requiere adoptar estándares mínimos, entre otras cosas, para facilitar la comprensión y ejecución de una rutina de código por otros usuarios que busquen regenerar nuestros resultados.\nLa figura a continuación muestra algunas buenas prácticas de código que contribuyen a hacer el trabajo más transparente, y son aplicables a lenguajes de programación:"
-  },
-  {
-    "objectID": "componentes/c-repro/index.html#paso3",
-    "href": "componentes/c-repro/index.html#paso3",
-    "title": "Análisis Reproducible",
-    "section": "Paso 3: Uso de documentos dinámicos",
-    "text": "Paso 3: Uso de documentos dinámicos\nLos documentos dinámicos son una herramienta que incorpora lo mejor de dos mundos: documentos en texto plano y código de análisis.\n🔴 Por un lado, trabajar con texto plano implica independencia de cualquier software comercial o plataformas específicas. Adicionalmente, un documento dinámico permite centrarnos en el contenido y menos en el formato, dado que existen distintas opciones para ello (p.ej. .pdf o .html).\n🔴 Finalmente, al incorporar código de análisis es posible generar documentos autocontenidos, es decir, no es necesario recurrir a imágenes o tablas externas, sino que es posible generarlas en el mismo documento.\nPor ejemplo, este documento está escrito en R Markdown, lo que nos permite demostrar cómo combinar código en R con texto plano.\n\n\nAsí se ve el código en nuestro documento:\n\n library(ggplot2)\n\n ggplot(mtcars, aes(x=mpg)) +\n  geom_histogram(fill=\"skyblue\",\n                 alpha=0.5) +\n  theme_minimal()\n\n\n\nLuego, el código se ejecuta y obtenemos el siguiente gráfico:\n\n\n\n\n\n\n\n\n\n\nUsar documentos dinámicos escritos en texto plano abre un abanico de posibilidades cuando buscamos avanzar hacia proyectos con análisis reproducibles. En este sentido, nos gustaría destacar tres opciones:\n\n\n\n\n\n\n\n\n\n🗸 Si deseas saber más sobre cómo funcionan los documentos dinámicos, puedes hacer click aquí:\nDocumentos dinámicos\n\nPaso 4: Control de versiones\nA modo global, el control de versiones nos permite rastrear los cambios en un documento o conjunto de archivos, es decir, saber cuáles/qué, quién y cuándo se han realizado cambios.\nAl trabajar colaborativamente existen diferentes (y poco eficientes) maneras de controlar versiones. Por ejemplo:\n❌ Fechas: codigo_2021-03-01.R → codigo_2021-05-02.R\n❌ Numeración: analisis_v02.do → analisis_v05.do\nNo obstante, hoy en día existen sistemas de control de versiones especializados para el trabajo de programación. Al respecto, nuestra sugerencia es emplear versionamiento basado en  , pero ¿qué es Git? Te lo explicamos a continuación.\n\nGit  y GitHub \nGit es un sistema de control de versiones de código abierto, tiene por objetivo hacer más eficiente el flujo de trabajo para proyectos de desarrollo de software. Algunas de sus principales características son:\n⭕ Permite registrar (snapshot) la versión de una carpeta completa y su contenido\n⭕ Registra qué, quién y cuándo se realizaron cambios\n⭕ Uso de repositorios (repos) locales (computadora) o remotos (online)\nA la par existe GitHub, el cual es una plataforma de desarrollo colaborativo para hospedar proyectos que utilizan control de versiones basado en Git. Una de sus principales características es el uso de repositorios locales y remotos. La siguiente figura muestra un ejemplo:\n\n\n\n\n\n\n\n\n\nRecomendamos el uso de Git y Github cómo flujo de trabajo para aquellos científicos sociales que trabajan con datos cuantitativos, especialmente cuando son grandes equipos de investigación o son proyectos con varias colaboraciones.\n🗸 Si deseas conocer más sobre Git y GitHub te invitamos a revisar la sesión del curso “Ciencia Social Abierta”:\nControl de Versiones/Git\n\n\n\nEn síntesis\n🔴 Si deseas revisar más detalles de cómo elaborar un proyecto reproducible, en el siguiente video se detalla el paso a paso para ello:"
-  },
-  {
-    "objectID": "componentes/c-repro/index.html#paso4",
-    "href": "componentes/c-repro/index.html#paso4",
-    "title": "Análisis Reproducible",
-    "section": "Paso 4: Control de versiones",
-    "text": "Paso 4: Control de versiones\nA modo global, el control de versiones nos permite rastrear los cambios en un documento o conjunto de archivos, es decir, saber cuáles/qué, quién y cuándo se han realizado cambios.\nAl trabajar colaborativamente existen diferentes (y poco eficientes) maneras de controlar versiones. Por ejemplo:\n❌ Fechas: codigo_2021-03-01.R → codigo_2021-05-02.R\n❌ Numeración: analisis_v02.do → analisis_v05.do\nNo obstante, hoy en día existen sistemas de control de versiones especializados para el trabajo de programación. Al respecto, nuestra sugerencia es emplear versionamiento basado en  , pero ¿qué es Git? Te lo explicamos a continuación.\n\nGit  y GitHub \nGit es un sistema de control de versiones de código abierto, tiene por objetivo hacer más eficiente el flujo de trabajo para proyectos de desarrollo de software. Algunas de sus principales características son:\n⭕ Permite registrar (snapshot) la versión de una carpeta completa y su contenido\n⭕ Registra qué, quién y cuándo se realizaron cambios\n⭕ Uso de repositorios (repos) locales (computadora) o remotos (online)\nA la par existe GitHub, el cual es una plataforma de desarrollo colaborativo para hospedar proyectos que utilizan control de versiones basado en Git. Una de sus principales características es el uso de repositorios locales y remotos. La siguiente figura muestra un ejemplo:\n\n\n\n\n\n\n\n\n\nRecomendamos el uso de Git y Github cómo flujo de trabajo para aquellos científicos sociales que trabajan con datos cuantitativos, especialmente cuando son grandes equipos de investigación o son proyectos con varias colaboraciones.\n🗸 Si deseas conocer más sobre Git y GitHub te invitamos a revisar la sesión del curso “Ciencia Social Abierta”:\nControl de Versiones/Git"
-  },
-  {
-    "objectID": "componentes/d-publibres/index.html",
-    "href": "componentes/d-publibres/index.html",
-    "title": "Publicaciones Libres",
-    "section": "",
-    "text": "La publicación de un trabajo científico es clave para dar a conocer los resultados y determinar su impacto. Al respecto, este momento puede trascender a algunas revistas indexadas donde encontramos barreras de acceso al conocimiento. Por este motivo, podemos enfrentarnos al dilema respecto a cómo abrir una publicación, ya sea por desconocimiento o aprehensiones en torno a ello. ¿Cómo podemos abrir nuestras publicaciones? ¿Cómo elegir el momento adecuado? ¿Dónde publicarlas? En este blog te entregaremos recomendaciones para responder a estas interrogantes."
-  },
-  {
-    "objectID": "componentes/d-publibres/index.html#prop-intel",
-    "href": "componentes/d-publibres/index.html#prop-intel",
-    "title": "Publicaciones Libres",
-    "section": "Tipos de licencias",
-    "text": "Tipos de licencias\nExisten licencias que regulan la propiedad intelectual (World Intelectual Property Organization, 2020), pues protegen los derechos patrimoniales y establecen las reglas para el debido uso de la obra. Las más importantes son:\n1.  Copyright: permite que el autor se reserve todos los derechos sobre la obra y solo se puede hacer uso de ella bajo permiso del mismo.\n2.  Creative Commons (CC): tiene el propósito de desarrollar herramientas digitales que faciliten la distribución de una obra, pues entrega al autor la responsabilidad de autorizar el modo de uso, difusión y citación de su obra. Al día de hoy existen seis tipos de licencias CC (Creative Commons, 2019)"
+    "objectID": "contactos/contactos.html#información",
+    "href": "contactos/contactos.html#información",
+    "title": "Contáctenos",
+    "section": "Información",
+    "text": "Información\n\n\nCorreo: coeslisa@gmail.com\nDirección: Facultad de Ciencias Sociales de la Universidad de Chile (FACSO), Ñuñoa, Santiago, Chile.\nHorario de atención: Lunes a viernes, 9:00–17:00 (CLT)\nPropósitos de contacto - Consultas sobre componentes y protocolos LISA\n- Invitaciones a talleres o colaboraciones\n- Prensa y difusión\n- Comentarios o sugerencias del sitio\n\nEscribir correo\n\n\n\n\n\n\n\nVer en Google Maps\n\n\n\n\n\n\n\n\n\nPrivacidad\n\n\n\nTu correo sólo se usa para responder a tu consulta. Si compartes datos sensibles o de terceros, indícalo explícitamente."
   },
   {
     "objectID": "equipo/posts/01-pi/index.html",
@@ -396,7 +445,7 @@
     "href": "noticias/noticias.html",
     "title": "Noticias",
     "section": "",
-    "text": "📢 Invitación al seminario Herramientas digitales para las Ciencias Sociales\n\n\nPrimer seminario organizado por SocialTec, donde se explorará cómo las ciencias sociales se vinculan con la programación, el análisis de datos y las nuevas herramientas…\n\n\n\nAug 21, 2025\n\n\n\n\n\n\n\n\n\n\n\n¡Bienvenidos a nuestro nuevo sitio web!\n\n\nEn este nuevo sitio web buscamos visibilizar el trabajo realizado por el Laboratorio, asi como las actividades organizadas por nuestro equipo.\n\n\n\nJul 1, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Nueva Plantilla Quarto para reportes FACSO\n\n\nPlantilla Quarto LISA para FACSO: escribe en .qmd y genera HTML y PDF con identidad institucional, portada, bibliografía APA y flujo reproducible.\n\n\n\nNov 2, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nHerramientas computacionales para la investigación social reproducible\n\n\nTaller de Formación Interna CIAE 2025: Sesión práctica sobre reproducibilidad, VS Code, Quarto y Git/GitHub realizada en el CIAE.\n\n\n\nOct 2, 2025\n\n\n\n\n\n\n\n\n\n\n\n📢 Invitación al seminario Herramientas digitales para las Ciencias Sociales\n\n\nPrimer seminario organizado por SocialTec, donde se explorará cómo las ciencias sociales se vinculan con la programación, el análisis de datos y las nuevas herramientas…\n\n\n\nAug 21, 2025\n\n\n\n\n\n\n\n\n\n\n\n¡Bienvenidos a nuestro nuevo sitio web!\n\n\nEn este nuevo sitio web buscamos visibilizar el trabajo realizado por el Laboratorio, asi como las actividades organizadas por nuestro equipo.\n\n\n\nJul 1, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "noticias/posts/evento-socialtec/index.html",
@@ -404,6 +453,13 @@
     "title": "📢 Invitación al seminario Herramientas digitales para las Ciencias Sociales",
     "section": "",
     "text": "Desde el Laboratorio de Investigación Social Abierta (LISA) tenemos el agrado de invitarles al primer seminario organizado por SocialTec, una instancia pensada para reflexionar en torno a la relación entre las ciencias sociales y las tecnologías de la información.\nEn un escenario donde las herramientas digitales se han vuelto fundamentales para la investigación y la producción de conocimiento, este encuentro busca abrir un espacio de diálogo sobre cómo la programación, el análisis de datos y las tecnologías emergentes pueden ponerse al servicio de las ciencias sociales. La invitación es a explorar juntos las posibilidades que estas herramientas ofrecen para comprender fenómenos sociales de manera más amplia, profunda e innovadora.\nEl seminario contará con la participación de tres destacadas presentaciones:\n\nRiva Quiroga (Dra. en Lingüística): Aprender a programar viniendo de las Ciencias Sociales\nNaim Bro (Académico UAI): A frustratingly easy way of extracting political networks from text\nKlaus Lehmann (Jefe de Ciencia de Datos, INE): Socialtec: tecnología al servicio de las ciencias sociales\n\n📅 Fecha: Martes 26 de agosto\n🕒 Hora: 15:00 hrs.\n📍 Lugar: Auditorio Pedro Ortiz, Facultad de Ciencias Sociales, Universidad de Chile\n💡 Creemos que este seminario será una oportunidad única para dialogar, aprender y proyectar nuevas formas de investigación en el campo de las ciencias sociales, integrando miradas diversas y saberes digitales.\nMás información en las redes de SocialTec"
+  },
+  {
+    "objectID": "noticias/posts/taller-ciae2025/index.html",
+    "href": "noticias/posts/taller-ciae2025/index.html",
+    "title": "Herramientas computacionales para la investigación social reproducible",
+    "section": "",
+    "text": "Taller de Formación Interna CIAE 2025\n\n\n\nTaller CIAE Repositorio del taller\n\n\nSantiago, 2 de octubre de 2025\n\n\nEl Programa de Talleres de Formación Interna 2025 del CIAE realizó la jornada “Herramientas computacionales para la investigación social reproducible”, organizada por LISA y dirigida al equipo académico y de investigación. La actividad se llevó a cabo en Casa Irma Salas (CIAE), sala Zócalo Norte, el jueves 2 de octubre, entre las 15:00 y 17:00 horas, y convocó a investigadoras/es y asistentes interesados en fortalecer la calidad técnica y la trazabilidad de sus proyectos.\nEl bloque de apertura estuvo a cargo de Juan Carlos Castillo, quien destacó la relevancia de la ciencia abierta y la reproducibilidad para garantizar transparencia, verificabilidad y acumulación de conocimiento. Subrayó que la combinación de documentación clara, control de versiones y publicación abierta permite dar seguimiento a los procesos analíticos, reducir errores y facilitar la revisión por pares, aspectos centrales para el trabajo académico de calidad.\nA continuación, Katherine Aravena presentó Visual Studio Code como un entorno unificado para organizar proyectos, editar documentos y trabajar de manera ordenada con múltiples archivos. A partir de un flujo simple (crear, guardar, revisar y sincronizar cambios) mostró cómo este editor facilita la colaboración dentro de los equipos y ayuda a mantener estructuras de trabajo consistentes a lo largo del tiempo.\nEl núcleo del taller estuvo a cargo de René Canales y Tomás Urzúa, quienes abordaron el uso conjunto de R y Quarto para elaborar documentos y presentaciones que integran texto, análisis y resultados en un mismo archivo. A partir de ejemplos prácticos, explicaron cómo este enfoque permite actualizar salidas automáticamente cuando cambian los datos, favorecer la coherencia entre el relato y los resultados y mejorar la legibilidad con criterios básicos de estilo y organización. También revisaron estrategias para mantener repositorios ordenados y estructuras de carpetas que facilitan el trabajo en equipo.\nPosteriormente, Kevin Carrasco introdujo Git y GitHub como herramientas centrales para el control de versiones y la publicación abierta de materiales. Se revisaron buenas prácticas para registrar cambios de forma clara, trabajar en ramas cuando se desarrollan nuevas funciones o análisis, y publicar sitios que permitan compartir informes, scripts y recursos docentes de manera accesible. Este componente resultó clave para conectar la producción técnica con la difusión de resultados.\nA lo largo de la jornada se reforzó un mensaje transversal: adoptar estándares reproducibles no solo mejora la calidad técnica de los productos, sino que acorta tiempos de revisión, ordena los flujos de trabajo y facilita la colaboración. La integración de herramientas abiertas (editor, lenguaje de programación, sistema de versionamiento y publicación web) habilita equipos más coordinados y procesos más transparentes.\nEl encuentro concluyó con un espacio de preguntas, intercambio de experiencias y recomendaciones para implementar estos recursos en cursos, informes y proyectos en curso del CIAE. En conjunto, el taller contribuyó a estandarizar la producción técnica de documentos y presentaciones, y promovió la adopción de prácticas reproducibles que favorecen la transparencia, la colaboración y la reutilización del trabajo académico.\n\n\n\n\n\n\n\nFigura 1: Equipo: Katherine Aravena - Ayudante de Investigación LISA; Kevin Carrasco - Coordinador LISA; René Canales - Asistente de Investigación LISA; Juan Carlos Castillo - Investigador Principal; Tomás Urzúa - Asistente de investigación OCS."
   },
   {
     "objectID": "protocolos/a-IPO-rep/index.html",
@@ -481,50 +537,5 @@
     "title": "Glosario de conceptos Ciencia Abierta ANID",
     "section": "",
     "text": "En el siguiente enlace podrán encontrar el glosario de Ciencia Abierta elaborado por ANID: https://acceso-abierto.anid.cl/recursos/glosario/"
-<<<<<<< HEAD
-  },
-  {
-    "objectID": "oferta_formativa/oferta_formativa.html",
-    "href": "oferta_formativa/oferta_formativa.html",
-    "title": "Oferta Formativa",
-    "section": "",
-    "text": "En LISA fomentamos el desarrollo de una ciencia social abierta y reproducible para la comunidad científica y la ciudadanía."
-  },
-  {
-    "objectID": "oferta_formativa/oferta_formativa.html#nuestra-misión",
-    "href": "oferta_formativa/oferta_formativa.html#nuestra-misión",
-    "title": "Oferta Formativa",
-    "section": "",
-    "text": "En LISA fomentamos el desarrollo de una ciencia social abierta y reproducible para la comunidad científica y la ciudadanía."
-  },
-  {
-    "objectID": "oferta_formativa/oferta_formativa.html#nuestro-enfoque",
-    "href": "oferta_formativa/oferta_formativa.html#nuestro-enfoque",
-    "title": "Oferta Formativa",
-    "section": "Nuestro Enfoque",
-    "text": "Nuestro Enfoque\nUno de nuestros objetivos principales ha sido generar una propuesta de trabajo integral, la cual se constituye a través de la elaboración de herramientas conceptuales y prácticas en cuatro componentes fundamentales:\n\nLos Cuatro Componentes de la Ciencia Abierta\n\n\n1. Diseño Transparente Promovemos la transparencia en el diseño de investigación desde la conceptualización hasta la implementación.\n\n\n2. Apertura de Datos Facilitamos el acceso y compartición de datos de investigación siguiendo principios FAIR.\n\n\n3. Análisis Reproducibles Enseñamos técnicas y herramientas para garantizar que los análisis puedan ser replicados y verificados.\n\n\n4. Publicaciones Libres Apoyamos la difusión del conocimiento a través de publicaciones de acceso abierto."
-  },
-  {
-    "objectID": "oferta_formativa/oferta_formativa.html#herramientas-de-capacitación",
-    "href": "oferta_formativa/oferta_formativa.html#herramientas-de-capacitación",
-    "title": "Oferta Formativa",
-    "section": "Herramientas de Capacitación",
-    "text": "Herramientas de Capacitación\nOfrecemos capacitación especializada en las siguientes herramientas tecnológicas:\n\n\n\nR Análisis estadístico y visualización de datos\n\n\n\nQuarto Publicación científica reproducible\n\n\n\nVSCode Entorno de desarrollo integrado\n\n\n\nGitHub Control de versiones y colaboración"
-  },
-  {
-    "objectID": "oferta_formativa/oferta_formativa.html#nuestros-cursos-y-talleres",
-    "href": "oferta_formativa/oferta_formativa.html#nuestros-cursos-y-talleres",
-    "title": "Oferta Formativa",
-    "section": "Nuestros Cursos y Talleres",
-    "text": "Nuestros Cursos y Talleres\nHacemos cursos y talleres sobre los siguientes temas:\n\n🔄 Talleres de Flujo Reproducible\n\nIntroducción a la reproducibilidad en ciencias sociales\nFlujo de trabajo desde el diseño hasta la publicación\nBuenas prácticas en documentación y organización de proyectos\n\n\n\n💻 Talleres sobre Herramientas Computacionales para las Ciencias Sociales\n\nProgramación en R para ciencias sociales\nAnálisis de datos con herramientas abiertas\nVisualización de datos efectiva\nManejo de repositorios y control de versiones\nUso de OSF para preregistros y gestión de proyectos abiertos\n\n\n\n📊 Capacitaciones Especializadas\n\nPreregistros y Diseño Transparente: Uso de OSF, preregistros, y estrategias para el diseño de investigación transparente.\nGestión y Apertura de Datos: Principios FAIR, buenas prácticas para compartir, documentar y abrir datos de investigación.\nEscritura y Publicación en Acceso Abierto: Uso de templates/protocolos IPO, escritura científica reproducible, y presentaciones en Quarto."
-  },
-  {
-    "objectID": "oferta_formativa/oferta_formativa.html#contacto-y-participación",
-    "href": "oferta_formativa/oferta_formativa.html#contacto-y-participación",
-    "title": "Oferta Formativa",
-    "section": "Contacto y Participación",
-    "text": "Contacto y Participación\n¿Interesado en nuestras capacitaciones? Contáctanos para conocer más sobre nuestros próximos talleres y cursos."
-=======
->>>>>>> 7a8a462a6ddb27840fa0910d3ed92abd6405faed
   }
 ]

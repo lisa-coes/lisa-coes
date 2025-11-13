@@ -55,50 +55,58 @@
     "items": []
   },
   {
+    "listing": "/actividades/actividades.html",
+    "items": [
+      "/actividades/presentaciones/2025-herramientas-computacionales-para-la-investigacion-social-reproducible/index.html",
+      "/actividades/presentaciones/2025-taller-flujo-de-investigacion-reproducible-con-github-vscode-y-quarto/index.html",
+      "/actividades/presentaciones/taller-elsoc-vscode/index.html",
+      "/actividades/presentaciones/2025-taller-semilleros-coes-junio-2025-introduccion-al-flujo-de-investigacion-abierto/index.html",
+      "/actividades/presentaciones/2025-introduccion-a-la-ciencia-abierta-antropologia-facso-2025/index.html",
+      "/actividades/presentaciones/2024-barreras-para-la-ciencia-abierta-en-la-investigacion-en-ciencias-sociales-en-chile-congreso-chileno-de-sociologia-2024/index.html",
+      "/actividades/presentaciones/2024-taller-flujo-de-investigacion-abierto-enero-2024-universidad-de-valparaiso/index.html",
+      "/actividades/presentaciones/2024-taller-introduccion-al-flujo-de-investigacion-reproducible-escuela-de-invierno-elsoc-2024/index.html",
+      "/actividades/presentaciones/2023-taller-herramientas-de-ciencia-abierta-noviembre-2023-nudos/index.html",
+      "/actividades/presentaciones/2023-taller-reproducibilidad-y-repositorios-abiertos-junio-2023-aprendiendo-metodologia-por-valentina/index.html",
+      "/actividades/presentaciones/2023-presentacion-congreso-de-bibliotecas-universitarias-especializadas-universidad-de-chile-enero-2023/index.html",
+      "/actividades/presentaciones/2023-presentacion-escuela-de-verano-conocimiento-y-ciencia-abierta-universidad-central/index.html",
+      "/actividades/presentaciones/2023-presentacion-universidad-iberoamericana-de-mexico-2023-online-/index.html",
+      "/actividades/presentaciones/2022-presentacion-workshop-produccion-de-articulos-cientificos-con-elsoc-30-de-septiembre-de-2022/index.html",
+      "/actividades/presentaciones/2022-workshop-produccion-de-articulos-cientificos-con-elsoc-30-de-septiembre-de-2022/index.html",
+      "/actividades/presentaciones/2022-taller-introduccion-a-shiny-enero-2022-aprendiendo-metodologia-por-valentina/index.html",
+      "/actividades/presentaciones/2022-taller-pre-registros-y-pre-prints-enero-2022/index.html",
+      "/actividades/presentaciones/2022-taller-reproducibilidad-enero-2022-aprendiendo-metodologia-por-valentina/index.html"
+    ]
+  },
+  {
+    "listing": "/actividades/presentaciones/index.html",
+    "items": [
+      "/actividades/presentaciones/2025-herramientas-computacionales-para-la-investigacion-social-reproducible/index.html",
+      "/actividades/presentaciones/2025-taller-flujo-de-investigacion-reproducible-con-github-vscode-y-quarto/index.html",
+      "/actividades/presentaciones/taller-elsoc-vscode/index.html",
+      "/actividades/presentaciones/2025-taller-semilleros-coes-junio-2025-introduccion-al-flujo-de-investigacion-abierto/index.html",
+      "/actividades/presentaciones/2025-introduccion-a-la-ciencia-abierta-antropologia-facso-2025/index.html",
+      "/actividades/presentaciones/2024-barreras-para-la-ciencia-abierta-en-la-investigacion-en-ciencias-sociales-en-chile-congreso-chileno-de-sociologia-2024/index.html",
+      "/actividades/presentaciones/2024-taller-flujo-de-investigacion-abierto-enero-2024-universidad-de-valparaiso/index.html",
+      "/actividades/presentaciones/2024-taller-introduccion-al-flujo-de-investigacion-reproducible-escuela-de-invierno-elsoc-2024/index.html",
+      "/actividades/presentaciones/2023-taller-herramientas-de-ciencia-abierta-noviembre-2023-nudos/index.html",
+      "/actividades/presentaciones/2023-taller-reproducibilidad-y-repositorios-abiertos-junio-2023-aprendiendo-metodologia-por-valentina/index.html",
+      "/actividades/presentaciones/2023-presentacion-congreso-de-bibliotecas-universitarias-especializadas-universidad-de-chile-enero-2023/index.html",
+      "/actividades/presentaciones/2023-presentacion-escuela-de-verano-conocimiento-y-ciencia-abierta-universidad-central/index.html",
+      "/actividades/presentaciones/2023-presentacion-universidad-iberoamericana-de-mexico-2023-online-/index.html",
+      "/actividades/presentaciones/2022-presentacion-workshop-produccion-de-articulos-cientificos-con-elsoc-30-de-septiembre-de-2022/index.html",
+      "/actividades/presentaciones/2022-workshop-produccion-de-articulos-cientificos-con-elsoc-30-de-septiembre-de-2022/index.html",
+      "/actividades/presentaciones/2022-taller-introduccion-a-shiny-enero-2022-aprendiendo-metodologia-por-valentina/index.html",
+      "/actividades/presentaciones/2022-taller-pre-registros-y-pre-prints-enero-2022/index.html",
+      "/actividades/presentaciones/2022-taller-reproducibilidad-enero-2022-aprendiendo-metodologia-por-valentina/index.html"
+    ]
+  },
+  {
     "listing": "/componentes/componentes.html",
     "items": [
       "/componentes/a-diseño/index.html",
       "/componentes/b-data/index.html",
       "/componentes/c-repro/index.html",
       "/componentes/d-publibres/index.html"
-    ]
-  },
-  {
-    "listing": "/actividades/presentaciones/index.html",
-    "items": [
-      "/actividades/presentaciones/2025-talleres-de-formacion-interna-ciae-octubre-2025-herramientas-computacionales-para-la-investigacion-social-reproducible/index.html",
-      "/actividades/presentaciones/taller-elsoc-vscode/index.html",
-      "/actividades/presentaciones/2025-taller-semilleros-coes-junio-2025-introduccion-al-flujo-de-investigacion-abierto/index.html",
-      "/actividades/presentaciones/2025-introduccion-a-la-ciencia-abierta-antropologia-facso-2025/index.html",
-      "/actividades/presentaciones/2024-taller-flujo-de-investigacion-abierto-enero-2024-universidad-de-valparaiso/index.html",
-      "/actividades/presentaciones/2023-taller-herramientas-de-ciencia-abierta-noviembre-2023-nudos/index.html",
-      "/actividades/presentaciones/2023-taller-reproducibilidad-y-repositorios-abiertos-junio-2023-aprendiendo-metodologia-por-valentina/index.html",
-      "/actividades/presentaciones/2023-presentacion-congreso-de-bibliotecas-universitarias-especializadas-universidad-de-chile-enero-2023/index.html",
-      "/actividades/presentaciones/2023-presentacion-escuela-de-verano-conocimiento-y-ciencia-abierta-universidad-central/index.html",
-      "/actividades/presentaciones/2023-presentacion-universidad-iberoamericana-de-mexico-2023-online-/index.html",
-      "/actividades/presentaciones/2022-presentacion-workshop-produccion-de-articulos-cientificos-con-elsoc-30-de-septiembre-de-2022/index.html",
-      "/actividades/presentaciones/2022-taller-introduccion-a-shiny-enero-2022-aprendiendo-metodologia-por-valentina/index.html",
-      "/actividades/presentaciones/2022-taller-pre-registros-y-pre-prints-enero-2022/index.html",
-      "/actividades/presentaciones/2022-taller-reproducibilidad-enero-2022-aprendiendo-metodologia-por-valentina/index.html"
-    ]
-  },
-  {
-    "listing": "/actividades/actividades.html",
-    "items": [
-      "/actividades/presentaciones/2025-talleres-de-formacion-interna-ciae-octubre-2025-herramientas-computacionales-para-la-investigacion-social-reproducible/index.html",
-      "/actividades/presentaciones/taller-elsoc-vscode/index.html",
-      "/actividades/presentaciones/2025-taller-semilleros-coes-junio-2025-introduccion-al-flujo-de-investigacion-abierto/index.html",
-      "/actividades/presentaciones/2025-introduccion-a-la-ciencia-abierta-antropologia-facso-2025/index.html",
-      "/actividades/presentaciones/2024-taller-flujo-de-investigacion-abierto-enero-2024-universidad-de-valparaiso/index.html",
-      "/actividades/presentaciones/2023-taller-herramientas-de-ciencia-abierta-noviembre-2023-nudos/index.html",
-      "/actividades/presentaciones/2023-taller-reproducibilidad-y-repositorios-abiertos-junio-2023-aprendiendo-metodologia-por-valentina/index.html",
-      "/actividades/presentaciones/2023-presentacion-congreso-de-bibliotecas-universitarias-especializadas-universidad-de-chile-enero-2023/index.html",
-      "/actividades/presentaciones/2023-presentacion-escuela-de-verano-conocimiento-y-ciencia-abierta-universidad-central/index.html",
-      "/actividades/presentaciones/2023-presentacion-universidad-iberoamericana-de-mexico-2023-online-/index.html",
-      "/actividades/presentaciones/2022-presentacion-workshop-produccion-de-articulos-cientificos-con-elsoc-30-de-septiembre-de-2022/index.html",
-      "/actividades/presentaciones/2022-taller-introduccion-a-shiny-enero-2022-aprendiendo-metodologia-por-valentina/index.html",
-      "/actividades/presentaciones/2022-taller-pre-registros-y-pre-prints-enero-2022/index.html",
-      "/actividades/presentaciones/2022-taller-reproducibilidad-enero-2022-aprendiendo-metodologia-por-valentina/index.html"
     ]
   },
   {

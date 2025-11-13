@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.7.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,15 +34,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-fca30eb9847a47594b8e4873b11d8021.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-4c032d22896a401144eeeebda381de0c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -116,7 +115,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -143,8 +142,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../resources/imagenes/logo.png" alt="" class="navbar-logo light-content">
-    <img src="../resources/imagenes/logo.png" alt="" class="navbar-logo dark-content">
+    <img src="../resources/imagenes/logo.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -302,25 +300,25 @@ h1.title {
 <section id="herramientas-de-capacitación" class="level2">
 <h2 class="anchored" data-anchor-id="herramientas-de-capacitación">Herramientas de Capacitación</h2>
 <p>Ofrecemos capacitación especializada en las siguientes herramientas tecnológicas:</p>
-<div class="grid g-cols-5">
+<div class="grid">
 <div class="g-col-5">
-<p><img src="../resources/imagenes/r-logo.png" class="img-fluid" alt="R logo" width="40"></p>
+<p><img src="../resources/imagenes/r-logo.png" style="width:4cm;height:4cm" alt="R logo"></p>
 <p><strong>R</strong> Análisis estadístico y visualización de datos</p>
 </div>
 <div class="g-col-5">
-<p><img src="../resources/imagenes/quarto-logo.png" class="img-fluid" alt="Quarto logo" width="40"></p>
+<p><img src="../resources/imagenes/quarto-logo.png" style="width:4cm;height:4cm" alt="Quarto logo"></p>
 <p><strong>Quarto</strong> Publicación científica reproducible</p>
 </div>
 <div class="g-col-5">
-<p><img src="../resources/imagenes/osf-logo.png" class="img-fluid" alt="OSF logo" width="40"></p>
+<p><img src="../resources/imagenes/osf-logo.png" style="width:4cm;height:4cm" alt="OSF logo"></p>
 <p><strong>OSF</strong> Gestión y organización de prerregistros</p>
 </div>
 <div class="g-col-5">
-<p><img src="../resources/imagenes/vscode-logo.png" class="img-fluid" alt="VSCode logo" width="40"></p>
+<p><img src="../resources/imagenes/vscode-logo.png" style="width:4cm;height:4cm" alt="VSCode logo"></p>
 <p><strong>VSCode</strong> Entorno de desarrollo integrado</p>
 </div>
 <div class="g-col-5">
-<p><img src="../resources/imagenes/github-logo.png" class="img-fluid" alt="GitHub logo" width="40"></p>
+<p><img src="../resources/imagenes/github-logo.png" style="width:4cm;height:4cm" alt="GitHub logo"></p>
 <p><strong>GitHub</strong> Control de versiones y colaboración</p>
 </div>
 </div>
@@ -472,14 +470,13 @@ h1.title {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
