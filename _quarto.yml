@@ -51,10 +51,10 @@ website:
       - text: Actividades
         icon: calendar-week
         href: actividades/actividades.qmd
-      - text: Recomendados
+      - text: Oferta formativa
         icon: journals
-        href: recomendados/recomendados.qmd
-      - text: Contactos
+        href: oferta_formativa/oferta_formativa.qmd
+      - text: Contáctanos
         icon: envelope
         href: contactos/contactos.qmd
          
