@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="LISA">
-<meta name="dcterms.date" content="2025-08-20">
-<meta name="keywords" content="codebook, reproducibilidad">
-<meta name="description" content="¿Cómo hacer un libro de códigos?">
+<meta name="description" content="Curso de Especialización de la Facultad de Ciencias Sociales de la Universidad de Chile que aborda el uso de VS Code, Quarto, Git y GitHub para fortalecer la reproducibilidad, la transparencia y la comunicación de resultados en investigación.">
 
-<title>Protocolo Análisis reproducible</title>
+<title>Investigación reproducible: Herramientas computacionales para el análisis, reporte y comunicación de resultados</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -27,26 +24,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-fca30eb9847a47594b8e4873b11d8021.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-addc1a85f985748ce9d42e673ebd2b4c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -61,26 +58,22 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
   }
 }</script>
-<script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
-
-<link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
-
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -90,19 +83,19 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../resources/imagenes/logo.png" alt="" class="navbar-logo light-content">
-    <img src="../../resources/imagenes/logo.png" alt="" class="navbar-logo dark-content">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../resources/imagenes/logo.png" alt="" class="navbar-logo light-content">
+    <img src="../../../resources/imagenes/logo.png" alt="" class="navbar-logo dark-content">
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../componentes/componentes.html"> <i class="bi bi-info-circle-fill" role="img">
+    <a class="nav-link" href="../../../componentes/componentes.html"> <i class="bi bi-info-circle-fill" role="img">
 </i> 
 <span class="menu-text">Sobre LISA</span></a>
   </li>  
@@ -114,19 +107,19 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-componentes">    
         <li>
-    <a class="dropdown-item" href="../../componentes/a-diseño/index.html">
+    <a class="dropdown-item" href="../../../componentes/a-diseño/index.html">
  <span class="dropdown-text"><i class="ai  ai-preregistered" aria-label="preregistered"></i> Diseño Transparente</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../componentes/b-data/index.html">
+    <a class="dropdown-item" href="../../../componentes/b-data/index.html">
  <span class="dropdown-text"><i class="ai  ai-open-data" aria-label="open-data"></i> Datos Abiertos</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../componentes/c-repro/index.html">
+    <a class="dropdown-item" href="../../../componentes/c-repro/index.html">
  <span class="dropdown-text"><i class="ai  ai-open-materials" aria-label="open-materials"></i> Análisis Reproducible</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../componentes/d-publibres/index.html">
+    <a class="dropdown-item" href="../../../componentes/d-publibres/index.html">
  <span class="dropdown-text"><i class="ai  ai-open-access-square" aria-label="open-access-square"></i> Publicaciones Libres</span></a>
   </li>  
     </ul>
@@ -139,32 +132,32 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-protocolos">    
         <li>
-    <a class="dropdown-item" href="../../protocolos/a-IPO-rep/index.html">
+    <a class="dropdown-item" href="../../../protocolos/a-IPO-rep/index.html">
  <span class="dropdown-text"><i class="ai  ai-ipo-rep" aria-label="ipo-rep"></i> Protocolo Análisis Reproducible</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../protocolos/b-IPO-data/index.html">
+    <a class="dropdown-item" href="../../../protocolos/b-IPO-data/index.html">
  <span class="dropdown-text"><i class="ai  ai-ipo-data" aria-label="ipo-data"></i> Protocolo Apertura Datos</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../noticias/noticias.html"> <i class="bi bi-newspaper" role="img">
+    <a class="nav-link" href="../../../noticias/noticias.html"> <i class="bi bi-newspaper" role="img">
 </i> 
 <span class="menu-text">Noticias</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../actividades/actividades.html"> <i class="bi bi-calendar-week" role="img">
+    <a class="nav-link" href="../../../actividades/actividades.html"> <i class="bi bi-calendar-week" role="img">
 </i> 
 <span class="menu-text">Actividades</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../oferta_formativa/oferta_formativa.html"> <i class="bi bi-journals" role="img">
+    <a class="nav-link" href="../../../oferta_formativa/oferta_formativa.html"> <i class="bi bi-journals" role="img">
 </i> 
 <span class="menu-text">Oferta formativa</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../contactos/contactos.html"> <i class="bi bi-envelope" role="img">
+    <a class="nav-link" href="../../../contactos/contactos.html"> <i class="bi bi-envelope" role="img">
 </i> 
 <span class="menu-text">Contáctanos</span></a>
   </li>  
@@ -186,32 +179,24 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Protocolo Análisis reproducible</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">protocolos</div>
-  </div>
+<h1 class="title">Investigación reproducible: Herramientas computacionales para el análisis, reporte y comunicación de resultados</h1>
+<p class="subtitle lead">Escuela de Verano Educación Continua FACSO 2026</p>
   </div>
 
 <div>
   <div class="description">
-    ¿Cómo hacer un libro de códigos?
+    Curso de Especialización de la Facultad de Ciencias Sociales de la Universidad de Chile que aborda el uso de VS Code, Quarto, Git y GitHub para fortalecer la reproducibilidad, la transparencia y la comunicación de resultados en investigación.
   </div>
 </div>
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>LISA </p>
-          </div>
-  </div>
     
     <div>
-    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 20, 2025</p>
+      <p class="date">Santiago, 22 de noviembre de 2025</p>
     </div>
   </div>
   
@@ -219,144 +204,43 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
-<div>
-  <div class="keywords">
-    <div class="block-title">Keywords</div>
-    <p>codebook, reproducibilidad</p>
-  </div>
-</div>
 
 </header>
 
 
-<section id="ipo-reproducibilidad" class="level1">
-<h1>IPO-reproducibilidad</h1>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="ipo-hex.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
-</figure>
+<div class="post-hero" style="--hero-edge: 160px; --hero-scale: 0.90;--hero-gap: 36px;">
+<p><img src="featured1.jpg" class="post-hero-img img-fluid"></p>
 </div>
-<section id="protocolo-para-flujo-de-investigación-reproducible" class="level3">
-<h3 class="anchored" data-anchor-id="protocolo-para-flujo-de-investigación-reproducible">Protocolo para flujo de investigación reproducible</h3>
-<p>Esta es una plantilla/protocolo de carpetas de proyecto basada en el protocolo <strong>TIER</strong> (Integridad de Enseñanza en Investigación Empírica). TIER “promueve la integración de principios y prácticas relacionadas con la transparencia y la replicabilidad en el entrenamiento en investigación de los científicos sociales”. (más información en <a href="https://www.projecttier.org/" class="uri">https://www.projecttier.org/</a>).</p>
-<p>La implementación de la reproducibilidad en este tipo de protocolos se basa en generar un <strong>conjunto de archivos auto-contenidos</strong> organizado en una estructura de proyecto que cualquier persona pueda compartir y ejecutar. En otras palabras, debe tener todo lo que necesita para ejecutar y volver a ejecutar el análisis.</p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://osf.io/ftkq8/?direct%26mode=render%26action=download%26public_file=True&amp;initialWidth=848&amp;childId=mfrIframe&amp;parentTitle=OSF+%7C+reproducibiity_relocates_time.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
-</figure>
+<div class="post-meta-row">
+<div class="post-actions">
+<p><a href="https://uchile.cl/s234561" class="btn btn-primary btn-sm" target="_blank" rel="noopener"><strong>Ficha del curso</strong></a> <a href="https://lnkd.in/eZr_dQYN" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener">Postulación en línea</a></p>
+</div>
+<div class="post-date">
+<p>Santiago, 22 de noviembre de 2025</p>
 </div>
 </div>
-</div>
-<p>El protocolo <strong>IPO</strong> sigue la lógica de <a href="https://www.projecttier.org/tier-protocol/protocol-4-0/">TIER</a>, pero con algunas innovaciones:</p>
+<p>El Departamento de Sociología de la Facultad de Ciencias Sociales de la Universidad de Chile invita a participar en el curso de especialización “Investigación reproducible: Herramientas computacionales para el análisis, reporte y comunicación de resultados”, parte de la Escuela de Verano 2026 de Educación Continua.</p>
+<p>El curso aborda el uso integrado de <strong>Visual Studio Code</strong>, <strong>Markdown/Quarto</strong> y <strong>Git/GitHub</strong> para organizar proyectos, documentar procesos y comunicar resultados de investigación de manera clara, transparente y reproducible. A través de casos y ejercicios prácticos, se trabaja el ciclo completo: desde la organización de carpetas y archivos hasta la generación de documentos dinámicos y la publicación en plataformas abiertas.</p>
+<p>La actividad está dirigida a <strong>profesionales, académicos, estudiantes, funcionariado público y trabajadores</strong> que requieran fortalecer sus habilidades en análisis, reporte y presentación de datos para mejorar la calidad y trazabilidad de sus proyectos.</p>
+<p><strong>Información general del curso</strong></p>
 <ul>
-<li><p>intenta un modelo fácil de memorizar y relacionado con el flujo de trabajo de análisis (Input-Procesamiento-Output = IPO), donde el procesamiento se refiere a la preparación y análisis de datos.</p></li>
-<li><p>agrega una carpeta “Input”, que tiene un alcance más amplio que la carpeta “Datos”<a href="https://www.projecttier.org/tier-protocol/protocol-4-0/root/data/">original en TIER</a>, pero también otras posibles entradas, como imágenes externas y archivos de bibliografía.</p></li>
-<li><p>la carpeta de datos también se simplifica, incluyendo ahora solo una estructura “original” y “procesada”.</p></li>
-<li><p>modifica los archivos a .md/.Rmd (archivos Markdown) /.Qmd (archivos Quarto) en lugar de .txt. Markdown es un lenguaje de texto con marcas mínimas de formato que luego se pueden convertir a otros formatos como pdf y / o html (por ejemplo, cuando se usa R / Rmarkdown / Quarto). Pero, en el fondo, son simples archivos txt con solo otra extensión.</p></li>
+<li><strong>Fechas:</strong> martes 13, miércoles 14, jueves 15 y viernes 16 de enero de 2026<br>
+</li>
+<li><strong>Horario:</strong> 09:00 a 13:30 horas<br>
+</li>
+<li><strong>Modalidad:</strong> Híbrida (clases por Zoom y en aula física)<br>
+</li>
+<li><strong>Organiza:</strong> Departamento de Sociología, FACSO – Universidad de Chile<br>
+</li>
+<li><strong>Valor de referencia:</strong> $250.000 CLP (aprox. 265 USD)</li>
 </ul>
-</section>
-<section id="archivos-y-estructura-de-carpetas" class="level3">
-<h3 class="anchored" data-anchor-id="archivos-y-estructura-de-carpetas">Archivos y estructura de carpetas</h3>
-<pre><code>├── input: información externa como datos, imágenes, .bib:
-|   ├── data-orig: archivos de datos originales y metadatos disponibles
-|   ├── data-proc: archivos de datos procesados
-│   ├── imagenes
-│   ├── bib: archivos de bibliografía
-│   ├── prereg: archivos de pre-registro si están disponibles
-|
-├── procesamiento:
-│   - preparacion.qmd
-│   - analisis.qmd
-|
-├── output: tablas, gráficos y otras salidas del procesamiento.
-│   ├── graphs
-│   ├── tables
-|
-- readme.md : archivo general de introducción
-- paper.qmd / paper.html / paper.pdf: el artículo/paper</code></pre>
-</section>
-<section id="versiones-de-ipo" class="level3">
-<h3 class="anchored" data-anchor-id="versiones-de-ipo">Versiones de IPO</h3>
-<div class="cell">
-<div class="cell-output-display">
-<div class="table-responsive">
-<table class="table table-striped table-bordered table-condensed caption-top table-sm small">
-<thead>
-<tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">Plantilla</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Descripción</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Software</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Documentos dinámicos</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Control de versiones</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">Enlace</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">IPO-base</td>
-<td style="text-align: left; width: 10cm;">Orientado a cualquier software o paquete estadístico. Emplea la estructura de carpetas del protocolo.</td>
-<td style="text-align: left;">Cuaquiera</td>
-<td style="text-align: center; width: 3cm;">NO</td>
-<td style="text-align: center; width: 3cm;">NO</td>
-<td style="text-align: left;"><a href="https://github.com/lisa-coes/ipo-rgit/raw/main/templates/IPO-base.rar" style="     ">IPO base</a></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">IPO-R</td>
-<td style="text-align: left; width: 10cm;">Orientado a usuarios de R. Emplea la estructura general de carpetas y posee énfasis en la reproducibilidad de resultados (tablas, figuras, etc)</td>
-<td style="text-align: left;">R</td>
-<td style="text-align: center; width: 3cm;">SI</td>
-<td style="text-align: center; width: 3cm;">NO</td>
-<td style="text-align: left;"><a href="https://github.com/lisa-coes/ipo-rgit/raw/main/templates/IPO-R.rar" style="     ">IPO R</a></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">IPO-Rgit</td>
-<td style="text-align: left; width: 10cm;">Mantiene la misma estructura básica, esta versión es una actualización para aprovechar todas las herramientas de reproducibilidad, colaboración y publicación ofrecidas por los entornos de trabajo Quarto / Github.</td>
-<td style="text-align: left;">R+Git</td>
-<td style="text-align: center; width: 3cm;">SI</td>
-<td style="text-align: center; width: 3cm;">SI</td>
-<td style="text-align: left;"><a href="https://github.com/lisa-coes/ipo-rgit/generate" style="     ">IPO R+Git</a></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</section>
-<section id="principios-básicos" class="level3">
-<h3 class="anchored" data-anchor-id="principios-básicos">Principios básicos</h3>
-<ul>
-<li><p><strong>orden</strong>: trabajar pensando en alguien que no esté familiarizado con el proyecto pueda entenderlo y reproducirlo sin mayores instrucciones que la referencia a este protocolo y otra información que esté en el archivo readme.md. O piense en usted dentro de 5 años: ¿podrá comprender y reproducir esto?</p></li>
-<li><p><strong>comentar los códigos</strong>: registrar brevemente los motivos de cualquier decisión</p></li>
-<li><p>el código de preparación debería comenzar cargando los datos originales y terminar guardando los datos procesados en la carpeta correspondiente (proc).</p></li>
-</ul>
-<p>El flujo de trabajo asociado a estos principios se presenta en el siguiente esquema:</p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://multivariada.netlify.app/images/produccion2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:75.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="ejemplo" class="level3">
-<h3 class="anchored" data-anchor-id="ejemplo">Ejemplo</h3>
-<p>Un ejemplo mínimo para probar la implementación del protocolo se puede bajar <a href="https://lisa-coes.github.io/ipo/IPO_miniex/IPO_miniex.tar.gz">aquí</a></p>
-<hr>
-</section>
-<section id="quieres-comentar-o-tienes-alguna-duda" class="level2">
-<h2 class="anchored" data-anchor-id="quieres-comentar-o-tienes-alguna-duda">¿Quieres comentar o tienes alguna duda?</h2>
-<p>Puedes dejar tus comentarios y dudas sobre el <strong>Protocolo IPO</strong> en nuestro foro. De todas formas puedes <a href="../..\contact/">contactarnos</a></p>
-<div id="disqus_thread">
-
+<p>El curso contempla clases teórico–participativas, discusión de experiencias y trabajo aplicado sobre repositorios reales, buscando que cada participante pueda adaptar las herramientas a sus contextos de investigación y docencia. Al finalizar, quienes aprueben obtendrán <strong>certificación como Curso de Especialización de la Universidad de Chile</strong>.</p>
+<p>Para más detalles de contenidos, requisitos y proceso de postulación, revisa la ficha oficial del curso y completa tu postulación en los enlaces destacados al inicio de esta nota.</p>
+<div class="figure-plain">
+<p><img src="Equipop.png" class="img-fluid"></p>
 </div>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <!-- FOOTER QUE IGNORA LA GRID DE QUARTO -->
@@ -385,7 +269,7 @@ ul.task-list li input[type="checkbox"] {
 
   <a href="https://coes.cl">
 
- <img id="logo-coes" src="../../COES_Logo_sello1.png" alt="Logo COES" style="width: 50%;">
+ <img id="logo-coes" src="../../../COES_Logo_sello1.png" alt="Logo COES" style="width: 50%;">
 
 
 
@@ -435,12 +319,12 @@ ul.task-list li input[type="checkbox"] {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copiado");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copiado");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",

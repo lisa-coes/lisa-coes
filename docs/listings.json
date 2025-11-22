@@ -18,6 +18,7 @@
       "/componentes/b-data/index.html",
       "/componentes/c-repro/index.html",
       "/componentes/d-publibres/index.html",
+      "/noticias/posts/curso_ed/index.html",
       "/noticias/posts/plantilla-quarto/index.html",
       "/noticias/posts/taller-ciae2025/index.html",
       "/noticias/posts/evento-socialtec/index.html",
@@ -112,6 +113,7 @@
   {
     "listing": "/noticias/noticias.html",
     "items": [
+      "/noticias/posts/curso_ed/index.html",
       "/noticias/posts/plantilla-quarto/index.html",
       "/noticias/posts/taller-ciae2025/index.html",
       "/noticias/posts/evento-socialtec/index.html",
