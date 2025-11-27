@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.24">
+<meta name="generator" content="quarto-1.7.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -33,15 +33,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="../../../">
 <script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-1f46aaffa8780b6e9e9c98f949ca4174.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/bootstrap/bootstrap-5211e9f1902429dbf03a740e12b6a9bf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -58,7 +57,7 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No se han encontrado resultados",
+    "search-no-results-text": "Sin resultados",
     "search-matching-documents-text": "documentos encontrados",
     "search-copy-link-title": "Copiar el enlace en la búsqueda",
     "search-hide-matches-text": "Ocultar resultados adicionales",
@@ -84,8 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../resources/imagenes/logo.png" alt="" class="navbar-logo light-content">
-    <img src="../../../resources/imagenes/logo.png" alt="" class="navbar-logo dark-content">
+    <img src="../../../resources/imagenes/logo.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Buscar"></div>
@@ -179,11 +177,17 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
-  <li><a href="#contenidos-principales" id="toc-contenidos-principales" class="nav-link" data-scroll-target="#contenidos-principales">Contenidos principales</a></li>
   <li><a href="#público-objetivo" id="toc-público-objetivo" class="nav-link" data-scroll-target="#público-objetivo">Público objetivo</a></li>
-  <li><a href="#información-general-del-curso" id="toc-información-general-del-curso" class="nav-link" data-scroll-target="#información-general-del-curso">Información general del curso</a></li>
+  <li><a href="#contenidos-principales" id="toc-contenidos-principales" class="nav-link" data-scroll-target="#contenidos-principales">Contenidos principales</a></li>
+  <li><a href="#información-general" id="toc-información-general" class="nav-link" data-scroll-target="#información-general">Información general</a></li>
   <li><a href="#equipo" id="toc-equipo" class="nav-link" data-scroll-target="#equipo">Equipo</a></li>
-  <li><a href="#programa-completo-del-curso" id="toc-programa-completo-del-curso" class="nav-link" data-scroll-target="#programa-completo-del-curso">Programa completo del curso</a></li>
+  <li><a href="#programa-completo-del-curso" id="toc-programa-completo-del-curso" class="nav-link" data-scroll-target="#programa-completo-del-curso">Programa completo del curso</a>
+  <ul class="collapse">
+  <li><a href="#introducción-al-análisis-de-datos-reproducibles" id="toc-introducción-al-análisis-de-datos-reproducibles" class="nav-link" data-scroll-target="#introducción-al-análisis-de-datos-reproducibles">1. Introducción al análisis de datos reproducibles</a></li>
+  <li><a href="#generación-de-documentos-dinámicos" id="toc-generación-de-documentos-dinámicos" class="nav-link" data-scroll-target="#generación-de-documentos-dinámicos">2. Generación de documentos dinámicos</a></li>
+  <li><a href="#repositorios-abiertos" id="toc-repositorios-abiertos" class="nav-link" data-scroll-target="#repositorios-abiertos">3. Repositorios abiertos</a></li>
+  <li><a href="#publicación-de-investigaciones-reproducibles" id="toc-publicación-de-investigaciones-reproducibles" class="nav-link" data-scroll-target="#publicación-de-investigaciones-reproducibles">4. Publicación de investigaciones reproducibles</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -235,25 +239,24 @@ ul.task-list li input[type="checkbox"] {
 <section id="section" class="level2">
 <h2 class="anchored" data-anchor-id="section"></h2>
 <p>El Departamento de Sociología de la Facultad de Ciencias Sociales de la Universidad de Chile invita a participar en el curso de especialización <strong>“Investigación reproducible: Herramientas computacionales para el análisis, reporte y comunicación de resultados”</strong>, parte de la <strong>Escuela de Verano 2026 de Educación Continua</strong>.</p>
-<p>El curso aborda el uso integrado de <strong>Visual Studio Code</strong>, <strong>Markdown/Quarto</strong> y <strong>Git/GitHub</strong> para organizar proyectos, documentar procesos y comunicar resultados de investigación de manera clara, transparente y reproducible.</p>
+</section>
+<section id="público-objetivo" class="level2">
+<h2 class="anchored" data-anchor-id="público-objetivo">Público objetivo</h2>
+<p>El curso está dirigido a <strong>profesionales, académicos, estudiantes, funcionariado público y trabajadores</strong> que necesiten fortalecer sus habilidades en análisis, reporte y presentación de datos para mejorar la calidad, transparencia y trazabilidad de sus proyectos. Se orienta especialmente a quienes desarrollan investigación social, análisis de datos, evaluación de políticas públicas, estudios de mercado o proyectos relacionados con ciencias sociales, salud, educación y áreas afines. No se requieren conocimientos previos en programación, pero si es recomendable tener experiencia básica en análisis de datos con programas basados en código (R, Python, Stata, etc.).</p>
 </section>
 <section id="contenidos-principales" class="level2">
 <h2 class="anchored" data-anchor-id="contenidos-principales">Contenidos principales</h2>
 <ul>
 <li><p><strong>Visual Studio Code (VSC)</strong><br>
-Presentación de Visual Studio Code como entorno de trabajo para investigación: un editor ligero que permite abrir y organizar carpetas completas de proyectos, editar distintos tipos de archivos (código, texto, datos) y personalizar el espacio de trabajo con extensiones, realizando todo en el mismo lugar.</p></li>
+VSC es un editor ampliamente utilizado en los últimos años y que sirve para escribir texto y código, y analizar datos en distintos lenguajes. Se revisan sus principales funcionalidades, extensiones y atajos de teclado para optimizar el flujo de trabajo en proyectos de análisis de datos e investigación reproducible.</p></li>
 <li><p><strong>Documentos dinámicos con Markdown y Quarto</strong><br>
 Introducción a Markdown como lenguaje de marcado sencillo para escribir texto estructurado (títulos, listas, énfasis) y combinarlo con código. A partir de esto, se trabaja con Quarto para crear documentos dinámicos como informes, reportes y presentaciones que se actualizan automáticamente cuando cambian los datos o el código, facilitando la coherencia entre análisis y resultados.</p></li>
 <li><p><strong>Control de versiones y publicación con Git/GitHub</strong><br>
 Revisión de los conceptos básicos de Git como sistema de control de versiones: guardar el historial de cambios, recuperar versiones anteriores y trabajar en paralelo en un mismo proyecto. Se explica el uso de GitHub como repositorio remoto para respaldar el trabajo, colaborar con otras personas y publicar productos reproducibles (informes, sitios web, materiales docentes) en plataformas abiertas.</p></li>
 </ul>
 </section>
-<section id="público-objetivo" class="level2">
-<h2 class="anchored" data-anchor-id="público-objetivo">Público objetivo</h2>
-<p>El curso está dirigido a <strong>profesionales, académicos, estudiantes, funcionariado público y trabajadores</strong> que necesiten fortalecer sus habilidades en análisis, reporte y presentación de datos para mejorar la calidad, transparencia y trazabilidad de sus proyectos.</p>
-</section>
-<section id="información-general-del-curso" class="level2">
-<h2 class="anchored" data-anchor-id="información-general-del-curso">Información general del curso</h2>
+<section id="información-general" class="level2">
+<h2 class="anchored" data-anchor-id="información-general">Información general</h2>
 <ul>
 <li><strong>Fechas:</strong> martes 13, miércoles 14, jueves 15 y viernes 16 de enero de 2026<br>
 </li>
@@ -328,7 +331,7 @@ Estudiante de Sociología en la Universidad de Chile, asistente de investigació
 </tr>
 <tr>
 <td class="team-photo-cell">
-<img src="../../../noticias/posts/curso_ed/tomas.jpg" alt="Foto de Tomás Urzúa" class="team-photo">
+<img src="../../../noticias/posts/curso_ed/tomas.png" alt="Foto de Tomás Urzúa" class="team-photo">
 <div class="team-name">
 Tomás Urzúa
 </div>
@@ -337,13 +340,40 @@ Asistente de Investigación OCS
 </div>
 </td>
 <td class="team-bio">
-Sociólogo de la Universidad de Chile y estudiante del Magíster de Ciencias Sociales en la misma institución. Actualmente se desempeña como asistente de investigación en el Observatorio de Cohesión Social (COES), y en paralelo es tesista del proyecto FONDECYT “Justicia de Mercado y merecimiento del bienestar social” (1250518) . Sus intereses de investigación se centran en las relaciones entre educación y mercado, metodologías cuantitativas, y ciencia abierta.o
+Sociólogo de la Universidad de Chile y estudiante del Magíster de Ciencias Sociales en la misma institución. Actualmente se desempeña como asistente de investigación en el Observatorio de Cohesión Social (COES), y en paralelo es tesista del proyecto FONDECYT “Justicia de Mercado y merecimiento del bienestar social” (1250518). Sus intereses de investigación se centran en las relaciones entre educación y mercado, metodologías cuantitativas, y ciencia abierta.
 </td>
 </tr>
 </tbody></table>
 </section>
 <section id="programa-completo-del-curso" class="level2">
 <h2 class="anchored" data-anchor-id="programa-completo-del-curso">Programa completo del curso</h2>
+<section id="introducción-al-análisis-de-datos-reproducibles" class="level3">
+<h3 class="anchored" data-anchor-id="introducción-al-análisis-de-datos-reproducibles">1. Introducción al análisis de datos reproducibles</h3>
+<p>1.1 Apertura y reproducibilidad: Principios de la Ciencia Abierta</p>
+<p>1.2 Ética y eficiencia en el proceso de investigación</p>
+<p>1.3 Editores de código abierto: Acercamiento a Visual Studio Code</p>
+<p>1.4 Recomendaciones en VSC: Acciones, extensiones y shortcuts</p>
+</section>
+<section id="generación-de-documentos-dinámicos" class="level3">
+<h3 class="anchored" data-anchor-id="generación-de-documentos-dinámicos">2. Generación de documentos dinámicos</h3>
+<p>2.1 Proyectos autocontenidos y organización de carpetas</p>
+<p>2.2 Funcionalidad del proyecto: funciones y rutas para la localización de datos</p>
+<p>2.3 Markdown/RMarkdown: creación de documentos con texto plano y código integrado</p>
+<p>2.4 Introducción a Quarto</p>
+</section>
+<section id="repositorios-abiertos" class="level3">
+<h3 class="anchored" data-anchor-id="repositorios-abiertos">3. Repositorios abiertos</h3>
+<p>3.1 Relevancia de repositorios abiertos y proyectos colaborativos en el contexto de la investigación</p>
+<p>3.2 Git y GitHub: control de versiones</p>
+<p>3.3 Inducción práctica a Git y GitHub: Comprensión del workflow y sus conceptos asociados</p>
+<p>3.4 Generación de repositorios: uso aplicado de GitHub</p>
+</section>
+<section id="publicación-de-investigaciones-reproducibles" class="level3">
+<h3 class="anchored" data-anchor-id="publicación-de-investigaciones-reproducibles">4. Publicación de investigaciones reproducibles</h3>
+<p>4.1 GitHub Pages y las ventajas de la publicación en plataformas abiertas</p>
+<p>4.2 Documentos reproducibles en Quarto</p>
+<p>4.3 Presentaciones en Quarto</p>
+<p>4.4 Profundización en Quarto: fundamentos aplicados para optimizar el flujo de trabajo en documentos dinámicos</p>
 <div class="program-embed">
 <p><iframe src="Programa-Curso-EdV.pdf#view=FitH" width="100%" height="800px" style="border: 1px solid #e5e7eb; border-radius: 12px;"> </iframe></p>
 </div>
@@ -351,58 +381,34 @@ Sociólogo de la Universidad de Chile y estudiante del Magíster de Ciencias Soc
 
 
 </section>
+</section>
 
 </main> <!-- /main -->
 <!-- FOOTER QUE IGNORA LA GRID DE QUARTO -->
-
 <div style="background-color: #1f1f1f; color: white;
-
             grid-column: 1 / -1;">
 
-
-
   <!-- TÍTULO -->
-
   <h2 style="text-align: center; font-size: 36px; font-weight: bold; margin-bottom: 2rem;">Acerca de Nosotros</h2>
-
   
-
   <!-- CONTENIDO FLEXIBLE -->
-
   <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; width: 100%; max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: 0 2rem;">
-
     
-
     <!-- Logo -->
-
     <div style="flex: 1; min-width: 250px; text-align: center; margin-bottom: 2rem;">
-
   <a href="https://coes.cl">
-
  <img id="logo-coes" src="../../../COES_Logo_sello1.png" alt="Logo COES" style="width: 50%;">
 
-
-
   </a>
-
 </div>
 
-
-
     <!-- Lisa -->
-
     <div style="flex: 1; min-width: 250px; margin-bottom: 2rem;">
-
       <h3>Laboratorio de Investigación Social Abierta</h3>
-
       <p>Capitán Ignacio Carrera Pinto 1045 <br> Universidad de Chile <br> Facultad de Ciencias Sociales <br> Departamento de Sociología <br> Ñuñoa – RM</p>
-
     </div>
 
-
-
   </div>
-
 </div>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -455,14 +461,13 @@ Sociólogo de la Universidad de Chile y estudiante del Magíster de Ciencias Soc
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

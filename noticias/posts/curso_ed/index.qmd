@@ -46,14 +46,14 @@ format:
 
 El Departamento de Sociología de la Facultad de Ciencias Sociales de la Universidad de Chile invita a participar en el curso de especialización **“Investigación reproducible: Herramientas computacionales para el análisis, reporte y comunicación de resultados”**, parte de la **Escuela de Verano 2026 de Educación Continua**.
 
-El curso aborda el uso integrado de **Visual Studio Code**, **Markdown/Quarto** y **Git/GitHub** para organizar proyectos, documentar procesos y comunicar resultados de investigación de manera clara, transparente y reproducible.
+## Público objetivo
+
+El curso está dirigido a **profesionales, académicos, estudiantes, funcionariado público y trabajadores** que necesiten fortalecer sus habilidades en análisis, reporte y presentación de datos para mejorar la calidad, transparencia y trazabilidad de sus proyectos. Se orienta especialmente a quienes desarrollan investigación social, análisis de datos, evaluación de políticas públicas, estudios de mercado o proyectos relacionados con ciencias sociales, salud, educación y áreas afines. No se requieren conocimientos previos en programación, pero si es recomendable tener experiencia básica en análisis de datos con programas basados en código (R, Python, Stata, etc.).
 
 ## Contenidos principales
 
-
-
 - **Visual Studio Code (VSC)**  
-  Presentación de Visual Studio Code como entorno de trabajo para investigación: un editor ligero que permite abrir y organizar carpetas completas de proyectos, editar distintos tipos de archivos (código, texto, datos) y personalizar el espacio de trabajo con extensiones, realizando todo en el mismo lugar. 
+  VSC es un editor ampliamente utilizado en los últimos años y que sirve para escribir texto y código, y analizar datos en distintos lenguajes. Se revisan sus principales funcionalidades, extensiones y atajos de teclado para optimizar el flujo de trabajo en proyectos de análisis de datos e investigación reproducible.
 
 - **Documentos dinámicos con Markdown y Quarto**  
   Introducción a Markdown como lenguaje de marcado sencillo para escribir texto estructurado (títulos, listas, énfasis) y combinarlo con código. A partir de esto, se trabaja con Quarto para crear documentos dinámicos como informes, reportes y presentaciones que se actualizan automáticamente cuando cambian los datos o el código, facilitando la coherencia entre análisis y resultados.
@@ -61,13 +61,7 @@ El curso aborda el uso integrado de **Visual Studio Code**, **Markdown/Quarto** 
 - **Control de versiones y publicación con Git/GitHub**  
   Revisión de los conceptos básicos de Git como sistema de control de versiones: guardar el historial de cambios, recuperar versiones anteriores y trabajar en paralelo en un mismo proyecto. Se explica el uso de GitHub como repositorio remoto para respaldar el trabajo, colaborar con otras personas y publicar productos reproducibles (informes, sitios web, materiales docentes) en plataformas abiertas.
 
-
-
-## Público objetivo
-
-El curso está dirigido a **profesionales, académicos, estudiantes, funcionariado público y trabajadores** que necesiten fortalecer sus habilidades en análisis, reporte y presentación de datos para mejorar la calidad, transparencia y trazabilidad de sus proyectos.
-
-## Información general del curso
+## Información general
 
 - **Fechas:** martes 13, miércoles 14, jueves 15 y viernes 16 de enero de 2026  
 - **Horario:** 09:00 a 13:30 horas  
@@ -136,22 +130,62 @@ El curso contempla clases teórico–participativas, discusión de experiencias 
 
  <tr>
     <td class="team-photo-cell">
-      <img src="/noticias/posts/curso_ed/tomas.jpg"
+      <img src="/noticias/posts/curso_ed/tomas.png"
            alt="Foto de Tomás Urzúa"
            class="team-photo">
       <div class="team-name">Tomás Urzúa </div>
       <div class="team-role">Asistente de Investigación OCS</div>
     </td>
     <td class="team-bio">
-      Sociólogo de la Universidad de Chile y estudiante del Magíster de Ciencias Sociales en la misma institución. Actualmente se desempeña como asistente de investigación en el Observatorio de Cohesión Social (COES), y en paralelo es tesista del proyecto FONDECYT  “Justicia de Mercado y merecimiento del bienestar social” (1250518) . Sus intereses de investigación se centran en las relaciones entre educación y mercado, metodologías cuantitativas, y ciencia abierta.o
+      Sociólogo de la Universidad de Chile y estudiante del Magíster de Ciencias Sociales en la misma institución. Actualmente se desempeña como asistente de investigación en el Observatorio de Cohesión Social (COES), y en paralelo es tesista del proyecto FONDECYT  “Justicia de Mercado y merecimiento del bienestar social” (1250518). Sus intereses de investigación se centran en las relaciones entre educación y mercado, metodologías cuantitativas, y ciencia abierta.
     </td>
   </tr>
 
 </table>
 
 
-
 ## Programa completo del curso
+
+### 1. Introducción al análisis de datos reproducibles
+   
+  1.1 Apertura y reproducibilidad: Principios de la Ciencia Abierta
+
+  1.2 Ética y eficiencia en el proceso de investigación
+
+  1.3 Editores de código abierto: Acercamiento a Visual Studio Code
+
+  1.4 Recomendaciones en VSC: Acciones, extensiones y shortcuts
+
+### 2. Generación de documentos dinámicos
+
+  2.1 Proyectos autocontenidos y organización de carpetas
+
+  2.2 Funcionalidad del proyecto: funciones y rutas para la localización de datos
+
+  2.3 Markdown/RMarkdown: creación de documentos con texto plano y código integrado
+
+  2.4 Introducción a Quarto
+
+### 3. Repositorios abiertos
+
+  3.1 Relevancia de repositorios abiertos y proyectos colaborativos en el contexto de la investigación
+
+  3.2 Git y GitHub: control de versiones
+
+  3.3 Inducción práctica a Git y GitHub: Comprensión del workflow y sus conceptos asociados
+
+  3.4 Generación de repositorios: uso aplicado de GitHub
+
+### 4. Publicación de investigaciones reproducibles
+
+  4.1 GitHub Pages y las ventajas de la publicación en plataformas abiertas
+
+  4.2 Documentos reproducibles en Quarto
+
+  4.3 Presentaciones en Quarto
+
+  4.4 Profundización en Quarto: fundamentos aplicados para optimizar el flujo de trabajo en documentos dinámicos
+
 
 <div class="program-embed">
   <iframe 
