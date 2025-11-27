@@ -1,15 +1,18 @@
 ---
 title: "Investigación reproducible: Herramientas computacionales para el análisis, reporte y comunicación de resultados"
 subtitle: "Escuela de Verano Educación Continua FACSO 2026"
-description: "Curso de Especialización de la Facultad de Ciencias Sociales de la Universidad de Chile que aborda el uso de VS Code, Quarto, Git y GitHub para fortalecer la reproducibilidad, la transparencia y la comunicación de resultados en investigación."
+description: "Curso de Especialización de la Facultad de Ciencias Sociales de la Universidad de Chile Escuela de Verano Educación Continua FACSO 2026 que aborda el uso de VS Code, Quarto, Git y GitHub para fortalecer la reproducibilidad, la transparencia y la comunicación de resultados en investigación."
 date: 2025-11-22
 categories: [noticias]
+resources:
+  - Programa-Curso-EdV.pdf
 
-image: featured1.jpg
+image: Equipop.png
 title-block-style: default
 title-block-categories: false
 
-toc: false
+toc: true
+body-classes: plantilla-post
 lang: es
 date-format: "[Santiago,] D [de] MMMM [de] YYYY"
 
@@ -23,9 +26,6 @@ format:
       gutter-width: 0px
 ---
 
-::: {.post-hero style="--hero-edge: 160px; --hero-scale: 0.90;--hero-gap: 36px;"}
-![](featured1.jpg){.post-hero-img}
-:::
 
 ::: {.post-meta-row}
 ::: {.post-actions}
@@ -38,13 +38,36 @@ format:
 :::
 :::
 
-El Departamento de Sociología de la Facultad de Ciencias Sociales de la Universidad de Chile invita a participar en el curso de especialización “Investigación reproducible: Herramientas computacionales para el análisis, reporte y comunicación de resultados”, parte de la Escuela de Verano 2026 de Educación Continua.
+::: {.flyer-wrap}
+![](Equipo1.png){.flyer-inline fig-alt="Afiche Escuela de Verano 2026: Investigación reproducible"}
+:::
 
-El curso aborda el uso integrado de **Visual Studio Code**, **Markdown/Quarto** y **Git/GitHub** para organizar proyectos, documentar procesos y comunicar resultados de investigación de manera clara, transparente y reproducible. A través de casos y ejercicios prácticos, se trabaja el ciclo completo: desde la organización de carpetas y archivos hasta la generación de documentos dinámicos y la publicación en plataformas abiertas.
+##
 
-La actividad está dirigida a **profesionales, académicos, estudiantes, funcionariado público y trabajadores** que requieran fortalecer sus habilidades en análisis, reporte y presentación de datos para mejorar la calidad y trazabilidad de sus proyectos.
+El Departamento de Sociología de la Facultad de Ciencias Sociales de la Universidad de Chile invita a participar en el curso de especialización **“Investigación reproducible: Herramientas computacionales para el análisis, reporte y comunicación de resultados”**, parte de la **Escuela de Verano 2026 de Educación Continua**.
 
-**Información general del curso**
+El curso aborda el uso integrado de **Visual Studio Code**, **Markdown/Quarto** y **Git/GitHub** para organizar proyectos, documentar procesos y comunicar resultados de investigación de manera clara, transparente y reproducible.
+
+## Contenidos principales
+
+
+
+- **Visual Studio Code (VSC)**  
+  Presentación de Visual Studio Code como entorno de trabajo para investigación: un editor ligero que permite abrir y organizar carpetas completas de proyectos, editar distintos tipos de archivos (código, texto, datos) y personalizar el espacio de trabajo con extensiones, realizando todo en el mismo lugar. 
+
+- **Documentos dinámicos con Markdown y Quarto**  
+  Introducción a Markdown como lenguaje de marcado sencillo para escribir texto estructurado (títulos, listas, énfasis) y combinarlo con código. A partir de esto, se trabaja con Quarto para crear documentos dinámicos como informes, reportes y presentaciones que se actualizan automáticamente cuando cambian los datos o el código, facilitando la coherencia entre análisis y resultados.
+
+- **Control de versiones y publicación con Git/GitHub**  
+  Revisión de los conceptos básicos de Git como sistema de control de versiones: guardar el historial de cambios, recuperar versiones anteriores y trabajar en paralelo en un mismo proyecto. Se explica el uso de GitHub como repositorio remoto para respaldar el trabajo, colaborar con otras personas y publicar productos reproducibles (informes, sitios web, materiales docentes) en plataformas abiertas.
+
+
+
+## Público objetivo
+
+El curso está dirigido a **profesionales, académicos, estudiantes, funcionariado público y trabajadores** que necesiten fortalecer sus habilidades en análisis, reporte y presentación de datos para mejorar la calidad, transparencia y trazabilidad de sus proyectos.
+
+## Información general del curso
 
 - **Fechas:** martes 13, miércoles 14, jueves 15 y viernes 16 de enero de 2026  
 - **Horario:** 09:00 a 13:30 horas  
@@ -54,9 +77,89 @@ La actividad está dirigida a **profesionales, académicos, estudiantes, funcion
 
 El curso contempla clases teórico–participativas, discusión de experiencias y trabajo aplicado sobre repositorios reales, buscando que cada participante pueda adaptar las herramientas a sus contextos de investigación y docencia. Al finalizar, quienes aprueben obtendrán **certificación como Curso de Especialización de la Universidad de Chile**.
 
-Para más detalles de contenidos, requisitos y proceso de postulación, revisa la ficha oficial del curso y completa tu postulación en los enlaces destacados al inicio de esta nota.
 
-:::{.figure-plain}
-![](Equipop.png)
-:::
+## Equipo
 
+<table class="team-table">
+  <tr>
+    <td class="team-photo-cell">
+      <img src="/equipo/posts/01-pi/featured.png"
+           alt="Foto de Juan Carlos Castillo"
+           class="team-photo">
+      <div class="team-name">Juan Carlos Castillo</div>
+      <div class="team-role">Investigador Principal LISA</div>
+    </td>
+    <td class="team-bio">
+      Profesor titular del Departamento de Sociología de la Universidad de Chile, investigador principal del Núcleo Milenio en Desigualdades y Oportunidades Digitales (NUDOS), y del Centro de Estudios de Conflicto y Cohesión Social (COES), donde es investigador principal del Laboratorio de Investigación Social Abierta - LISA. Obtuvo su doctorado en Sociología en la Humboldt Universität zu Berlin.  
+
+    </td>
+  </tr>
+
+  <tr>
+    <td class="team-photo-cell">
+      <img src="/equipo/posts/03-asit-coes/featured.jpg"
+           alt="Foto de Kevin Carrasco"
+           class="team-photo">
+      <div class="team-name">Kevin Carrasco</div>
+      <div class="team-role">Coordinador LISA</div>
+    </td>
+    <td class="team-bio">
+      Sociólogo y magíster en Ciencias Sociales de la Universidad de Chile. Actualmente, se desempeña como coordinador del Laboratorio de Investigación Social Abierta (LISA-COES), asistente de investigación de la línea “Interacciones grupales e individuales” de COES y como profesor de la cátedra “Métodos Estadísticos para las Ciencias Sociales III” de la Universidad Andrés Bello. Sus intereses de investigación incluyen desigualdad, justicia distributiva, ciencia abierta y métodos cuantitativos de investigación social.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="team-photo-cell">
+      <img src="/equipo/posts/04-asis-lisa/featured.jpg"
+           alt="Foto de René Canales"
+           class="team-photo">
+      <div class="team-name">René Canales</div>
+      <div class="team-role">Asistente de Investigación LISA</div>
+    </td>
+    <td class="team-bio">
+       Sociólogo de la Pontificia Universidad Católica y estudiante del Magíster en Sociología en la misma institución. Actualmente se desempeña como asistente de investigación en el Observatorio de Cohesión Social (COES) y en el Laboratorio de Investigación Social Abierta (LISA). Además, es tesista del proyecto FONDECYT “Actitudes y Comportamiento Juvenil” (1230922). Sus intereses incluyen la participación política, estratificación social, métodos cuantitativos y ciencia abierta.
+    </td>
+  </tr>
+
+  <tr>
+    <td class="team-photo-cell">
+      <img src="https://correlacional.netlify.app/images/ayudantes/katherine.png"
+           alt="Foto de Katherine Aravena"
+           class="team-photo">
+      <div class="team-name">Katherine Aravena</div>
+      <div class="team-role">Ayudante de Investigación LISA</div>
+    </td>
+    <td class="team-bio">
+      Estudiante de Sociología en la Universidad de Chile, asistente de investigación en el Centro de Estudios Públicos (CEP) -equipo de humanidades digitales C22- y asistente de proyecto en el Laboratorio de Investigación Social Abierta (LISA), iniciativa del Centro de Estudios de Conflicto y Cohesión Social (COES). Certificada por Duke University en análisis de datos, con experiencia en construcción y limpieza de bases, análisis cuantitativo  y elaboración de reportes reproducibles orientados a la toma de decisiones.
+    </td>
+  </tr>
+
+ <tr>
+    <td class="team-photo-cell">
+      <img src="/noticias/posts/curso_ed/tomas.jpg"
+           alt="Foto de Tomás Urzúa"
+           class="team-photo">
+      <div class="team-name">Tomás Urzúa </div>
+      <div class="team-role">Asistente de Investigación OCS</div>
+    </td>
+    <td class="team-bio">
+      Sociólogo de la Universidad de Chile y estudiante del Magíster de Ciencias Sociales en la misma institución. Actualmente se desempeña como asistente de investigación en el Observatorio de Cohesión Social (COES), y en paralelo es tesista del proyecto FONDECYT  “Justicia de Mercado y merecimiento del bienestar social” (1250518) . Sus intereses de investigación se centran en las relaciones entre educación y mercado, metodologías cuantitativas, y ciencia abierta.o
+    </td>
+  </tr>
+
+</table>
+
+
+
+## Programa completo del curso
+
+<div class="program-embed">
+  <iframe 
+    src="Programa-Curso-EdV.pdf#view=FitH"
+    width="100%"
+    height="800px"
+    style="border: 1px solid #e5e7eb; border-radius: 12px;">
+  </iframe>
+</div>
+
+[Descargar programa del curso (PDF)](Programa-Curso-EdV.pdf){target="_blank" rel="noopener"}
