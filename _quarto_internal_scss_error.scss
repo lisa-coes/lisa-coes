@@ -1,4 +1,4 @@
-// quarto-scss-analysis-annotation { "quarto-version": "1.7.33" }
+// quarto-scss-analysis-annotation { "quarto-version": "1.8.25" }
 
 // quarto-scss-analysis-annotation { "origin": "'use' section from format" }
 
@@ -1101,22 +1101,9 @@ html, body{
   letter-spacing: .2px;
 }
 .page-columns .content h2{
-  position: relative;
-  margin: 2.35rem 0 1.35rem;
-  padding-bottom: .3rem;
-  font-weight: 700;
-  border-bottom: none !important;
-}
-.page-columns .content h2::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: clamp(120px, 32%, 200px);
-  height: 4px;
-  display: inline-block;
-  background: linear-gradient(90deg, $lisa-red, $lisa-red-dark);
-  border-radius: 999px;
+  margin-top: 2rem;
+  border-bottom: 2px solid $line;
+  padding-bottom: .35rem;
 }
 
 /* Enlaces SOLO del artículo */
@@ -1638,14 +1625,13 @@ body{ margin: 0 !important; padding-left: 0 !important; }
 /* Subtítulo reubicado debajo del hero */
 .post-subtitle-below{
   max-width: var(--content-max, 1040px);
-  margin: 0 auto 14px;           /* aire arriba y abajo */
+  margin: 10px auto 14px;        /* aire arriba y abajo */
   font-family: var(--bs-font-sans-serif, "Cabin", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif);
   font-weight: 600;
   font-size: clamp(1.05rem, 1.2vw + .8rem, 1.25rem);
   line-height: 1.35;
   color: #374151;                 /* tono suave */
   letter-spacing: .1px;
-  text-align: center;
 }
 
 @media (max-width: 640px){
@@ -1676,7 +1662,12 @@ body{ margin: 0 !important; padding-left: 0 !important; }
   box-shadow: none !important;
 }
 
-
+/* Ocultar subtítulo en la página, conservar en metadatos */
+#quarto-content .quarto-title-block .subtitle,
+#title-block-header .quarto-title-banner .subtitle,  /* si el tema lo pone sobre el banner */
+.post-subtitle-below { 
+  display: none !important;
+}
 
 /* ==== Espacio real antes de la foto del equipo (sin colapso) ==== */
 :root{ --fig-top-gap: 22px; } /* súbelo/bájalo: 18–28px */
@@ -1733,32 +1724,6 @@ body{ margin: 0 !important; padding-left: 0 !important; }
   height: var(--footer-gap);
 }
 
-/* Ajustes responsivos del hero para pantallas pequeñas */
-@media (max-width: 960px){
-  .post-hero{
-    --hero-edge: clamp(24px, 6vw, 80px) !important;
-    --hero-scale: 1 !important;
-    position: static !important;
-    left: auto !important;
-    transform: none !important;
-    margin: 0 auto var(--gap) !important;
-    width: min(100%, max(0px, calc(100dvw - (2 * var(--hero-edge))))) !important;
-    max-width: max(0px, calc(100dvw - (2 * var(--hero-edge)))) !important;
-  }
-}
-@media (max-width: 640px){
-  .post-hero{
-    --hero-edge: 16px !important;
-    --hero-scale: 1 !important;
-    position: static !important;
-    left: auto !important;
-    transform: none !important;
-    margin: 0 auto var(--gap) !important;
-    width: min(100%, max(0px, calc(100dvw - (2 * var(--hero-edge))))) !important;
-    max-width: max(0px, calc(100dvw - (2 * var(--hero-edge)))) !important;
-  }
-}
-
 #quarto-page > footer,
 footer.footer,
 .nav-footer{
@@ -1769,254 +1734,21 @@ footer.footer,
   color: #fff !important;
 }
 
-/* =========================================================
-   Layout alineado a la izquierda (mantiene anchos)
-   ========================================================= */
-:root{
-  --layout-left-gap: clamp(32px, 4vw, 72px);
-  --layout-left-pad: clamp(16px, 2.5vw, 40px);
-  --layout-left-border: 6px solid rgba(17, 24, 39, .08);
-}
-
-#quarto-content.page-columns{
-  display: block !important;
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-main#quarto-document-content{
-  margin-left: var(--layout-left-gap) !important;
-  margin-right: auto !important;
-  padding: 0 !important;
-}
-
-#quarto-content .quarto-title-block .quarto-title-banner,
-#quarto-content .quarto-about-marquee .about-image,
-#quarto-content .quarto-title-block .quarto-title,
-#quarto-content .quarto-title-block .quarto-title-meta,
-#quarto-content .page-columns,
-#quarto-content .content,
-.pubdate,
-.post-meta-row,
-.post-subtitle-below,
-.figure-plain,
-.figure-plain:last-of-type,
-.post-hero{
-  margin-left: 0 !important;
-  margin-right: auto !important;
-}
-
-.post-hero,
-#quarto-content .quarto-title-block .quarto-title-banner,
-#quarto-content .quarto-about-marquee .about-image{
-  left: auto !important;
-  transform: none !important;
-}
-
-main#quarto-document-content > :is(header, .post-hero, .post-subtitle-below, .post-meta-row, .pubdate, section){
-  border-left: var(--layout-left-border) !important;
-  padding-left: var(--layout-left-pad) !important;
-  box-sizing: border-box !important;
-}
-
-main#quarto-document-content > header.quarto-title-block{
-  text-align: center !important;
-  padding-right: var(--layout-left-pad) !important;
-}
-
-main#quarto-document-content > .post-subtitle-below{
-  padding-right: var(--layout-left-pad) !important;
-}
-
-main#quarto-document-content > header.quarto-title-block .quarto-title,
-main#quarto-document-content > header.quarto-title-block .quarto-title .title,
-main#quarto-document-content > header.quarto-title-block .subtitle{
-  text-align: center !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-main#quarto-document-content > .post-hero{
-  margin-bottom: clamp(0px, 0.6vw, 8px) !important;
-}
-
-body.plantilla-post{
-  --hero-gap: clamp(0px, 0.8vw, 12px);
-}
-
-main#quarto-document-content > .post-hero::after{
-  height: 0 !important;
-}
-
-.post-subtitle-below + .post-meta-row{
-  margin-top: clamp(12px, 1.6vw, 22px) !important;
-}
-
-/* =========================================================
-   TOC flotante a la derecha (solo plantilla Quarto)
-   ========================================================= */
-body.plantilla-post #quarto-content{
-  position: relative !important;
-}
-
-body.plantilla-post #quarto-margin-sidebar{
-  display: block !important;
-  position: absolute !important;
-  top: clamp(120px, 18vh, 220px) !important;
-  right: clamp(24px, 4vw, 72px) !important;
-  width: clamp(220px, 24vw, 320px) !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-body.plantilla-post #quarto-margin-sidebar #TOC{
-  position: sticky !important;
-  top: clamp(96px, 14vh, 160px) !important;
-  width: 100% !important;
-  max-height: calc(100vh - clamp(96px, 14vh, 160px) - 48px) !important;
-  overflow-y: auto !important;
-  padding: clamp(16px, 1.8vw, 24px) !important;
-  border-left: var(--layout-left-border) !important;
-  background: #F9FAFB !important;
-  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.08) !important;
-  border-radius: 10px 0 0 10px !important;
-}
-
-body.plantilla-post #quarto-margin-sidebar #TOC h2{
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: .08em;
-  margin-bottom: .75rem;
-}
-
-body.plantilla-post #quarto-margin-sidebar #TOC ul{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: .35rem;
-}
-
-body.plantilla-post #quarto-margin-sidebar #TOC a{
-  color: $ink-soft;
-  text-decoration: none;
-  font-size: .95rem;
-  line-height: 1.4;
-  transition: color .2s ease, padding-left .2s ease;
-}
-
-body.plantilla-post #quarto-margin-sidebar #TOC a:hover,
-body.plantilla-post #quarto-margin-sidebar #TOC a:focus,
-body.plantilla-post #quarto-margin-sidebar #TOC .nav-link.active{
-  color: $ink;
-  padding-left: 4px;
-}
-
-@media (max-width: 1200px){
-  body.plantilla-post #quarto-margin-sidebar{
-    display: none !important;
-  }
-}
-
-
-/* Flyer vertical del curso */
-.poster-vertical {
-  display: block;
-  margin: 1.5rem auto;   /* centra la imagen */
-  width: 100%;
-  max-width: 360px;      /* más pequeño: prueba 320–400px */
-  height: auto;          /* mantiene proporción */
-}
-
-.program-embed {
-  max-width: 1040px;
-  margin: 0 auto 1.5rem;
-}
-
-/* ===== Tabla de equipo con fotos circulares ===== */
-
-.team-table {
-  width: 100%;
-  max-width: var(--content-max, 1040px);
-  margin: 2rem auto;
-  border-collapse: collapse;
-}
-
-.team-photo-cell {
-  width: 220px;
-  text-align: center;
-  vertical-align: top;
-  padding: 1rem;
-}
-
-.team-bio {
-  padding: 1rem;
-  vertical-align: top;
-  line-height: 1.6;
-}
-
-.team-photo {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;          /* hace la foto circular */
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 0.75rem;
-  border: 2px solid $line;
-}
-
-.team-name {
-  font-family: $headingFont;
-  font-weight: 700;
-  margin-bottom: 0.15rem;
-}
-
-.team-role {
-  font-size: 0.95rem;
-  color: $ink-soft;
-}
-
-/* Versión responsiva en móvil */
 @media (max-width: 640px) {
-  .team-table,
-  .team-table tr,
-  .team-table td {
-    display: block;
-    width: 100%;
+  .post-hero {
+    width: 100vw !important;      /* ocupa todo el ancho del viewport */
+    max-width: 100vw !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
   }
 
-  .team-photo-cell {
-    padding-bottom: 0.25rem;
-  }
-
-  .team-bio {
-    padding-top: 0;
-  }
-}
-
-/* Flyer del curso flotado a la derecha del texto */
-.flyer-wrap {
-  float: right;
-  max-width: 260px;             /* tamaño del flyer */
-  margin: 0 0 1.5rem 1.5rem;    /* espacio respecto al texto */
-}
-
-.flyer-inline {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: $shadow-1;
-  border: 1px solid $line;      /* si no quieres borde, borra esta línea */
-}
-
-/* En pantallas chicas el flyer baja y se centra */
-@media (max-width: 768px) {
-  .flyer-wrap {
-    float: none;
-    max-width: 360px;
-    margin: 1.5rem auto;
+  .post-hero-img {
+    width: 100% !important;
+    height: auto !important;      /* mantiene proporciones del afiche */
+    object-fit: contain !important;
   }
 }
 
@@ -2082,7 +1814,7 @@ $btn-code-copy-color-active: #4758AB !default;
 
 // quarto-scss-analysis-annotation { "origin": "Defaults from Quarto's SCSS" }
 
-$code-copy-selector: "pre.sourceCode:hover > " !default;
+$code-copy-selector: "div.code-copy-outer-scaffold:hover > " !default;
 $code-white-space: pre !default;
 $tbl-cap-location: top !default;
 $footer-bg: #121212 !default;
@@ -2128,7 +1860,11 @@ $code-block-theme-dark-threshhold: 40% !default;
 
 /* Inline Code Formatting */
 // $code-bg, $code-color, $code-padding
-$code-color: #7d12ba !default;
+$code-color: if(
+  variable-exists(pre-color) and $pre-color != null,
+  $pre-color,
+  #7d12ba
+) !default;
 
 // Set a default body emphasis color
 $code-bg: $gray-100 !default;
@@ -6239,60 +5975,6 @@ $grid-default-toc-mid-body: minmax(
   }
 }
 
-@import "spacer";
-@import "tab-fill";
-@import "color-utilities";
-
-$spacer: 1rem !default;
-
-:root {
-  // Controls default spacing in layout containers (e.g, layout_columns())
-  --bslib-spacer: #{$spacer};
-  --bslib-mb-spacer: var(--bslib-spacer, 1rem);
-}
-
-// Some things like card(), p(), inputs, etc. want some margin-bottom by default
-// so you can plop them anywhere and you get spacing between rows. However, now
-// that we have layout utilities like page_fillable(), layout_columns(),
-// layout_sidebar(), etc. where we can control the gap between rows/columns, we
-// need a way to reset those margin-bottom to 0 in those special contexts
-//
-// We do this by adding this class to components (e.g., card())...
-.bslib-mb-spacing {
-  margin-bottom: var(--bslib-mb-spacer);
-}
-
-// ...And this class for layout containers (e.g, layout_columns())
-.bslib-gap-spacing {
-  gap: var(--bslib-mb-spacer);
-  > .bslib-mb-spacing, > .form-group, > p, > pre {
-    margin-bottom: 0;
-  }
-}
-
-// We generally don't want mb spacing for _activated_ fill items
-.html-fill-container > .html-fill-item.bslib-mb-spacing {
-  margin-bottom: 0;
-}
-.tab-content {
-  // Workaround for pkgdown's CSS to make tab-pane all a consistent height
-  // https://github.com/r-lib/pkgdown/blob/956f07/inst/BS5/assets/pkgdown.scss#L342-L355
-  >.tab-pane.html-fill-container {
-    display: none;
-  }
-
-  // Take precedence over Bootstrap's `display:block` rule
-  >.active.html-fill-container {
-    display: flex;
-  }
-
-  // Another workaround for pkgdown adding extra padding we didn't ask for
-  // https://github.com/r-lib/pkgdown/blob/956f07/inst/BS5/assets/pkgdown.scss#L335-L337
-  &.html-fill-container {
-    padding: 0;
-  }
-}
-
 $bslib-enable-color-utilities: $bootstrap-version >= 5 !default;
 
 @if ($bslib-enable-color-utilities) {
@@ -6368,22 +6050,121 @@ $bslib-enable-color-utilities: $bootstrap-version >= 5 !default;
   }
 }
 
-html {
-  height: 100%;
+$spacer: 1rem !default;
+
+:root {
+  // Controls default spacing in layout containers (e.g, layout_columns())
+  --bslib-spacer: #{$spacer};
+  --bslib-mb-spacer: var(--bslib-spacer, 1rem);
 }
 
-.bslib-page-fill {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: var(--bslib-spacer, 1rem);
+// Some things like card(), p(), inputs, etc. want some margin-bottom by default
+// so you can plop them anywhere and you get spacing between rows. However, now
+// that we have layout utilities like page_fillable(), layout_columns(),
+// layout_sidebar(), etc. where we can control the gap between rows/columns, we
+// need a way to reset those margin-bottom to 0 in those special contexts
+//
+// We do this by adding this class to components (e.g., card())...
+.bslib-mb-spacing {
+  margin-bottom: var(--bslib-mb-spacer);
+}
+
+// ...And this class for layout containers (e.g, layout_columns())
+.bslib-gap-spacing {
+  gap: var(--bslib-mb-spacer);
+  > .bslib-mb-spacing, > .form-group, > p, > pre {
+    margin-bottom: 0;
+  }
+}
+
+// We generally don't want mb spacing for _activated_ fill items
+.html-fill-container > .html-fill-item.bslib-mb-spacing {
+  margin-bottom: 0;
+}
+@import "spacer";
+@import "tab-fill";
+@import "color-utilities";
+
+.tab-content {
+  // Workaround for pkgdown's CSS to make tab-pane all a consistent height
+  // https://github.com/r-lib/pkgdown/blob/956f07/inst/BS5/assets/pkgdown.scss#L342-L355
+  >.tab-pane.html-fill-container {
+    display: none;
+  }
+
+  // Take precedence over Bootstrap's `display:block` rule
+  >.active.html-fill-container {
+    display: flex;
+  }
+
+  // Another workaround for pkgdown adding extra padding we didn't ask for
+  // https://github.com/r-lib/pkgdown/blob/956f07/inst/BS5/assets/pkgdown.scss#L335-L337
+  &.html-fill-container {
+    padding: 0;
+  }
+}
+
+.bslib-grid {
+  display: grid !important;
   gap: var(--bslib-spacer, 1rem);
+  height: var(--bslib-grid-height);
+  &.grid {
+    // Don't let intrinsic width of a column affect the width of grid cols
+    grid-template-columns: repeat(var(--bs-columns, 12), minmax(0, 1fr));
+    // For some reason, Bootstrap sets `grid-template-rows: 1fr` by default, which
+    // is problematic for a multi-row filling layout. This fixes it...
+    // > page_fillable(layout_columns(c(12, 12), plotly::plot_ly(), plotly::plot_ly()))
+    grid-template-rows: unset;
+    grid-auto-rows: var(--bslib-grid--row-heights);
+    @include bslib-breakpoints-css-vars('bslib-grid--row-heights', map-keys($grid-breakpoints));
+  }
+
+  & > * > .shiny-input-container {
+    width: 100%;
+  }
+}
+
+.bslib-grid-item {
+  grid-column: auto/span 1;
+}
+
+@include media-breakpoint-down(md) {
+  // collapse all columns to a single column below medium (by default only)
+  .bslib-grid-item {
+    grid-column: 1 / -1;
+  }
 }
 
 @include media-breakpoint-down(sm) {
-  .bslib-page-fill {
-    height: var(--bslib-page-fill-mobile-height, auto);
+  // with each "row" taking its natural height
+  .bslib-grid {
+    grid-template-columns: 1fr !important;
+    height: var(--bslib-grid-height-mobile);
+    &.grid {
+      height: unset !important;
+      grid-auto-rows: var(--bslib-grid--row-heights--xs, auto);
+    }
   }
+}
+
+$bslib-page-sidebar-title-bg: if($navbar-bg, $navbar-bg, $dark) !default;
+$bslib-page-sidebar-title-color: color-contrast($bslib-page-sidebar-title-bg) !default;
+$bslib-sidebar-padding: $spacer * 1.5 !default;
+
+:root {
+  --bslib-page-sidebar-title-bg: #{$bslib-page-sidebar-title-bg};
+  --bslib-page-sidebar-title-color: #{$bslib-page-sidebar-title-color};
+}
+
+.bslib-page-title {
+  background-color: var(--bslib-page-sidebar-title-bg);
+  color: var(--bslib-page-sidebar-title-color);
+  font-size: $h4-font-size;
+  font-weight: 300;
+  padding: var(--bslib-spacer, 1rem);
+  padding-left: $bslib-sidebar-padding;
+  margin-bottom: 0;
+  border-bottom: $border-width solid $border-color;
 }
 
 /* CSS behind nav_spacer() */
@@ -6428,6 +6209,160 @@ html {
   }
 }
 
+.bslib-card {
+  // TODO: allow a way to opt out
+  overflow: auto;
+
+  // Avoid "double padding" when two card_body()s are immediate siblings
+  .card-body + .card-body {
+    padding-top: 0;
+  }
+
+  .card-body {
+    overflow: auto;
+    p {
+      margin-top: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .card-body {
+    max-height: var(--bslib-card-body-max-height, none);
+  }
+
+  &[data-full-screen="true"] > .card-body {
+    max-height: var(--bslib-card-body-max-height-full-screen, none);
+  }
+
+  .card-header {
+    .form-group {
+      margin-bottom: 0;
+    }
+    .selectize-control {
+      margin-bottom: 0;
+      // TODO: we should probably add this to selectize's SCSS since this actually makes selectInput()
+      // usable with width="fit-content"
+      .item {
+        margin-right: 1.15rem;
+      }
+    }
+  }
+
+  .card-footer {
+    margin-top: auto;
+  }
+
+  // For navs_tab_card(title = ...)
+  .bslib-navs-card-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .nav {
+      margin-left: auto;
+    }
+  }
+
+  .bslib-sidebar-layout:not([data-bslib-sidebar-border="true"]) {
+    border: none;
+  }
+  .bslib-sidebar-layout:not([data-bslib-sidebar-border-radius="true"]) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+}
+
+
+/*************************************************
+* Full screen card logic
+*************************************************/
+
+[data-full-screen="true"] {
+  position: fixed;
+  inset: 3.5rem 1rem 1rem;
+  height: auto !important;
+  max-height: none !important;
+  width: auto !important;
+  z-index: $zindex-popover;
+}
+
+.bslib-full-screen-enter {
+  display: none;
+  position: absolute;
+  bottom: var(--bslib-full-screen-enter-bottom, 0.2rem);
+  right: var(--bslib-full-screen-enter-right, 0);
+  top: var(--bslib-full-screen-enter-top);
+  left: var(--bslib-full-screen-enter-left);
+  color: var(--bslib-color-fg, var(--bs-card-color));
+  background-color: var(--bslib-color-bg, var(--bs-card-bg, var(--bs-body-bg)));
+  border: var(--bs-card-border-width) solid var(--bslib-color-fg, var(--bs-card-border-color));
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  margin: 0.2rem 0.4rem;
+  padding: 0.55rem !important;
+  font-size: .8rem;
+  cursor: pointer;
+  opacity: 0.7;
+  &:hover { opacity: 1; }
+  z-index: $zindex-popover;
+}
+
+.card[data-full-screen="false"]:hover > * > .bslib-full-screen-enter {
+  display: block;
+}
+
+// Hide all enter-full-screen buttons when *any* card is full-screenified
+.bslib-has-full-screen .card:hover > * > .bslib-full-screen-enter {
+  display: none;
+}
+
+// Only allow full_screen on desktop screens
+@include media-breakpoint-down(sm) {
+  .bslib-full-screen-enter { display: none !important; }
+}
+
+.bslib-full-screen-exit {
+  position: relative;
+  top: 1.35rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  float: right;
+  margin-right: 2.15rem;
+  align-items: center;
+  color: rgba(var(--bs-body-bg-rgb), 0.8);
+  &:hover {
+    color: rgba(var(--bs-body-bg-rgb), 1);
+  }
+  svg {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+#bslib-full-screen-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(var(--bs-body-color-rgb), 0.6);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  z-index: $zindex-popover - 1;
+  animation: bslib-full-screen-overlay-enter 400ms cubic-bezier(.6,.02,.65,1) forwards;
+}
+
+@keyframes bslib-full-screen-overlay-enter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .accordion {
   .accordion-header {
     @include bootstrap-heading($h2-font-size);
@@ -6447,6 +6382,24 @@ html {
     &:focus {
       box-shadow: var(--#{$prefix}accordion-btn-focus-box-shadow);
     }
+  }
+}
+
+html {
+  height: 100%;
+}
+
+.bslib-page-fill {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: var(--bslib-spacer, 1rem);
+  gap: var(--bslib-spacer, 1rem);
+}
+
+@include media-breakpoint-down(sm) {
+  .bslib-page-fill {
+    height: var(--bslib-page-fill-mobile-height, auto);
   }
 }
 
@@ -6828,223 +6781,6 @@ $bslib-sidebar-column-sidebar: Min(calc(100% - var(--bslib-sidebar-icon-size)), 
       &.sidebar-collapsed > .main {
         opacity: 1;
       }
-    }
-  }
-}
-
-$bslib-page-sidebar-title-bg: if($navbar-bg, $navbar-bg, $dark) !default;
-$bslib-page-sidebar-title-color: color-contrast($bslib-page-sidebar-title-bg) !default;
-$bslib-sidebar-padding: $spacer * 1.5 !default;
-
-:root {
-  --bslib-page-sidebar-title-bg: #{$bslib-page-sidebar-title-bg};
-  --bslib-page-sidebar-title-color: #{$bslib-page-sidebar-title-color};
-}
-
-.bslib-page-title {
-  background-color: var(--bslib-page-sidebar-title-bg);
-  color: var(--bslib-page-sidebar-title-color);
-  font-size: $h4-font-size;
-  font-weight: 300;
-  padding: var(--bslib-spacer, 1rem);
-  padding-left: $bslib-sidebar-padding;
-  margin-bottom: 0;
-  border-bottom: $border-width solid $border-color;
-}
-
-.bslib-card {
-  // TODO: allow a way to opt out
-  overflow: auto;
-
-  // Avoid "double padding" when two card_body()s are immediate siblings
-  .card-body + .card-body {
-    padding-top: 0;
-  }
-
-  .card-body {
-    overflow: auto;
-    p {
-      margin-top: 0;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  .card-body {
-    max-height: var(--bslib-card-body-max-height, none);
-  }
-
-  &[data-full-screen="true"] > .card-body {
-    max-height: var(--bslib-card-body-max-height-full-screen, none);
-  }
-
-  .card-header {
-    .form-group {
-      margin-bottom: 0;
-    }
-    .selectize-control {
-      margin-bottom: 0;
-      // TODO: we should probably add this to selectize's SCSS since this actually makes selectInput()
-      // usable with width="fit-content"
-      .item {
-        margin-right: 1.15rem;
-      }
-    }
-  }
-
-  .card-footer {
-    margin-top: auto;
-  }
-
-  // For navs_tab_card(title = ...)
-  .bslib-navs-card-title {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    .nav {
-      margin-left: auto;
-    }
-  }
-
-  .bslib-sidebar-layout:not([data-bslib-sidebar-border="true"]) {
-    border: none;
-  }
-  .bslib-sidebar-layout:not([data-bslib-sidebar-border-radius="true"]) {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
-
-}
-
-
-/*************************************************
-* Full screen card logic
-*************************************************/
-
-[data-full-screen="true"] {
-  position: fixed;
-  inset: 3.5rem 1rem 1rem;
-  height: auto !important;
-  max-height: none !important;
-  width: auto !important;
-  z-index: $zindex-popover;
-}
-
-.bslib-full-screen-enter {
-  display: none;
-  position: absolute;
-  bottom: var(--bslib-full-screen-enter-bottom, 0.2rem);
-  right: var(--bslib-full-screen-enter-right, 0);
-  top: var(--bslib-full-screen-enter-top);
-  left: var(--bslib-full-screen-enter-left);
-  color: var(--bslib-color-fg, var(--bs-card-color));
-  background-color: var(--bslib-color-bg, var(--bs-card-bg, var(--bs-body-bg)));
-  border: var(--bs-card-border-width) solid var(--bslib-color-fg, var(--bs-card-border-color));
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  margin: 0.2rem 0.4rem;
-  padding: 0.55rem !important;
-  font-size: .8rem;
-  cursor: pointer;
-  opacity: 0.7;
-  &:hover { opacity: 1; }
-  z-index: $zindex-popover;
-}
-
-.card[data-full-screen="false"]:hover > * > .bslib-full-screen-enter {
-  display: block;
-}
-
-// Hide all enter-full-screen buttons when *any* card is full-screenified
-.bslib-has-full-screen .card:hover > * > .bslib-full-screen-enter {
-  display: none;
-}
-
-// Only allow full_screen on desktop screens
-@include media-breakpoint-down(sm) {
-  .bslib-full-screen-enter { display: none !important; }
-}
-
-.bslib-full-screen-exit {
-  position: relative;
-  top: 1.35rem;
-  font-size: 0.9rem;
-  cursor: pointer;
-  text-decoration: none;
-  display: flex;
-  float: right;
-  margin-right: 2.15rem;
-  align-items: center;
-  color: rgba(var(--bs-body-bg-rgb), 0.8);
-  &:hover {
-    color: rgba(var(--bs-body-bg-rgb), 1);
-  }
-  svg {
-    margin-left: 0.5rem;
-    font-size: 1.5rem;
-  }
-}
-
-#bslib-full-screen-overlay {
-  position: fixed;
-  inset: 0;
-  background-color: rgba(var(--bs-body-color-rgb), 0.6);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  z-index: $zindex-popover - 1;
-  animation: bslib-full-screen-overlay-enter 400ms cubic-bezier(.6,.02,.65,1) forwards;
-}
-
-@keyframes bslib-full-screen-overlay-enter {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.bslib-grid {
-  display: grid !important;
-  gap: var(--bslib-spacer, 1rem);
-  height: var(--bslib-grid-height);
-  &.grid {
-    // Don't let intrinsic width of a column affect the width of grid cols
-    grid-template-columns: repeat(var(--bs-columns, 12), minmax(0, 1fr));
-    // For some reason, Bootstrap sets `grid-template-rows: 1fr` by default, which
-    // is problematic for a multi-row filling layout. This fixes it...
-    // > page_fillable(layout_columns(c(12, 12), plotly::plot_ly(), plotly::plot_ly()))
-    grid-template-rows: unset;
-    grid-auto-rows: var(--bslib-grid--row-heights);
-    @include bslib-breakpoints-css-vars('bslib-grid--row-heights', map-keys($grid-breakpoints));
-  }
-
-  & > * > .shiny-input-container {
-    width: 100%;
-  }
-}
-
-.bslib-grid-item {
-  grid-column: auto/span 1;
-}
-
-@include media-breakpoint-down(md) {
-  // collapse all columns to a single column below medium (by default only)
-  .bslib-grid-item {
-    grid-column: 1 / -1;
-  }
-}
-
-@include media-breakpoint-down(sm) {
-  // with each "row" taking its natural height
-  .bslib-grid {
-    grid-template-columns: 1fr !important;
-    height: var(--bslib-grid-height-mobile);
-    &.grid {
-      height: unset !important;
-      grid-auto-rows: var(--bslib-grid--row-heights--xs, auto);
     }
   }
 }
@@ -10761,8 +10497,7 @@ details > summary > p:only-child {
 }
 
 // codeCopy
-pre.sourceCode,
-code.sourceCode {
+div.code-copy-outer-scaffold {
   position: relative;
 }
 
@@ -11923,7 +11658,11 @@ h1.title {
   margin-top: 0;
 }
 
-main.content > section:first-of-type > h2:first-child {
+main.content > p:has(+ section) {
+  margin-bottom: 2rem;
+}
+
+main.content > section:first-of-type > h2:nth-child(1) {
   margin-top: 0;
 }
 
@@ -12165,7 +11904,8 @@ pre.sourceCode {
     border: none;
   }
   font-size: $code-block-font-size;
-  overflow: visible !important;
+  overflow-y: visible !important;
+  // overflow-y: auto !important;
   @if $code-block-bg {
     padding: $code-block-bg-padding;
   }
@@ -12179,6 +11919,7 @@ pre.sourceCode > code.sourceCode {
 
 div.sourceCode {
   overflow-y: hidden;
+  // position: relative;
 }
 
 .callout div.sourceCode {
@@ -12209,6 +11950,26 @@ pre {
   border: initial;
 }
 
+p code.sourceCode,
+li code.sourceCode,
+td code.sourceCode {
+  $calculated-bg: if(
+    variable-exists(code-bg),
+    if(
+      $code-bg == $gray-100 and variable-exists(code-block-bg-color),
+      $code-block-bg-color,
+      $code-bg
+    ),
+    null
+  );
+
+  @if variable-exists(mono-background-color) {
+    background-color: $mono-background-color;
+  } @else if variable-exists(calculated-bg) {
+    background-color: $calculated-bg;
+  }
+}
+
 // Maps the pandoc 'monobackgroundcolor' to bootstrap
 // Note this only targets code outside of sourceCode blocks
 @if variable-exists(mono-background-color) {
@@ -12228,14 +11989,23 @@ pre code:not(.sourceCode) {
   background-color: initial;
 }
 
-// Default padding if background is set
 p code:not(.sourceCode),
 li code:not(.sourceCode),
 td code:not(.sourceCode) {
+  $calculated-bg: if(
+    variable-exists(code-bg),
+    if(
+      $code-bg == $gray-100 and variable-exists(code-block-bg-color),
+      $code-block-bg-color,
+      $code-bg
+    ),
+    null
+  );
+
   @if variable-exists(mono-background-color) {
     background-color: $mono-background-color;
-  } @else if variable-exists(code-bg) {
-    background-color: $code-bg;
+  } @else if variable-exists(calculated-bg) {
+    background-color: $calculated-bg;
   }
 
   @if variable-exists(code-padding) {
@@ -12674,6 +12444,8 @@ kbd,
 .callout.callout-style-simple .callout-body {
   font-size: 0.9rem;
   font-weight: 400;
+  margin-bottom: -0.4em;
+  margin-top: 0.5em;
 }
 
 .callout.callout-style-default .callout-body {
@@ -12690,6 +12462,15 @@ kbd,
   margin-bottom: -0.2em;
 }
 
+.callout.callout-empty-content > .callout-header {
+  margin-bottom: 0em;
+  border-bottom-right-radius: add($border-radius, -1px);
+}
+
+.callout > .callout-header.collapsed {
+  border-bottom-right-radius: add($border-radius, -1px);
+}
+
 .callout.callout-style-simple > div.callout-header {
   border-bottom: none;
   font-size: 0.9rem;
@@ -12704,6 +12485,7 @@ kbd,
   font-size: 0.9rem;
   padding-left: 0.5em;
   padding-right: 0.5em;
+  border-top-right-radius: add($border-radius, -1px);
 }
 
 .callout.callout-style-default .callout-body {
@@ -13467,6 +13249,18 @@ a {
   background-color: $link-color-bg;
   font-weight: $link-weight;
   text-decoration: $link-decoration;
+}
+
+// screen-reader-only, cf https://github.com/quarto-dev/quarto-cli/issues/726#issuecomment-1112486100
+.screen-reader-only {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  width: 1px;
 }
 
 

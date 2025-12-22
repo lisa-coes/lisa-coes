@@ -30,7 +30,7 @@ format:
 ::: {.post-meta-row}
 ::: {.post-actions}
 [**Ficha del curso**](https://uchile.cl/s234561){.btn .btn-primary .btn-sm target="_blank" rel="noopener"}
-[Postulación en línea](https://lnkd.in/eZr_dQYN){.btn .btn-outline-secondary .btn-sm target="_blank" rel="noopener"}
+[Postulación en línea](https://econtinua.facso.cl/vistas/formulario.php?prog=NjM=){.btn .btn-outline-secondary .btn-sm target="_blank" rel="noopener"}
 :::
 
 ::: {.post-date}
